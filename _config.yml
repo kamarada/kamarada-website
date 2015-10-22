@@ -51,6 +51,14 @@ markdown: redcarpet
 # to create custom renderers, please refer to
 # http://jekyllrb.com/docs/configuration/#markdown-options
 
+# Permalink
+# Set the site’s URLs style
+# Default: date
+permalink: pretty
+
+# For more info on permalinks, please refer to
+# http://jekyllrb.com/docs/permalinks/
+
 ######################
 # Google integration #
 ######################
@@ -142,11 +150,6 @@ gems:
     # variable. It also allows to manually set images for posts using a front
     # matter variable.
     - jekyll-auto-image
-
-    # Jekyll Sitemap Generator Plugin
-    # https://github.com/jekyll/jekyll-sitemap
-    # Plugin to silently generate a sitemaps.org compliant sitemap for your site
-    - jekyll-sitemap
 
 # Jekyll Archives plugin configuration
 jekyll-archives:
@@ -314,11 +317,35 @@ defaults:
     -
         scope:
             path: ""
-            type: "posts"
+        values:
+            lang: "en"
+            layout: "page"
+    -
+        scope:
+            path: "en"
+        values:
+            lang: "en"
+    -
+        scope:
+            path: "en/_posts"
         values:
             # Allows one to use {{ page.is_post }} to check whether the page is
             # a post, as seen on http://stackoverflow.com/a/23555679/1657502
             is_post: true
+            lang: "en"
+            layout: "post"
+    -
+        scope:
+            path: "pt"
+        values:
+            lang: "pt"
+    -
+        scope:
+            path: "pt/_posts"
+        values:
+            is_post: true
+            lang: "pt"
+            layout: "post"
 
 # For more info on YAML Front Matter and its configuration, please refer to
 # https://jekyllrb.com/docs/frontmatter/

@@ -1,0 +1,30 @@
+en:
+    about: "About"
+    author: "Author"
+    all_rights_reserved: "All rights reserved"
+    based_on: "Based on"
+    navigation:
+        -
+            title: "About"
+            url: "/en/about/"
+    newer: "Newer"
+    next: "Next"
+    older: "Older"
+    previous: "Previous"
+    read_more: "Read more"
+    search: "Search"
+pt:
+    about: "Sobre"
+    author: "Autor"
+    all_rights_reserved:  "Todos os direitos reservados"
+    based_on: "Baseado no"
+    navigation:
+        -
+            title: "Sobre"
+            url: "/pt/sobre/"
+    newer: "Primeira"
+    next: "Anterior"
+    older: "Última"
+    previous: "Próxima"
+    read_more: "Leia mais"
+    search: "Pesquisar"

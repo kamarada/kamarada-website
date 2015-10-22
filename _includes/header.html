@@ -12,13 +12,21 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
-                {% for page in site.pages %}
-                    {% if page.title %}
+                {% if site.data.t[page.lang].navigation %}
+                    {% for link in site.data.t[page.lang].navigation %}
                         <li>
-                            <a href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a href="{{ link.url | prepend: site.baseurl }}">{{ link.title }}</a>
                         <li>
-                    {% endif %}
-                {% endfor %}
+                    {% endfor %}
+                {% else %}
+                    {% for site_page in site.pages | where: "lang", page.lang  %}
+                        {% if site_page.title %}
+                            <li>
+                                <a href="{{ site_page.url | prepend: site.baseurl }}">{{ site_page.title }}</a>
+                            <li>
+                        {% endif %}
+                    {% endfor %}
+                {% endif %}
             </ul>
         </div><!-- #navbar -->
         <form action="{% if site.google.cse_id %}{{ "/search/" | prepend: site.baseurl }}{% else %}https://www.google.com/search{% endif %}" class="navbar-form" id="search-form" method="get" role="search">
@@ -26,7 +34,7 @@
             {% else %}
                 <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
             {% endif %}
-            <input type="text" class="form-control" id="search-input" name="q" placeholder="Search" />
+            <input type="text" class="form-control" id="search-input" name="q" placeholder="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}" />
             <a class="mdi-action-search" id="search-button"></a>
         </form>
     </div><!-- .container-fluid -->

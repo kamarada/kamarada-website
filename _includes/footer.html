@@ -3,7 +3,7 @@
         <div class="row">
             <div class="col-xs-12">
                 <p class="text-center">
-                    Copyright &copy; {{ site.time | date: '%Y' }} {% if site.author.name %}<a href='#author'>{{ site.author.name }}</a>{% else %}<a href='#about'>{{ site.title }}</a>{% endif %}. All rights reserved. Based on <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
+                    Copyright &copy; {{ site.time | date: '%Y' }} {% if site.author.name %}<a href='#author'>{{ site.author.name }}</a>{% else %}<a href='#about'>{{ site.title }}</a>{% endif %}. {% if site.data.t[page.lang].all_rights_reserved %}{{ site.data.t[page.lang].all_rights_reserved }}{% else %}{{ "All rights reserved" }}{% endif %}. {% if site.data.t[page.lang].based_on %}{{ site.data.t[page.lang].based_on }}{% else %}{{ "Based on" }}{% endif %} <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
                 </p>
             </div>
         </div>

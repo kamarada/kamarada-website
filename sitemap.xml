@@ -1,0 +1,68 @@
+---
+layout: null
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+    xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+    xmlns:xhtml="http://www.w3.org/1999/xhtml"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    {% for post in site.posts %}
+        {% unless post.sitemap == false %}
+            <url>
+                <loc>{{ post.url | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url | uri_escape }}</loc>
+
+                {% if post.sitemap.lastmod %}
+                    <lastmod>{{ post.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+                {% elsif post.date %}
+                    <lastmod>{{ post.date | date_to_xmlschema }}</lastmod>
+                {% else %}
+                    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                {% endif %}
+
+                {% if post.sitemap.changefreq %}
+                    <changefreq>{{ post.sitemap.changefreq }}</changefreq>
+                {% endif %}
+
+                {% if post.sitemap.priority %}
+                    <priority>{{ post.sitemap.priority }}</priority>
+                {% endif %}
+                
+                {% assign translations = site.posts | where: 'nickname', post.nickname %}
+                {% for translation in translations %}
+                    <xhtml:link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url | uri_escape }}" />
+                {% endfor %}
+            </url>
+        {% endunless %}
+    {% endfor %}
+    {% for page in site.pages %}
+        {% unless page.sitemap == false %}
+            <url>
+                <loc>{{ page.url | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url | uri_escape }}</loc>
+
+                {% if page.sitemap.lastmod %}
+                    <lastmod>{{ page.sitemap.lastmod | date: "%Y-%m-%d" }}</lastmod>
+                {% elsif page.date %}
+                    <lastmod>{{ page.date | date_to_xmlschema }}</lastmod>
+                {% else %}
+                    <lastmod>{{ site.time | date_to_xmlschema }}</lastmod>
+                {% endif %}
+
+                {% if page.sitemap.changefreq %}
+                    <changefreq>{{ page.sitemap.changefreq }}</changefreq>
+                {% endif %}
+
+                {% if page.sitemap.priority %}
+                    <priority>{{ page.sitemap.priority }}</priority>
+                {% endif %}
+
+                {% if page.nickname %}
+                    {% assign translations = site.pages | where: 'nickname', page.nickname %}
+                    {% for translation in translations %}
+                        <xhtml:link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | replace: 'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url | uri_escape }}" />
+                    {% endfor %}
+                {% endif %}
+            </url>
+       {% endunless %}
+    {% endfor %}
+</urlset>
