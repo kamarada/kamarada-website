@@ -12,11 +12,19 @@
         </script>
     {% endif %}
 
-    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
-    <meta name="author" content="{{ site.author.name }}">
-    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <title>
+        {% if page.title %}
+            {{ page.title }}
+        {% elsif site.data.t[page.lang].site.title %}
+            {{ site.data.t[page.lang].site.title }}
+        {% else %}
+            {{ site.title }}
+        {% endif %}
+    </title>
+    <meta name="author" content="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% else %}{{ site.author.name }}{% endif %}">
+    <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 
     {% assign translations = site.posts | where: 'nickname', page.nickname %}
     {% for translation in translations %}
@@ -38,18 +46,18 @@
     {% if site.facebook.page_id %}
         <meta property="fb:page_id" content="{{ site.facebook.page_id }}" />
     {% endif %}
-    {% if site.author.name %}
-        <meta property="og:author" content="{{ site.author.name }}" />
+    {% if site.author.name or site.data.t[page.lang].site.author.name %}
+        <meta property="og:author" content="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% else %}{{ site.author.name }}{% endif %}" />
     {% endif %}
-    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
-    {% if site.author.email %}
-        <meta property="og:email" content="{{ site.author.email }}" />
+    <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}" />
+    {% if site.author.email or site.data.t[page.lang].site.author.email %}
+        <meta property="og:email" content="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}" />
     {% endif %}
     {% if page.image %}
         <meta property="og:image" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
     {% endif %}
-    <meta property="og:site_name" content="{{ site.title }}" />
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:site_name" content="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" />
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% elsif site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" />
     <meta property="og:type" content="{% if page.is_post %}{{ "article" }}{% else %}{{ "website" }}{% endif %}" />
     <meta property="og:url" content="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
 
@@ -115,7 +123,7 @@
         ga('create', '{{ site.google.analytics_property_id }}', 'auto');
         ga('send', 'pageview', {
             'page': '{{ page.url | replace:"index.html","" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}',
-            'title': '{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}'
+            'title': '{% if page.title %}{{ page.title }}{% elsif site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}'
         });
 
         </script>
@@ -139,7 +147,7 @@
             var addthis_share = {
                 url: '{{ page.url | prepend: site.baseurl | replace: "//", "/"" | prepend: site.url }}',
                 title: document.title,
-                description: '{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}{% else %}{{ site.description }}{% endif %}'
+                description: '{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}'
             };
         </script>
         <!-- End AddThis -->

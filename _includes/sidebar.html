@@ -12,11 +12,19 @@
     <div class="panel-body">
         <p class="lead">
             <a href="{{ site.baseurl | prepend: site.url }}">
-                {{ site.title }}
+                {% if site.data.t[page.lang].site.title %}
+                    {{ site.data.t[page.lang].site.title }}
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
             </a>
         </p>
         <p class="text"{% if !page.excerpt %} itemprop="description"{% endif %}>
-            {{ site.description }}
+            {% if site.data.t[page.lang].site.description %}
+                {{ site.data.t[page.lang].site.description }}
+            {% else %}
+                {{ site.description }}
+            {% endif %}
         </p>
     </div><!-- .panel-body -->
 </div><!-- .panel -->
@@ -34,24 +42,28 @@
     </div>
     <div class="panel-body">
         <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-            {% if site.author.email %}
+            {% if site.author.email or site.data.t[page.lang].site.author.email %}
                 <p class="text-center">
-                    <a href='{{ site.author.email | to_secure_gravatar }}' title='{{ site.author.name }}'>
-                        <img src='{{ site.author.email | to_secure_gravatar }}' alt='{{ site.author.name }}' class='img-circle img-responsive img-thumbnail'>
+                    <a href="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email | to_secure_gravatar }}{% else %}{{ site.author.email | to_secure_gravatar }}{% endif %}" title="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}">
+                        <img src="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email | to_secure_gravatar }}{% else %}{{ site.author.email | to_secure_gravatar }}{% endif %}" alt="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}" class="img-circle img-responsive img-thumbnail">
                     </a>
                 </p>
             {% endif %}
-            {% if site.author.name %}
+            {% if site.author.name or site.data.t[page.lang].site.author.name %}
                 <p class="lead" itemprop="name">
-                    {{ site.author.name }}
+                    {% if site.data.t[page.lang].site.author.name %}
+                        {{ site.data.t[page.lang].site.author.name }}
+                    {% else %}
+                        {{ site.author.name }}
+                    {% endif %}
                 </p>
             {% endif %}
             <ul class="contact-list list-unstyled">
-                {% if site.author.site %}
-                    <li><a href="{{ site.author.site }}" itemprop="url"><i class="fa fa-globe"></i> {{ site.author.site }}</a></li>
+                {% if site.author.site or site.data.t[page.lang].site.author.site %}
+                    <li><a href="{% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}" itemprop="url"><i class="fa fa-globe"></i> {% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}</a></li>
                 {% endif %}
-                {% if site.author.email %}
-                    <li><a href="mailto:{{ site.author.email }}" itemprop="email"><i class="fa fa-envelope"></i> {{ site.author.email }}</a></li>
+                {% if site.author.email or site.data.t[page.lang].site.author.email %}
+                    <li><a href="mailto:{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}" itemprop="email"><i class="fa fa-envelope"></i> {% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}</a></li>
                 {% endif %}
             </ul>
         </div>

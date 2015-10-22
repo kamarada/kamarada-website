@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<meta itemprop="headline name" content="{{ site.title }}">
+<meta itemprop="headline name" content=" {% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}">
 <link href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" itemprop="url">
 
 {% if paginator %}
