@@ -63,8 +63,8 @@
 
     <!-- Twitter Cards -->
     <meta name="twitter:card" content="summary" />
-    {% if site.twitter_username %}
-        <meta name="twitter:site" content="{{ site.twitter_username | prepend: "@" }}" />
+    {% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
+        <meta name="twitter:site" content="{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username | prepend: "@" }}{% else %}{{ site.twitter_username | prepend: "@" }}{% endif %}" />
     {% endif %}
 
     <!-- Favicons (made with RealFaviconGenerator.net) -->
