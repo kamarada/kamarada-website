@@ -24,7 +24,7 @@
     <meta name="author" content="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% else %}{{ site.author.name }}{% endif %}">
     <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
-    <link rel="alternate" type="application/rss+xml" title="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
+    <link rel="alternate" type="application/rss+xml" title="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" href="{{ '/feed.xml' | prepend: page.lang | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
 
     {% assign translations = site.posts | where: 'nickname', page.nickname %}
     {% for translation in translations %}

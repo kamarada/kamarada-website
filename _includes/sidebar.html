@@ -92,7 +92,7 @@
                 {% if site.github_username or site.data.t[page.lang].site.github_username %}
                     <a href="https://github.com/{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" class="addthis_button_github_follow" addthis:userid="{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="addthis_button_rss_follow"></a>
+                <a href="{{ '/feed.xml' | prepend: page.lang | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" class="addthis_button_rss_follow"></a>
             </div>
             <!-- AddThis Follow Buttons End -->
         {% else %}
@@ -147,7 +147,7 @@
                     </li>
                 {% endif %}
                 <li>
-                    <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
+                    <a href="{{ '/feed.xml' | prepend: page.lang | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
                         <i class="fa fa-rss-square"></i> {% if site.data.t[page.lang].subscribe_via_rss %}{{ site.data.t[page.lang].subscribe_via_rss }}{% else %}{{ "subscribe via RSS" }}{% endif %}
                     </a>
                 </li>
