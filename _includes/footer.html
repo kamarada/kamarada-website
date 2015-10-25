@@ -18,6 +18,10 @@
     <meta itemprop="image" content="{{ page.image }}">
 {% endif %}
 
+{% if site.lang or page.lang %}
+    <meta itemprop="inLanguage" content="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}"/>
+{% endif %}
+
 {% if site.disqus_shortname %}
     <!-- Disqus -->
     <script type="text/javascript">
