@@ -46,4 +46,5 @@ pt:
             Escreva uma descrição para o seu site aqui. Você pode editar essa linha no
             arquivo _config.yml. Ela vai aparecer nos meta dados do cabeçalho da sua
             página (para os resultados da busca do Google) e no seu feed.xml.
+        # disqus_shortname: "my_disqus_shortname_pt"
         twitter_username: "jekyllrb_pt"
