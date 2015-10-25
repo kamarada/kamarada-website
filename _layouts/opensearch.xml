@@ -1,0 +1,27 @@
+---
+layout: null
+---
+{% if site.data.t[page.lang].site.title %}
+    {% assign site_title = site.data.t[page.lang].site.title %}
+{% else %}
+    {% assign site_title = site.title %}
+{% endif %}
+
+{% if site.data.t[page.lang].search %}
+    {% assign search = site.data.t[page.lang].search %}
+{% else %}
+    {% assign search = "Search" %}
+{% endif %}
+
+{% if site.data.t[page.lang].search_using_google %}
+    {% assign search_using_google = site.data.t[page.lang].search_using_google %}
+{% else %}
+    {% assign search_using_google = "Use Google to search" %}
+{% endif %}
+
+<?xml version="1.0" encoding="{{ site.encoding }}"?>
+<OpenSearchDescription xmlns="http://a9.com/-/spec/opensearch/1.1/">
+    <ShortName>{{ site_title }}</ShortName>
+    <Description>{% if site.google.cse_id %}{{ search }}{% else %}{{ search_using_google }}{% endif %} {{ site_title }}</Description>
+    <Url type="application/rss+xml" template="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ '?' | prepend: search_result_page.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}{% else %}{{ '&' | prepend: site.baseurl | prepend: site.url | prepend: 'https://www.google.com/search?as_sitesearch=' }}{% endif %}q={searchTerms}"/>
+</OpenSearchDescription>

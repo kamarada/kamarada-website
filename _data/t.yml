@@ -16,6 +16,7 @@ en:
     search: "Search"
     search_form_above: "Please, use the search form above."
     search_results: "Search results"
+    search_using_google: "Use Google to search"
 pt:
     about: "Sobre"
     author: "Autor"
@@ -34,6 +35,7 @@ pt:
     search: "Pesquisar"
     search_form_above: "Por favor, use a pesquisa no topo da página."
     search_results: "Resultados da pesquisa"
+    search_using_google: "Use o Google para pesquisar em"
     site:
         author:
             name: "Seu nome aqui"

@@ -34,7 +34,7 @@
     {% endfor %}
 
     <!-- OpenSearch -->
-    <link rel="search" type="application/opensearchdescription+xml" title="Search {{ site.title }}" href="{{ '/opensearch.xml' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
+    <link rel="search" type="application/opensearchdescription+xml" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}Search{% endif %} {% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" href="{{ '/opensearch.xml' | prepend: page.lang | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
 
     <!-- Open Graph -->
     {% if page.is_post %}
