@@ -18,7 +18,7 @@ layout: default
                 </p>
             </div>
             <div class='col-sm-6'>
-                {% if site.addthis_profile_id %}
+                {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
                     <div class='blog-post-share'>
                         <!-- AddThis Sharing Buttons -->
                         <div class="addthis_toolbox addthis_default_style">

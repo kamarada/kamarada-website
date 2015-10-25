@@ -68,87 +68,87 @@
             </ul>
         </div>
 
-        {% if site.addthis_profile_id %}
+        {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
             <!-- AddThis Follow Buttons -->
             <div class="addthis_toolbox addthis_32x32_style addthis_default_style center-block">
-                {% if site.facebook.username %}
-                    <a href="https://facebook.com/{{ site.facebook.username }}" class="addthis_button_facebook_follow" addthis:userid="{{ site.facebook_username }}" itemprop="sameAs"></a>
+                {% if site.facebook.username or site.data.t[page.lang].site.facebook.username %}
+                    <a href="https://facebook.com/{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}" class="addthis_button_facebook_follow" addthis:userid="{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.twitter_username %}
-                    <a href="https://twitter.com/{{ site.twitter_username }}" class="addthis_button_twitter_follow" addthis:userid="{{ site.twitter_username }}" itemprop="sameAs"></a>
+                {% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
+                    <a href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" class="addthis_button_twitter_follow" addthis:userid="{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.linkedin_username %}
-                    <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" class="addthis_button_linkedin_follow" addthis:userid="{{ site.linkedin_username }}" itemprop="sameAs"></a>
+                {% if site.linkedin_username or site.data.t[page.lang].site.linkedin_username %}
+                    <a href="https://www.linkedin.com/in/{% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}" class="addthis_button_linkedin_follow" addthis:userid="{% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.google_plus_user_id %}
-                    <a href="https://plus.google.com/{{ site.google_plus_user_id }}" class="addthis_button_google_follow" addthis:userid="{{ site.google_plus_user_id }}" itemprop="sameAs"></a>
+                {% if site.google_plus_user_id or site.data.t[page.lang].site.google_plus_user_id %}
+                    <a href="https://plus.google.com/{% if site.data.t[page.lang].site.google_plus_user_id %}{{ site.data.t[page.lang].site.google_plus_user_id }}{% else %}{{ site.google_plus_user_id }}{% endif %}" class="addthis_button_google_follow" addthis:userid="{% if site.data.t[page.lang].site.google_plus_user_id %}{{ site.data.t[page.lang].site.google_plus_user_id }}{% else %}{{ site.google_plus_user_id }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.youtube.profile and site.youtube.name %}
-                    <a href="https://youtube.com/{{ site.youtube.profile }}/{{ site.youtube.name }}" class="addthis_button_youtube_follow" addthis:userid="{{ site.youtube.name }}" itemprop="sameAs"></a>
+                {% if (site.youtube.profile and site.youtube.name) or (site.data.t[page.lang].site.youtube.profile and site.data.t[page.lang].site.youtube.name) %}
+                    <a href="https://youtube.com/{% if site.data.t[page.lang].site.youtube.name %}{{ site.data.t[page.lang].site.youtube.profile }}/{{ site.data.t[page.lang].site.youtube.name }}{% else %}{{ site.youtube.profile }}/{{ site.youtube.name }}{% endif %}" class="addthis_button_youtube_follow" addthis:userid="{% if site.data.t[page.lang].site.youtube.name %}{{ site.data.t[page.lang].site.youtube.name }}{% else %}{{ site.youtube.name }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.foursquare_username %}
-                    <a href="https://foursquare.com/{{ site.foursquare_username }}" class="addthis_button_foursquare_follow" addthis:userid="{{ site.foursquare_username }}" itemprop="sameAs"></a>
+                {% if site.foursquare_username or site.data.t[page.lang].site.foursquare_username %}
+                    <a href="https://foursquare.com/{% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}" class="addthis_button_foursquare_follow" addthis:userid="{% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
-                {% if site.github_username %}
-                    <a href="https://github.com/{{ site.github_username }}" class="addthis_button_github_follow" addthis:userid="{{ site.github_username }}" itemprop="sameAs"></a>
+                {% if site.github_username or site.data.t[page.lang].site.github_username %}
+                    <a href="https://github.com/{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" class="addthis_button_github_follow" addthis:userid="{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
                 <a href="{{ "/feed.xml" | prepend: site.baseurl }}" class="addthis_button_rss_follow"></a>
             </div>
             <!-- AddThis Follow Buttons End -->
         {% else %}
             <ul class="social-media-list list-unstyled">
-                {% if site.facebook.username %}
+                {% if site.facebook.username or site.data.t[page.lang].site.facebook.username %}
                     <li>
-                        <a href="https://facebook.com/{{ site.facebook.username }}" itemprop="sameAs">
-                            <i class="fa fa-facebook-official"></i> {{ site.facebook.username }}
+                        <a href="https://facebook.com/{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-facebook-official"></i> {% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.twitter_username %}
+                {% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
                     <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}" itemprop="sameAs">
-                            <i class="fa fa-twitter"></i> {{ site.twitter_username }}
+                        <a href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-twitter"></i> {% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.linkedin_username %}
+                {% if site.linkedin_username or site.data.t[page.lang].site.linkedin_username %}
                     <li>
-                        <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" itemprop="sameAs">
-                            <i class="fa fa-linkedin-square"></i> {{ site.linkedin_username }}
+                        <a href="https://www.linkedin.com/in/{% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-linkedin-square"></i> {% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.google.user_id %}
+                {% if site.google_plus_user_id or site.data.t[page.lang].site.google_plus_user_id %}
                     <li>
-                        <a href="https://plus.google.com/{{ site.google.user_id }}" itemprop="sameAs">
-                            <i class="fa fa-google-plus-square"></i> {{ site.google.user_id }}
+                        <a href="https://plus.google.com/{% if site.data.t[page.lang].site.google_plus_user_id %}{{ site.data.t[page.lang].site.google_plus_user_id }}{% else %}{{ site.google_plus_user_id }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-google-plus-square"></i> {% if site.data.t[page.lang].site.google_plus_user_id %}{{ site.data.t[page.lang].site.google_plus_user_id }}{% else %}{{ site.google_plus_user_id }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.youtube.profile and site.youtube.name %}
+                {% if (site.youtube.profile and site.youtube.name) or (site.data.t[page.lang].site.youtube.profile and site.data.t[page.lang].site.youtube.name) %}
                     <li>
-                        <a href="https://youtube.com/{{ site.youtube.profile }}/{{ site.youtube.username }}" itemprop="sameAs">
-                            <i class="fa fa-youtube-play"></i> {{ site.youtube.name }}
+                        <a href="https://youtube.com/{% if site.data.t[page.lang].site.youtube.name %}{{ site.data.t[page.lang].site.youtube.profile }}/{{ site.data.t[page.lang].site.youtube.name }}{% else %}{{ site.youtube.profile }}/{{ site.youtube.name }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-youtube-play"></i> {% if site.data.t[page.lang].site.youtube.name %}{{ site.data.t[page.lang].site.youtube.name }}{% else %}{{ site.youtube.name }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.foursquare_username %}
+                {% if site.foursquare_username or site.data.t[page.lang].site.foursquare_username %}
                     <li>
-                        <a href="https://foursquare.com/{{ site.foursquare_username }}" itemprop="sameAs">
-                            <i class="fa fa-foursquare"></i> {{ site.foursquare_username }}
+                        <a href="https://foursquare.com/{% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-foursquare"></i> {% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
-                {% if site.github_username %}
+                {% if site.github_username or site.data.t[page.lang].site.github_username %}
                     <li>
-                        <a href="https://github.com/{{ site.github_username }}" itemprop="sameAs">
-                            <i class="fa fa-github"></i> {{ site.github_username }}
+                        <a href="https://github.com/{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" itemprop="sameAs">
+                            <i class="fa fa-github"></i> {% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}
                         </a>
                     </li>
                 {% endif %}
                 <li>
                     <a href="{{ "/feed.xml" | prepend: site.baseurl }}">
-                        <i class="fa fa-rss-square"></i> subscribe via RSS
+                        <i class="fa fa-rss-square"></i> {% if site.data.t[page.lang].subscribe_via_rss %}{{ site.data.t[page.lang].subscribe_via_rss }}{% else %}{{ "subscribe via RSS" }}{% endif %}
                     </a>
                 </li>
             </ul>

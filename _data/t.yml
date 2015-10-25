@@ -17,6 +17,7 @@ en:
     search_form_above: "Please, use the search form above."
     search_results: "Search results"
     search_using_google: "Use Google to search"
+    subscribe_via_rss: "subscribe via RSS"
 pt:
     about: "Sobre"
     author: "Autor"
@@ -46,5 +47,16 @@ pt:
             Escreva uma descrição para o seu site aqui. Você pode editar essa linha no
             arquivo _config.yml. Ela vai aparecer nos meta dados do cabeçalho da sua
             página (para os resultados da busca do Google) e no seu feed.xml.
+        # addthis_profile_id: "ra-examplo123456789"
         # disqus_shortname: "my_disqus_shortname_pt"
+        facebook:
+            # username: "nomedeusuario"
+        # foursquare_username: "nomedeusuario"
+        github_username: "jekyll_pt"
+        # google_plus_user_id: 987654321012345678987
+        # linkedin_username: "nomedeusuario"
         twitter_username: "jekyllrb_pt"
+        youtube:
+            # profile: "user"
+            # name: "nomedeusuario"
+    subscribe_via_rss: "inscreva-se via RSS"

@@ -135,14 +135,16 @@
         <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     {% endif %}
 
-    {% if site.addthis_profile_id %}
+    {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
         <!-- AddThis -->
-        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid={{ site.addthis_profile_id }}"></script>
+        <script async src="//s7.addthis.com/js/300/addthis_widget.js#pubid={% if site.data.t[page.lang].site.addthis_profile_id %}{{ site.data.t[page.lang].site.addthis_profile_id }}{% else %}{{ site.addthis_profile_id }}{% endif %}"></script>
         <script type="text/javascript">
             var addthis_config = {
                 data_track_clickback: true,
                 data_track_addressbar: true,
-                ui_language: '{{ site.lang }}'
+                {% if site.lang or page.lang %}
+                    ui_language: '{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}'
+                {% endif %}
             };
             var addthis_share = {
                 url: '{{ page.url | prepend: site.baseurl | replace: "//", "/"" | prepend: site.url }}',

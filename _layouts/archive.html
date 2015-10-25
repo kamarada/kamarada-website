@@ -41,7 +41,7 @@ sitemap: false
                     </p>
                 </div>
                 <div class='col-sm-6'>
-                    {% if site.addthis_profile_id %}
+                    {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
                         <div class='blog-post-share'>
                             <!-- AddThis Sharing Buttons -->
                             <div class="addthis_toolbox addthis_default_style" addthis:url="{{ post.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" addthis:title="{{ post.title }}" addthis:description="{{ post.excerpt | strip_html | strip_html | truncatewords: 55 }}">
