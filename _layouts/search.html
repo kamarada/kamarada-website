@@ -1,15 +1,22 @@
 ---
 layout: default
-sitemap: false
 ---
 
 <div class="blog-post panel panel-default">
     <header class="panel-heading">
         <h1 class="blog-post-title" itemprop="headline name">
             {% if site.google.cse_id %}
-                Search results
+                {% if site.data.t[page.lang].search_results %}
+                    {{ site.data.t[page.lang].search_results }}
+                {% else %}
+                    {{ "Search results" }}
+                {% endif %}
             {% else %}
-                Got lost?
+                {% if site.data.t[page.lang].got_lost %}
+                    {{ site.data.t[page.lang].got_lost }}
+                {% else %}
+                    {{ "Got lost?" }}
+                {% endif %}               
             {% endif %}
         </h1>
     </header>
@@ -33,10 +40,24 @@ sitemap: false
                         s.parentNode.insertBefore(gcse, s);
                     })();
                 </script>
-                <gcse:searchresults-only></gcse:searchresults-only>
+                <gcse:searchresults-only
+                    ie="{{ site.encoding }}"
+                    oe="{{ site.encoding }}"
+                    {% if site.lang or page.lang %}
+                        hl="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}"
+                        image_lr="lang_{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}"
+                        lr="lang_{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}"
+                    {% endif %}
+                ></gcse:searchresults-only>
             </div>
         {% else %}
-            <p>Please, use the search form above.</p>
+            <p>
+                {% if site.data.t[page.lang].search_form_above %}
+                    {{ site.data.t[page.lang].search_form_above }}
+                {% else %}
+                    {{ "Please, use the search form above." }}
+                {% endif %}
+            </p>
             <script>
                 $(document).ready(function(){
                     $('#search-button').click();

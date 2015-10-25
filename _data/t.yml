@@ -3,6 +3,7 @@ en:
     author: "Author"
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
+    got_lost: "Got lost?"
     navigation:
         -
             title: "About"
@@ -13,11 +14,14 @@ en:
     previous: "Previous"
     read_more: "Read more"
     search: "Search"
+    search_form_above: "Please, use the search form above."
+    search_results: "Search results"
 pt:
     about: "Sobre"
     author: "Autor"
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
+    got_lost: "Se perdeu?"
     navigation:
         -
             title: "Sobre"
@@ -28,6 +32,8 @@ pt:
     previous: "Próxima"
     read_more: "Leia mais"
     search: "Pesquisar"
+    search_form_above: "Por favor, use a pesquisa no topo da página."
+    search_results: "Resultados da pesquisa"
     site:
         author:
             name: "Seu nome aqui"
