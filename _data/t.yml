@@ -42,7 +42,7 @@ pt:
             name: "Seu nome aqui"
             email: "seu-email@seudominio.com.br"
             site: "http://seudominio.com.br"
-        title: "Seu título aqui"
+        title: "Linux Kamarada"
         description: >
             Escreva uma descrição para o seu site aqui. Você pode editar essa linha no
             arquivo _config.yml. Ela vai aparecer nos meta dados do cabeçalho da sua

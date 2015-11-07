@@ -24,18 +24,30 @@ h6, .h6 {
 
 /* Brand */
 
+a.navbar-brand {
+    padding-left: 0px !important;
+}
+
 @media (min-width: 350px) {
     a.navbar-brand {
-        background: url(../favicons/favicon-32x32.png) 15px no-repeat;
-        padding-left: 60px !important;
+        background: url(../favicons/favicon-40x40.png) 0px no-repeat;
+        padding-left: 50px !important;
+    }
+}
+
+@media (min-width: 768px) {
+    a.navbar-brand {
+        background-position: 15px;
+        padding-left: 65px !important;
     }
 }
 
 /* Footer */
 
 .footer {
-    background-color: #009688;
+    background-color: #4caf50;
     bottom: 0;
+    color: rgba(255,255,255,0.84);
     position: absolute;
     width: 100%;
 }
@@ -98,7 +110,8 @@ h6, .h6 {
 /* Search form */
 
 #search-button {
-    color: white;
+    bottom: 0;
+    color: rgba(255,255,255,0.84);
     cursor: pointer;
 }
 
@@ -107,7 +120,7 @@ h6, .h6 {
 }
 
 #search-form {
-    background: #009688;
+    background: #4caf50;
     box-shadow: none;
     position: absolute;
     top: 0;
