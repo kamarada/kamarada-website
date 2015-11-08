@@ -50,9 +50,6 @@
         <meta property="og:author" content="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% else %}{{ site.author.name }}{% endif %}" />
     {% endif %}
     <meta property="og:description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}" />
-    {% if site.author.email or site.data.t[page.lang].site.author.email %}
-        <meta property="og:email" content="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}" />
-    {% endif %}
     {% if page.image %}
         <meta property="og:image" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
     {% endif %}

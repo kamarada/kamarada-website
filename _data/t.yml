@@ -50,14 +50,14 @@ pt:
             no trabalho ou no servidor. Os focos do projeto são principalmente
             distribuição e documentação.
         # addthis_profile_id: "ra-examplo123456789"
-        # disqus_shortname: "my_disqus_shortname_pt"
-        facebook:
+        disqus_shortname: "kamarada"
+        # facebook:
             # username: "nomedeusuario"
         # foursquare_username: "nomedeusuario"
-        github_username: "jekyll_pt"
+        # github_username: "jekyll_pt"
         # google_plus_user_id: 987654321012345678987
         # linkedin_username: "nomedeusuario"
-        twitter_username: "jekyllrb_pt"
+        twitter_username: "LinuxKamarada"
         youtube:
             # profile: "user"
             # name: "nomedeusuario"

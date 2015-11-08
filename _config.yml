@@ -67,7 +67,7 @@ google:
     # Google Analytics Property ID
     # Allows tracking site pageviews and other events using Google Analytics.
     # Default: not set (Google Analytics is not used to track site pageviews)
-    # analytics_property_id: UA-12345678-9
+    analytics_property_id: "UA-65333685-3"
 
     # If you do not know your Property ID, take a look at
     # https://support.google.com/analytics/answer/1032385
@@ -79,7 +79,7 @@ google:
     # Allows visitors to search the website without leaving it, using a custom
     # search engine powered by Google.
     # Default: not set (instead of a CSE, Google is used to handle searching)
-    # cse_id: 123456789012345678901:abcdefghijk
+    cse_id: "006707575509905065349:tyq6aq7gfo4"
 
     # If you do not know your CSE ID, take a look at
     # https://support.google.com/customsearch/answer/2649143
@@ -162,13 +162,13 @@ jekyll-archives:
 # Site URL
 # The base protocol and hostname for the website
 # Default: not set (this variable is only necessary for external systems)
-# url: "https://yourdomain.com"
+url: "https://kamarada.github.io"
 
 # Enforce the use of HTTPS on production domain
 # The hostname (does not include protocol, just the domain) for which the use of
 # HTTPS should be enforced
 # Default: not set (the use of HTTPS is never enforced)
-# enforce_https: "yourdomain.com"
+enforce_https: "kamarada.github.io"
 
 ###########
 # Serving #
@@ -200,13 +200,13 @@ description: > # this means to ignore newlines until the text ends
 # Image used as a default thumbnail for pages and posts which do not have an
 # thumbnail explicitly set by the front matter image variable.
 # Default: not set (no image is displayed if an image is not explicitly set)
-image: "/assets/favicons/favicon-194x194.png"
+image: "/assets/favicons/favicon.png"
 
 # Site language
 # A language tag following the language tag syntax (IETF's BCP 47). This is
 # meant to assist search engines and browsers.
 # Default: not set (do not associate any language with this site's content)
-lang: en
+lang: "en"
 
 # For more info on language tags, please refer to
 # http://www.w3.org/International/articles/language-tags/
@@ -220,7 +220,7 @@ lang: en
 # website with social networks. An AddThis profile contains configuration options
 # and analytics data for a website.
 # Default: not set (AddThis is not used to handle social networks integration)
-# addthis_profile_id: "ra-example123456789"
+addthis_profile_id: "ra-563f92aa117815bd"
 
 # If you do not know your AddThis profile ID, you can find it at
 # https://www.addthis.com/settings/publisher
@@ -235,7 +235,7 @@ lang: en
 # only your site's comments, as well as the settings specified in your Disqus
 # admin.
 # Default: not set (do not use Disqus to handle comments)
-# disqus_shortname: "my_disqus_shortname"
+disqus_shortname: "kamaradaww"
 
 # If you do not know your Disqus shortname, take a look at
 # https://help.disqus.com/customer/portal/articles/466208
@@ -257,7 +257,7 @@ facebook:
     # Facebook Page ID
     # If your site has a corresponding Facebook Page, inform its ID here
     # Example: 123456, if your page is at https://facebook.com/Page-Name/123456
-    # page_id: 1234567890123456
+    page_id: 1700979763454346
 
     # For more info on Facebook Pages, please refer to
     # https://www.facebook.com/about/pages
@@ -267,7 +267,7 @@ facebook:
     # username, if your profile is at https://facebook.com/username or
     # Page-Name/123456, if your page is at https://facebook.com/Page-Name/123456
     # Default: not set (Facebook URL is not displayed)
-    # username: "username"
+    username: "LinuxKamarada"
 
 # Foursquare username
 # Example: username, if your Foursquare URL is https://foursquare.com/username
@@ -277,7 +277,7 @@ facebook:
 # GitHub username
 # Example: jekyll, if your GitHub URL is https://github.com/jekyll
 # Default: not set (GitHub URL is not displayed)
-github_username: "jekyll"
+github_username: "kamarada"
 
 # Google Plus user ID
 # Example: 123456789098765432123, if your Google Plus URL is
@@ -294,7 +294,7 @@ github_username: "jekyll"
 # Twitter username
 # Example: jekyllrb, if your Twitter URL is https://twitter.com/jekyllrb
 # Default: not set (Twitter URL is not displayed)
-twitter_username: "jekyllrb"
+twitter_username: "LinuxKamaradaWW"
 
 youtube:
     # What kind of YouTube profile you have (it can be "user" or "channel")
