@@ -4,10 +4,10 @@ en:
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
     got_lost: "Got lost?"
-    navigation:
-        -
-            title: "About"
-            url: "/en/about/"
+    # navigation:
+    #     -
+    #         title: "About"
+    #         url: "/en/about/"
     newer: "Newer"
     next: "Next"
     older: "Older"
@@ -24,10 +24,10 @@ pt:
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
     got_lost: "Se perdeu?"
-    navigation:
-        -
-            title: "Sobre"
-            url: "/pt/sobre/"
+    # navigation:
+    #     -
+    #         title: "Sobre"
+    #         url: "/pt/sobre/"
     newer: "Primeira"
     next: "Anterior"
     older: "Última"
@@ -38,15 +38,17 @@ pt:
     search_results: "Resultados da pesquisa"
     search_using_google: "Use o Google para pesquisar em"
     site:
-        author:
-            name: "Seu nome aqui"
-            email: "seu-email@seudominio.com.br"
-            site: "http://seudominio.com.br"
-        title: "Linux Kamarada"
+        # author:
+        #     name: "Seu nome aqui"
+        #     email: "seu-email@seudominio.com.br"
+        #     site: "http://seudominio.com.br"
+        # title: "Seu título aqui"
         description: >
-            Escreva uma descrição para o seu site aqui. Você pode editar essa linha no
-            arquivo _config.yml. Ela vai aparecer nos meta dados do cabeçalho da sua
-            página (para os resultados da busca do Google) e no seu feed.xml.
+            O Projeto Linux Kamarada é um projeto novo que visa divulgar e
+            promover o Linux como um sistema operacional robusto, seguro,
+            versátil e fácil de usar, adequado para o uso diário seja em casa,
+            no trabalho ou no servidor. Os focos do projeto são principalmente
+            distribuição e documentação.
         # addthis_profile_id: "ra-examplo123456789"
         # disqus_shortname: "my_disqus_shortname_pt"
         facebook:

@@ -1,4 +1,4 @@
-<div class="panel panel-default">
+<div class="panel panel-default" id="about">
     <div class="panel-heading">
         <h3>
             <a name="about"></a>
@@ -10,15 +10,7 @@
         </h3>
     </div>
     <div class="panel-body">
-        <p class="lead">
-            <a href="{{ site.baseurl | prepend: site.url }}">
-                {% if site.data.t[page.lang].site.title %}
-                    {{ site.data.t[page.lang].site.title }}
-                {% else %}
-                    {{ site.title }}
-                {% endif %}
-            </a>
-        </p>
+        {% include image.html src="/assets/img/TuxKamarada.png" %}
         <p class="text"{% if !page.excerpt %} itemprop="description"{% endif %}>
             {% if site.data.t[page.lang].site.description %}
                 {{ site.data.t[page.lang].site.description }}
@@ -50,7 +42,7 @@
                 </p>
             {% endif %}
             {% if site.author.name or site.data.t[page.lang].site.author.name %}
-                <p class="lead" itemprop="name">
+                <p class="lead text-center" itemprop="name">
                     {% if site.data.t[page.lang].site.author.name %}
                         {{ site.data.t[page.lang].site.author.name }}
                     {% else %}
@@ -61,9 +53,6 @@
             <ul class="contact-list list-unstyled">
                 {% if site.author.site or site.data.t[page.lang].site.author.site %}
                     <li><a href="{% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}" itemprop="url"><i class="fa fa-globe"></i> {% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}</a></li>
-                {% endif %}
-                {% if site.author.email or site.data.t[page.lang].site.author.email %}
-                    <li><a href="mailto:{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}" itemprop="email"><i class="fa fa-envelope"></i> {% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email }}{% else %}{{ site.author.email }}{% endif %}</a></li>
                 {% endif %}
             </ul>
         </div>
@@ -96,7 +85,7 @@
             </div>
             <!-- AddThis Follow Buttons End -->
         {% else %}
-            <ul class="social-media-list list-unstyled">
+            <!--<ul class="social-media-list list-unstyled">
                 {% if site.facebook.username or site.data.t[page.lang].site.facebook.username %}
                     <li>
                         <a href="https://facebook.com/{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}" itemprop="sameAs">
@@ -151,7 +140,7 @@
                         <i class="fa fa-rss-square"></i> {% if site.data.t[page.lang].subscribe_via_rss %}{{ site.data.t[page.lang].subscribe_via_rss }}{% else %}{{ "subscribe via RSS" }}{% endif %}
                     </a>
                 </li>
-            </ul>
+            </ul>-->
         {% endif %}
     </div><!-- .panel-body -->
 </div><!-- .panel -->

@@ -1,6 +1,6 @@
 #!/bin/bash
-SOURCE="vinyanalista-website"
-TARGET="vinyanalista.github.io"
+SOURCE="kamarada-website"
+TARGET="kamarada.github.io"
 
 git add --all .
 git stash

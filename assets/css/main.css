@@ -264,3 +264,16 @@ em.caption {
 h2.blog-archive-title a {
     color: #FFF;
 }
+
+/* About */
+
+#about img {
+    border: none;
+    max-width: 200px;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    #about img {
+        max-width: 100%;
+    }
+}

@@ -5,15 +5,15 @@
 author:
     # Site's author name
     # Default: not set (author name is not displayed)
-    name: Your awesome name
+    name: "Antônio Vinícius"
 
     # Site's author email
     # Default: not set (author email is not displayed)
-    email: your-email@yourdomain.com
+    email: "vinyanalista@gmail.com"
 
     # Site's author website, profile
     # Default: not set (author site is not displayed)
-    site: http://yourdomain.com
+    site: "http://www.vinyanalista.com.br"
 
 ############
 # Building #
@@ -93,7 +93,7 @@ google:
         # Google AdSense publisher ID
         # Your publisher ID is the unique identifier for your AdSense account.
         # Default: not set (Google AdSense is not used to show ads)
-        # publisher_id: ca-pub-1234567890123456
+        publisher_id: "ca-pub-5193467168351289"
 
         # If you do not know your publisher ID, take a look at
         # https://support.google.com/adsense/answer/105516
@@ -102,17 +102,17 @@ google:
         # the title, if in a page or post, or after the first post, if in a post
         # listing
         # Default: not set (no ad is displayed at the top)
-        # content_ad_unit_1: 1234567890
+        content_ad_unit_1: "8945658251"
 
         # Ad unit ID for the ad displayed inside the page content, randomly
         # placed between paragraphs, if in a page or post, or between posts, if
         # in a post listing
         # Default: not set (no ad is displayed in the page content)
-        # content_ad_unit_2: 0987654321
+        # content_ad_unit_2: "4375857858"
 
         # Ad unit ID for the ad displayed in the sidebar
         # Default: not set (no ad is displayed in the sidebar)
-        # sidebar_ad_unit: 1231231231
+        sidebar_ad_unit: "7329324255"
 
         # Note: use only responsive ad units
 
@@ -191,9 +191,10 @@ title: "Linux Kamarada"
 
 # Site description
 description: > # this means to ignore newlines until the text ends
-    Write an awesome description for your new site here. You can edit this
-    line in _config.yml. It will appear in your document head meta (for
-    Google search results) and in your feed.xml site description.
+    The Linux Kamarada Project is a new project that aims to spread and promote
+    Linux as a robust, secure, versatile and easy to use operating system,
+    suitable for everyday usage be at home, at work or on the server. The
+    project focuses mainly on distribution and documentation.
 
 # Default site image
 # Image used as a default thumbnail for pages and posts which do not have an
