@@ -4,10 +4,10 @@ en:
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
     got_lost: "Got lost?"
-    # navigation:
-    #     -
-    #         title: "About"
-    #         url: "/en/about/"
+    navigation:
+        -
+            title: "Download"
+            url: "/en/download/"
     newer: "Newer"
     next: "Next"
     older: "Older"
@@ -24,10 +24,10 @@ pt:
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
     got_lost: "Se perdeu?"
-    # navigation:
-    #     -
-    #         title: "Sobre"
-    #         url: "/pt/sobre/"
+    navigation:
+        -
+            title: "Download"
+            url: "/pt/download/"
     newer: "Primeira"
     next: "Anterior"
     older: "Última"

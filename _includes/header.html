@@ -16,7 +16,7 @@
                 {% endif %}
             </a>
         </div>
-        <!--<div id="navbar" class="collapse navbar-collapse">
+        <div id="navbar" class="collapse navbar-collapse">
             <ul class="nav navbar-nav navbar-right">
                 {% if site.data.t[page.lang].navigation %}
                     {% for link in site.data.t[page.lang].navigation %}
@@ -34,7 +34,7 @@
                     {% endfor %}
                 {% endif %}
             </ul>
-        </div>--><!-- #navbar -->
+        </div><!-- #navbar -->
         <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" class="navbar-form" id="search-form" method="get" role="search">
             {% if site.google.cse_id %}
             {% else %}
