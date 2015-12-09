@@ -4,6 +4,9 @@ en:
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
     got_lost: "Got lost?"
+    home_page: "English home page"
+    language: "English"
+    language_tag: "en"
     navigation:
         -
             title: "Download"
@@ -18,12 +21,16 @@ en:
     search_results: "Search results"
     search_using_google: "Use Google to search"
     subscribe_via_rss: "subscribe via RSS"
+    translation: "This page in English"
 pt:
     about: "Sobre"
     author: "Autor"
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
     got_lost: "Se perdeu?"
+    home_page: "Página inicial em Português"
+    language: "Português"
+    language_tag: "pt"
     navigation:
         -
             title: "Download"
@@ -62,3 +69,4 @@ pt:
             # profile: "user"
             # name: "nomedeusuario"
     subscribe_via_rss: "inscreva-se via RSS"
+    translation: "Esta página em Português"

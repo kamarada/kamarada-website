@@ -26,7 +26,11 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" href="{{ '/feed.xml' | prepend: page.lang | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />
 
-    {% assign translations = site.posts | where: 'nickname', page.nickname %}
+    {% if page.is_post %}
+        {% assign translations = site.posts | where: 'nickname', page.nickname %}
+    {% else %}
+        {% assign translations = site.pages | where: 'nickname', page.nickname %}
+    {% endif %}
     {% for translation in translations %}
         {% if translation.lang != page.lang %}
             <link rel="alternate" hreflang="{{ translation.lang }}" href="{{ translation.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" />

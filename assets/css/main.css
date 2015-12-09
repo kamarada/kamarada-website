@@ -107,6 +107,37 @@ a.navbar-brand {
     padding: 0px;
 }
 
+/* Translation */
+
+#language-button {
+    bottom: 0;
+    color: rgba(255,255,255,0.84);
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#language-form {
+    background: #4caf50;
+    box-shadow: none;
+    position: absolute;
+    top: 0;
+    right: 55px;
+}
+
+@media (max-width: 767px) {
+    #language-form {
+        border: none;
+        outline: none !important;
+        padding-bottom: 0px;
+        right: 65px;
+        top: -10px;
+    }
+}
+
+.translation-en:lang(en), .translation-pt:lang(pt) {
+    font-weight: bold;
+}
+
 /* Search form */
 
 #search-button {
@@ -139,7 +170,7 @@ a.navbar-brand {
 
 @media (min-width: 768px) {
     #navbar {
-        margin-right: 60px;
+        margin-right: 110px;
     }
 }
 
