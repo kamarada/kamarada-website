@@ -35,6 +35,35 @@
                 {% endif %}
             </ul>
         </div><!-- #navbar -->
+        <form class="navbar-form" id="language-form">
+            <div class="dropdown">
+                <a class="mdi-action-language dropdown-toggle" id="language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+                <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="language-button">
+                    {% if page.is_post %}
+                        {% assign translations = site.posts | where: 'nickname', page.nickname %}
+                    {% else %}
+                        {% assign translations = site.pages | where: 'nickname', page.nickname %}
+                    {% endif %}
+                    {% for lang in site.data.t %}
+                        <li class="dropdown-header">{{ lang[1].language }}</li>
+                        {% assign translation = translations | where: 'lang', lang[1].language_tag | first %}
+                        {% if translation %}
+                            <li>
+                                <a class="translation-{{ lang[1].language_tag }}" href="{{ translation.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&tl={{ lang[1].language_tag }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                            </li>
+                        {% endif %}
+                        <li><a href="{{ '/' | prepend: lang[1].language_tag | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].home_page }}</a></li>
+                        <li role="separator" class="divider"></li>
+                    {% endfor %}
+                    <li class="dropdown-header">Other languages (by Google Translate)</li>
+                    <li><a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">Translate this page</a></li>
+                </ul>
+            </div>
+        </form>
         <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" class="navbar-form" id="search-form" method="get" role="search">
             {% if site.google.cse_id %}
             {% else %}
