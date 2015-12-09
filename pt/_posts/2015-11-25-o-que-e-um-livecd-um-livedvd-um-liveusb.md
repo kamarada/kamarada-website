@@ -4,13 +4,14 @@ layout: post
 published: true
 title: 'O que é um LiveCD? Um LiveDVD? Um LiveUSB?'
 image: /files/2015/11/livecd.png
+nickname: 'what-is-a-livecd-dvd-usb'
 --- 
 
 {% include image.html src="/files/2015/11/livecd.png" %}
 
-Um LiveCD (do inglês [*live*][dictionary-live], vivo, e [CD][wikipedia-cd], o disco ótico) é um CD que contém um sistema operacional pronto para uso. Esse sistema não precisa ser instalado no computador, pois pode ser executado diretamente a partir do CD: você insere o CD, liga o computador e utiliza o sistema, que já está pronto. Ele é muito parecido com o sistema que é executado a partir do disco rígido, que é o mais comum.
+Um **LiveCD** (do inglês [*live*][dicionario-live], vivo, e [CD][wikipedia-cd], o disco ótico) é um CD que contém um sistema operacional pronto para uso. Esse sistema não precisa ser instalado no computador, pois pode ser executado diretamente a partir do CD: você insere o CD, liga o computador e utiliza o sistema, que já está pronto. Ele é muito parecido com o sistema que é executado a partir do disco rígido, que é o mais comum.
 
-Também existem os mais atuais LiveDVDs e LiveUSBs, que seguem a mesma ideia: são, respectivamente, DVDs e *pendrives* (ou cartões de memória) com sistemas operacionais prontos para uso. Todas as explicações aqui também se aplicam ao LiveDVD e ao LiveUSB.
+Também existem os mais atuais **LiveDVDs** e **LiveUSBs**, que seguem a mesma ideia: são, respectivamente, DVDs e *pendrives* (ou cartões de memória) com sistemas operacionais prontos para uso. Todas as explicações aqui também se aplicam ao LiveDVD e ao LiveUSB.
 
 A principal vantagem de um LiveCD é a despreocupação com instalação: o sistema já vem **pronto para uso** no CD, e seu uso **não altera o sistema instalado no disco rígido**. Ao terminar de usar o LiveCD, você desliga o computador e remove o CD. Da próxima vez em que você ligar o computador, seu sistema operacional rotineiro ([Windows][windows], [Linux][linux] ou outro) será iniciado da mesma maneira, como se ele tivesse sido o último a ser usado.
 
@@ -41,7 +42,7 @@ Também vale observar que os sistemas executados a partir de CDs, DVDs, *pendriv
 
 Portanto, de maneira geral, os LiveCDs, assim como LiveDVDs e LiveUSBs, **não são recomendados para uso diário**. Se você pretende usar o Linux todos os dias, considere instalá-lo em seu computador ou em uma máquina virtual.
 
-[dictionary-live]:      http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=ingles-portugues&palavra=live
+[dicionario-live]:      http://michaelis.uol.com.br/moderno/ingles/index.php?lingua=ingles-portugues&palavra=live
 [wikipedia-cd]:         https://pt.wikipedia.org/wiki/Compact_Disc
 [windows]:              http://www.microsoft.com/pt-br/windows
 [linux]:                http://www.vivaolinux.com.br/linux/
