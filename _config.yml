@@ -108,7 +108,7 @@ google:
         # placed between paragraphs, if in a page or post, or between posts, if
         # in a post listing
         # Default: not set (no ad is displayed in the page content)
-        # content_ad_unit_2: "4375857858"
+        content_ad_unit_2: "4375857858"
 
         # Ad unit ID for the ad displayed in the sidebar
         # Default: not set (no ad is displayed in the sidebar)
