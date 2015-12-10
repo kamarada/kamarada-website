@@ -5,7 +5,7 @@ TARGET="kamarada.github.io"
 git add --all .
 git stash
 LAST_COMMIT_HASH=`git rev-parse HEAD`
-jekyll build
+bundle exec jekyll build
 cd "../$TARGET"
 git pull
 git rm -rf *
