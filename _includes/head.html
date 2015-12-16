@@ -14,7 +14,11 @@
 
     <title>
         {% if page.title %}
-            {{ page.title }}
+            {% if site.data.t[page.lang].site.title %}
+                {{ page.title }} - {{ site.data.t[page.lang].site.title }}
+            {% else %}
+                {{ page.title }} - {{ site.title }}
+            {% endif %}
         {% elsif site.data.t[page.lang].site.title %}
             {{ site.data.t[page.lang].site.title }}
         {% else %}

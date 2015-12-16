@@ -17,6 +17,14 @@ body {
     margin-top: 0;
 }
 
+.gap {
+    margin-bottom: 30px;
+}
+
+.gap-small {
+    margin-bottom: 15px;
+}
+
 .panel-default > .panel-heading {
     color: #212121;
     background-color: #F5F5F5;
@@ -217,6 +225,10 @@ a.navbar-brand {
 
     .blog-post-share {
         float: right !important;
+    }
+
+    .pager {
+        margin-bottom: 60px;
     }
 }
 

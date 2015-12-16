@@ -10,12 +10,10 @@
     </div>
 </footer>
 
-{% if page.excerpt %}
-    <meta itemprop="description" content="{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}">
-{% endif %}
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}{% else %}{{ site.description }}{% endif %}">
 
 {% if page.image %}
-    <meta itemprop="image" content="{{ page.image }}">
+    <meta itemprop="image" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
 {% endif %}
 
 {% if site.lang or page.lang %}
@@ -55,7 +53,7 @@
 
         $(document).ready(function(){
             {% if site.google.adsense.content_ad_unit_2 %}
-                var $ad = $('#content_ad_unit_2');
+                var $ad = $('#content_ad_unit_2').closest('.row');
                 if (($('.blog-post').length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
                     var $posts = $('.blog-post');
