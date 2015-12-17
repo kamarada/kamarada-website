@@ -10,10 +10,14 @@
     </div>
 </footer>
 
-<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}{% else %}{{ site.description }}{% endif %}">
+<meta itemprop="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncatewords: 55 }}{% elsif site.data.t[page.lang].site.description %}{{ site.data.t[page.lang].site.description }}{% else %}{{ site.description }}{% endif %}">
 
 {% if page.image %}
-    <meta itemprop="image" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">
+    <div itemprop="image" itemscope itemtype="http://schema.org/ImageObject">
+        <meta itemprop="url" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}"/>
+        <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+        <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+    </div> 
 {% endif %}
 
 {% if site.lang or page.lang %}

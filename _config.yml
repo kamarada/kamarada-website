@@ -151,6 +151,12 @@ gems:
     # matter variable.
     - jekyll-auto-image
 
+    # Last Modified At Plugin
+    # https://github.com/gjtorikian/jekyll-last-modified-at
+    # Plugin that makes available the last time a page was modified as a
+    # variable.
+    - jekyll-last-modified-at
+
 # Jekyll Archives plugin configuration
 jekyll-archives:
     enabled: all

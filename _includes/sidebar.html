@@ -9,9 +9,17 @@
             {% endif %}
         </h3>
     </div>
-    <div class="panel-body">
-        {% include image.html src="/assets/img/TuxKamarada.png" %}
-        <p class="text"{% if !page.excerpt %} itemprop="description"{% endif %}>
+    <div class="panel-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="{{ site.title }}" />
+        <meta itemprop="url" content="{{ site.baseurl | prepend: site.url }}" />
+        <p class='text-center' itemprop='logo' itemscope itemtype='http://schema.org/ImageObject'>
+            <a href='{{ "/assets/img/TuxKamarada.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' itemprop='url'>
+                <img src='{{ "/assets/img/TuxKamarada.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' class='img-responsive img-thumbnail'>
+            </a>
+            <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
+            <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
+        </p>
+        <p class="text" itemprop="description">
             {% if site.data.t[page.lang].site.description %}
                 {{ site.data.t[page.lang].site.description }}
             {% else %}
