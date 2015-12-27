@@ -37,6 +37,31 @@ nickname: 'how-to-download-linux'
             </div>
         </div>
     </div>
+    
+    <div class="no-ads-here panel panel-default">
+        <div class="panel-heading" role="tab" id="help-microsoft-edge">
+            <h4 class="panel-title">
+                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-microsoft-edge-collapse" aria-expanded="true" aria-controls="help-microsoft-edge-collapse">
+                    <i class="fa fa-edge"></i> Microsoft Edge (Windows)
+                </a>
+            </h4>
+        </div>
+        <div id="help-microsoft-edge-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-microsoft-edge">
+            <div class="panel-body">
+                {% include image.html src="/files/2015/12/download-linux-edge-1-pt.jpg" caption="Na página de downloads, clique no link desejado." %}
+                {% include image.html src="/files/2015/12/download-linux-edge-2-pt.jpg" caption="Se o download for oferecido pelo Projeto Linux Kamarada, você será redirecionado para uma página do SourceForge.net, que é onde os downloads do Projeto Linux Kamarada são hospedados, mas o download deve começar automaticamente. Caso isso não aconteça, clique em direct link na página do SourceForge.net." %}
+                {% include image.html src="/files/2015/12/download-linux-edge-3-pt.jpg" caption="O download vai começar. Você pode acompanhar seu andamento na parte inferior da janela." %}
+                {% include image.html src="/files/2015/12/download-linux-edge-4-pt.jpg" caption="O navegador avisará quando o download terminar, indicando que o arquivo já se encontra em seu computador. Clique em Exibir downloads." %}
+                {% include image.html src="/files/2015/12/download-linux-edge-5-pt.jpg" caption="Clique em Abrir pasta." %}
+                {% include image.html src="/files/2015/12/download-linux-downloads-pt.jpg" caption="Você verá o arquivo na pasta de Downloads do seu computador." %}
+                <p>Agora que você já sabe como baixar o Linux usando o Microsoft Edge, pode acessar a <a href="/pt/download/">página de Downloads</a> do Projeto Linux Kamarada e baixar esse incrível sistema operacional!</p>
+                <p><a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-microsoft-edge-collapse" aria-expanded="true" aria-controls="help-microsoft-edge-collapse">
+                    Fechar as instruções para o Microsoft Edge
+                </a></p>
+            </div>
+        </div>
+    </div>
+    
     <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="help-mozilla-firefox">
             <h4 class="panel-title">
