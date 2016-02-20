@@ -15,7 +15,7 @@ nickname: 'how-to-download-linux'
 </div>
 
 <div class="no-ads-here panel-group" id="help-accordion" role="tablist" aria-multiselectable="true">
-    <div class="no-ads-here panel panel-default">
+    <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="help-google-chrome">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-google-chrome-collapse" aria-expanded="true" aria-controls="help-google-chrome-collapse">
@@ -38,7 +38,7 @@ nickname: 'how-to-download-linux'
         </div>
     </div>
     
-    <div class="no-ads-here panel panel-default">
+    <div class="panel panel-default">
         <div class="panel-heading" role="tab" id="help-microsoft-edge">
             <h4 class="panel-title">
                 <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-microsoft-edge-collapse" aria-expanded="true" aria-controls="help-microsoft-edge-collapse">
