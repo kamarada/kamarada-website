@@ -2,6 +2,7 @@
 SOURCE="kamarada-website"
 TARGET="kamarada.github.io"
 
+set -e
 git add --all .
 git stash
 LAST_COMMIT_HASH=`git rev-parse HEAD`
