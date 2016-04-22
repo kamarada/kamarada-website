@@ -284,6 +284,8 @@ Pode remover seu dispositivo USB. Se ele tem uma luz que pisca quando dados são
     </div>
 </div>
 
+Como utilizar o LiveUSB que você acabou de preparar será o assunto de outro *post*. Não deixe de nos acompanhar para conferir!
+
 ## Referências
 
 - [Rufus: o canivete suíço do boot pelo pendrive (ou cartão de memória) - Antônio Vinícius](https://vinyanalista.github.io/blog/2015/10/08/rufus/)
