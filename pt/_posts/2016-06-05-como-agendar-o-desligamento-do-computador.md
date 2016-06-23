@@ -40,6 +40,8 @@ Se você não quiser fazer *login* como superusuário (*root*) apenas para invoc
 $ sudo shutdown -h
 ```
 
+A depender de como seu computador esteja configurado, você será solicitado a fornecer a senha do superusuário.
+
 Pela interface gráfica, a princípio, não temos como agendar ou programar o desligamento do computador, mas pela linha de comando temos algumas opções interessantes.
 
 ## Desligando em determinado horário
