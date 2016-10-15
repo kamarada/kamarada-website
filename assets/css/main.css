@@ -270,6 +270,10 @@ a.navbar-brand {
 
 /* Images */
 
+div.image {
+    margin: 0 0 10px;
+}
+
 em.caption {
     display: block;
     margin-top: 1em;
