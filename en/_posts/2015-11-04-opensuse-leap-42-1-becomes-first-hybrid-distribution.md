@@ -26,27 +26,32 @@ Have a lot of fun!
 ## openSUSE Leap 42.1 is…
 
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/places/favorites.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Purposeful</h3>
-        <p>
-            Leap provides a balance between new and innovative and mature and downgraded.. Leap offers that enterprise feel, provides modern hardware support and has intentional downgraded packages to reinforce the Long-Term-Support vision of Leap.Newer releases like KDE Plasma 5 and Libreoffice 5 are in Leap while other mature releases like GNOME 3.16 and GNU Compiler Collection 4.8.5 with the option of GCC 5.2 are in Leap as well.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/places/favorites.png" %}
 </div>
+<div class='col-sm-10'>
+{% markdown %}
 
+### Purposeful
+
+Leap provides a balance between new and innovative and mature and downgraded.. Leap offers that enterprise feel, provides modern hardware support and has intentional downgraded packages to reinforce the Long-Term-Support vision of Leap.Newer releases like KDE Plasma 5 and Libreoffice 5 are in Leap while other mature releases like GNOME 3.16 and GNU Compiler Collection 4.8.5 with the option of GCC 5.2 are in Leap as well.
+
+{% endmarkdown %}
+</div>
+</div>
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/places/start-here-branding.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Dependable</h3>
-        <p>
-            Leap has a further developed Btrfs filesystem as the default option and an XFS data file system for performance, but there are several other options to choose from. The benefit of Btrfs allows users to take advantage of Snapper. Users can recover the previous status of the system using snapshots. Snapper will automatically create hourly snapshots of the system, as well as pre- and post-snapshots for YaST and zypper transactions, which can be disabled. This new version adds the ability to boot right into a snapshot to recover from corruption of important files on the system (like bash). A powerful system and a powerful tool.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/places/start-here-branding.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### Dependable
+
+Leap has a further developed Btrfs filesystem as the default option and an XFS data file system for performance, but there are several other options to choose from. The benefit of Btrfs allows users to take advantage of Snapper. Users can recover the previous status of the system using snapshots. Snapper will automatically create hourly snapshots of the system, as well as pre- and post-snapshots for YaST and zypper transactions, which can be disabled. This new version adds the ability to boot right into a snapshot to recover from corruption of important files on the system (like bash). A powerful system and a powerful tool.
+
+{% endmarkdown %}
+</div>
 </div>
 
 ## Get Leap!
@@ -64,139 +69,137 @@ openSUSE Leap 42.1 represents the combined effort of thousands of developers who
 ## For Developers
 
 <div class='row'>
-    <div class='col-sm-4'>
-        {% include image.html caption="GNOME Builder" src="/files/2015/11/gnome-builder.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="KDE Anjunta" src="/files/2015/11/kde-anjunta.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="KDE Qt5 designer" src="/files/2015/11/kde-qt5-designer.png" %}
-    </div>
+    <div class='col-sm-4'>{% include image.html caption="GNOME Builder" src="/files/2015/11/gnome-builder.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="KDE Anjunta" src="/files/2015/11/kde-anjunta.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="KDE Qt5 designer" src="/files/2015/11/kde-qt5-designer.png" %}</div>
 </div>
-
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/categories/applications-development.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>IDEs and tooling</h3>
-        <p>
-            Leap carries the latest version of the Qt 5 GUI toolkit (5.5). Qt5.5 brings multiple features and enhancements for developers, but also for normal users, who will benefit from a large improvement in multi-screen handling and in QML (which is heavily used by Plasma). Builder is a brand new IDE, which is intended to make it easy to create GNOME applications. This initial 3.16 release is an early preview, which shows editing features, such as split view, snippets, auto-indentation and a VIM engine. Builder was backed by a successful crowdfunding campaign early in 2015, and there are big plans for the future. These include project management functionality, global search, version tracking, debugging, Glade integration, and much more.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/categories/applications-development.png" %}
 </div>
+<div class='col-sm-10'>
+{% markdown %}
 
+### IDEs and tooling
+
+Leap carries the latest version of the Qt 5 GUI toolkit (5.5). Qt5.5 brings multiple features and enhancements for developers, but also for normal users, who will benefit from a large improvement in multi-screen handling and in QML (which is heavily used by Plasma). Builder is a brand new IDE, which is intended to make it easy to create GNOME applications. This initial 3.16 release is an early preview, which shows editing features, such as split view, snippets, auto-indentation and a VIM engine. Builder was backed by a successful crowdfunding campaign early in 2015, and there are big plans for the future. These include project management functionality, global search, version tracking, debugging, Glade integration, and much more.
+
+{% endmarkdown %}
+</div>
+</div>
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/categories/applications-engineering.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Languages and Libraries</h3>
-        <p>
-            The KDE Frameworks 5 development libraries are at the latest stable version at the time of release (5.15), bringing in many bugfixes which affect the many KDE applications that are using them. In particular, the Baloo file indexing framework has been the subject of much changes, from bugfixes to performance improvements.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/categories/applications-engineering.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### Languages and Libraries
+
+The KDE Frameworks 5 development libraries are at the latest stable version at the time of release (5.15), bringing in many bugfixes which affect the many KDE applications that are using them. In particular, the Baloo file indexing framework has been the subject of much changes, from bugfixes to performance improvements.
+
+{% endmarkdown %}
+</div>
 </div>
 
 ## For Sysadmins
 
 <div class='row'>
-    <div class='col-sm-4'>
-        {% include image.html caption="YaST App Folder" src="/files/2015/11/yast-app-folder.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="Installation overview" src="/files/2015/11/installation-overview.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="YaST" src="/files/2015/11/yast.png" %}
-    </div>
+    <div class='col-sm-4'>{% include image.html caption="YaST App Folder" src="/files/2015/11/yast-app-folder.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="Installation overview" src="/files/2015/11/installation-overview.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="YaST" src="/files/2015/11/yast.png" %}</div>
 </div>
-
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/hicolor/64x64/apps/yast-virtualisation.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Virtualization</h3>
-        <p>
-            openSUSE Leap 42.1 is full of virtualization solutions. QEMU 2.3.1, VirtualBox 5.0.6 and Docker 1.8.2 makes openSUSE Leap 42.1 a perfect base system to distribute applications. Set up is easy with YaST, so you’ll be able deploy solutions quickly and easily. GNOME boxes, virt-manager, and virsh are also useful to sysadmins using openSUSE.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/hicolor/64x64/apps/yast-virtualisation.png" %}
 </div>
+<div class='col-sm-10'>
+{% markdown %}
 
-<div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/hicolor/48x48/apps/yast.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Improved YaST</h3>
-        <p>
-            Being a completely open source project, the YaST versions and features shipped with SLE and openSUSE has always being in pretty close sync. With Leap that trends goes one step further, since 42.1 it will include exactly the same version of YaST, AutoYaST and Linuxrc that will be shipped in SLE12-SP1. When compared to the versions shipped in openSUSE 13.2, that means more than 600 fixes including corrections of errors, new features and enhancements in the already existing ones. Users and sysadmins will benefit from the improved YaST included in Leap 42.1. YaST is now more developer friendly than ever, with more polished code (although there is still a lot of autoconverted code from YCP), better development tools and documentation and a much better integration into the Ruby ecosystem including RSpec helpers, Rake tasks and other goodies. Although the YaST2-lxc module was dropped, the YaST family has grown with the addition of three new modules. Read more about the <a href='https://news.opensuse.org/2015/02/25/openness-brings-fresh-air-to-yast/'>new modules</a>.
-        </p>
-    </div>
+### Virtualization
+
+openSUSE Leap 42.1 is full of virtualization solutions. QEMU 2.3.1, VirtualBox 5.0.6 and Docker 1.8.2 makes openSUSE Leap 42.1 a perfect base system to distribute applications. Set up is easy with YaST, so you’ll be able deploy solutions quickly and easily. GNOME boxes, virt-manager, and virsh are also useful to sysadmins using openSUSE.
+
+{% endmarkdown %}
 </div>
-
+</div>
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/files/2015/11/machinery.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Machinery</h3>
-        <p>
-            Available for use with openSUSE Leap 42.1 is <a href='http://machinery-project.org/'>Machinery</a>. Machinery is a command line application sysadmins can use for creating descriptions of Linux systems and working with them. You can use it to get insight into existing systems, to store and track their state, or to create new systems based on existing ones. Machinery provides powerful views of individual and comparisons between systems. It can also export descriptions to other tools for installation, migration, image building, containerization, or cloud deployment, and provides defined interfaces to work with system descriptions from your custom tools.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/hicolor/48x48/apps/yast.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### Improved YaST
+
+Being a completely open source project, the YaST versions and features shipped with SLE and openSUSE has always being in pretty close sync. With Leap that trends goes one step further, since 42.1 it will include exactly the same version of YaST, AutoYaST and Linuxrc that will be shipped in SLE12-SP1. When compared to the versions shipped in openSUSE 13.2, that means more than 600 fixes including corrections of errors, new features and enhancements in the already existing ones. Users and sysadmins will benefit from the improved YaST included in Leap 42.1. YaST is now more developer friendly than ever, with more polished code (although there is still a lot of autoconverted code from YCP), better development tools and documentation and a much better integration into the Ruby ecosystem including RSpec helpers, Rake tasks and other goodies. Although the YaST2-lxc module was dropped, the YaST family has grown with the addition of three new modules. Read more about the [new modules](https://news.opensuse.org/2015/02/25/openness-brings-fresh-air-to-yast/).
+
+{% endmarkdown %}
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-2'>
+{% include image.html src="/files/2015/11/machinery.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### Machinery
+
+Available for use with openSUSE Leap 42.1 is [Machinery](http://machinery-project.org/). Machinery is a command line application sysadmins can use for creating descriptions of Linux systems and working with them. You can use it to get insight into existing systems, to store and track their state, or to create new systems based on existing ones. Machinery provides powerful views of individual and comparisons between systems. It can also export descriptions to other tools for installation, migration, image building, containerization, or cloud deployment, and provides defined interfaces to work with system descriptions from your custom tools.
+
+{% endmarkdown %}
+</div>
 </div>
 
 ## For Users
 
 <div class='row'>
-    <div class='col-sm-4'>
-        {% include image.html caption="GNOME LibreOffice 5" src="/files/2015/11/libreoffice5.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="GNOME Weather" src="/files/2015/11/gnome-weather.png" %}
-    </div>
-    <div class='col-sm-4'>
-        {% include image.html caption="GIMP in Plasma 5" src="/files/2015/11/gimp.png" %}
-    </div>
+    <div class='col-sm-4'>{% include image.html caption="GNOME LibreOffice 5" src="/files/2015/11/libreoffice5.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="GNOME Weather" src="/files/2015/11/gnome-weather.png" %}</div>
+    <div class='col-sm-4'>{% include image.html caption="GIMP in Plasma 5" src="/files/2015/11/gimp.png" %}</div>
 </div>
-
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/apps/kde.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>KDE</h3>
-        <p>
-            openSUSE Leap 42.1 is the first stable openSUSE release to include KDE Plasma 5 (version 5.4.2) as the default desktop environment. Plasma 5 is now mature enough for a wide audience to enjoy this beautiful, feature rich, innovative and performant desktop. The 5.4 version of the workspace introduces a new audio volume applet, a full-screen dashboard menu, many new icons (more than 1600 added) and improved High DPI support. Some minor “papercuts” from the previous releases have also been fixed, for example additional date formats in the clock or improvements in Folder View behavior and visuals.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/apps/kde.png" %}
 </div>
+<div class='col-sm-10'>
+{% markdown %}
 
-<div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/hicolor/48x48/apps/pattern-gnome.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>GNOME</h3>
-        <p>
-            openSUSE Leap 42.1 ships with GNOME 3.16.2. The GNOME 3.16.x branch has been released in April 2015 and received multiple bug fix iterations, making it a well tested and stable version to supplement the rock-solid SLE12 base system. GNOME 3’s visuals have been updated for 3.16. The Activities Overview, login screen, system menus and other system components have been given a new, more contemporary look. The new visuals are designed to integrate with the visual style of GNOME applications, for a more seamless experience. 3.16 has a new style of scrollbar for GNOME 3. Instead of being shown all the time, these new overlay scrollbars are only shown when needed: a small scroll indicator is shown when the pointer is moved, and a larger bar appears when control is wanted.
-        </p>
-    </div>
+### KDE
+
+openSUSE Leap 42.1 is the first stable openSUSE release to include KDE Plasma 5 (version 5.4.2) as the default desktop environment. Plasma 5 is now mature enough for a wide audience to enjoy this beautiful, feature rich, innovative and performant desktop. The 5.4 version of the workspace introduces a new audio volume applet, a full-screen dashboard menu, many new icons (more than 1600 added) and improved High DPI support. Some minor “papercuts” from the previous releases have also been fixed, for example additional date formats in the clock or improvements in Folder View behavior and visuals.
+
+{% endmarkdown %}
 </div>
-
+</div>
 <div class='row'>
-    <div class='col-sm-2'>
-        {% include image.html src="/assets/icons/oxygen/48x48/places/user-desktop.png" %}
-    </div>
-    <div class='col-sm-10'>
-        <h3>Other desktop environments</h3>
-        <p>
-            openSUSE Leap 42.1 includes MATE (1.10), which provides support for both GTK2 and GTK3 toolkits, added support for 3.x GUI toolkits and improvements in Audio Mixer Library. openSUSE Leap 42.1 also ships with XFCE (4.12.1). The XFCE panel can now intelligently hide itself, supports GTK3 plugins, and saw lots of its third-party plugins updated to take full advantage of the features added in 4.10. Enlightenment 19 (0.19.12) ships in openSUSE Leap 42.1 and can now unshade clients when they’re activated, updates the X11 compositor to use damage events, and updates the icon theme search list for the wizard.
-        </p>
-    </div>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/hicolor/48x48/apps/pattern-gnome.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### GNOME
+
+openSUSE Leap 42.1 ships with GNOME 3.16.2. The GNOME 3.16.x branch has been released in April 2015 and received multiple bug fix iterations, making it a well tested and stable version to supplement the rock-solid SLE12 base system. GNOME 3’s visuals have been updated for 3.16. The Activities Overview, login screen, system menus and other system components have been given a new, more contemporary look. The new visuals are designed to integrate with the visual style of GNOME applications, for a more seamless experience. 3.16 has a new style of scrollbar for GNOME 3. Instead of being shown all the time, these new overlay scrollbars are only shown when needed: a small scroll indicator is shown when the pointer is moved, and a larger bar appears when control is wanted.
+
+{% endmarkdown %}
+</div>
+</div>
+<div class='row'>
+<div class='col-sm-2'>
+{% include image.html src="/assets/icons/oxygen/48x48/places/user-desktop.png" %}
+</div>
+<div class='col-sm-10'>
+{% markdown %}
+
+### Other desktop environments
+
+openSUSE Leap 42.1 includes MATE (1.10), which provides support for both GTK2 and GTK3 toolkits, added support for 3.x GUI toolkits and improvements in Audio Mixer Library. openSUSE Leap 42.1 also ships with XFCE (4.12.1). The XFCE panel can now intelligently hide itself, supports GTK3 plugins, and saw lots of its third-party plugins updated to take full advantage of the features added in 4.10. Enlightenment 19 (0.19.12) ships in openSUSE Leap 42.1 and can now unshade clients when they’re activated, updates the X11 compositor to use damage events, and updates the icon theme search list for the wizard.
+
+{% endmarkdown %}
+</div>
 </div>
 
 Details about Power 8 (ppc64le), and ARM (AArch64) in openSUSE Leap 42.1 will be released at a later date.

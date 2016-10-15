@@ -25,22 +25,26 @@ Identifique abaixo o sistema operacional que você está usando agora e clique n
 [download]: /pt/download/
 
 <div class="alert alert-danger" role="alert">
-Antes de continuar, observe que <strong>os dados presentes no dispositivo USB serão perdidos!</strong> Depois, <strong>o dispositivo USB só poderá ser utilizado para armazenar o Linux</strong>. Certifique-se de reservar o dispositivo para apenas essa finalidade.
+{% markdown %}
+
+Antes de continuar, observe que **os dados presentes no dispositivo USB serão perdidos!** Depois, **o dispositivo USB só poderá ser utilizado para armazenar o Linux**. Certifique-se de reservar o dispositivo para apenas essa finalidade.
+
+{% endmarkdown %}
 </div>
 
 Por precaução, antes de começar, recomendo remover todos os dispositivos de armazenamento em massa USB (*pendrives*, HDs externos, cartões de memória, etc.) conectados ao computador, se houver algum.
 
 <div class="no-ads-here panel-group" id="help-accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel-default">
-        <div class="panel-heading" role="tab" id="help-windows">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-windows-collapse" aria-expanded="true" aria-controls="help-windows-collapse">
-                    <i class="fa fa-windows"></i> Windows
-                </a>
-            </h4>
-        </div>
-        <div id="help-windows-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-windows">
-            <div class="panel-body">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="help-windows">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#help-windows-collapse" aria-expanded="true" aria-controls="help-windows-collapse">
+                <i class="fa fa-windows"></i> Windows
+            </a>
+        </h4>
+    </div>
+    <div id="help-windows-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-windows">
+        <div class="panel-body">
 {% markdown %}
 
 No [Windows][windows], a ferramenta que usaremos para preparar o LiveUSB é o [Rufus][rufus]. Ele é pequeno, leve, gratuito, fácil de usar e dispensa instalação: ao baixar o Rufus, ele já vem pronto para uso.
@@ -100,20 +104,19 @@ Se seu dispositivo USB tem uma luz que pisca quando dados são gravados nele, ag
 [hybrid-iso]: http://www.syslinux.org/wiki/index.php/Isohybrid
 
 {% endmarkdown %}
-            </div>
-        </div>
+<p><a role="button" data-toggle="collapse" href="#help-windows-collapse" aria-controls="help-windows-collapse">Fechar as instruções para o Windows</a></p></div>
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="help-suse">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#help-suse-collapse" aria-expanded="true" aria-controls="help-suse-collapse">
+                <i class="fl-opensuse"></i> Linux (distribuição openSUSE)
+            </a>
+        </h4>
     </div>
-    
-    <div class="panel-default">
-        <div class="panel-heading" role="tab" id="help-suse">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-suse-collapse" aria-expanded="true" aria-controls="help-suse-collapse">
-                    <i class="fl-opensuse"></i> Linux (distribuição openSUSE)
-                </a>
-            </h4>
-        </div>
-        <div id="help-suse-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-suse">
-            <div class="panel-body">
+    <div id="help-suse-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-suse">
+        <div class="panel-body">
 {% markdown %}
 
 No Linux openSUSE, a ferramenta que usaremos para preparar o LiveUSB é o Gravador de imagens do SUSE Studio ([SUSE Studio Imagewriter](http://github.com/mbarringer/imagewriter)).
@@ -169,22 +172,20 @@ Ao final, quando essa janela de progresso desaparecer, você terá um dispositiv
 Se seu dispositivo USB tem uma luz que pisca quando dados são gravados nele, aguarde essa luz parar de piscar antes de removê-lo.
 
 {% endmarkdown %}
-            </div>
-        </div>
+<p><a role="button" data-toggle="collapse" href="#help-suse-collapse" aria-controls="help-suse-collapse">Fechar as instruções para o openSUSE</a></p></div>
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="help-linux">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#help-linux-collapse" aria-expanded="true" aria-controls="help-linux-collapse">
+                <i class="fa fa-linux"></i> Linux (qualquer distribuição)
+            </a>
+        </h4>
     </div>
-    
-    <div class="panel-default">
-        <div class="panel-heading" role="tab" id="help-linux">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-linux-collapse" aria-expanded="true" aria-controls="help-linux-collapse">
-                    <i class="fa fa-linux"></i> Linux (qualquer distribuição)
-                </a>
-            </h4>
-        </div>
-        <div id="help-linux-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-linux">
-            <div class="panel-body">
+    <div id="help-linux-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-linux">
+        <div class="panel-body">
 {% markdown %}
-
 
 As instruções a seguir devem funcionar para qualquer distribuição Linux (inclusive para o openSUSE). Vamos utilizar o terminal para preparar o LiveUSB. Certifique-se de que os aplicativos de linha de comando **df**, **dd** e **fdisk** encontram-se instalados.
 
@@ -279,9 +280,9 @@ Nesse momento, seu dispositivo USB já é capaz de iniciar o Linux em qualquer c
 Pode remover seu dispositivo USB. Se ele tem uma luz que pisca quando dados são gravados nele, aguarde essa luz parar de piscar antes de removê-lo.
 
 {% endmarkdown %}
-            </div>
-        </div>
-    </div>
+<p><a role="button" data-toggle="collapse" href="#help-linux-collapse" aria-controls="help-linux-collapse">Fechar as instruções para o Linux</a></p></div>
+</div>
+</div>
 </div>
 
 Como utilizar o LiveUSB que você acabou de preparar será o assunto de outro *post*. Não deixe de nos acompanhar para conferir!

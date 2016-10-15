@@ -25,16 +25,16 @@ Identifique abaixo o sistema operacional que você está usando agora e clique n
 [download]: /pt/download/
 
 <div class="no-ads-here panel-group" id="help-accordion" role="tablist" aria-multiselectable="true">
-    <div class="panel-default">
-        <div class="panel-heading" role="tab" id="help-windows">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-windows-collapse" aria-expanded="true" aria-controls="help-windows-collapse">
-                    <i class="fa fa-windows"></i> Microsoft Windows
-                </a>
-            </h4>
-        </div>
-        <div id="help-windows-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-windows">
-            <div class="panel-body">
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="help-windows">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#help-windows-collapse" aria-expanded="true" aria-controls="help-windows-collapse">
+                <i class="fa fa-windows"></i> Windows
+            </a>
+        </h4>
+    </div>
+    <div id="help-windows-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-windows">
+        <div class="panel-body">
 {% markdown %}
 
 Para usuários de [Windows][windows], recomendamos a utilização do programa gratuito [CDBurnerXP][cdburnerxp].
@@ -81,26 +81,26 @@ Você pode fechar todas as janelas e utilizar o DVD, que deve ter sido ejetado.
 [cdburnerxp]: https://cdburnerxp.se/
 
 {% endmarkdown %}
-            </div>
-        </div>
+<p><a role="button" data-toggle="collapse" href="#help-windows-collapse" aria-controls="help-windows-collapse">Fechar as instruções para o Windows</a></p></div>
+</div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="help-suse">
+        <h4 class="panel-title">
+            <a role="button" data-toggle="collapse" href="#help-suse-collapse" aria-expanded="true" aria-controls="help-suse-collapse">
+                <i class="fa fa-linux"></i> Linux
+            </a>
+        </h4>
     </div>
-    
-    <div class="panel-default">
-        <div class="panel-heading" role="tab" id="help-suse">
-            <h4 class="panel-title">
-                <a role="button" data-toggle="collapse" data-parent="#help-accordion" href="#help-suse-collapse" aria-expanded="true" aria-controls="help-suse-collapse">
-                    <i class="fa fa-linux"></i> Linux
-                </a>
-            </h4>
-        </div>
-        <div id="help-suse-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-suse">
-            <div class="panel-body">
+    <div id="help-suse-collapse" class="panel-collapse collapse" role="tabpanel" aria-labelledby="help-suse">
+        <div class="panel-body">
 {% markdown %}
+
 Para usuários de Linux, recomendamos a utilização do programa [K3b][k3b].
 
 Antes de começar, insira a mídia DVD vazia no seu gravador de DVD.
 
-Inicie o programa K3b clicando no **ícone do Kicker**, apontando para **Multimídia** e, por fim, clicando em **K3b**:
+Inicie o programa K3b abrindo o **Menu de aplicativos**, apontando para **Multimídia** e, por fim, clicando em **K3b**:
 
 {% include image.html src="/files/2016/04/k3b01.jpg" %}
 
@@ -133,10 +133,11 @@ Ao final, o K3b mostra uma mensagem indicando que a gravação foi concluída co
 Você pode fechar todas as janelas e utilizar o DVD, que deve ter sido ejetado.
 
 [k3b]: http://www.k3b.org/
+
 {% endmarkdown %}
-            </div>
-        </div>
-    </div>
+<p><a role="button" data-toggle="collapse" href="#help-suse-collapse" aria-controls="help-suse-collapse">Fechar as instruções para o Linux</a></p></div>
+</div>
+</div>
 </div>
 
 Como utilizar o LiveDVD que você acabou de gravar será o assunto de outro *post*. Não deixe de nos acompanhar para conferir!
