@@ -11,7 +11,7 @@ Computer programs, the more amazing they are, are not perfect: they are made by 
 
 Fortunately, keeping your Linux system always up to date is easy if you are using [openSUSE][opensuse]. You can get software updates using the graphical user interface (GUI) or the command line interface (CLI).
 
-{% include image.html src="/files/2016/10/sw-updates.jpg" caption="Source: [site OMG! Ubuntu!](http://www.omgubuntu.co.uk/2016/10/why-use-linux-answer-three-short-words)" %}
+{% include image.html src="/files/2016/10/sw-updates.jpg" caption="Source: [OMG! Ubuntu!](http://www.omgubuntu.co.uk/2016/10/why-use-linux-answer-three-short-words)" %}
 
 ## Getting updates using the GUI
 
