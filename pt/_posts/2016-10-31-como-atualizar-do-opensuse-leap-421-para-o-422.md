@@ -1,7 +1,8 @@
 ---
-date: '2016-10-31 21:00:00 GMT-2'
+date: '2016-10-31 23:59:59 GMT-2'
+excerpt: 'Atualizar de uma versão para outra para quem usa openSUSE é uma tranquilidade. Há mais de 3 anos utilizo o Linux openSUSE e sempre consegui atualizar de uma versão para outra. Comecei a usá-lo na versão 12.2, pouco antes do lançamento da 12.3, em maio de 2013. Desde então já foram 5 atualizações: da versão 12.2 para a 12.3, para a 13.1, para a 13.2, para a Leap 42.1 (realmente, houve um salto, como falamos em outro post) e essa semana para a 42.2, mesmo antes de ter sido lançada.'
 layout: post
-published: false
+published: true
 title: 'Como atualizar do openSUSE Leap 42.1 para o 42.2'
 image: /files/2016/10/upgrade.png
 nickname: 'how-to-upgrade'
@@ -14,6 +15,8 @@ Atualizar de uma versão para outra para quem usa [openSUSE][opensuse] é uma tr
 A próxima versão do openSUSE Leap, a 42.2, já passou pelas fases alfa e beta e teve a primeira versão candidata a lançamento (*release candidate* ou RC) liberada dia [18 de outubro][opensuse-422-rc1]. Isso quer dizer que boa parte dos testes já terminaram. Essa versão já é bem próxima da final, cujo lançamento está previsto para [16 de novembro][opensuse-roadmap]. Daqui para lá, o openSUSE Leap deve receber apenas alguns retoques finais.
 
 Confira nesse *post* de antemão como atualizar seu openSUSE Leap da versão 42.1 para a 42.2. Se você é o tipo de pessoa mais segura e menos entusiasmada, aqui você verá o que fazer no dia 16, quando o openSUSE Leap 42.2 for lançado oficialmente. Se você é do tipo mais ansioso, como eu, verá o que pode fazer para obter a nova versão já agora. Ao menos nos computadores que eu uso em casa e no trabalho, ambos agora com openSUSE Leap 42.2 RC 1, está tudo funcionando.
+
+Para organizar melhor, vou dividir a atualização em 6 etapas.
 
 ## Algumas observações
 
@@ -31,7 +34,9 @@ O roteiro para atualização que apresento aqui é o que utilizei no meu computa
 
 Recomendo também que você leia toda essa página antes de começar de fato a atualização. Conhecendo todo o processo, você terá condição de agendá-lo melhor. Você pode até usar o computador enquanto baixa os novos pacotes, mas depois que começar a atualização, só poderá voltar a usá-lo quando ela for concluída.
 
-## 1) Atualização da versão atual (*update*)
+Antes de começar, gostaria de fazer só mais uma observação, para quem deseja atualizar para o openSUSE Leap 42.2 antes do lançamento oficial. Se esse é o seu caso, observe que você deverá repetir as etapas *download* dos pacotes e atualização da distribuição (*upgrade*), as últimas duas etapas desse tutorial (5 e 6), para cada novo lançamento dessa versão. Então, vocês repetirão essas etapas nos dias [02 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 RC 2, e [16 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 final.
+
+## 1) Atualização dos pacotes da distribuição (*update*)
 
 Antes de começar, certifique-se de que a instalação do openSUSE que está no seu computador esteja atualizada.
 
@@ -45,19 +50,21 @@ Ou, se você prefere utilizar a interface de linha de comando, o comando **zyppe
 
 Consulte [aquele *post*]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para saber como atualizar seu openSUSE.
 
-É importante esclarecer algo: a atualização de que falei naquele *post* foi uma atualização sem mudança de distribuição. No inglês, um *update*. Aqui, vamos ver como passar de uma distribuição anterior para uma mais nova, um *upgrade*.
+É importante esclarecer algo: a atualização de que falei naquele *post* foi uma atualização dos pacotes, sem mudança de distribuição (*update*). Aqui, vamos ver como atualizar todo o sistema e passar para uma distribuição mais nova (*upgrade*).
 
 Utilizarei sempre que possível a interface gráfica, mas a interface textual nos permite vantagens como apenas baixar as atualizações e depois apenas instalá-las. Se você não está acostumado à linha de comando, perceberá que não é difícil utilizá-la.
 
-Note que você pode utilizar a interface de linha de comando sem abandonar a interface gráfica por meio do aplicativo [**Konsole**][konsole]. Para iniciá-lo, clique no **Menu de aplicativos**, aponte para **Sistema** e em seguida clique em **Konsole**:
+Note que, quase sempre, você pode utilizar a interface de linha de comando sem abandonar a interface gráfica por meio do aplicativo [**Konsole**][konsole]. Para iniciá-lo, clique no **Menu de aplicativos**, aponte para **Sistema** e em seguida clique em **Konsole**:
 
 {% include image.html src="/files/2016/10/upgrade-01-pt.jpg" %}
+
+Se você está habituado a utilizar [Windows][windows], talvez encontre alguma semelhança do Konsole com o **Prompt de Comando**.
 
 ## 2) *Backup* dos repositórios atuais
 
 Essa etapa, na verdade, é opcional.
 
-Talvez você queira fazer *backup* da sua lista atual de repositórios para devolvê-la depois da atualização (lembre-se quando for devolver de fazer os devidos ajustes em relação à versão do openSUSE, mudando de `42.1` para `42.2` onde for necessário). O openSUSE guarda as configurações de repositórios na pasta `/etc/zypp/repos.d`, sendo um arquivo de texto para cada repositório. Vamos fazer uma cópia dessa pasta. Para isso, utilizaremos a interface de linha de comando.
+Talvez você queira fazer *backup* da sua lista atual de repositórios para devolvê-la depois da atualização. O openSUSE guarda as configurações de repositórios na pasta `/etc/zypp/repos.d`, sendo um arquivo de texto para cada repositório. Vamos fazer uma cópia dessa pasta. Para isso, utilizaremos a interface de linha de comando.
 
 Adquira privilégios de superusuário (*root*) executando o comando `su` (para isso, na linha de comando, digite `su` e tecle **Enter**). Será solicitada a senha do superusuário, que você deve fornecer para continuar (digite a senha e tecle **Enter**, observe que a senha não é exibida, nem mesmo mascarada como ******, isso é normal).
 
@@ -147,7 +154,7 @@ Ele passa um tempo "pensando" e logo depois mostra o que precisa fazer para atua
 
 Note que essa lista de ações é semelhante à produzida pelo comando `zypper up`, apresentado no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}). No entanto, como agora estamos fazendo uma atualização de distribuição (*upgrade*), e não uma simples e cotidiana atualização de pacotes (*update*), a lista do que precisa ser feito é bem maior.
 
-Confira essa lista com cuidado. Você pode ir para cima ou para baixo utilizando a barra de rolagem à direita da tela ou a roda (*scroll*) do *mouse*, se utiliza o Konsole, ou as combinações de teclas **Shift + Page Up** ou **Shift + Page Down**, se está em uma interface puramente textual.
+Confira essa lista com cuidado. Você pode ir para cima ou para baixo utilizando a barra de rolagem à direita da tela ou a roda (*scroll*) do *mouse*, se utiliza o Konsole, ou as combinações de teclas **Shift + Page Up** ou **Shift + Page Down**, se está em uma interface puramente textual (elas também funcionam no Konsole).
 
 A opção padrão é continuar (**s**). Se você concorda, pode apenas teclar **Enter** e o *download* dos novos pacotes começará. Enquanto isso, você pode utilizar seu computador normalmente. A atualização propriamente dita ainda não começou.
 
@@ -159,38 +166,96 @@ Isso porque solicitamos a ele por ora apenas baixar os pacotes.
 
 Termine o que está fazendo e salve os arquivos abertos para iniciarmos a atualização da distribuição. Note que ela pode levar alguns (vários) minutos e você só poderá voltar a usar o computador quando ela for concluída.
 
-## 6) Atualização para a nova versão (*upgrade*)
+## 6) Atualização da distribuição (*upgrade*)
 
-- falar da necessidade de utilizar linha de comando
+Agora que já baixamos os pacotes necessários para atualizar nosso openSUSE Leap da versão 42.1 para a 42.2, vamos sair da interface gráfica e utilizar a linha de comando para realizar a instalação. Aqui, você não poderá utilizar o Konsole.
 
-- sugerir imprimir a página ou anotar os comandos
+Isso é necessário porque inclusive a própria interface gráfica será atualizada. Se estivermos utilizando a interface gráfica durante a atualização, pode ser que o sistema trave no meio da processo e as consequências disso são imprevisíveis.
+
+Considere abrir essa página em outro computador, em um *smartphone* ou *tablet*, imprimi-la ou anotar o que vai fazer.
+
+Encerre sua sessão (*logout*) abrindo o **Menu de aplicativos**, apontando para **Desligar / Sessão** e clicando em **Encerrar sessão**:
 
 {% include image.html src="/files/2016/10/logout-kde-pt.jpg" %}
+
+Você será apresentado à tela de *login*, onde você poderia informar seu usuário e senha para iniciar uma nova sessão na interface gráfica:
+
 {% include image.html src="/files/2016/10/upgrade-13-pt.jpg" %}
+
+Mas não é ela que queremos. Aperte a combinação de teclas **Ctrl + Alt + F1** para alternar para uma interface puramente textual:
+
 {% include image.html src="/files/2016/10/upgrade-14.jpg" %}
+
+Caso isso seja novidade para você, saiba que o Linux disponibiliza seis [consoles][terminal] além da interface gráfica. Você pode usar as teclas de **F1** a **F6** naquela mesma combinação (**Ctrl + Alt + F1**, **Ctrl + Alt + F2** e assim por diante) para alternar entre os consoles, assim como pressionar **Ctrl + Alt + F7** para retornar à interface gráfica.
+
+Vamos permanecer no primeiro console.
+
+Entre como superusuário (*root*). Para isso, digite `root` e tecle **Enter**. Depois, digite a senha do superusuário e tecle **Enter**.
+
+Vamos alternar do nível de execução ([*runlevel*][runlevel]) 5, nível padrão, no qual o sistema nos provê interface gráfica, para o nível de execução 3, no qual temos apenas a interface de linha de comando e conexão de rede.
+
+Para [alterar o nível de execução][switch-runlevel] para 3, execute o comando `init 3`.
+
+Finalmente, vamos realizar a atualização de distribuição propriamente dita. Para isso, execute o comando `zypper --no-refresh dup`:
+
 {% include image.html src="/files/2016/10/upgrade-15.jpg" %}
+
+O argumento `--no-refresh` faz com que o **zypper** não atualize a lista de pacotes dos repositórios. Com isso, garantimos que ele não tente baixar mais algum pacote além dos que nós já baixamos. Isso pode ser útil especialmente em *notebooks*, que podem perder a conexão com a rede Wi-Fi ao sair da interface gráfica.
+
+Como antes, o **zypper** vai processar a atualização e mostrar o que vai fazer:
+
 {% include image.html src="/files/2016/10/upgrade-16.jpg" %}
+
+Note que todos os pacotes que ele precisa já foram baixados: ao final ele mostra "*Overall download size: 0 B. Already cached: 1.62 GiB.*" (Tamanho geral do *download*: 0 B. Já em cache: 1.62 GiB).
+
+Apenas pressione **Enter** para que a atualização comece.
+
+Ele pula o *download* dos pacotes e já vai direto para a instalação:
+
 {% include image.html src="/files/2016/10/upgrade-17.jpg" %}
+
+A atualização da distribuição pode demorar alguns (vários) minutos.
+
+Quando ela terminar, assim como aconteceu no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}), o **zypper** vai sugerir para reiniciar. É o que vamos fazer executando `reboot`:
+
 {% include image.html src="/files/2016/10/upgrade-18.jpg" %}
 
 ## Pronto
 
+Se você conseguiu fazer tudo até aqui, agora seu computador já está com o openSUSE Leap 42.2.
+
+Observe que o menu do [GRUB][grub], aquele que permite a você escolher o sistema operacional quando o computador liga (útil especialmente se você possui Windows e Linux instalados na mesma máquina), já está diferente:
+
 {% include image.html src="/files/2016/10/upgrade-19.jpg" %}
+
+E *voilà*! O openSUSE Leap 42.2 está instalado e pronto para uso!
+
 {% include image.html src="/files/2016/10/upgrade-20-pt.jpg" %}
 
-[opensuse]: https://www.opensuse.org
-[opensuse-123]: https://news.opensuse.org/2013/03/13/opensuse-12-3-free-open-and-awesome/
-[opensuse-422-rc1]: https://news.opensuse.org/2016/10/18/release-candidate-available-for-opensuse-leap-42-2/
-[opensuse-roadmap]: https://en.opensuse.org/openSUSE:Roadmap
-[system-upgrade]: https://en.opensuse.org/SDB:System_upgrade
-[debian]: https://www.debian.org/
-[most-annoying-bugs]: https://en.opensuse.org/openSUSE:Most_annoying_bugs
-[release-notes]: https://en.opensuse.org/openSUSE:Release_Notes
-[konsole]: https://www.kde.org/applications/system/konsole/
-[official-repos]: https://en.opensuse.org/Package_repositories#Official_Repositories
-[third-party-repos]: https://en.opensuse.org/Additional_package_repositories
-[oss]: https://pt.wikipedia.org/wiki/Software_de_c%C3%B3digo_aberto
-[repo-oss]: http://download.opensuse.org/distribution/leap/42.2/repo/oss/
-[repo-update]: http://download.opensuse.org/update/leap/42.2/oss/
-[url]: https://pt.wikipedia.org/wiki/URL
-[opensuse-license]: https://en.opensuse.org/openSUSE:License
+Verifique se está tudo no lugar. Agora você pode devolver os repositórios que excluiu, lembrando de fazer os devidos ajustes em relação à versão do openSUSE, mudando de `42.1` para `42.2` onde for necessário. Pode também tentar instalar qualquer programa que por ventura tenha sido removido durante a atualização.
+
+Se você encontrou alguma dificuldade durante a atualização ou possui alguma dúvida, não deixe de comentar!
+
+Até a próxima!
+
+[opensuse]:             https://www.opensuse.org
+[opensuse-123]:         https://news.opensuse.org/2013/03/13/opensuse-12-3-free-open-and-awesome/
+[opensuse-422-rc1]:     https://news.opensuse.org/2016/10/18/release-candidate-available-for-opensuse-leap-42-2/
+[opensuse-roadmap]:     https://en.opensuse.org/openSUSE:Roadmap
+[system-upgrade]:       https://en.opensuse.org/SDB:System_upgrade
+[debian]:               https://www.debian.org/
+[most-annoying-bugs]:   https://en.opensuse.org/openSUSE:Most_annoying_bugs
+[release-notes]:        https://en.opensuse.org/openSUSE:Release_Notes
+[konsole]:              https://www.kde.org/applications/system/konsole/
+[windows]:              https://www.microsoft.com/pt-br/windows/
+[official-repos]:       https://en.opensuse.org/Package_repositories#Official_Repositories
+[third-party-repos]:    https://en.opensuse.org/Additional_package_repositories
+[oss]:                  https://pt.wikipedia.org/wiki/Software_de_código_aberto
+[repo-oss]:             http://download.opensuse.org/distribution/leap/42.2/repo/oss/
+[repo-update]:          http://download.opensuse.org/update/leap/42.2/oss/
+[url]:                  https://pt.wikipedia.org/wiki/URL
+[opensuse-license]:     https://en.opensuse.org/openSUSE:License
+[terminal]:             http://www.hardware.com.br/livros/linux/usando-terminal.html
+[runlevel]:             http://www.hardware.com.br/termos/runlevel
+[switch-runlevel]:      https://en.opensuse.org/SDB:Switch_runlevel
+[grub]:                 https://www.gnu.org/software/grub/
