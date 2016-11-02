@@ -34,7 +34,7 @@ O roteiro para atualização que apresento aqui é o que utilizei no meu computa
 
 Recomendo também que você leia toda essa página antes de começar de fato a atualização. Conhecendo todo o processo, você terá condição de agendá-lo melhor. Você pode até usar o computador enquanto baixa os novos pacotes, mas depois que começar a atualização, só poderá voltar a usá-lo quando ela for concluída.
 
-Antes de começar, gostaria de fazer só mais uma observação, para quem deseja atualizar para o openSUSE Leap 42.2 antes do lançamento oficial. Se esse é o seu caso, observe que você deverá repetir as etapas *download* dos pacotes e atualização da distribuição (*upgrade*), as últimas duas etapas desse tutorial (5 e 6), para cada novo lançamento dessa versão. Então, vocês repetirão essas etapas nos dias [02 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 RC 2, e [16 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 final.
+Antes de começar, gostaria de fazer só mais uma observação, para quem deseja atualizar para o openSUSE Leap 42.2 antes do lançamento oficial. Se esse é o seu caso, observe que você deverá repetir as etapas "*download* dos pacotes" e "atualização da distribuição (*upgrade*)", as últimas duas etapas desse tutorial (5 e 6), para cada novo lançamento dessa versão. Então, você repetirá essas etapas nos dias [02 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 RC 2, e [16 de novembro][opensuse-roadmap], data prevista para o lançamento da versão 42.2 final.
 
 ## 1) Atualização dos pacotes da distribuição (*update*)
 
@@ -44,7 +44,7 @@ Como vimos no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-semp
 
 {% include image.html src="/files/2016/10/sw-updates-05-pt.jpg" %}
 
-Ou, se você prefere utilizar a interface de linha de comando, o comando **zypper** deve informar que não há o que fazer, ou seja, todas as atualizações disponíveis para o sistema até o momento foram instaladas:
+Ou, se você prefere utilizar a interface de linha de comando, o **zypper** deve informar que não há o que fazer, ou seja, todas as atualizações disponíveis para o sistema até o momento foram instaladas:
 
 {% include image.html src="/files/2016/10/sw-updates-cmd-05-pt.jpg" %}
 
@@ -136,7 +136,7 @@ Ao final, sua lista de repositórios deve estar assim:
 
 {% include image.html src="/files/2016/10/upgrade-09-pt.jpg" %}
 
-Clique em **OK** para gravar as alterações.
+Clique em **OK** para gravar as alterações. Pode fechar o YaST.
 
 ## 5) *Download* dos pacotes
 
@@ -173,6 +173,8 @@ Agora que já baixamos os pacotes necessários para atualizar nosso openSUSE Lea
 Isso é necessário porque inclusive a própria interface gráfica será atualizada. Se estivermos utilizando a interface gráfica durante a atualização, pode ser que o sistema trave no meio da processo e as consequências disso são imprevisíveis.
 
 Considere abrir essa página em outro computador, em um *smartphone* ou *tablet*, imprimi-la ou anotar o que vai fazer.
+
+Se o openSUSE que você vai atualizar está em um *notebook*, certifique-se de que ele esteja com a bateria completamente carregada e conectado à fonte de alimentação. Não desconecte a bateria ou a fonte durante a atualização. Vamos prevenir qualquer possibilidade de problema.
 
 Encerre sua sessão (*logout*) abrindo o **Menu de aplicativos**, apontando para **Desligar / Sessão** e clicando em **Encerrar sessão**:
 
@@ -233,6 +235,8 @@ E *voilà*! O openSUSE Leap 42.2 está instalado e pronto para uso!
 {% include image.html src="/files/2016/10/upgrade-20-pt.jpg" %}
 
 Verifique se está tudo no lugar. Agora você pode devolver os repositórios que excluiu, lembrando de fazer os devidos ajustes em relação à versão do openSUSE, mudando de `42.1` para `42.2` onde for necessário. Pode também tentar instalar qualquer programa que por ventura tenha sido removido durante a atualização.
+
+Se lembre de regularmente [verificar se há atualizações]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para sua nova distribuição.
 
 Se você encontrou alguma dificuldade durante a atualização ou possui alguma dúvida, não deixe de comentar!
 
