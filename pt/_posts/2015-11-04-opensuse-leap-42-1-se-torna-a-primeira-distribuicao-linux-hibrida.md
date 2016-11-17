@@ -64,7 +64,7 @@ Confira as imagens para ARM na [*wiki* do ARM][arm-wiki]. As imagens para ARMv7 
 
 ## Obrigado!
 
-O openSUSE Leap 42.1 representa o esforço conjunto de milhares de desenvolvedores que participam das nossas distribuições e projetos que fazem parte dela. Os colaboradores, dentro e fora do Projeto openSUSE, devem se orgulhar desse lançamento, e merecem um enorme **"obrigado"** por todo o trabalho duro e cuidado que tiveram com ele. Acreditamos que o Leap é um grande lançamento e será uma distribuição Linux na qual desenvolvedores, administradores de sistemas e usuários poderão confiar! Esperamos que você se divirta bastante usando o Leap, e aguardamos ansiosamente contar com você no próximo lançamento!
+O openSUSE Leap 42.1 representa o esforço conjunto de milhares de desenvolvedores que participam das nossas distribuições e projetos que fazem parte delas. Os colaboradores, dentro e fora do Projeto openSUSE, devem se orgulhar desse lançamento, e merecem um enorme **"obrigado"** por todo o trabalho duro e cuidado que tiveram com ele. Acreditamos que o Leap é um grande lançamento e será uma distribuição Linux na qual desenvolvedores, administradores de sistemas e usuários poderão confiar! Esperamos que você se divirta bastante usando o Leap, e aguardamos ansiosamente contar com você no próximo lançamento!
 
 ## Para desenvolvedores
 
