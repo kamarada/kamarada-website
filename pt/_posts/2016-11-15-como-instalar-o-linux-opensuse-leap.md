@@ -146,8 +146,8 @@ Agora é só reiniciar seu computador e começar a usar o openSUSE Leap. Divirta
 [intel]:                        http://www.intel.com.br/
 [amd]:                          http://www.amd.com/pt-br
 [how-to-livedvd]:               {%post_url 2016-04-22-como-gravar-um-livedvd %}
-[kde]:                          https://www.kde.org/
 [how-to-liveusb]:               {%post_url 2016-02-21-como-preparar-um-liveusb %}
+[kde]:                          https://www.kde.org/
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.pt-br.html
 [how-to-ntp-client]:            {%post_url 2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
