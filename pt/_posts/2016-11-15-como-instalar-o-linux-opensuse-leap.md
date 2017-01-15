@@ -20,7 +20,7 @@ O openSUSE Leap oferece suporte à grande maioria dos componentes de *hardware* 
 
 No entanto, para que o sistema funcione bem, seu computador deve satisfazer aos seguintes [requisitos][system-requirements]:
 
-- Processador de 64 *bits* [Intel][intel], [AMD][amd] ou compatível (processadores de 32 *bits* não são suportados, mas se seu computador é ao menos relativamente novo é bem provável que seu processador seja de 32 *bits*);
+- Processador de 64 *bits* [Intel][intel], [AMD][amd] ou compatível ([processadores de 32 *bits* não são suportados][leap-32bit], mas se seu computador é ao menos relativamente novo é bem provável que seu processador seja de 32 *bits*);
 - Memória RAM de pelo menos 1GB (são recomendados 2GB ou mais); e
 - Disco rígido com 5GB de espaço livre (recomenda-se mais para arquivos pessoais e eventuais programas que você virá a ser instalar no futuro).
 
@@ -145,6 +145,7 @@ Agora é só reiniciar seu computador e começar a usar o openSUSE Leap. Divirta
 [system-requirements]:          https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/art.opensuse.installquick.html#sec.osuse.installquick.sysreqs
 [intel]:                        http://www.intel.com.br/
 [amd]:                          http://www.amd.com/pt-br
+[leap-32bit]:                   https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
 [how-to-livedvd]:               {%post_url 2016-04-22-como-gravar-um-livedvd %}
 [how-to-liveusb]:               {%post_url 2016-02-21-como-preparar-um-liveusb %}
 [kde]:                          https://www.kde.org/
@@ -157,3 +158,4 @@ Agora é só reiniciar seu computador e começar a usar o openSUSE Leap. Divirta
 [esp]:                          https://en.wikipedia.org/wiki/EFI_system_partition
 [opensuse-doc-partitioning]:    https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.inst_mode.partitioning
 [passwords]:                    http://cartilha.cert.br/senhas/
+

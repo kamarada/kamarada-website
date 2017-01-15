@@ -20,7 +20,7 @@ openSUSE supports most [PC][pc] hardware components and can be installed alongsi
 
 However, to ensure smooth operation of openSUSE Leap, your computer should satisfy the following [requirements][system-requirements]:
 
-- [Intel][intel], [AMD][amd] or compatible 64-bit processor (32-bit processors are not supported, but if your computer is at least relatively new, there is a good chance its processor is 64-bit);
+- [Intel][intel], [AMD][amd] or compatible 64-bit processor ([32-bit processors are not supported][leap-32bit], but if your computer is at least relatively new, there is a good chance its processor is 64-bit);
 - 1GB physical RAM (2GB or more recommended); and
 - 5GB available disk space (more recommended for personal files and software to be installed in the future).
 
@@ -142,6 +142,7 @@ Have a lot of fun!
 [system-requirements]:          https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/art.opensuse.installquick.html#sec.osuse.installquick.sysreqs
 [intel]:                        http://www.intel.com/
 [amd]:                          http://www.amd.com/
+[leap-32bit]:                   https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
 [how-to-livedvd]:               {%post_url 2015-11-25-what-is-a-livecd-dvd-usb %}
 [how-to-liveusb]:               {%post_url 2015-11-25-what-is-a-livecd-dvd-usb %}
 [kde]:                          https://www.kde.org/
@@ -154,3 +155,4 @@ Have a lot of fun!
 [esp]:                          https://en.wikipedia.org/wiki/EFI_system_partition
 [opensuse-doc-partitioning]:    https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.inst_mode.partitioning
 [passwords]:                    http://lifehacker.com/four-methods-to-create-a-secure-password-youll-actually-1601854240
+
