@@ -69,8 +69,8 @@ When you finish, click **Next**.
 By default, openSUSE proposes to create three new partitions:
 
 - `/` (root), for system files;
-- `/home/`, for personal files of users; and
-- [swap][swap] which is used as a supplement for RAM, similar to the [page file][page-file] in Windows.
+- `/home`, for personal files of users; and
+- [swap][swap], which is used as a supplement for RAM, similar to the [page file][page-file] in Windows.
 
 If your computer is in [UEFI][uefi] mode (as is the case in the figure), possibly the installer will suggest creating a fourth partition, which is the [ESP][esp]. If your computer came with Windows pre-installed, probably it already has an ESP, so its creation is not suggested.
 
@@ -138,7 +138,7 @@ Have a lot of fun!
 [opensuse-leap]:                {%post_url 2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %}
 [opensuse-doc]:                 https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/part.basics.html
 [pc]:                           https://en.wikipedia.org/wiki/IBM_Personal_Computer
-[windows]:                      https://www.microsoft.comwindows/
+[windows]:                      https://www.microsoft.com/windows/
 [system-requirements]:          https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/art.opensuse.installquick.html#sec.osuse.installquick.sysreqs
 [intel]:                        http://www.intel.com/
 [amd]:                          http://www.amd.com/

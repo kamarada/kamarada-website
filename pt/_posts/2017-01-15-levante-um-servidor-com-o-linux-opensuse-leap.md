@@ -17,7 +17,7 @@ Nesse *post*, você verá a instalação e as configurações básicas de um ser
 
 Antes de começar, aqui vão algumas coisas às quais você deve se atentar.
 
-O openSUSE Leap pode ser instalado nos mais diversos tipos de *hardware* existentes. Processadores de 32 *bits* são uma exceção à regra: eles [não são mais suportados][opensuse-leap-32bit], mas servidores com processadores de 64 *bits* já são bastante comuns.
+O openSUSE Leap pode ser instalado nos mais diversos tipos de *hardware* existentes. Processadores de 32 *bits* são uma exceção à regra: [eles não são mais suportados][opensuse-leap-32bit], mas servidores com processadores de 64 *bits* já são bastante comuns.
 
 Eu poderia falar dos [requisitos mínimos][system-requirements] para utilização do openSUSE. Porém, se ele já roda com tranquilidade em *desktops*, o que dirá em servidores, cujos números (frequência ou *clock* do processador, quantidade de núcleos ou *cores*, memória RAM e disco rigido, etc.) são geralmente bem maiores. Linux, em geral, é um sistema leve.
 
@@ -59,7 +59,7 @@ O *download* da mídia para instalação pela rede vai começar:
 
 {% include image.html src="/files/2017/01/opensuse-server-05-pt.jpg" %}
 
-Não deve demorar muito, visto que essa mídia contém apenas um sistema mínimo, que serve somente para ligar o servidor, baixar o instalador e baixar os pacotes.
+Não deve demorar muito, visto que essa mídia contém apenas um sistema mínimo, que serve somente para ligar o servidor, baixar e iniciar o instalador.
 
 Quando o *download* terminar, vamos verificar a integridade da mídia: ainda na [página de *downloads* do openSUSE Leap 42.2][opensuse-leap-422-download], onde há **Rede**, clique em **Soma de verificação SHA256**. O arquivo contendo a soma de verificação deve ser baixado na mesma pasta onde foi baixada a mídia.
 
@@ -83,7 +83,7 @@ Em instantes, você verá o menu do gerenciador de inicialização (*bootloader*
 
 {% include image.html src="/files/2017/01/opensuse-server-06.jpg" %}
 
-Tecle **F2** para mudar o Idioma (*Language*). No menu que aparece, use as **teclas de setas para cima e para baixo** para selecionar **Português (Brasil)** e tecle **Enter**:
+Tecle **F2** para mudar o Idioma (*Language*). No menu que aparece, use as teclas de **setas** para selecionar **Português (Brasil)** e tecle **Enter**:
 
 {% include image.html src="/files/2017/01/opensuse-server-07-pt.jpg" %}
 
@@ -113,11 +113,11 @@ No modo texto, você não dispõe do *mouse* para interagir com o instalador, ap
 
 Observe que cada campo possui em seu nome uma letra destacada (**I**dioma, **L**ayout de teclado, **T**este de teclado, Pró**x**imo, etc.). Você também pode selecionar um campo pressionando a tecla **Alt** junto da letra destacada em seu nome. Por exemplo, você pode pressionar **Alt + I** para acessar o campo **I**dioma.
 
-Para ver as opções de um menu *dropdown* (como **Idioma** e **Layout de Teclado**), passe para esse menu e use a tecla **seta para baixo**. Utilize as **teclas de setas** para selecionar uma opção e a tecla **Enter** para confirmar.
+Para ver as opções de um menu *dropdown* (como **Idioma** e **Layout de Teclado**), passe para esse menu e use a tecla **seta para baixo**. Utilize as teclas de **setas para cima e para baixo** para selecionar uma opção e a tecla **Enter** para confirmar.
 
 Há um campo de texto em que você pode digitar qualquer coisa para testar a configuração do teclado. Eu recomendo digitar uma palavra como **acentuação**, com caracteres especiais (note a presença do til e da cê-cedilha). Para utilizar esse campo, é só acessá-lo e começar a digitar.
 
-Você não precisa se preocupar com a licença de uso: uma vez que o openSUSE é um [*software* livre][free-software], ela não limita a forma como você pode utilizá-lo. Você pode lê-la para conhecer seus direitos ao usar o openSUSE. Para isso, tecle **Tab** até selecionar **Contrato de Licença** e use as **teclas de setas** para cima ou para baixo ou as teclas **Page Down** ou **Page Up** para mover o texto para cima ou para baixo, respectivamente.
+Você não precisa se preocupar com a licença de uso: uma vez que o openSUSE é um [*software* livre][free-software], ela não limita a forma como você pode utilizá-lo. Você pode lê-la para conhecer seus direitos ao usar o openSUSE. Para isso, tecle **Tab** até selecionar **Contrato de Licença** e use as teclas de **setas para cima e para baixo** ou as teclas **Page Down** ou **Page Up** para mover o texto para cima ou para baixo, respectivamente.
 
 Quando terminar, selecione **Próximo** e tecle **Enter**.
 
@@ -140,7 +140,7 @@ Por padrão, o openSUSE deve sugerir a divisão do disco rígido em três parti�
 
 - `/` (raiz ou *root*), para os arquivos do sistema;
 - `/home`, para os arquivos pessoais do(s) usuário(s); e
-- [*swap*][swap], que é um espaço do disco rígido utilizado em complemento à memória RAM, semelhante ao [arquivo de paginação][page-file] do Windows.
+- [*swap*][swap], que é um espaço do disco rígido utilizado em complemento à memória RAM, semelhante ao [arquivo de paginação][page-file] do [Windows][windows].
 
 Não falarei muito sobre particionamento aqui, pois isso seria assunto para um *post* inteiro (e extenso). Se precisar de mais informações, sugiro que consulte a [documentação oficial do openSUSE][opensuse-doc-partitioning].
 
@@ -252,7 +252,7 @@ Deixe habilitados apenas os repositórios:
 
 - **Repositório principal de atualização**: contém atualizações (*updates*) oficiais para os pacotes do repositório principal.
 
-Para desabilitar um repositório nessa lista, selecione-o usando as **teclas de setas** e aperte a **barra de espaço**.
+Para desabilitar um repositório nessa lista, selecione-o usando as teclas de **setas para cima e para baixo** e aperte a **barra de espaço**.
 
 Quando terminar, selecione **Próximo**.
 
@@ -297,7 +297,7 @@ Quando terminar, selecione **Próximo**.
 
 Essa tela exibe um resumo das configurações que serão utilizadas na instalação. Verifique se tudo está conforme o desejado. Utilize as **teclas de setas para cima e para baixo** para ler o resumo. Uma vez passada essa tela, não haverá volta.
 
-Se precisar alterar alguma configuração, selecione o *link* da configuração desejada usando as **teclas de setas** e tecle **Enter** para ir para a tela correspondente.
+Se precisar alterar alguma configuração, selecione o *link* da configuração desejada usando as teclas de **setas para cima e para baixo** e tecle **Enter** para ir para a tela correspondente.
 
 Observe que por padrão o *firewall* e o acesso remoto via SSH são desabilitados:
 
@@ -337,7 +337,7 @@ Enquanto o servidor reinicia, aproveite para remover a mídia de instalação do
 
 A instalação foi concluída. O sistema operacional já se encontra no disco rígido. Mas ainda faltam algumas configurações básicas antes de começar a usar o servidor.
 
-Como percebi que o *post* ficaria muito grande, decidi dividi-lo em duas partes. Deixei alguns detalhes para o próximo *post*.
+Como percebi que o *post* já está muito grande, decidi dividi-lo em duas partes. Deixei alguns detalhes para o próximo *post*.
 
 Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publicada!
 
@@ -358,6 +358,7 @@ Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publica
 [third-party-repos]:            https://en.opensuse.org/Additional_package_repositories
 [swap]:                         https://www.vivaolinux.com.br/artigo/Funcionamento-da-memoria-virtual
 [page-file]:                    https://support.microsoft.com/kb/2160852
+[windows]:                      https://www.microsoft.com/pt-br/windows/
 [opensuse-doc-partitioning]:    https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.inst_mode.partitioning
 [swap-opensuse-1]:              https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.advdisk.html
 [swap-opensuse-2]:              https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.pmanage.html
