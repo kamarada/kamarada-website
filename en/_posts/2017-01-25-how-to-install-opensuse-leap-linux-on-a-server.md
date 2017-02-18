@@ -302,7 +302,7 @@ On the last screen before the real installation takes place, you can review the 
 
 If you need to change any setting, select the respective headline using the **up and down arrow** keys and hit **Enter** to go to the corresponding screen.
 
-Please observe that by default both the firewall and remote access via the secure shell (SSH) are disabled:
+Please observe that by default both the firewall and remote access via the [secure shell (SSH)][ssh] are disabled:
 
 {% include image.html src="/files/2017/01/opensuse-server-34-en.jpg" %}
 
@@ -373,4 +373,5 @@ Follow the Linux Kamarada Project to read the second part as soon as it's publis
 [firefox]:                      https://www.mozilla.org/en-US/firefox/
 [kmines]:                       https://www.kde.org/applications/games/kmines/
 [passwords]:                    http://lifehacker.com/four-methods-to-create-a-secure-password-youll-actually-1601854240
+[ssh]:                          https://en.wikipedia.org/wiki/Secure_Shell
 

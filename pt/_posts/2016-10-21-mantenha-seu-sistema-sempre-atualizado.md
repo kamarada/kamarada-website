@@ -89,7 +89,7 @@ Para se certificar de que instalou realmente todas as atualizações disponívei
 
 Ou seja, não é possível atualizar ainda mais o sistema, porque não há mais atualizações disponíveis: todas as que havia já foram instaladas.
 
-Se lembre de verificar de tempos em tempos se há atualizações usando os comandos `zypper ref` e `zypper dup`, já que utilizando a linha de comando o sistema não avisa a você quando há atualizações.
+Se lembre de verificar de tempos em tempos se há atualizações usando os comandos `zypper ref` e `zypper up`, já que utilizando a linha de comando o sistema não avisa a você quando há atualizações.
 
 [opensuse]:                 https://www.opensuse.org/
 [zypper]:                   https://pt.opensuse.org/Portal:Zypper

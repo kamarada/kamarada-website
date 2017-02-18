@@ -5,6 +5,7 @@ layout: post
 published: true
 nickname: 'how-to-server'
 title: 'Levante um servidor com o Linux openSUSE Leap'
+excerpt: 'Quando eu digo que o openSUSE Leap é uma distribuição Linux madura e estável, não me refiro ao conceito de estabilidade de algumas distribuições: softwares antigos congelados exaustivamente testados e corrigidos. Cada nova versão do openSUSE Leap traz softwares bem recentes (lançados dentro do mesmo mês ou ano) e que funcionam bem em conjunto. Isso é fruto da tecnologia e do esforço empregados no processo de desenvolvimento da distribuição, que funciona bem em computadores domésticos e estações de trabalho, e não poderia ser diferente em servidores.'
 ---
 
 Quando eu digo que o [openSUSE Leap][opensuse-leap-422] é uma distribuição Linux madura e estável, não me refiro ao conceito de estabilidade de algumas distribuições: *softwares* antigos congelados exaustivamente testados e corrigidos. Cada nova versão do openSUSE Leap traz *softwares* bem recentes (lançados dentro do mesmo mês ou ano) e que funcionam bem em conjunto. Isso é fruto da tecnologia e do esforço empregados no processo de desenvolvimento da distribuição, que funciona bem em computadores domésticos e estações de trabalho, e não poderia ser diferente em servidores.
@@ -83,9 +84,9 @@ Em instantes, você verá o menu do gerenciador de inicialização (*bootloader*
 
 {% include image.html src="/files/2017/01/opensuse-server-06.jpg" %}
 
-Tecle **F2** para mudar o Idioma (*Language*). No menu que aparece, use as teclas de **setas** para selecionar **Português (Brasil)** e tecle **Enter**:
+Tecle **F2** para mudar o Idioma (*Language*). No menu que aparece, use as teclas de **setas para cima e para baixo** para selecionar **Português (Brasil)** e tecle **Enter**:
 
-{% include image.html src="/files/2017/01/opensuse-server-07-pt.jpg" %}
+{% include image.html src="/files/2017/01/opensuse-server-07.jpg" %}
 
 Perceba que agora o menu está em português.
 
@@ -299,7 +300,7 @@ Essa tela exibe um resumo das configurações que serão utilizadas na instalaç
 
 Se precisar alterar alguma configuração, selecione o *link* da configuração desejada usando as teclas de **setas para cima e para baixo** e tecle **Enter** para ir para a tela correspondente.
 
-Observe que por padrão o *firewall* e o acesso remoto via SSH são desabilitados:
+Observe que por padrão o *firewall* e o acesso remoto via [SSH][ssh] são desabilitados:
 
 {% include image.html src="/files/2017/01/opensuse-server-34-pt.jpg" %}
 
@@ -341,6 +342,9 @@ Como percebi que o *post* já está muito grande, decidi dividi-lo em duas parte
 
 Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publicada!
 
+{% capture atualizacao %}[A segunda parte desse tutorial já está aqui! (clique para acessá-la)]({%post_url 2017-02-18-levante-um-servidor-com-o-linux-opensuse-leap-parte-2 %}){% endcapture %}
+{% include update.html date="18/02/2017" message=atualizacao %}
+
 [opensuse-leap-422]:            {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [how-to-install]:               {%post_url 2016-11-15-como-instalar-o-linux-opensuse-leap %}
 [opensuse-leap-32bit]:          https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
@@ -370,4 +374,5 @@ Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publica
 [firefox]:                      https://www.mozilla.org/pt-BR/firefox/
 [kmines]:                       https://www.kde.org/applications/games/kmines/
 [passwords]:                    http://cartilha.cert.br/senhas/
+[ssh]:                          https://pt.wikipedia.org/wiki/Secure_Shell
 

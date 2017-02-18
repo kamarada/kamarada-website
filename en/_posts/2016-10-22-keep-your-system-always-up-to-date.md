@@ -89,7 +89,7 @@ Make sure you have installed really all the updates available up to now by repea
 
 That is, it is not possible to update the system further, because there are no more updates available: your system is really up to date.
 
-Remember to check for software updates from time to time using the `zypper ref` and `zypper dup` commands, as the command line interface does not notify you when there are updates available.
+Remember to check for software updates from time to time using the `zypper ref` and `zypper up` commands, as the command line interface does not notify you when there are updates available.
 
 [opensuse]:                 https://www.opensuse.org/
 [zypper]:                   https://en.opensuse.org/Portal:Zypper

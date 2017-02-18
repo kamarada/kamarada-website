@@ -60,7 +60,7 @@ Você vai para a tela **Mudar Data e Horário**:
 
 Selecione a opção **Sincronizar com o Servidor NTP**.
 
-No campo **Endereço do Servidor NTP**, informe o endereço **pool.ntp.br**.
+No campo **Endereço do Servidor NTP**, informe o endereço `pool.ntp.br`.
 
 Clique em **Sincronizar agora** para já acertar a data e hora do seu computador.
 
