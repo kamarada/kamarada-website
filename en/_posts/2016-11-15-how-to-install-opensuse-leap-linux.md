@@ -58,7 +58,7 @@ If you need to change the time zone, click on the map closest to your current lo
 
 If your computer will have only Linux installed, it's recommended to keep the **Hardware Clock Set to UTC** option checked. If you are installing Linux alongside Windows or other operating system, make sure you unckeck that box.
 
-If you need further information about that screen, please refer to the [openSUSE Leap official documentation][how-to-ntp-client].
+If you need further information about that screen, please refer to the [Sync your system time with NTP][how-to-ntp-client] post.
 
 When you finish, click **Next**.
 
@@ -148,7 +148,7 @@ Have a lot of fun!
 [kde]:                          https://www.kde.org/
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.html
-[how-to-ntp-client]:            https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.timezone
+[how-to-ntp-client]:            {%post_url 2017-02-25-sync-your-system-time-with-ntp %}
 [swap]:                         https://www.linux.com/news/all-about-linux-swap-space
 [page-file]:                    https://support.microsoft.com/kb/2160852
 [uefi]:                         https://en.opensuse.org/openSUSE:UEFI

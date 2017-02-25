@@ -7,15 +7,15 @@ image: /files/2016/10/tux-time.png
 nickname: 'how-to-ntp-client'
 ---
 
-Nesse domingo 16 de outubro de 2016 começa o horário de verão. Ele vai até o dia 19 de fevereiro do ano que vem. Já sabe quando e como vai mudar a hora do seu computador? Ano que vem você vai ter que desfazer essa mudança. 
+Nesse domingo 16 de outubro de 2016 começa o [horário de verão][dst]. Ele vai até o dia 19 de fevereiro do ano que vem. Já sabe quando e como vai mudar a hora do seu computador? Ano que vem você vai ter que desfazer essa mudança. 
 
 Que tal fazermos melhor? Vamos configurar o computador para sincronizar a data e a hora com a Internet, para nunca mais termos que nos preocupar com essas mudanças. Para isso, vamos utilizar o protocolo NTP.
 
 {% include image.html src="/files/2016/10/tux-time.png" caption="Imagem obtida no [*site* da revista PCLinuxOS](http://pclosmag.com/html/Issues/201503/page06.html)" style="max-height: 240px;" %}
 
-O [**NTP**][ntp], do inglês *Network Time Protocol* (Protocolo de Tempo para Redes) permite que equipamentos conectados à rede, como estações de trabalho, servidores, roteadores (e também o computador de casa, não nos esqueçamos de que ele está conectado à maior rede de todas, que é a Internet), sincronizem seus relógios a partir de referências de tempo confiáveis.
+O [**NTP**][ntp] (do inglês *Network Time Protocol*, Protocolo de Tempo para Redes) permite que equipamentos conectados à rede, como estações de trabalho, servidores, roteadores (e também o computador de casa, não nos esqueçamos de que ele está conectado à maior rede de todas, que é a Internet), sincronizem seus relógios a partir de referências de tempo confiáveis.
 
-No Brasil, podemos utilizar como referência os servidores de hora do projeto [NTP.br][ntpbr], uma parceria entre o [Observatório Nacional (ON)][on], responsável pelo horário oficial de Brasília, e o [Núcleo de Informação e Coordenação do Ponto BR (NIC.br)][nicbr], um dos órgãos responsáveis pela gestão da Internet no Brasil.
+No Brasil, podemos utilizar como referência os servidores de hora do projeto [NTP.br][ntpbr], uma parceria entre o [Observatório Nacional (ON)][on], responsável pelo [horário oficial de Brasília][brasilia-standard], e o [Núcleo de Informação e Coordenação do Ponto BR (NIC.br)][nicbr], um dos órgãos responsáveis pela gestão da Internet no Brasil.
 
 Como você vai configurar seu computador para sincronizar seu relógio com o do NTP.br depende dos sistemas operacionais instalados no computador.
 
@@ -29,7 +29,7 @@ Mostrarei todos os casos a seguir.
 
 Aqui mostrarei a configuração para o Linux openSUSE. Para as demais distribuições Linux, consulte a documentação da distribuição.
 
-No openSUSE, acesse o Centro de Controle do YaST. Para isso, clique no **Menu de aplicativos**, aponte para **Configurações** e em seguida clique em **YaST**:
+No openSUSE, acesse o [Centro de Controle do YaST][yast]. Para isso, clique no **Menu de aplicativos**, aponte para **Configurações** e em seguida clique em **YaST**:
 
 {% include image.html src="/files/2016/10/linux-ntp-01.jpg" %}
 
@@ -68,7 +68,7 @@ Marque as opções **Executar NTP como daemon** e **Gravar Configuração do NTP
 
 Clique em **Aceitar** para voltar à tela anterior e depois em **OK** para sair da configuração de data e hora. Pode fechar o YaST também.
 
-### Sincronizando a hora pelo Windows
+## Sincronizando a hora pelo Windows
 
 Se você prefere sincronizar a hora pelo Windows, vamos primeiro desativar a sincronização de hora no Linux.
 
@@ -111,7 +111,7 @@ Certifique-se de que a opção **Sincronizar com um servidor de horário na Inte
 
 {% include image.html src="/files/2016/10/win-ntp-05.jpg" %}
 
-No campo **Servidor**, informe o endereço **pool.ntp.br**.
+No campo **Servidor**, informe o endereço `pool.ntp.br`.
 
 Clique em **Atualizar agora** para já acertar a data e hora do seu computador.
 
@@ -121,13 +121,13 @@ Clique em **OK** para sair da caixa de diálogo **Configurações de Horário na
 
 Vamos a algumas explicações, para quem tiver curiosidade de entender o que se passa.
 
-Todos os fusos horários do mundo são definidos em relação ao [**UTC**][utc] (*Universal Time Coordinated*, Tempo Universal Coordenado), que é o fuso horário da cidade de Londres quando não está no horário de verão. Esse fuso também é conhecido por fuso horário de Greenwich ou [**GMT**][gmt] (*Greenwich Mean Time*, hora de Greenwich).
+Todos os [fusos horários][time-zones] do mundo são definidos em relação ao [UTC][utc] (*Universal Time Coordinated*, Tempo Universal Coordenado). Informalmente, em ocasiões que dispensam a precisão de frações de segundo, podemos considerar o UTC equivalente ao [GMT][gmt] (*Greenwich Mean Time*, hora de Greenwich), que é o fuso horário da cidade de Londres quando não está no [horário de verão][dst].
 
-O [fuso horário de Brasília][brasilia] marca 3 horas a menos que o fuso horário de Greenwich (por isso abrevia-se UTC-03:00) quando não está no horário de verão, ou 2 horas a menos (UTC-02:00) no horário de verão.
+O [fuso horário de Brasília][brasilia-standard] marca 3 horas a menos que o fuso horário de Greenwich (por isso abrevia-se UTC-03:00) quando não está no horário de verão, ou 2 horas a menos (UTC-02:00) no horário de verão.
 
 Suponhamos, para exemplificar, que estamos em Brasília, que agora sejam dez horas da noite (22:00) no fuso horário de Greenwich e que não estamos no horário de verão. Então, em Brasília, nossa hora local, são sete horas da noite (19:00).
 
-O computador possui dois relógios: um do *hardware*, semelhante ao relógio de pulso (se você abrir seu computador perceberá que há uma pilha de relógio lá); e um do *software*, que é o que você vê enquanto usa o sistema operacional, geralmente fica em um canto da tela. Você pode conferir a hora do relógio do *hardware* reiniciando o computador e acessando a configuração da placa-mãe (também conhecida como *setup*, BIOS ou UEFI; consulte o manual da sua placa-mãe ou do seu computador).
+O computador possui dois relógios: um do *hardware*, semelhante ao relógio de pulso (se você abrir seu computador perceberá que há uma [pilha de relógio][clock-battery] lá); e um do *software*, que é o que você vê enquanto usa o sistema operacional, geralmente fica em um canto da tela. Você pode conferir a hora do relógio do *hardware* reiniciando o computador e acessando a configuração da placa-mãe (também conhecida como [*setup*][setup], [BIOS][bios] ou [UEFI][uefi]; consulte o manual da sua placa-mãe ou do seu computador).
 
 <div class="alert alert-warning" role="alert">
 {% markdown %}
@@ -158,7 +158,7 @@ Vamos mostrar agora como fazer para que o Windows funcione de maneira diferente,
 <div class="alert alert-warning" role="alert">
 {% markdown %}
 
-Esse procedimento só funciona para o Windows Vista SP2, o Windows Server 2008, o Windows 7 e versões mais recentes do Windows. Em versões anteriores, trabalhar com o relógio em UTC não era oficialmente documentado nem suportado pela Microsoft. Mais informações podem ser obtidas [aqui](https://support.microsoft.com/kb/2687252) e [aqui](http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html). Se você utiliza versões mais recentes do Windows, pode seguramente desconsiderar esse aviso. Apenas certifique-se de que todas as atualizações disponíveis para a sua versão do Windows estão instaladas.
+Esse procedimento só funciona para o Windows Vista SP2, o Windows Server 2008, o Windows 7 e versões mais recentes do Windows. Em versões anteriores, trabalhar com o relógio em UTC não era oficialmente documentado nem suportado pela [Microsoft](https://www.microsoft.com/pt-br). Mais informações podem ser obtidas [aqui](https://support.microsoft.com/kb/2687252) e [aqui](http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html). Se você utiliza versões mais recentes do Windows, pode seguramente desconsiderar esse aviso. Apenas certifique-se de que todas as atualizações disponíveis para a sua versão do Windows estão instaladas.
 
 {% endmarkdown %}
 </div>
@@ -171,7 +171,7 @@ Na estrutura de árvore da esquerda, navegue até a chave de registro **HKEY_LOC
 
 {% include image.html src="/files/2016/10/utc-win-02.jpg" %}
 
-Digite **RealTimeIsUniversal** e tecle **Enter**. Depois, dê dois cliques no valor recém-criado, atribua-lhe o valor **1** e clique em **OK**:
+Digite `RealTimeIsUniversal` e tecle **Enter**. Depois, dê dois cliques no valor recém-criado, atribua-lhe o valor `1` e clique em **OK**:
 
 {% include image.html src="/files/2016/10/utc-win-03.jpg" %}
 
@@ -191,25 +191,34 @@ Até a próxima!
 - [Economia - Horário de verão começa em 16 de outubro e vai até 19 de fevereiro - G1][g1]
 - [Decreto nº 8.112][decreto]
 - [SDB:Configuring the clock - openSUSE][opensuse-wiki]
-- [Why does Windows keep your BIOS clock on local time? - The Old New Thing][win-localtime]
-- [Time - ArchWiki][archwiki]
-- [IBM PC Real Time Clock should run in UT][win-utc]
+- [Time Synchronization with NTP | Reference | openSUSE Leap 42.2][opensuse-doc]
 - [UbuntuTime - Community Help Wiki][ubuntu-wiki]
+- [Time - ArchWiki][arch-wiki]
+- [Why does Windows keep your BIOS clock on local time? - The Old New Thing][win-localtime]
+- [IBM PC Real Time Clock should run in UT][win-utc]
 
-[ntp]:              http://ntp.br/ntp.php
-[ntpbr]:            http://ntp.br/
-[on]:               http://pcdsh01.on.br/
-[nicbr]:            http://nic.br/
-[opensuse]:         https://www.opensuse.org/
-[ubuntu]:           https://www.ubuntu.com/
-[windows]:          https://www.microsoft.com/pt-br/windows/
-[utc]:              https://pt.wikipedia.org/wiki/Tempo_Universal_Coordenado
-[gmt]:              https://pt.wikipedia.org/wiki/Greenwich_Mean_Time
-[brasilia]:         https://pt.wikipedia.org/wiki/Fusos_hor%C3%A1rios_no_Brasil
-[g1]:               http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html
-[decreto]:          http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm
-[opensuse-wiki]:    https://en.opensuse.org/SDB:Configuring_the_clock
-[win-localtime]:    https://blogs.msdn.microsoft.com/oldnewthing/20040902-00/?p=37983/
-[archwiki]:         https://wiki.archlinux.org/index.php/Time
-[win-utc]:          http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html
-[ubuntu-wiki]:      https://help.ubuntu.com/community/UbuntuTime
+[dst]:                  https://pt.wikipedia.org/wiki/Hor%C3%A1rio_de_ver%C3%A3o
+[ntp]:                  http://ntp.br/ntp.php
+[ntpbr]:                http://ntp.br/
+[on]:                   http://pcdsh01.on.br/
+[brasilia-standard]:    https://pt.wikipedia.org/wiki/Fusos_hor%C3%A1rios_no_Brasil
+[nicbr]:                http://nic.br/
+[opensuse]:             https://www.opensuse.org/
+[ubuntu]:               https://www.ubuntu.com/
+[windows]:              https://www.microsoft.com/pt-br/windows/
+[yast]:                 https://pt.opensuse.org/Portal:YaST
+[time-zones]:           https://pt.wikipedia.org/wiki/Fuso_hor%C3%A1rio
+[utc]:                  https://pt.wikipedia.org/wiki/Tempo_Universal_Coordenado
+[gmt]:                  https://pt.wikipedia.org/wiki/Greenwich_Mean_Time
+[clock-battery]:        https://pt.wikipedia.org/wiki/RAM-CMOS#Bateria_do_CMOS
+[setup]:                http://www.techtudo.com.br/noticias/noticia/2015/02/o-que-e-setup.html
+[bios]:                 https://pt.wikipedia.org/wiki/BIOS
+[uefi]:                 https://pt.wikipedia.org/wiki/EFI
+[g1]:                   http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html
+[decreto]:              http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm
+[opensuse-wiki]:        https://en.opensuse.org/SDB:Configuring_the_clock
+[opensuse-doc]:         https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.netz.xntp.html
+[ubuntu-wiki]:          https://help.ubuntu.com/community/UbuntuTime
+[arch-wiki]:            https://wiki.archlinux.org/index.php/Time
+[win-localtime]:        https://blogs.msdn.microsoft.com/oldnewthing/20040902-00/?p=37983/
+[win-utc]:              http://www.cl.cam.ac.uk/~mgk25/mswish/ut-rtc.html

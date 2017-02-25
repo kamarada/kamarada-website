@@ -239,7 +239,7 @@ Check that your time zone, date and time settings are correct.
 
 If you need to change the time zone, first select a **Region** (e.g. **Brazil**), then select a **Time Zone** (e.g. **São Paulo**).
 
-As your server is going to run Linux only, keep the **Hardware Clock Set to UTC** option checked (it is already checked by default). If you need further information about that option, please refer to the [openSUSE Leap official documentation][how-to-ntp-client].
+As your server is going to run Linux only, keep the **Hardware Clock Set to UTC** option checked (it is already checked by default). If you need further information about that option, please refer to the [Sync your system time with NTP][how-to-ntp-client] post.
 
 When you finish, choose **Next** (**Alt + N**).
 
@@ -367,7 +367,7 @@ Follow the Linux Kamarada Project to read the second part as soon as it's publis
 [swap-opensuse-2]:              https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.pmanage.html
 [swap-ubuntu]:                  https://help.ubuntu.com/community/SwapFaq
 [swap-redhat]:                  https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Storage_Administration_Guide/ch-swapspace.html
-[how-to-ntp-client]:            https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.timezone
+[how-to-ntp-client]:            {%post_url 2017-02-25-sync-your-system-time-with-ntp %}
 [oss]:                          https://opensource.org/osd-annotated
 [libreoffice]:                  https://www.libreoffice.org/
 [firefox]:                      https://www.mozilla.org/en-US/firefox/
