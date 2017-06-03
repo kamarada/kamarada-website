@@ -6,7 +6,7 @@ published: true
 title: 'Como preparar um LiveUSB'
 image: /files/2016/02/liveusb.jpg
 nickname: 'how-to-liveusb'
---- 
+---
 
 {% include image.html src="/files/2016/02/liveusb.jpg" %}
 
@@ -39,7 +39,7 @@ Por precaução, antes de começar, recomendo remover todos os dispositivos de a
     <div class="panel-heading" role="tab" id="help-windows">
         <h4 class="panel-title">
             <a role="button" data-toggle="collapse" href="#help-windows-collapse" aria-expanded="true" aria-controls="help-windows-collapse">
-                <i class="fa fa-windows"></i> Windows
+                <i class="fa fa-windows"></i> Microsoft Windows
             </a>
         </h4>
     </div>
