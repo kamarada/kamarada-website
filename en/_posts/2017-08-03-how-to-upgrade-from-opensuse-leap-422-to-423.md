@@ -1,11 +1,11 @@
 ---
-date: '2017-08-03 23:00:00 GMT-3'
+date: '2017-08-03 18:00:00 GMT-3'
 layout: post
 published: true
 title: 'How to upgrade from openSUSE Leap 42.2 to 42.3'
 image: /files/2017/08/how-to-upgrade-to-42.3-00-en.png
 nickname: 'how-to-upgrade-to-42.3'
-excerpt: 'A versão atual da distribuição openSUSE Leap, a 42.3, foi lançada dia 26 de julho. Atualizar da versão 42.2 para a versão 42.3 é como atualizar da versão 42.1 para a versão 42.2, o passo a passo é bem parecido. Se você já utiliza o openSUSE há algum tempo, sabe que atualizar de uma versão para outra é fácil e tranquilo. Se você conheceu o openSUSE na versão 42.2, vai perceber isso agora. Neste post você verá como atualizar seu openSUSE Leap da versão 42.2 para a 42.3.'
+excerpt: "The latest openSUSE Leap release, 42.3, has been launched on July 26. You can upgrade from the 42.2 to the 42.3 release in the same way as you upgraded from the 42.1 to the 42.2 release, the step by step is very similar. If you havent't upgraded openSUSE yet, you are going to realize it is an easy and safe procedure. Continue reading to know how to upgrade your openSUSE Leap installation from 42.2 to 42.3."
 ---
 
 {% include image.html src="/files/2017/08/how-to-upgrade-to-42.3-00-en.png" caption="openSUSE Leap 42.3 is now available" %}
