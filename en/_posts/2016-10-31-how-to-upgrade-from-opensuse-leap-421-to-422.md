@@ -174,7 +174,7 @@ Consider open this page on another computer (or on a mobile device), print it or
 
 If you are upgrading a laptop system, make sure its battery is fully charged and its AC adapter is plugged in. Do not remove the battery or unplug the AC adapter during the upgrade. We want to prevent any possibility of problem.
 
-Logout by by opening the **Application Menu**, pointing to **Power / Session** and clicking on **Logout**:
+Logout by opening the **Application Menu**, pointing to **Power / Session** and clicking on **Logout**:
 
 {% include image.html src="/files/2016/10/logout-kde-en.jpg" %}
 

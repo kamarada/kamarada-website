@@ -16,7 +16,7 @@ Neste *post* você verá como atualizar seu openSUSE Leap da versão 42.2 para a
 
 ## Algumas observações
 
-O passo a passo para atualização que apresento aqui é o que utilizei no meu computador e que aprendi lendo a [*wiki* do openSUSE][system-upgrade]. Ele é praticamente o mesmo desde que comecei a utilizar o openSUSE. É um procedimento seguro, que deve funcionar para a maioria dos casos, mas que requer que alguns cuidados sejam observados.
+O passo a passo para atualização que apresento aqui é o que utilizei no meu computador e que aprendi lendo a [*wiki* do openSUSE][system-upgrade]. Ele é praticamente o mesmo desde que comecei a utilizar o openSUSE. É um procedimento seguro, que deve funcionar para a maioria dos casos, mas que requer alguns cuidados.
 
 **Você deve estar utilizando a versão imediatamente anterior do openSUSE.** Isso quer dizer que se você pretende atualizar para a versão 42.3, deve estar usando agora a versão 42.2. Saltos de versões não são suportados. Podem funcionar, mas não há garantia. Portanto, se você utiliza a versão 42.1, por exemplo, é melhor que primeiro atualize para a versão 42.2, para então atualizar para a versão 42.3. Se esse é o seu caso, sua leitura deve começar por [esse outro *post*][how-to-upgrade-to-42.2]. Quando terminar, retorne a este.
 
@@ -52,7 +52,7 @@ Se você utiliza Windows, talvez ache o Terminal parecido com o **Prompt de Coma
 
 ### Pela interface gráfica
 
-Para obter atualizações pela interface gráfica, você pode usar o aplicativo **Atualizador de pacotes**. Para iniciá-lo, acesse o **panorama de Atividades**, comece a digitar `atualizador` e clique no ícone do Atualizador de pacotes:
+Para obter atualizações pela interface gráfica, você pode usar o aplicativo **Atualizador de pacotes**. Para iniciá-lo, acesse o **panorama de Atividades**, comece a digitar `atualizador` e clique no ícone do **Atualizador de pacotes**:
 
 {% include image.html src="/files/2017/08/how-to-upgrade-to-42.3-03-pt.jpg" %}
 
@@ -82,7 +82,7 @@ Para alternar do seu usuário para o *root*, execute o comando:
 $ su
 ```
 
-Se você não está acostumado com essa notação, isso significa digitar `su` e teclar **Enter**. O cifrão (`$`) não deve ser digitado, ele apenas indica que o comando pode ser executado por qualquer usuário do computador. A seguir, você verá exemplos de comandos que só podem ser executados com permissões elevadas (do usuário *root*).
+Se você não está acostumado com essa notação, isso significa digitar `su` e teclar **Enter**. O cifrão (`$`) não deve ser digitado, ele apenas indica que o comando pode ser executado por qualquer usuário do computador. A seguir, você verá exemplos de comandos que só podem ser executados com permissões elevadas (do usuário *root*). Estes são precedidos por cerquilha (`#`).
 
 O comando **su** pedirá a senha do usuário *root*, que você deve fornecer para continuar. Digite a senha e tecle **Enter**.
 
