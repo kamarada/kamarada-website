@@ -15,6 +15,8 @@ Além disso, a linguagem Java inovou ao permitir que pequenos programas sejam ex
 
 Vejamos como instalar a versão mais recente da máquina virtual Java da [Oracle][oracle] no Linux [openSUSE][opensuse]. Para referência futura, no momento da escrita deste *post*, ela está na versão **8 Update 121**, lançada em [17 de janeiro de 2017][java-release-notes].
 
+{% include update.html date="09 de agosto de 2017" message="Hoje, a versão mais recente da máquina virtual Java da Oracle é a **8 Update 144**, lançada em [26 de julho de 2017](http://www.oracle.com/technetwork/java/javase/8u144-relnotes-3838694.html). Esse passo deve funcionar com pequenas alterações tanto para essa nova versão quanto para versões futuras. Se você seguiu as instruções dessa página para instalar o Java da Oracle e voltou aqui para saber como atualizar, consulte a seção que foi incluída no final da página." %}
+
 ## Java "da Oracle"? Existe outra?
 
 A linguagem e a máquina virtual Java foram projetadas originalmente pela empresa [Sun Microsystems][sun]. Até 2006, elas eram gratuitas, mas proprietárias (ou seja, o código-fonte delas era de propriedade da Sun, não estando disponível para quem tivesse interesse em obtê-lo). Nesse ano, a Sun liberou o código-fonte de grande parte da máquina virtual Java, dando origem ao projeto [OpenJDK][openjdk], que é [*software* livre][free-software].
@@ -159,6 +161,27 @@ Após um tempo carregando o *applet* e verificando a instalação do Java no com
 {% include image.html src="/files/2017/02/oracle-jre-17.jpg" %}
 
 Pronto! Instalamos, configuramos e testamos o Java da Oracle, agora é só utilizá-lo.
+
+## Como atualizar o Java da Oracle
+
+{% include update.html date="09 de agosto de 2017" message="Essa seção foi incluída para explicar como atualizar a máquina virtual Java da Oracle para a versão mais recente. As instruções a seguir também devem funcionar para versões futuras com pequenas alterações." %}
+
+Se você seguiu o passo a passo dessa página para instalar e agora deseja atualizar a máquina virtual do Java para a versão mais atual, execute o procedimento a seguir. Como exemplo, vamos atualizar da versão **8 Update 121** para a versão **8 Update 144**.
+
+Acesse o *site* do Java em [java.com][java.com] e baixe e instale o pacote RPM para o openSUSE, assim como você fez na instalação da versão anterior. Aproveite a instalação da nova versão para remover a antiga: na tela do YaST, alterne para a aba **Pesquisar**, procure por `jre` e marque o pacote **jre1.8.0_121** para remoção. Se você voltar para a aba **Resumo da instalação**, ela deve estar assim:
+
+{% include image.html src="/files/2017/08/update-oracle-jre-pt.jpg" %}
+
+Clique em **Aceitar** e aguarde o YaST terminar. Depois, clique em **Concluir**.
+
+Pronto! Agora é só utilizar a nova versão do Java. Você pode testá-la pela linha de comando ou pelo navegador, conforme expliquei anteriormente:
+
+```
+$ java -version
+java version "1.8.0_144"
+Java(TM) SE Runtime Environment (build 1.8.0_144-b01)
+Java HotSpot(TM) 64-Bit Server VM (build 25.144-b01, mixed mode)
+```
 
 [java]:                         https://java.com/pt_BR/about/whatis_java.jsp
 [java-programming-language]:    https://pt.wikipedia.org/wiki/Java_(linguagem_de_programa%C3%A7%C3%A3o)
