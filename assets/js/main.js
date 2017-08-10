@@ -22,7 +22,7 @@ $(document).ready(function(){
 
     /* Search form */
 
-    $search_input = $('#search-input');
+    /*$search_input = $('#search-input');
 
     $('#search-button').click(function(event) {
         event.preventDefault();
@@ -50,5 +50,25 @@ $(document).ready(function(){
         if (!$search_input.val() && !do_search) {
             hide_search_input();
         }
-    });
+    });*/
+
+    $('a[href="#toggle-search"], .btn[type="reset"]').on('click', function(event) {
+		event.preventDefault();
+		$('.navbar-bootsnipp .bootsnipp-search .input-group > input').val('');
+		$('.navbar-bootsnipp .bootsnipp-search').toggleClass('open');
+		$('a[href="#toggle-search"]').closest('li').toggleClass('active');
+
+		if ($('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+			/* I think .focus doesn't like css animations, set timeout to make sure input gets focus */
+			setTimeout(function() {
+				$('.navbar-bootsnipp .bootsnipp-search .form-control').focus();
+			}, 100);
+		}
+	});
+
+	$(document).on('keyup', function(event) {
+		if (event.which == 27 && $('.navbar-bootsnipp .bootsnipp-search').hasClass('open')) {
+			$('a[href="#toggle-search"]').trigger('click');
+		}
+	});
 });
