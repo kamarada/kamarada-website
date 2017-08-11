@@ -1,80 +1,54 @@
-<nav class="navbar navbar-fixed-top navbar-bootsnipp" role="navigation">
+<nav class="navbar navbar-default navbar-fixed-top navbar-with-search" role="navigation">
     <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed pull-left" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <div class="brand">
-                <a class="navbar-brand" href="{{ site.baseurl }}/">
-                    {% if site.data.t[page.lang].site.title %}
-                        {{ site.data.t[page.lang].site.title }}
-                    {% else %}
-                        {{ site.title }}
-                    {% endif %}
-                </a>
-            </div>
-        </div>
+            <a class="navbar-brand" href="{{ site.baseurl }}/">
+                {% if site.data.t[page.lang].site.title %}
+                    {{ site.data.t[page.lang].site.title }}
+                {% else %}
+                    {{ site.title }}
+                {% endif %}
+            </a>
+        </div><!--.navbar-header-->
 
-        <form class="navbar-form" id="language-form">
+        <form class="navbar-form">
             <div class="dropdown pull-left">
                 <a class="mdi-action-language dropdown-toggle" id="language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="language-button">
                     {% if page.is_post %}
-                    {% assign translations = site.posts | where: 'nickname', page.nickname %}
+                        {% assign translations = site.posts | where: 'nickname', page.nickname %}
                     {% else %}
-                    {% assign translations = site.pages | where: 'nickname', page.nickname %}
+                        {% assign translations = site.pages | where: 'nickname', page.nickname %}
                     {% endif %}
                     {% for lang in site.data.t %}
-                    <li class="dropdown-header">{{ lang[1].language }}</li>
-                    {% assign translation = translations | where: 'lang', lang[1].language_tag | first %}
-                    {% if translation %}
-                    <li>
-                        <a class="translation-{{ lang[1].language_tag }}" href="{{ translation.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
-                    </li>
-                    {% else %}
-                    <li>
-                        <a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&tl={{ lang[1].language_tag }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
-                    </li>
-                    {% endif %}
-                    <li><a href="{{ '/' | prepend: lang[1].language_tag | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].home_page }}</a></li>
-                    <li role="separator" class="divider"></li>
+                        <li class="dropdown-header">{{ lang[1].language }}</li>
+                        {% assign translation = translations | where: 'lang', lang[1].language_tag | first %}
+                        {% if translation %}
+                            <li>
+                                <a class="translation-{{ lang[1].language_tag }}" href="{{ translation.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                            </li>
+                        {% else %}
+                            <li>
+                                <a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&tl={{ lang[1].language_tag }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                            </li>
+                        {% endif %}
+                        <li><a href="{{ '/' | prepend: lang[1].language_tag | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].home_page }}</a></li>
+                        <li role="separator" class="divider"></li>
                     {% endfor %}
                     <li class="dropdown-header">Other languages (by Google Translate)</li>
                     <li><a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">Translate this page</a></li>
                 </ul>
-            </div>
-            <a class="mdi-action-search pull-left" id="search-button" href="#toggle-search" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}"></a>
-        </form>
+            </div><!--.dropdown-->
+            <a class="mdi-action-search pull-left" id="search-button" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}"></a>
+        </form><!--.navbar-form-->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <div class="collapse navbar-collapse" id="navbar">
             <ul class="nav navbar-nav navbar-right">
-                <!--<li class="visible-xs">
-                    <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" method="get" role="search">
-                        {% if site.google.cse_id %}
-                        {% else %}
-                            <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
-                            <input type="hidden" name="ie" value="{{ site.encoding }}" />
-                            <input type="hidden" name="oe" value="{{ site.encoding }}" />
-                            {% if site.lang or page.lang %}
-                                <input type="hidden" name="hl" value="{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" />
-                                <input type="hidden" name="image_lr" value="lang_{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" />
-                                <input type="hidden" name="lr" value="lang_{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}" />
-                            {% endif %}
-                        {% endif %}
-                        <div class="input-group">
-                            <input type="text" class="form-control" name="q" placeholder="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}">
-                            <span class="input-group-btn">
-                                <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-                                <button type="reset" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
-                            </span>
-                        </div>
-                    </form>
-                </li>-->
                 {% if site.data.t[page.lang].navigation %}
                     {% assign navigation = site.data.t[page.lang].navigation %}
                 {% elsif site.navigation %}
@@ -92,14 +66,13 @@
                         {% endif %}
                     {% endfor %}
                 {% endif %}
-                <!--<li class="hidden-xs"><a href="#toggle-search" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}"><span class="glyphicon glyphicon-search"></span></a></li>-->
             </ul>
-        </div>
+        </div><!--#navbar -->
+    </div><!--.container-->
 
-    </div>
-    <div class="bootsnipp-search animate">
+    <div class="search-bar">
         <div class="container">
-            <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" method="get" role="search">
+            <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" id="search-form" method="get" role="search">
                 {% if site.google.cse_id %}
                 {% else %}
                     <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
@@ -114,11 +87,11 @@
                 <div class="input-group">
                     <input class="form-control" id="search-input" type="text" name="q" placeholder="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}">
                     <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
-                        <button type="reset" class="btn btn-danger"><span class="glyphicon glyphicon-remove"></span></button>
+                        <button type="submit" class="btn btn-primary" id="submit-search-button"><span class="glyphicon glyphicon-search"></span></button>
+                        <button type="reset" class="btn btn-danger" id="reset-search-button"><span class="glyphicon glyphicon-remove"></span></button>
                     </span>
                 </div>
             </form>
         </div>
-    </div>
+    </div><!--.search-bar-->
 </nav>
