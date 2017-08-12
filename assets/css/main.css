@@ -136,12 +136,32 @@ a.navbar-brand {
 /* Navbar with language menu and search bar */
 /* Search based on: https://bootsnipp.com/snippets/a6aV0 */
 
+.navbar-form {
+    float: right;
+    margin: 0px !important;
+    padding: 0px;
+    padding-left: 15px;
+}
+
+@media (max-width: 767px) {
+    .navbar-header, .navbar-brand {
+        float: left;
+    }
+
+    .navbar-form {
+        border: none;
+    }
+
+    #navbar {
+        clear: both;
+    }
+}
+
 #language-button, #search-button {
     color: rgba(255,255,255,0.84);
     cursor: pointer;
     text-decoration: none;
     line-height: 20px;
-    margin-right: 0px;
     padding: 15px;
 }
 
@@ -156,46 +176,12 @@ a.navbar-brand {
     }
 }
 
-.navbar-form {
-    background: #4caf50;
-    box-shadow: none;
-    float: right;
-    margin: 0px !important;
-    padding: 0px;
-    padding-left: 15px;
-}
-
-@media (max-width: 767px) {
-    .navbar-form {
-        border: none;
-        outline: none !important;
-        padding-bottom: 0px;
-        right: 65px;
-        top: -10px;
-    }
-}
-
-@media (max-width: 767px) {
-    .navbar-header, .navbar-brand {
-        float: left;
-    }
-
-    .navbar-form {
-        float: right;
-    }
-
-    #navbar {
-        clear: both;
-    }
-}
-
 .translation-en:lang(en), .translation-pt:lang(pt) {
     font-weight: bold;
 }
 
-.navbar-with-search .search-bar {
+#search-bar {
     background-color: #F5F5F5;
-    display: block;
     position: absolute;
 
     -moz-transform: rotateX(-90deg);
@@ -220,7 +206,7 @@ a.navbar-brand {
     width: 100%;
 }
 
-.navbar-with-search .search-bar.open {
+#search-bar.open {
     -webkit-transform: rotateX(0deg);
     -moz-transform: rotateX(0deg);
     -o-transform: rotateX(0deg);
@@ -229,7 +215,7 @@ a.navbar-brand {
     visibility: visible;
 }
 
-.navbar-with-search .search-bar .input-group-btn > .btn {
+#search-bar .input-group-btn > .btn {
     border-radius: 0px;
     padding: 15px;
 }

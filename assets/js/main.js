@@ -10,10 +10,10 @@ $(document).ready(function(){
     $('#search-button, #reset-search-button').on('click', function(event) {
         event.preventDefault();
         $('#search-input').val('');
-        $('.navbar-with-search .search-bar').toggleClass('open');
+        $('#search-bar').toggleClass('open');
         $('#search-button').closest('li').toggleClass('active');
 
-        if ($('.navbar-with-search .search-bar').hasClass('open')) {
+        if ($('#search-bar').hasClass('open')) {
             /* I think .focus doesn't like css animations, set timeout to make sure input gets focus */
             setTimeout(function() {
                 $('#search-input').focus();
@@ -22,7 +22,7 @@ $(document).ready(function(){
     });
 
     $(document).on('keyup', function(event) {
-        if (event.which == 27 && $('.navbar-with-search .search-bar').hasClass('open')) {
+        if (event.which == 27 && $('#search-bar').hasClass('open')) {
             $('#search-button').trigger('click');
         }
     });

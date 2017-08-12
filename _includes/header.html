@@ -70,7 +70,7 @@
         </div><!--#navbar -->
     </div><!--.container-->
 
-    <div class="search-bar">
+    <div id="search-bar">
         <div class="container">
             <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" id="search-form" method="get" role="search">
                 {% if site.google.cse_id %}
