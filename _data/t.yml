@@ -23,6 +23,8 @@ en:
     search_using_google: "Use Google to search"
     subscribe_via_rss: "subscribe via RSS"
     translation: "This page in English"
+    translations: "Translations"
+    update: "Update"
     what_about_sharing: "Did you like it? What about sharing?"
 pt:
     about: "Sobre"
@@ -73,4 +75,6 @@ pt:
             # name: "nomedeusuario"
     subscribe_via_rss: "inscreva-se via RSS"
     translation: "Esta página em Português"
+    translations: "Traduções"
+    update: "Atualização"
     what_about_sharing: "Gostou? Que tal compartilhar?"

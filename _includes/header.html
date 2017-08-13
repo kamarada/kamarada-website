@@ -18,7 +18,7 @@
 
         <form class="navbar-form">
             <div class="dropdown pull-left">
-                <a class="mdi-action-language dropdown-toggle" id="language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"></a>
+                <a class="dropdown-toggle" id="language-button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" title="{% if site.data.t[page.lang].translations %}{{ site.data.t[page.lang].translations }}{% else %}{{ 'Translations' }}{% endif %}"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a>
                 <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="language-button">
                     {% if page.is_post %}
                         {% assign translations = site.posts | where: 'nickname', page.nickname %}
@@ -44,7 +44,7 @@
                     <li><a href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">Translate this page</a></li>
                 </ul>
             </div><!--.dropdown-->
-            <a class="mdi-action-search pull-left" id="search-button" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}"></a>
+            <a class="pull-left" id="search-button" title="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
         </form><!--.navbar-form-->
 
         <div class="collapse navbar-collapse" id="navbar">
@@ -67,7 +67,7 @@
                     {% endfor %}
                 {% endif %}
             </ul>
-        </div><!--#navbar -->
+        </div><!--#navbar-->
     </div><!--.container-->
 
     <div id="search-bar">
@@ -93,5 +93,5 @@
                 </div>
             </form>
         </div>
-    </div><!--.search-bar-->
+    </div><!--#search-bar-->
 </nav>

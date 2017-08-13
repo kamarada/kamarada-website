@@ -26,6 +26,10 @@ body {
     }
 }
 
+body, h1, h2, h3, h4, h5, h6 {
+    font-weight: 400;
+}
+
 .panel-heading h1,
 .panel-heading h2,
 .panel-heading h3,
@@ -56,7 +60,8 @@ a.navbar-brand {
 
 @media (min-width: 350px) {
     a.navbar-brand {
-        background: url(../favicons/favicon-40x40.png) 0px no-repeat;
+        background: url(../../favicon.png) 0px no-repeat;
+        background-size: 40px;
         padding-left: 50px !important;
     }
 }
@@ -160,9 +165,11 @@ a.navbar-brand {
 #language-button, #search-button {
     color: rgba(255,255,255,0.84);
     cursor: pointer;
-    text-decoration: none;
-    line-height: 20px;
     padding: 15px;
+}
+
+#language-button {
+    display: inline-block;
 }
 
 #search-button {
@@ -215,14 +222,25 @@ a.navbar-brand {
     visibility: visible;
 }
 
+#search-bar .form-group {
+    margin: 0;
+    padding: 0;
+}
+
+#search-bar .input-group-btn {
+    padding: 0;
+}
+
 #search-bar .input-group-btn > .btn {
     border-radius: 0px;
+    margin: 0;
     padding: 15px;
 }
 
 #search-input {
     font-size: 18px;
     height: 50px;
+    margin: 0;
 }
 
 /* Blog posts */
