@@ -11,7 +11,7 @@ en:
     navigation:
         -
             title: "Download"
-            url: "/en/download/"
+            url: "/en/download/leap/42.2/"
     newer: "Newer"
     next: "Next"
     older: "Older"
