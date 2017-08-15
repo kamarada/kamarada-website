@@ -39,7 +39,7 @@ pt:
     navigation:
         -
             title: "Download"
-            url: "/pt/download/"
+            url: "/pt/download/leap/42.2/"
     newer: "Primeira"
     next: "Anterior"
     older: "Última"
