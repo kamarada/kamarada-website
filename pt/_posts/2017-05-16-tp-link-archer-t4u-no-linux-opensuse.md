@@ -5,10 +5,10 @@ published: true
 title: 'TP-Link Archer T4U no Linux openSUSE'
 image: '/files/2017/05/tp-link-archer-t4u.jpg'
 nickname: 'tp-link-archer-t4u'
-excerpt: 'Mês passado decidi turbinar a rede Wi-Fi da minha casa. Eu, que já tinha comprado uma RouterBOARD hAP, comprei dessa vez uma antena para conectar meu notebook à frequência de 5GHz do padrão 802.11ac: a TP-Link Archer T4U. O novo padrão de Wi-Fi 802.11ac visa ao desempenho. Além de maior velocidade, a frequência maior também garante que haja menos interferência, seja pela menor quantidade de aparelhos que a utilizam (hoje, por exemplo, telefones sem fio, microondas e dispositivos Bluetooth competem com a Wi-Fi pela frequência de 2,4GHz), seja pelo menor alcance das redes a 5GHz (o comprimento da onda reduz quando aumenta a frequência, na prática isso quer dizer que se a sua Wi-Fi e a do vizinho transmitem a 5GHz, é mais difícil que elas invadam a casa um do outro).'
+excerpt: 'Mês passado decidi turbinar a rede Wi-Fi da minha casa. Eu, que já tinha comprado uma MikroTik hAP ac lite tower, comprei dessa vez uma antena para conectar meu notebook à frequência de 5GHz do padrão 802.11ac: a TP-Link Archer T4U. O novo padrão de Wi-Fi 802.11ac visa ao desempenho. Além de maior velocidade, a frequência maior também garante que haja menos interferência, seja pela menor quantidade de aparelhos que a utilizam (hoje, por exemplo, telefones sem fio, microondas e dispositivos Bluetooth competem com a Wi-Fi pela frequência de 2,4GHz), seja pelo menor alcance das redes a 5GHz (o comprimento da onda reduz quando aumenta a frequência, na prática isso quer dizer que se a sua Wi-Fi e a do vizinho transmitem a 5GHz, é mais difícil que elas invadam a casa um do outro).'
 ---
 
-Mês passado decidi turbinar a rede Wi-Fi da minha casa. Eu, que já tinha comprado uma [RouterBOARD hAP][routerboard-hap], comprei dessa vez uma antena para conectar meu *notebook* à frequência de 5GHz do padrão [802.11ac][802.11ac]: a [TP-Link Archer T4U][tp-link-archer-t4u].
+Mês passado decidi turbinar a rede Wi-Fi da minha casa. Eu, que já tinha comprado uma [MikroTik hAP ac lite tower][mikrotik], comprei dessa vez uma antena para conectar meu *notebook* à frequência de 5GHz do padrão [802.11ac][802.11ac]: a [TP-Link Archer T4U][tp-link-archer-t4u].
 
 {% include image.html src='/files/2017/05/tp-link-archer-t4u.jpg' %}
 
@@ -37,7 +37,7 @@ Todos os arquivos que compõem o código-fonte são baixados na forma de um arqu
 
 ```
 $ unzip rtl8812AU_8821AU_linux-master.zip
-$ cd unzip rtl8812AU_8821AU_linux-master
+$ cd rtl8812AU_8821AU_linux-master
 ```
 
 Para compilar o código-fonte do *driver*, instale os pacotes **gcc**, **make**, **dkms** e **kernel-default-devel** (supondo que você utiliza o *kernel* padrão, que é o **kernel-default**):
@@ -77,11 +77,11 @@ Os comandos dessa seção devem ser repetidos a cada atualização do *kernel*.
 
 Feito isso, o sistema já mostra seu novo adaptador Wi-Fi:
 
-{% include image.html src='/files/2017/05/tp-link-archer-t4u-2.jpg' %}
+{% include image.html src='/files/2017/05/tp-link-archer-t4u-2-pt.jpg' %}
 
 Você já pode se conectar à sua rede Wi-Fi 802.11ac de 5GHz:
 
-{% include image.html src='/files/2017/05/tp-link-archer-t4u-3.png' %}
+{% include image.html src='/files/2017/05/tp-link-archer-t4u-3-pt.png' %}
 
 Divirta-se bastante!
 
@@ -94,7 +94,7 @@ Divirta-se bastante!
 - [Uso básico dos comandos zip e unzip [Dica] - Viva o Linux][unzip]
 - [Howto: Linux Add or Remove a Linux Kernel Modules / Drivers - nixCraft][list-add-kernel-modules]
 
-[routerboard-hap]:          https://routerboard.com/RB952Ui-5ac2nD-TC
+[mikrotik]:                 https://mikrotik.com/product/RB952Ui-5ac2nD-TC
 [802.11ac]:                 http://www.techtudo.com.br/noticias/noticia/2016/09/80211ac-e-80211n-veja-diferencas-entre-padroes-da-performance-wi-fi.html
 [tp-link-archer-t4u]:       http://www.tp-link.com.br/products/details/cat-11_Archer-T4U.html
 [bluetooth]:                https://pt.wikipedia.org/wiki/Bluetooth
