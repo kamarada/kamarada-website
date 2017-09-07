@@ -10,7 +10,7 @@ excerpt: 'Se você trabalha em uma empresa cujo e-mail é servido localmente pel
 
 Se você trabalha em uma empresa cujo *e-mail* é servido localmente pelo [Microsoft Exchange][exchange] ou na nuvem pelo [Office 365][office-365], você pode gerenciar seus *e-mails* pelo computador utilizando os tradicionais protocolos [POP], [IMAP] e [SMTP]. No entanto, alguns recursos adicionais como gerenciar agendas e contatos estão disponíveis apenas para quem utiliza o protocolo proprietário [Exchange ActiveSync][activesync] da [Microsoft].
 
-Pois saiba que nesse cenário usuários de [Linux][linux] não precisam deixar seu sistema favorito para poder se comunicar com seus colegas: veja neste *post* como conectar o [Evolution] ao Microsoft Exchange ou ao Office 365 com as [contas *online* do GNOME][goa].
+Pois saiba que nesse cenário usuários de [Linux] não precisam deixar seu sistema favorito para poder se comunicar com seus colegas: veja neste *post* como conectar o [Evolution] ao Microsoft Exchange ou ao Office 365 com as [contas *online* do GNOME][goa].
 
 {% include image.html src="/files/2017/09/evolution.png" %}
 
