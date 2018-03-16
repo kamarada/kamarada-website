@@ -5,7 +5,7 @@ layout: post
 published: true
 nickname: 'how-to-server-config'
 title: 'How to install openSUSE Leap Linux on a server (part 2)'
-excerpt: 'No post anterior, você viu como instalar o openSUSE Leap em um servidor. Agora, você percorrerá um checklist com as principais configurações que deve ajustar no novo servidor para que ele possa ser considerado efetivamente pronto para uso.'
+excerpt: 'We have already seen on a previous post how to install openSUSE Leap on a server. Now, you are going to walk through a checklist with the first things to set up on the new server so that it can be considered effectively ready to use.'
 ---
 
 We have already seen [on a previous post][how-to-server] how to install [openSUSE Leap][opensuse-leap-422] on a server. Now, you are going to walk through a checklist with the first things to set up on the new server so that it can be considered effectively ready to use.
