@@ -344,6 +344,9 @@ As I realized that this post is already very long, I decided to split it into tw
 
 Follow the Linux Kamarada Project to read the second part as soon as it's published!
 
+{% capture update %}[Sorry for the long wait, the second part of this tutorial is here. (click)]({%post_url 2018-03-15-how-to-install-opensuse-leap-linux-on-a-server-part-2 %}){% endcapture %}
+{% include update.html date="15/03/2018" message=update %}
+
 [opensuse-leap-422]:            {%post_url 2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
 [how-to-install]:               {%post_url 2016-11-15-how-to-install-opensuse-leap-linux %}
 [opensuse-leap-32bit]:          https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
@@ -374,4 +377,3 @@ Follow the Linux Kamarada Project to read the second part as soon as it's publis
 [kmines]:                       https://www.kde.org/applications/games/kmines/
 [passwords]:                    http://lifehacker.com/four-methods-to-create-a-secure-password-youll-actually-1601854240
 [ssh]:                          https://en.wikipedia.org/wiki/Secure_Shell
-
