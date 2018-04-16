@@ -22,7 +22,7 @@ Algumas utilidades do certificado digital para pessoas físicas e jurídicas sã
 - Assinar e enviar documentos com validade jurídica pela Internet;
 - Assinar [Nota Fiscal eletrônica (NF-e)][nfe];
 - Entrar em ambientes seguros;
-- Acessar sistemas seguros do governo que possibilitam atendimentos antes possíveis apenas presencialmente, como o [eCAC][ecac] da [Receita Federal][receita];
+- Acessar sistemas seguros do governo que possibilitam atendimentos antes possíveis apenas presencialmente, como o [eCAC][ecac] da [Receita Federal][receita-federal];
 - Enviar declarações de imposto de renda, seja de pessoa física ou jurídica; e
 - Realizar transações bancárias com mais segurança.
 
@@ -30,7 +30,7 @@ Para uma lista completa de tipos de certificados digitais e suas possíveis util
 
 Há também os certificados digitais que identificam *sites*. Quando você acessa um *site* que apresenta um certificado digital, o navegador exibe o ícone de um cadeado verde, indicando que o *site* é autêntico e seguro. Já falamos um pouco sobre certificados de *sites* em [outro *post*][certificados-sites].
 
-Neste *post*, você verá como utilizar um *token* para acessar um sistema do governo com certificado digital no [Linux openSUSE][opensuse].
+Neste *post*, você verá como utilizar um *token* para acessar um sistema do governo com certificado digital no [Linux openSUSE][opensuse]. Para referência, utilizo a versão [15.0 Beta][opensuse-leap-15].
 
 Na demonstração, vou utilizar um *token* USB igual ao da imagem, modelo [eToken PRO][etoken], da fabricante [SafeNet][safenet] (antiga [Aladdin][aladdin]).
 
@@ -253,7 +253,7 @@ Observe que o *token* é adicionado à lista de **Dispositivos e módulos de seg
 
 ## Acessando o sistema eCAC
 
-O [eCAC][ecac] é um sistema da [Receita Federal][receita] que disponibiliza pela Internet [vários serviços][ecac-servicos] para pessoas físicas e jurídicas, antes disponíveis apenas presencialmente. É possível acessá-lo por meio de um código de acesso gerado na hora, mas menos serviços estão disponíveis por esse meio, que é menos seguro. A totalidade dos serviços está disponível apenas para quem o acessa com certificado digital.
+O [eCAC][ecac] é um sistema da Receita Federal que disponibiliza pela Internet [vários serviços][ecac-servicos] para pessoas físicas e jurídicas, antes disponíveis apenas presencialmente. É possível acessá-lo por meio de um código de acesso gerado na hora, mas menos serviços estão disponíveis por esse meio, que é menos seguro. A totalidade dos serviços está disponível apenas para quem o acessa com certificado digital.
 
 Alguns dos serviços mais úteis para pessoas físicas incluem consultar declarações e recibos já enviados do imposto de renda e [verificar se a declaração caiu na malha fina][malha-fina], assim como [tomar ações para regularizar a situação][malha-fina-regularizar].
 
@@ -303,10 +303,11 @@ Divirta-se bastante... (*have a lot of fun...*)
 [token]:                            https://pt.wikipedia.org/wiki/Token_(chave_eletr%C3%B4nica)
 [nfe]:                              http://www.nfe.fazenda.gov.br/
 [ecac]:                             https://cav.receita.fazenda.gov.br/
-[receita]:                          http://idg.receita.fazenda.gov.br/
+[receita-federal]:                  http://idg.receita.fazenda.gov.br/
 [certisign-indicacoes]:             https://www.certisign.com.br/certificado-digital/indicacao-uso
 [certificados-sites]:               {%post_url 2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
 [opensuse]:                         https://www.opensuse.org/
+[opensuse-leap-15]:                 https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/
 [etoken]:                           https://safenet.gemalto.com/multi-factor-authentication/authenticators/pki-usb-authentication/
 [safenet]:                          https://safenet.gemalto.com/
 [aladdin]:                          https://pt.wikipedia.org/wiki/Aladdin_Knowledge_Systems
