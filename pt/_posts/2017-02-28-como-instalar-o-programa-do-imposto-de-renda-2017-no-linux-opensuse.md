@@ -99,7 +99,6 @@ Espero que essa dica possa ter sido útil. Se ficou alguma dúvida em relação 
 [irpf-2017]:            http://idg.receita.fazenda.gov.br/interface/cidadao/irpf/2017
 [opensuse]:             https://www.opensuse.org
 [irpf-instalacao]:      https://idg.receita.fazenda.gov.br/interface/cidadao/irpf/2017/download/instrucoes-de-instalacao
-[how-to-oracle-jre]:    {%post_url 2017-02-28-como-instalar-o-java-da-oracle-no-linux-opensuse %}
+[how-to-oracle-jre]:    {%post_url pt/2017-02-28-como-instalar-o-java-da-oracle-no-linux-opensuse %}
 [java-test]:            https://www.java.com/verify/
 [edivaldobrito.com.br]: http://www.edivaldobrito.com.br/como-instalar-o-irpf-2017-no-linux/
-

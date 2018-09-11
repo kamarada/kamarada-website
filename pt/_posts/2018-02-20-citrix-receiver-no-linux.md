@@ -165,11 +165,11 @@ Para verificar se o Mozilla Firefox está devidamente integrado ao Citrix Receiv
 [xenapp-e-xendesktop]:          https://www.citrix.com.br/products/xenapp-xendesktop/
 [citrix-receiver]:              https://www.citrix.com.br/products/receiver/
 [byod]:                         https://pt.wikipedia.org/wiki/Bring_your_own_device
-[opensuse-leap]:                {%post_url 2017-08-07-atualizacao-de-distribuicao-linux-continua-empoderando-a-comunidade-e-as-empresas-se-beneficiam %}
+[opensuse-leap]:                {%post_url pt/2017-08-07-atualizacao-de-distribuicao-linux-continua-empoderando-a-comunidade-e-as-empresas-se-beneficiam %}
 [download-citrix-receiver]:     https://www.citrix.com/downloads/citrix-receiver/
 [rpm]:                          https://pt.wikipedia.org/wiki/RPM_(Linux)
 [yast]:                         https://pt.opensuse.org/Portal:YaST
-[how-to-install-certificates]:  {%post_url 2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
+[how-to-install-certificates]:  {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
 [firefox]:                      https://www.mozilla.org/pt-BR/firefox/
 [chrome]:                       https://www.google.com/chrome/
 [windows]:                      https://www.microsoft.com/pt-br/windows

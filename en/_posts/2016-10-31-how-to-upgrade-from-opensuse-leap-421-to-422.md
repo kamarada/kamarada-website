@@ -10,7 +10,7 @@ nickname: 'how-to-upgrade'
 
 {% include image.html src="/files/2016/10/upgrade.png" caption="Source: [openSUSE News](https://news.opensuse.org/2016/09/22/new-leap-beta-adds-plasma-5-8-beta/)" %}
 
-Being able to upgrade from one release to another is a certainty [openSUSE][opensuse] users have. For 3 years now I use openSUSE Linux and I always upgraded without an issue. I started to use openSUSE when it was 12.2, shortly before the [12.3 release in May 2013][opensuse-123]. Since then I went through 5 upgrades: from 12.2 to 12.3, to 13.1, to 13.2, to Leap 42.1 (in fact, there was a leap, as we have seen on [that release's announcement]({% post_url 2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %})) and this week to 42.2, even before it was officially launched.
+Being able to upgrade from one release to another is a certainty [openSUSE][opensuse] users have. For 3 years now I use openSUSE Linux and I always upgraded without an issue. I started to use openSUSE when it was 12.2, shortly before the [12.3 release in May 2013][opensuse-123]. Since then I went through 5 upgrades: from 12.2 to 12.3, to 13.1, to 13.2, to Leap 42.1 (in fact, there was a leap, as we have seen on [that release's announcement]({% post_url en/2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %})) and this week to 42.2, even before it was officially launched.
 
 The next openSUSE Leap release, 42.2, already passed alfa and beta phases and had its first release candidate (RC) launched on [October 18][opensuse-422-rc1]. That means most of the tests have ended. That release is very close to the final one, scheduled to [November 16][opensuse-roadmap]. Until then, openSUSE Leap should receive no more than a few finishing touches.
 
@@ -22,9 +22,9 @@ To better organize the text, I split the upgrade process in 6 steps.
 
 The how-to I present here is based on the openSUSE wiki's [SDB:System upgrade][system-upgrade] page, whose instructions I followed to upgrade my system. That page has changed little since I started using openSUSE. It presents a safe upgrade procedure, which should work for most cases, but requires some things be observed.
 
-**You must be using the immediately previous openSUSE release.** It means that if you want to upgrade to 42.2, now you must be using 42.1. Hopping over one or more releases is not supported and probably will not work. So if you use openSUSE 13.2, for example, you must first upgrade to Leap 42.1, and then to Leap 42.2 (note that the leap here is just in numbers, [the Leap 42.1 release is indeed the successor of 13.2]({% post_url 2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %})).
+**You must be using the immediately previous openSUSE release.** It means that if you want to upgrade to 42.2, now you must be using 42.1. Hopping over one or more releases is not supported and probably will not work. So if you use openSUSE 13.2, for example, you must first upgrade to Leap 42.1, and then to Leap 42.2 (note that the leap here is just in numbers, [the Leap 42.1 release is indeed the successor of 13.2]({% post_url en/2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %})).
 
-**Your openSUSE installation must be up to date** with the latest updates for the release you are currently running. To learn how to update your system, read the [previous post]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}).
+**Your openSUSE installation must be up to date** with the latest updates for the release you are currently running. To learn how to update your system, read the [previous post]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}).
 
 **You should read about the openSUSE release you are going to install.** Read the [list of annoying bugs][most-annoying-bugs] to be prepared for upcoming problems, how to prevent and/or solve them. Also, read the [release notes][release-notes], which list changes and glitches in the new release.
 
@@ -40,7 +40,7 @@ Before we begin, I would like to make one more note, for those who want to upgra
 
 Before beginning, make sure your openSUSE installation is up to date.
 
-As we have seen in the [previous post]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}), if your system is up to date, the **Software Updates** icon informs that to you:
+As we have seen in the [previous post]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}), if your system is up to date, the **Software Updates** icon informs that to you:
 
 {% include image.html src="/files/2016/10/sw-updates-05-en.jpg" %}
 
@@ -48,7 +48,7 @@ Or, if you prefer using the command line interface (CLI), you can check if your 
 
 {% include image.html src="/files/2016/10/sw-updates-cmd-05-en.jpg" %}
 
-Take a look at [that post]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}) to see how to update your openSUSE.
+Take a look at [that post]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}) to see how to update your openSUSE.
 
 Let me clarify something, in case it sounds confusing: by **update** we mean update just a few packages without actually moving from one release to another (e.g. from 42.1 to 42.2). By **upgrade** we mean update the whole system to move to the next release.
 
@@ -150,7 +150,7 @@ Back to CLI, run `zypper ref` to retrieve the list of available packages from th
 
 {% include image.html src="/files/2016/10/upgrade-11-en.jpg" %}
 
-That list of actions is similar to that produced by `zypper up`, presented in the [previous post]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}). However, as we are now doing a distribution upgrade, and not an ordinary update, the list of what needs to be done is much bigger.
+That list of actions is similar to that produced by `zypper up`, presented in the [previous post]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}). However, as we are now doing a distribution upgrade, and not an ordinary update, the list of what needs to be done is much bigger.
 
 Review that list carefully. You can go up or down using the scrollbar at the right of the window or the mouse wheel (scroll wheel) if you are using Konsole, or the **Shift + Page Up** / **Shift + Page Down** key combinations if you are using a purely textual interface (they also work in Konsole).
 
@@ -216,7 +216,7 @@ Just press **Enter** to start upgrading.
 
 Distribution upgrade may take several minutes.
 
-When it finishes, as happened in the [previous post]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}), **zypper** suggests to restart. Let's do that by running `reboot`:
+When it finishes, as happened in the [previous post]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}), **zypper** suggests to restart. Let's do that by running `reboot`:
 
 {% include image.html src="/files/2016/10/upgrade-18.jpg" %}
 
@@ -234,7 +234,7 @@ And *voilà*! openSUSE Leap 42.2 is installed and ready for use!
 
 Make sure everything is in place. Now you may return any repositories you removed. Remember to make the appropriate adjustments with respect to the openSUSE version, changing from `42.1` to `42.2` where necessary. You may also try to install any program that perhaps has been removed during the upgrade.
 
-Remember to regularly [check for updates]({% post_url 2016-10-22-keep-your-system-always-up-to-date %}) for your new distribution.
+Remember to regularly [check for updates]({% post_url en/2016-10-22-keep-your-system-always-up-to-date %}) for your new distribution.
 
 If you find any difficulty during the upgrade or have any questions, don't hesitate to comment!
 

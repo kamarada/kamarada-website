@@ -70,12 +70,12 @@ Conecte o *token* e verifique que ele é reconhecido como um dispositivo USB (no
 
 ```
 $ lsusb
-Bus 001 Device 002: ID 8087:8001 Intel Corp. 
+Bus 001 Device 002: ID 8087:8001 Intel Corp.
 Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
 Bus 003 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
 Bus 002 Device 005: ID 0bda:0129 Realtek Semiconductor Corp. RTS5129 Card Reader Controller
-Bus 002 Device 004: ID 1bcf:2c81 Sunplus Innovation Technology Inc. 
-Bus 002 Device 002: ID 13fe:4200 Kingston Technology Company Inc. 
+Bus 002 Device 004: ID 1bcf:2c81 Sunplus Innovation Technology Inc.
+Bus 002 Device 002: ID 13fe:4200 Kingston Technology Company Inc.
 Bus 002 Device 006: ID 045e:0745 Microsoft Corp. Nano Transceiver v1.0 for Bluetooth
 Bus 002 Device 007: ID 0529:0620 Aladdin Knowledge Systems Token JC
 Bus 002 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
@@ -92,10 +92,10 @@ V 1.5.2 (c) 2001-2017, Ludovic Rousseau <ludovic.rousseau@free.fr>
 Using reader plug'n play mechanism
 Scanning present readers...
 0: SafeNet eToken 5100 [Main Interface] 00 00
- 
+
 Sun Apr 15 17:45:37 2018
  Reader 0: SafeNet eToken 5100 [Main Interface] 00 00
-  Card state: Card inserted, 
+  Card state: Card inserted,
   ATR: 3B D5 18 00 81 31 FE 7D 80 73 C8 21 10 F4
 
 ATR: 3B D5 18 00 81 31 FE 7D 80 73 C8 21 10 F4
@@ -104,9 +104,9 @@ ATR: 3B D5 18 00 81 31 FE 7D 80 73 C8 21 10 F4
   TA(1) = 18 --> Fi=372, Di=12, 31 cycles/ETU
     129032 bits/s at 4 MHz, fMax for Fi = 5 MHz => 161290 bits/s
   TC(1) = 00 --> Extra guard time: 0
-  TD(1) = 81 --> Y(i+1) = 1000, Protocol T = 1 
+  TD(1) = 81 --> Y(i+1) = 1000, Protocol T = 1
 -----
-  TD(2) = 31 --> Y(i+1) = 0011, Protocol T = 1 
+  TD(2) = 31 --> Y(i+1) = 0011, Protocol T = 1
 -----
   TA(3) = FE --> IFSC: 254
   TB(3) = 7D --> Block Waiting Integer: 7 - Character Waiting Integer: 13
@@ -203,7 +203,7 @@ Instale os requisitos do SafeNet Authentication Client:
 E, por fim, instale o SafeNet Authentication Client em si:
 
 ```
-# ./install.sh 
+# ./install.sh
 ################################# [100%]
 Updating / installing...
 ################################# [100%]
@@ -305,7 +305,7 @@ Divirta-se bastante... (*have a lot of fun...*)
 [ecac]:                             https://cav.receita.fazenda.gov.br/
 [receita-federal]:                  http://idg.receita.fazenda.gov.br/
 [certisign-indicacoes]:             https://www.certisign.com.br/certificado-digital/indicacao-uso
-[certificados-sites]:               {%post_url 2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
+[certificados-sites]:               {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
 [opensuse]:                         https://www.opensuse.org/
 [opensuse-leap-15]:                 https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/
 [etoken]:                           https://safenet.gemalto.com/multi-factor-authentication/authenticators/pki-usb-authentication/

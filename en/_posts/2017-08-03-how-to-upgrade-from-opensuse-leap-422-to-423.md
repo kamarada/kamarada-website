@@ -364,8 +364,8 @@ Remember to regularly check for updates for your new distribution.
 If you find any difficulty during the upgrade or have any questions, don't hesitate to comment!
 
 [opensuse-leap]:            https://en.opensuse.org/Portal:Leap
-[opensuse-leap-42.3]:       {% post_url 2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
-[how-to-upgrade-to-42.2]:   {% post_url 2016-10-31-how-to-upgrade-from-opensuse-leap-421-to-422 %}
+[opensuse-leap-42.3]:       {% post_url en/2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
+[how-to-upgrade-to-42.2]:   {% post_url en/2016-10-31-how-to-upgrade-from-opensuse-leap-421-to-422 %}
 [system-upgrade]:           https://en.opensuse.org/SDB:System_upgrade
 [release-notes]:            https://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/42.3/
 [debian]:                   https://www.debian.org/

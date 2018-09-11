@@ -66,7 +66,7 @@ Carregue o módulo do *kernel* e verifique que ele foi de fato carregado:
 ```
 # modprobe rtl8812au
 # lsmod | grep rtl8812au
-rtl8812au            1368064  0 
+rtl8812au            1368064  0
 cfg80211              593920  5 mac80211,rtl8812au,ath9k,ath,ath9k_common
 usbcore               245760  10 uvcvideo,usbhid,rtl8812au,ehci_hcd,xhci_pci,rtsx_usb,ath3k,btusb,xhci_hcd,ehci_pci
 ```
@@ -100,7 +100,7 @@ Divirta-se bastante!
 [bluetooth]:                https://pt.wikipedia.org/wiki/Bluetooth
 [archer-t4u-driver]:        http://www.tp-link.com.br/download/Archer-T4U_V1.html#Driver
 [kernel]:                   https://www.kernel.org/
-[opensuse-leap-42.2]:       {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[opensuse-leap-42.2]:       {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [ubuntu-14.04]:             https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes
 [free-software]:            https://www.gnu.org/philosophy/free-sw.pt-br.html
 [google]:                   https://www.google.com.br
@@ -109,4 +109,3 @@ Divirta-se bastante!
 [wikidevi]:                 https://wikidevi.com/wiki/TP-LINK_Archer_T4U
 [unzip]:                    https://www.vivaolinux.com.br/dica/Uso-basico-dos-comandos-zip-e-unzip
 [list-add-kernel-modules]:  https://www.cyberciti.biz/faq/add-remove-list-linux-kernel-modules/
-

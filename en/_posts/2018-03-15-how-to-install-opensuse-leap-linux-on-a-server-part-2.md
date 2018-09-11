@@ -392,9 +392,9 @@ Follow the Linux Kamarada Project to discover interesting things you can do with
 
 And... have a lot a fun!
 
-[how-to-server]:                {%post_url 2017-01-25-how-to-install-opensuse-leap-linux-on-a-server %}
-[opensuse-leap-422]:            {%post_url 2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
-[opensuse-leap-423]:            {%post_url 2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
+[how-to-server]:                {%post_url en/2017-01-25-how-to-install-opensuse-leap-linux-on-a-server %}
+[opensuse-leap-422]:            {%post_url en/2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
+[opensuse-leap-423]:            {%post_url en/2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
 [opensuse-leap-150-beta]:       https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/
 [why-opensuse-leap-150]:        https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/#comment-181994
 [why-opensuse-leap-150-answer]: https://lists.opensuse.org/opensuse-project/2017-04/msg00014.html
@@ -410,7 +410,7 @@ And... have a lot a fun!
 [google-public-dns-statistics]: https://webmasters.googleblog.com/2014/12/google-public-dns-and-location.html
 [google-public-dns]:            https://developers.google.com/speed/public-dns/
 [ssh]:                          https://doc.opensuse.org/documentation/leap/security/html/book.security/cha.ssh.html
-[how-to-ntp-client]:            {%post_url 2017-02-25-sync-your-system-time-with-ntp %}
+[how-to-ntp-client]:            {%post_url en/2017-02-25-sync-your-system-time-with-ntp %}
 [public-time-servers]:          http://support.ntp.org/servers
 [ntpbr]:                        http://ntp.br/
 [official-repos]:               https://en.opensuse.org/Package_repositories
@@ -418,4 +418,4 @@ And... have a lot a fun!
 [third-party-repos]:            https://en.opensuse.org/Additional_package_repositories
 [mirrors]:                      https://mirrors.opensuse.org/
 [c3sl]:                         http://www.c3sl.ufpr.br/espelhos/
-[how-to-sw-updates]:            {%post_url 2016-10-22-keep-your-system-always-up-to-date %}
+[how-to-sw-updates]:            {%post_url en/2016-10-22-keep-your-system-always-up-to-date %}

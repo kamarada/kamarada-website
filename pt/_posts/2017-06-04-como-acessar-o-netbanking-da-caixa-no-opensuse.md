@@ -86,13 +86,12 @@ Vale observar que o procedimento que fizemos n√£o remove do Warsaw as configura√
 [dieboldnixdorf-gas]:   http://www.dieboldnixdorf.com.br/
 [bb]:                   http://www.bb.com.br/
 [opensuse]:             https://www.opensuse.org/
-[opensuse-leap-422]:    {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[opensuse-leap-422]:    {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [firefox]:              https://www.mozilla.org/pt-BR/firefox/
-[how-to-sw-updates]:    {%post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}
+[how-to-sw-updates]:    {%post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}
 [chrome]:               https://www.google.com.br/chrome/
 [usuario-senha-caixa]:  http://www.caixa.gov.br/atendimento/canais-digitais/banking-caixa/primeiro-acesso/usuario-senha/Paginas/default.aspx
 [deb]:                  https://pt.wikipedia.org/wiki/.deb
 [rpm]:                  https://pt.wikipedia.org/wiki/RPM_(Linux)
 [fedora]:               https://getfedora.org/
-[netbanking-bb]:        {%post_url 2017-06-03-como-acessar-o-netbanking-do-banco-do-brasil-no-opensuse %}
-
+[netbanking-bb]:        {%post_url pt/2017-06-03-como-acessar-o-netbanking-do-banco-do-brasil-no-opensuse %}

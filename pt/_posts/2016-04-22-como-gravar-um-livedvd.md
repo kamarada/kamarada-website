@@ -10,13 +10,13 @@ nickname: 'how-to-livedvd'
 
 {% include image.html src="/files/2015/11/livecd.png" %}
 
-Um [LiveDVD]({% post_url 2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}) é uma boa opção para quem deseja conhecer o Linux, sem a necessidade de instalá-lo no computador, ou para quem deseja carregar o Linux para utilizar onde quiser. Com um LiveDVD, você pode usar o Linux em qualquer computador que ofereça a possibilidade de iniciar o sistema operacional ("dar o *boot*", na gíria técnica) a partir de um DVD.
+Um [LiveDVD]({% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}) é uma boa opção para quem deseja conhecer o Linux, sem a necessidade de instalá-lo no computador, ou para quem deseja carregar o Linux para utilizar onde quiser. Com um LiveDVD, você pode usar o Linux em qualquer computador que ofereça a possibilidade de iniciar o sistema operacional ("dar o *boot*", na gíria técnica) a partir de um DVD.
 
 Nesse *post*, veremos como gravar um LiveDVD do Linux.
 
-Se você não sabe o que é um LiveDVD, já apresentamos ele em [outro *post*]({% post_url 2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}).
+Se você não sabe o que é um LiveDVD, já apresentamos ele em [outro *post*]({% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}).
 
-Antes de gravar um LiveDVD, você deve [baixar o Linux][download]. Caso precise de ajuda com o *download*, consulte esse [outro *post*]({% post_url 2015-12-20-como-baixar-o-linux %}). Você também vai precisar de uma mídia DVD vazia que possa ser gravada.
+Antes de gravar um LiveDVD, você deve [baixar o Linux][download]. Caso precise de ajuda com o *download*, consulte esse [outro *post*]({% post_url pt/2015-12-20-como-baixar-o-linux %}). Você também vai precisar de uma mídia DVD vazia que possa ser gravada.
 
 As instruções para gravar um LiveDVD variam de acordo com o sistema operacional que você usa. Isso porque os programas utilizados são diferentes.
 

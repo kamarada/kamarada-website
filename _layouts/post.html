@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<div class="blog-post panel panel-default">
-    <header class="panel-heading">
+<div class="blog-post card mb-3">
+    <header class="card-header">
         <h1 class="blog-post-title" itemprop="headline name">
             <a class="blog-post-link" href="{{ page.url | prepend: site.baseurl | replace: '//', '/' }}" itemprop="mainEntityOfPage url">
                 {{ page.title }}
@@ -24,7 +24,7 @@ layout: default
                         <!-- AddThis Sharing Buttons -->
                         <div class="addthis_toolbox addthis_default_style">
                             <a class="addthis_button_facebook"></a>
-                            <a class="addthis_button_twitter"{% if site.twitter_username %} data-via="{{ site.twitter_username }}"{% endif %}></a>
+                            <a class="addthis_button_twitter"{% if site.twitter_username or site.data.t[page.lang].site.twitter_username %} data-via="{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}"{% endif %}></a>
                             <a class="addthis_button_google_plusone_share"></a>
                             <a class="addthis_button_favorites"></a>
                             <a class="addthis_button_compact"></a>
@@ -37,15 +37,13 @@ layout: default
         </div><!-- .blog-post-meta -->
     </header>
 
-    <article class="blog-post-content panel-body">
+    <article class="blog-post-content card-body">
         {% if site.google.adsense.content_ad_unit_1 %}
             {% include adsense.html id="content_ad_unit_1" ad_slot=site.google.adsense.content_ad_unit_1 %}
         {% endif %}
 
-        <div class="row" itemprop="articleBody mainEntity">
-            <div class="col-xs-12">
-                {{ content }}
-            </div>
+        <div itemprop="articleBody mainEntity">
+            {{ content }}
         </div>
 
         {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
@@ -60,7 +58,7 @@ layout: default
             </h2>
             <div class="addthis_toolbox addthis_default_style addthis_32x32_style">
                 <a class="addthis_button_facebook"></a>
-                <a class="addthis_button_twitter"></a>
+                <a class="addthis_button_twitter"{% if site.twitter_username or site.data.t[page.lang].site.twitter_username %} data-via="{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}"{% endif %}></a>
                 <a class="addthis_button_google_plusone_share"></a>
                 <a class="addthis_button_email"></a>
                 <a class="addthis_button_favorites"></a>
@@ -82,33 +80,27 @@ layout: default
                     {{ "Comments" }}
                 {% endif %}
             </h2>
-            <div class="row">
-                <div class="col-xs-12">
-                    <div id="disqus_thread"></div>
-                    <script type="text/javascript">
-                        /* * * CONFIGURATION VARIABLES * * */
-                        {% if site.lang or page.lang %}
-                            var disqus_config = function () {
-                                this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
-                            };
-                        {% endif %}
-                        var disqus_shortname = '{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}';
-                        var disqus_url = '{{ page.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}';
+            <div id="disqus_thread"></div>
+            <script>
+                var disqus_config = function () {
+                    {% if site.lang or page.lang %}
+                        this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
+                    {% endif %}
+                    this.page.url = '{{ page.url | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}';
+                };
 
-                        /* * * DON'T EDIT BELOW THIS LINE * * */
-                        (function() {
-                            var dsq = document.createElement('script');
-                            dsq.type = 'text/javascript';
-                            dsq.async = true;
-                            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-                        })();
-                    </script>
-                    <noscript>
-                        <p>Please <a href="http://www.enable-javascript.com/" target="_blank">enable JavaScript</a> to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus</a>.</p>
-                    </noscript>
-                </div><!-- .col-xs-12 -->
-            </div><!-- .row -->
+                (function() {
+                    var d = document, s = d.createElement('script');
+
+                    s.src = '//{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}.disqus.com/embed.js';
+
+                    s.setAttribute('data-timestamp', +new Date());
+                    (d.head || d.body).appendChild(s);
+                })();
+            </script>
+            <noscript>
+                <p>Please <a href="http://www.enable-javascript.com/" target="_blank">enable JavaScript</a> to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus</a>.</p>
+            </noscript>
             <!-- Disqus End -->
         {% endif %}
     </article>

@@ -4,23 +4,24 @@ en:
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
     comments: "Comments"
+    earlier: "Earlier"
+    earliest: "Earliest"
     got_lost: "Got lost?"
     home_page: "English home page"
     language: "English"
     language_tag: "en"
-    navigation:
-        -
-            title: "Download"
-            url: "/en/download/leap/42.2/"
-    newer: "Newer"
-    next: "Next"
-    older: "Older"
-    previous: "Previous"
+    later: "Later"
+    latest: "Latest"
     read_more: "Read more"
     search: "Search"
     search_form_above: "Please, use the search form above."
     search_results: "Search results"
     search_using_google: "Use Google to search"
+    site:
+        navigation:
+            -
+                title: "Download"
+                url: "/en/download/leap/42.2/"
     subscribe_via_rss: "subscribe via RSS"
     translation: "This page in English"
     translations: "Translations"
@@ -32,18 +33,14 @@ pt:
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
     comments: "Comentários"
+    earlier: "Próxima"
+    earliest: "Última"
     got_lost: "Se perdeu?"
     home_page: "Página inicial em Português"
     language: "Português"
     language_tag: "pt"
-    navigation:
-        -
-            title: "Download"
-            url: "/pt/download/leap/42.2/"
-    newer: "Primeira"
-    next: "Anterior"
-    older: "Última"
-    previous: "Próxima"
+    later: "Anterior"
+    latest: "Primeira"
     read_more: "Leia mais"
     search: "Pesquisar"
     search_form_above: "Por favor, use a pesquisa no topo da página."
@@ -61,6 +58,10 @@ pt:
             versátil e fácil de usar, adequado para o uso diário seja em casa,
             no trabalho ou no servidor. Os focos do projeto são principalmente
             distribuição e documentação.
+        navigation:
+            -
+                title: "Download"
+                url: "/pt/download/leap/42.2/"
         # addthis_profile_id: "ra-examplo123456789"
         disqus_shortname: "kamarada"
         # facebook:

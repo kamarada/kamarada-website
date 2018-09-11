@@ -1,20 +1,20 @@
-<div class="panel panel-default" id="about">
-    <div class="panel-heading">
-        <h3>
-            <a name="about"></a>
-            {% if site.data.t[page.lang].about %}
-                {{ site.data.t[page.lang].about }}
-            {% else %}
-                {{ "About" }}
-            {% endif %}
-        </h3>
+<div class="card mb-3" id="about">
+    <div class="card-header">
+      <h3>
+          <a name="about"></a>
+          {% if site.data.t[page.lang].about %}
+              {{ site.data.t[page.lang].about }}
+          {% else %}
+              {{ "About" }}
+          {% endif %}
+      </h3>
     </div>
-    <div class="panel-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-        <meta itemprop="name" content="{{ site.title }}" />
+    <div class="card-body" itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+        <meta itemprop="name" content="{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}" />
         <meta itemprop="url" content="{{ site.baseurl | prepend: site.url }}" />
         <p class='text-center' itemprop='logo' itemscope itemtype='http://schema.org/ImageObject'>
             <a href='{{ "/assets/img/TuxKamarada.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' itemprop='url'>
-                <img src='{{ "/assets/img/TuxKamarada.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' class='img-responsive img-thumbnail'>
+                <img src='{{ "/assets/img/TuxKamarada.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' class='img-fluid'>
             </a>
             <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
             <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
@@ -28,7 +28,7 @@
         </p>
         {% if site.addthis_profile_id or site.data.t[page.lang].site.addthis_profile_id %}
             <!-- AddThis Follow Buttons -->
-            <div class="addthis_toolbox addthis_32x32_style addthis_default_style center-block">
+            <div class="addthis_toolbox addthis_32x32_style addthis_default_style addthis_follow_buttons text-center">
                 {% if site.facebook.username or site.data.t[page.lang].site.facebook.username %}
                     <a href="https://facebook.com/{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}" class="addthis_button_facebook_follow" addthis:userid="{% if site.data.t[page.lang].site.facebook.username %}{{ site.data.t[page.lang].site.facebook.username }}{% else %}{{ site.facebook.username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
@@ -111,11 +111,11 @@
                 </li>
             </ul>
         {% endif %}
-    </div><!-- .panel-body -->
-</div><!-- .panel -->
+    </div><!-- .card-body -->
+</div><!-- .card -->
 
-<div class="panel panel-default">
-    <div class="panel-heading">
+<div class="card mb-3">
+    <div class="card-header">
         <h3>
             <a name="author"></a>
             {% if site.data.t[page.lang].author %}
@@ -125,36 +125,34 @@
             {% endif %}
         </h3>
     </div>
-    <div class="panel-body">
-        <div itemprop="author" itemscope itemtype="http://schema.org/Person">
-            {% if site.author.email or site.data.t[page.lang].site.author.email %}
-                <p class="text-center">
-                    <a href="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email | to_secure_gravatar }}{% else %}{{ site.author.email | to_secure_gravatar }}{% endif %}" title="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}">
-                        <img src="{% if site.data.t[page.lang].site.author.email %}{{ site.data.t[page.lang].site.author.email | to_secure_gravatar }}{% else %}{{ site.author.email | to_secure_gravatar }}{% endif %}" alt="{% if site.data.t[page.lang].site.author.name %}{{ site.data.t[page.lang].site.author.name }}{% elsif site.author.name %}{{ site.author.name }}{% endif %}" class="img-circle img-responsive img-thumbnail">
-                    </a>
-                </p>
-            {% endif %}
-            {% if site.author.name or site.data.t[page.lang].site.author.name %}
-                <p class="lead text-center" itemprop="name">
-                    {% if site.data.t[page.lang].site.author.name %}
-                        {{ site.data.t[page.lang].site.author.name }}
-                    {% else %}
-                        {{ site.author.name }}
-                    {% endif %}
-                </p>
-            {% endif %}
-            <ul class="contact-list list-unstyled">
-                {% if site.author.site or site.data.t[page.lang].site.author.site %}
-                    <li><a href="{% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}" itemprop="url"><i class="fa fa-globe"></i> {% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}</a></li>
+    <div class="card-body" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        {% if site.author.email %}
+            <p class="text-center">
+                <a href='{{ site.author.email | to_secure_gravatar }}' title='{{ site.author.name }}'>
+                    <img src='{{ site.author.email | to_secure_gravatar }}' alt='{{ site.author.name }}' class='img-fluid img-thumbnail rounded-circle'>
+                </a>
+            </p>
+        {% endif %}
+        {% if site.author.name or site.data.t[page.lang].site.author.name %}
+            <p class="lead text-center" itemprop="name">
+                {% if site.data.t[page.lang].site.author.name %}
+                    {{ site.data.t[page.lang].site.author.name }}
+                {% else %}
+                    {{ site.author.name }}
                 {% endif %}
-            </ul>
-        </div>
-    </div><!-- .panel-body -->
-</div><!-- .panel -->
+            </p>
+        {% endif %}
+        <ul class="contact-list list-unstyled">
+            {% if site.author.site or site.data.t[page.lang].site.author.site %}
+                <li><a href="{% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}" itemprop="url"><i class="fas fa-globe"></i> {% if site.data.t[page.lang].site.author.site %}{{ site.data.t[page.lang].site.author.site }}{% else %}{{ site.author.site }}{% endif %}</a></li>
+            {% endif %}
+        </ul>
+    </div><!-- .card-body -->
+</div><!-- .card -->
 
 {% if site.google.adsense.sidebar_ad_unit %}
-    <div class="panel panel-default">
-        <div class="panel-body">
+    <div class="card mb-3">
+        <div class="card-body">
             {% include adsense.html id="sidebar_ad_unit" ad_slot=site.google.adsense.sidebar_ad_unit %}
         </div><!-- .col-xs-12 -->
     </div><!-- .row -->

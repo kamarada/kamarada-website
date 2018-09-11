@@ -42,7 +42,7 @@ On the first screen, you are presented to the language and keyboard layout setti
 
 {% include image.html src="/files/2016/11/installation-02-en.jpg" %}
 
-Check that the language and keyboard layout settings are as desired. The installer offers a text field in which you can type something to test your keyboard. 
+Check that the language and keyboard layout settings are as desired. The installer offers a text field in which you can type something to test your keyboard.
 
 You don't need to worry about the software license: since openSUSE is a [software *libre*][free-software], its license does not limit your use. You can read it just to know your rights as an openSUSE user.
 
@@ -135,7 +135,7 @@ Now you just need to restart your computer and start using openSUSE Leap.
 
 Have a lot of fun!
 
-[opensuse-leap]:                {%post_url 2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %}
+[opensuse-leap]:                {%post_url en/2015-11-04-opensuse-leap-42-1-becomes-first-hybrid-distribution %}
 [opensuse-doc]:                 https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/part.basics.html
 [pc]:                           https://en.wikipedia.org/wiki/IBM_Personal_Computer
 [windows]:                      https://www.microsoft.com/windows/
@@ -143,16 +143,15 @@ Have a lot of fun!
 [intel]:                        http://www.intel.com/
 [amd]:                          http://www.amd.com/
 [leap-32bit]:                   https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
-[how-to-livedvd]:               {%post_url 2015-11-25-what-is-a-livecd-dvd-usb %}
-[how-to-liveusb]:               {%post_url 2015-11-25-what-is-a-livecd-dvd-usb %}
+[how-to-livedvd]:               {%post_url en/2015-11-25-what-is-a-livecd-dvd-usb %}
+[how-to-liveusb]:               {%post_url en/2015-11-25-what-is-a-livecd-dvd-usb %}
 [kde]:                          https://www.kde.org/
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.html
-[how-to-ntp-client]:            {%post_url 2017-02-25-sync-your-system-time-with-ntp %}
+[how-to-ntp-client]:            {%post_url en/2017-02-25-sync-your-system-time-with-ntp %}
 [swap]:                         https://www.linux.com/news/all-about-linux-swap-space
 [page-file]:                    https://support.microsoft.com/kb/2160852
 [uefi]:                         https://en.opensuse.org/openSUSE:UEFI
 [esp]:                          https://en.wikipedia.org/wiki/EFI_system_partition
 [opensuse-doc-partitioning]:    https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.inst_mode.partitioning
 [passwords]:                    http://lifehacker.com/four-methods-to-create-a-secure-password-youll-actually-1601854240
-

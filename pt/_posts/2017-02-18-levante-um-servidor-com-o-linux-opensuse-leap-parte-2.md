@@ -223,7 +223,7 @@ Como essa é a primeira conexão com o servidor, o computador pergunta se deve c
 ```
 The authenticity of host '192.168.25.100 (192.168.25.100)' can't be established.
 ECDSA key fingerprint is SHA256:GFiBtsouaZSU4HuTOuzYyDJrxq+AD4coYZBESbl6tzE.
-Are you sure you want to continue connecting (yes/no)? 
+Are you sure you want to continue connecting (yes/no)?
 ```
 
 Digite `yes` ("sim", em inglês) e tecle **Enter**. Das próximas vezes em que você acessar esse servidor via SSH, essa verificação não será mais feita.
@@ -232,7 +232,7 @@ Na sequência, você deve informar a senha do usuário e teclar **Enter**:
 
 ```
 Warning: Permanently added '192.168.25.100' (ECDSA) to the list of known hosts.
-Password: 
+Password:
 Have a lot of fun...
 kamarada@novoservidor:~>
 ```
@@ -446,8 +446,8 @@ Siga o Projeto Linux Kamarada para descobrir coisas interessantes que você pode
 
 E... *have a lot a fun*! (divirta-se bastante)
 
-[how-to-server]:                {%post_url 2017-01-15-levante-um-servidor-com-o-linux-opensuse-leap %}
-[opensuse-leap-422]:            {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[how-to-server]:                {%post_url pt/2017-01-15-levante-um-servidor-com-o-linux-opensuse-leap %}
+[opensuse-leap-422]:            {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [yast]:                         https://pt.opensuse.org/Portal:YaST
 [windows]:                      https://www.microsoft.com/pt-br/windows/
 [control-panel]:                http://www.techtudo.com.br/dicas-e-tutoriais/noticia/2015/06/como-acessar-o-painel-de-controle-antigo-no-windows-10.html
@@ -460,7 +460,7 @@ E... *have a lot a fun*! (divirta-se bastante)
 [google-public-dns-statistics]: https://tecnoblog.net/91521/google-dns/
 [google-public-dns]:            https://developers.google.com/speed/public-dns/
 [ssh]:                          https://pt.wikipedia.org/wiki/Secure_Shell
-[how-to-ntp-client]:            {%post_url 2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
+[how-to-ntp-client]:            {%post_url pt/2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
 [ntpbr]:                        http://ntp.br/
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.pt-br.html
@@ -470,5 +470,4 @@ E... *have a lot a fun*! (divirta-se bastante)
 [oss]:                          https://pt.wikipedia.org/wiki/Software_de_código_aberto
 [semi-official-repos]:          https://en.opensuse.org/Package_repositories#Semi_official_repositories
 [third-party-repos]:            https://en.opensuse.org/Additional_package_repositories
-[how-to-sw-updates]:            {%post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}
-
+[how-to-sw-updates]:            {%post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}

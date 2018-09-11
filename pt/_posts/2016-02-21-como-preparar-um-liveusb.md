@@ -10,13 +10,13 @@ nickname: 'how-to-liveusb'
 
 {% include image.html src="/files/2016/02/liveusb.jpg" %}
 
-Um [LiveUSB]({% post_url 2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}) permite que você leve o Linux consigo de forma prática para usar em qualquer computador que ofereça a possibilidade de iniciar o sistema operacional ("dar o *boot*", na gíria técnica) a partir de dispositivos USB, como *pendrives*, discos rígidos ou cartões de memória.
+Um [LiveUSB]({% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}) permite que você leve o Linux consigo de forma prática para usar em qualquer computador que ofereça a possibilidade de iniciar o sistema operacional ("dar o *boot*", na gíria técnica) a partir de dispositivos USB, como *pendrives*, discos rígidos ou cartões de memória.
 
 Em tese, qualquer dispositivo de armazenamento em massa USB pode ser transformado em um LiveUSB. Como fazer isso é o que veremos nesse *post*.
 
-Se você não sabe o que é um LiveUSB, já apresentamos ele em [outro *post*]({% post_url 2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}).
+Se você não sabe o que é um LiveUSB, já apresentamos ele em [outro *post*]({% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}).
 
-Antes de criar um LiveUSB, você deve [baixar o Linux][download]. Caso precise de ajuda com o *download*, consulte esse [outro *post*]({% post_url 2015-12-20-como-baixar-o-linux %}).
+Antes de criar um LiveUSB, você deve [baixar o Linux][download]. Caso precise de ajuda com o *download*, consulte esse [outro *post*]({% post_url pt/2015-12-20-como-baixar-o-linux %}).
 
 As instruções para criar um LiveUSB variam de acordo com o sistema operacional que você usa. Isso porque os programas utilizados são diferentes.
 

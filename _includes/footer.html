@@ -1,12 +1,6 @@
 <footer class="footer">
     <div class="container">
-        <div class="row">
-            <div class="col-xs-12">
-                <p class="text-center">
-                    Copyright &copy; {{ site.time | date: '%Y' }} {% if site.data.t[page.lang].site.author.name %}<a href='#author'>{{ site.data.t[page.lang].site.author.name }}</a>{% elsif site.author.name %}<a href='#author'>{{ site.author.name }}</a>{% else %}<a href='#about'>{{ site.title }}</a>{% endif %}. {% if site.data.t[page.lang].all_rights_reserved %}{{ site.data.t[page.lang].all_rights_reserved }}{% else %}{{ "All rights reserved" }}{% endif %}. {% if site.data.t[page.lang].based_on %}{{ site.data.t[page.lang].based_on }}{% else %}{{ "Based on" }}{% endif %} <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
-                </p>
-            </div>
-        </div>
+        Copyright &copy; {{ site.time | date: '%Y' }} {% if site.data.t[page.lang].site.author.name %}<a href='#author'>{{ site.data.t[page.lang].site.author.name }}</a>{% elsif site.author.name %}<a href='#author'>{{ site.author.name }}</a>{% else %}<a href='#about'>{% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}</a>{% endif %}. {% if site.data.t[page.lang].all_rights_reserved %}{{ site.data.t[page.lang].all_rights_reserved }}{% else %}{{ "All rights reserved" }}{% endif %}. {% if site.data.t[page.lang].based_on %}{{ site.data.t[page.lang].based_on }}{% else %}{{ "Based on" }}{% endif %} <a href='https://github.com/vinyanalista/material-jekyll-plus'>Material site template for Jekyll PLUS</a>.
     </div>
 </footer>
 
@@ -17,7 +11,7 @@
         <meta itemprop="url" content="{{ page.image | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}"/>
         <!--<meta itemprop="width" content=""/>--><!-- TODO Image width -->
         <!--<meta itemprop="height" content=""/>--><!-- TODO Image height -->
-    </div> 
+    </div>
 {% endif %}
 
 {% if site.lang or page.lang %}
@@ -34,7 +28,7 @@
             };
         {% endif %}
         var disqus_shortname = '{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}';
-        
+
         /* * * DON'T EDIT BELOW THIS LINE * * */
         (function () {
             var s = document.createElement('script'); s.async = true;
@@ -57,7 +51,7 @@
 
         $(document).ready(function(){
             {% if site.google.adsense.content_ad_unit_2 %}
-                var $ad = $('#content_ad_unit_2').closest('.row');
+                var $ad = $('#content_ad_unit_2');
                 var $posts = $('.blog-post');
                 if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing

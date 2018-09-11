@@ -102,7 +102,7 @@ Para referência futura, nesse *post* foi utilizada a distribuição Linux [open
 [vinyanalista-vpn]:         https://vinyanalista.github.io/blog/2016/06/26/como-criar-uma-vpn-pfsense-openvpn/
 [pfsense]:                  https://www.pfsense.org/
 [tor]:                      https://www.torproject.org/
-[opensuse-leap-42.2]:       {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[opensuse-leap-42.2]:       {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [gnome-3.20]:               https://www.gnome.org/news/2016/03/gnome-3-20-released/
 [openvpn-2.3.8]:            https://github.com/OpenVPN/openvpn/releases/tag/v2.3.8
 [lifehacker-vpn]:           http://lifehacker.com/5940565/why-you-should-start-using-a-vpn-and-how-to-choose-the-best-one-for-your-needs

@@ -10,7 +10,7 @@ nickname: 'how-to-upgrade'
 
 {% include image.html src="/files/2016/10/upgrade.png" caption="Imagem obtida no site [openSUSE News](https://news.opensuse.org/2016/09/22/new-leap-beta-adds-plasma-5-8-beta/)" %}
 
-Atualizar de uma versão para outra para quem usa [openSUSE][opensuse] é uma tranquilidade. Há mais de 3 anos utilizo o Linux openSUSE e sempre consegui atualizar de uma versão para outra. Comecei a usá-lo na versão 12.2, pouco antes do [lançamento da 12.3, em maio de 2013][opensuse-123]. Desde então já foram 5 atualizações: da versão 12.2 para a 12.3, para a 13.1, para a 13.2, para a Leap 42.1 (realmente, houve um salto, como falamos em [outro *post*]({% post_url 2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %})) e essa semana para a 42.2, mesmo antes de ter sido lançada.
+Atualizar de uma versão para outra para quem usa [openSUSE][opensuse] é uma tranquilidade. Há mais de 3 anos utilizo o Linux openSUSE e sempre consegui atualizar de uma versão para outra. Comecei a usá-lo na versão 12.2, pouco antes do [lançamento da 12.3, em maio de 2013][opensuse-123]. Desde então já foram 5 atualizações: da versão 12.2 para a 12.3, para a 13.1, para a 13.2, para a Leap 42.1 (realmente, houve um salto, como falamos em [outro *post*]({% post_url pt/2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %})) e essa semana para a 42.2, mesmo antes de ter sido lançada.
 
 A próxima versão do openSUSE Leap, a 42.2, já passou pelas fases alfa e beta e teve a primeira versão candidata a lançamento (*release candidate* ou RC) liberada dia [18 de outubro][opensuse-422-rc1]. Isso quer dizer que boa parte dos testes já terminaram. Essa versão já é bem próxima da final, cujo lançamento está previsto para [16 de novembro][opensuse-roadmap]. Daqui para lá, o openSUSE Leap deve receber apenas alguns retoques finais.
 
@@ -22,9 +22,9 @@ Para organizar melhor, vou dividir a atualização em 6 etapas.
 
 O roteiro para atualização que apresento aqui é o que utilizei no meu computador e que aprendi lendo a [*wiki* do openSUSE][system-upgrade]. Ele é praticamente o mesmo desde que comecei a utilizar o openSUSE. É um procedimento seguro, que deve funcionar para a maioria dos casos, mas que requer que alguns cuidados sejam observados.
 
-**Você deve estar utilizando a versão imediatamente anterior do openSUSE.** Isso quer dizer que se você pretende atualizar para a versão 42.2, deve estar usando agora a 42.1. Saltos de versões não são suportados e é possível que não funcionem. Portanto, se você utiliza a versão 13.2, por exemplo, deve primeiro atualizar para a versão 42.1, para então atualizar para a versão 42.2 (note que o salto aqui é apenas nos números, [a versão 42.1 é de fato a versão seguinte à 13.2]({% post_url 2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %})).
+**Você deve estar utilizando a versão imediatamente anterior do openSUSE.** Isso quer dizer que se você pretende atualizar para a versão 42.2, deve estar usando agora a 42.1. Saltos de versões não são suportados e é possível que não funcionem. Portanto, se você utiliza a versão 13.2, por exemplo, deve primeiro atualizar para a versão 42.1, para então atualizar para a versão 42.2 (note que o salto aqui é apenas nos números, [a versão 42.1 é de fato a versão seguinte à 13.2]({% post_url pt/2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %})).
 
-**Sua instalação do openSUSE deve estar atualizada** com as versões mais recentes dos pacotes lançadas até o momento. Para saber como obtê-las, leia o [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}).
+**Sua instalação do openSUSE deve estar atualizada** com as versões mais recentes dos pacotes lançadas até o momento. Para saber como obtê-las, leia o [*post* anterior]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}).
 
 **Você deve se informar sobre a versão do openSUSE que vai instalar.** Consulte a [lista de *bugs* mais chatos][most-annoying-bugs] para ter ciência deles, como preveni-los e/ou solucioná-los, assim como as [notas de lançamento][release-notes], que descrevem o que muda na nova versão.
 
@@ -40,7 +40,7 @@ Antes de começar, gostaria de fazer só mais uma observação, para quem deseja
 
 Antes de começar, certifique-se de que a instalação do openSUSE que está no seu computador esteja atualizada.
 
-Como vimos no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}), o ícone da **Atualização de aplicativos** (*Software Updates*) deve informar que seu sistema está totalmente atualizado:
+Como vimos no [*post* anterior]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}), o ícone da **Atualização de aplicativos** (*Software Updates*) deve informar que seu sistema está totalmente atualizado:
 
 {% include image.html src="/files/2016/10/sw-updates-05-pt.jpg" %}
 
@@ -48,7 +48,7 @@ Ou, se você prefere utilizar a interface de linha de comando, o **zypper** deve
 
 {% include image.html src="/files/2016/10/sw-updates-cmd-05-pt.jpg" %}
 
-Consulte [aquele *post*]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para saber como atualizar seu openSUSE.
+Consulte [aquele *post*]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para saber como atualizar seu openSUSE.
 
 É importante esclarecer algo: a atualização de que falei naquele *post* foi uma atualização dos pacotes, sem mudança de distribuição (*update*). Aqui, vamos ver como atualizar todo o sistema e passar para uma distribuição mais nova (*upgrade*).
 
@@ -152,7 +152,7 @@ Ele passa um tempo "pensando" e logo depois mostra o que precisa fazer para atua
 
 {% include image.html src="/files/2016/10/upgrade-11-pt.jpg" %}
 
-Note que essa lista de ações é semelhante à produzida pelo comando `zypper up`, apresentado no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}). No entanto, como agora estamos fazendo uma atualização de distribuição (*upgrade*), e não uma simples e cotidiana atualização de pacotes (*update*), a lista do que precisa ser feito é bem maior.
+Note que essa lista de ações é semelhante à produzida pelo comando `zypper up`, apresentado no [*post* anterior]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}). No entanto, como agora estamos fazendo uma atualização de distribuição (*upgrade*), e não uma simples e cotidiana atualização de pacotes (*update*), a lista do que precisa ser feito é bem maior.
 
 Confira essa lista com cuidado. Você pode ir para cima ou para baixo utilizando a barra de rolagem à direita da tela ou a roda (*scroll*) do *mouse*, se utiliza o Konsole, ou as combinações de teclas **Shift + Page Up** ou **Shift + Page Down**, se está em uma interface puramente textual (elas também funcionam no Konsole).
 
@@ -218,7 +218,7 @@ Ele pula o *download* dos pacotes e já vai direto para a instalação:
 
 A atualização da distribuição pode demorar alguns (vários) minutos.
 
-Quando ela terminar, assim como aconteceu no [*post* anterior]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}), o **zypper** vai sugerir para reiniciar. É o que vamos fazer executando `reboot`:
+Quando ela terminar, assim como aconteceu no [*post* anterior]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}), o **zypper** vai sugerir para reiniciar. É o que vamos fazer executando `reboot`:
 
 {% include image.html src="/files/2016/10/upgrade-18.jpg" %}
 
@@ -236,7 +236,7 @@ E *voilà*! O openSUSE Leap 42.2 está instalado e pronto para uso!
 
 Verifique se está tudo no lugar. Agora você pode devolver os repositórios que excluiu, lembrando de fazer os devidos ajustes em relação à versão do openSUSE, mudando de `42.1` para `42.2` onde for necessário. Pode também tentar instalar qualquer programa que por ventura tenha sido removido durante a atualização.
 
-Se lembre de regularmente [verificar se há atualizações]({% post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para sua nova distribuição.
+Se lembre de regularmente [verificar se há atualizações]({% post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}) para sua nova distribuição.
 
 Se você encontrou alguma dificuldade durante a atualização ou possui alguma dúvida, não deixe de comentar!
 

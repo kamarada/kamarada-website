@@ -70,7 +70,7 @@ Run the following commands to load the driver and check it is indeed loaded:
 ```
 # modprobe rtl8812au
 # lsmod | grep rtl8812au
-rtl8812au            1368064  0 
+rtl8812au            1368064  0
 cfg80211              593920  5 mac80211,rtl8812au,ath9k,ath,ath9k_common
 usbcore               245760  10 uvcvideo,usbhid,rtl8812au,ehci_hcd,xhci_pci,rtsx_usb,ath3k,btusb,xhci_hcd,ehci_pci
 ```
@@ -104,7 +104,7 @@ Have a lot of fun!
 [bluetooth]:                https://en.wikipedia.org/wiki/Bluetooth
 [archer-t4u-driver]:        http://www.tp-link.com/us/download/Archer-T4U.html#Driver
 [kernel]:                   https://www.kernel.org/
-[opensuse-leap-42.3]:       {%post_url 2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
+[opensuse-leap-42.3]:       {%post_url en/2017-07-26-refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits %}
 [ubuntu-14.04]:             https://wiki.ubuntu.com/TrustyTahr/ReleaseNotes
 [free-software]:            https://www.gnu.org/philosophy/free-sw.en.html
 [google]:                   https://www.google.com
@@ -113,4 +113,3 @@ Have a lot of fun!
 [wikidevi]:                 https://wikidevi.com/wiki/TP-LINK_Archer_T4U
 [unzip]:                    https://www.lifewire.com/examples-linux-unzip-command-2201157
 [list-add-kernel-modules]:  https://www.cyberciti.biz/faq/add-remove-list-linux-kernel-modules/
-

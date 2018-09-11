@@ -124,7 +124,7 @@ Há quem diga que [transmitir a declaração com certificado digital antecipa a 
 - [Configuração para uso de Tokens e SmartCards no Linux —  Receita Federal][tokens-receita]
 - [Declaração do Imposto de Renda com Certificado Digital][serasa]
 
-[how-to-token]:                 {%post_url 2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
+[how-to-token]:                 {%post_url pt/2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
 [irpf-2018]:                    http://idg.receita.fazenda.gov.br/interface/cidadao/irpf/2018
 [receita-federal]:              http://idg.receita.fazenda.gov.br/
 [declaracao-pre-preenchida]:    http://idg.receita.fazenda.gov.br/orientacao/tributaria/declaracoes-e-demonstrativos/dirpf/declaracao-pre-preenchida
@@ -135,8 +135,8 @@ Há quem diga que [transmitir a declaração com certificado digital antecipa a 
 [oracle]:                       https://www.oracle.com/br/
 [java-test]:                    https://www.java.com/verify/
 [java-release-notes]:           http://www.oracle.com/technetwork/java/javase/8u161-relnotes-4021379.html
-[how-to-oracle-jre]:            {%post_url 2017-02-28-como-instalar-o-java-da-oracle-no-linux-opensuse %}
-[irpf-2017]:                    {%post_url 2017-02-28-como-instalar-o-programa-do-imposto-de-renda-2017-no-linux-opensuse %}
+[how-to-oracle-jre]:            {%post_url pt/2017-02-28-como-instalar-o-java-da-oracle-no-linux-opensuse %}
+[irpf-2017]:                    {%post_url pt/2017-02-28-como-instalar-o-programa-do-imposto-de-renda-2017-no-linux-opensuse %}
 [cartao-inteligente]:           https://pt.wikipedia.org/wiki/Cart%C3%A3o_inteligente
 [token]:                        https://pt.wikipedia.org/wiki/Token_(chave_eletr%C3%B4nica)
 [opensuse-leap-15]:             https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/

@@ -138,7 +138,7 @@ Isso é tudo.
 
 Agora é só reiniciar seu computador e começar a usar o openSUSE Leap. Divirta-se!
 
-[opensuse-leap]:                {%post_url 2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %}
+[opensuse-leap]:                {%post_url pt/2015-11-04-opensuse-leap-42-1-se-torna-a-primeira-distribuicao-linux-hibrida %}
 [opensuse-doc]:                 https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/part.basics.html
 [pc]:                           https://pt.wikipedia.org/wiki/IBM_PC
 [windows]:                      https://www.microsoft.com/pt-br/windows/
@@ -146,16 +146,15 @@ Agora é só reiniciar seu computador e começar a usar o openSUSE Leap. Divirta
 [intel]:                        http://www.intel.com.br/
 [amd]:                          http://www.amd.com/pt-br
 [leap-32bit]:                   https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
-[how-to-livedvd]:               {%post_url 2016-04-22-como-gravar-um-livedvd %}
-[how-to-liveusb]:               {%post_url 2016-02-21-como-preparar-um-liveusb %}
+[how-to-livedvd]:               {%post_url pt/2016-04-22-como-gravar-um-livedvd %}
+[how-to-liveusb]:               {%post_url pt/2016-02-21-como-preparar-um-liveusb %}
 [kde]:                          https://www.kde.org/
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.pt-br.html
-[how-to-ntp-client]:            {%post_url 2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
+[how-to-ntp-client]:            {%post_url pt/2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
 [swap]:                         https://www.vivaolinux.com.br/artigo/Funcionamento-da-memoria-virtual
 [page-file]:                    https://support.microsoft.com/kb/2160852
 [uefi]:                         https://pt.wikipedia.org/wiki/UEFI
 [esp]:                          https://en.wikipedia.org/wiki/EFI_system_partition
 [opensuse-doc-partitioning]:    https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/cha.inst.html#sec.i.yast2.inst_mode.partitioning
 [passwords]:                    http://cartilha.cert.br/senhas/
-

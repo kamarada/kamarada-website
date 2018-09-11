@@ -377,7 +377,7 @@ Até a próxima!
 
 [opensuse-leap]:            https://en.opensuse.org/Portal:Leap
 [opensuse-leap-42.3]:       https://news.opensuse.org/2017/07/26/refresh-of-linux-distribution-continues-leveraging-community-enterprise-benefits/
-[how-to-upgrade-to-42.2]:   {% post_url 2016-10-31-como-atualizar-do-opensuse-leap-421-para-o-422 %}
+[how-to-upgrade-to-42.2]:   {% post_url pt/2016-10-31-como-atualizar-do-opensuse-leap-421-para-o-422 %}
 [system-upgrade]:           https://en.opensuse.org/SDB:System_upgrade
 [release-notes]:            https://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/42.3/RELEASE-NOTES.pt_BR.html
 [debian]:                   https://www.debian.org/

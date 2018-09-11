@@ -24,7 +24,7 @@ A seguir são apresentadas algumas [imagens ISO][iso] que você pode baixar e tr
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="/files/2017/07/screenshot-kde-42.2.jpg" class="center-block img-responsive">
+                <img src="/files/2017/07/screenshot-kde-42.2.jpg" class="center-block img-fluid">
                 <a href="https://sourceforge.net/projects/kamarada/files/distribution/leap/42.2/Linux-Kamarada-42.2-KDE-Live.x86_64-20170717.iso/download" class="btn btn-primary center-block">Download</a>
                 <a href="https://sourceforge.net/projects/kamarada/files/distribution/leap/42.2/Linux-Kamarada-42.2-KDE-Live.x86_64-20170717.iso.sha256/download" class="btn btn-default center-block">Soma SHA256</a>
             </div>
@@ -41,7 +41,7 @@ A seguir são apresentadas algumas [imagens ISO][iso] que você pode baixar e tr
         </div>
         <div class="row">
             <div class="col-xs-12">
-                <img src="/files/2017/07/screenshot-gnome-42.2.jpg" class="center-block img-responsive">
+                <img src="/files/2017/07/screenshot-gnome-42.2.jpg" class="center-block img-fluid">
                 <a href="https://sourceforge.net/projects/kamarada/files/distribution/leap/42.2/Linux-Kamarada-42.2-GNOME-Live.x86_64-20170717.iso/download" class="btn btn-primary center-block">Download</a>
                 <a href="https://sourceforge.net/projects/kamarada/files/distribution/leap/42.2/Linux-Kamarada-42.2-GNOME-Live.x86_64-20170717.iso.sha256/download" class="btn btn-default center-block">Soma SHA256</a>
             </div>
@@ -54,10 +54,10 @@ Se for instalar o Linux, recomendamos que antes verifique as [Notas de Lançamen
 <p>As imagens ISO produzidas pelo Projeto Linux Kamarada são gentilmente hospedadas pelo <a href="https://sourceforge.net/p/kamarada/" rel="nofollow"><img alt="Download Linux Kamarada" src="https://sourceforge.net/sflogo.php?type=10&group_id=2301355"></a>.</p>
 
 [free-software]:    https://www.gnu.org/philosophy/free-sw.pt-br.html
-[opensuse-leap]:    {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[opensuse-leap]:    {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [opensuse]:         https://www.opensuse.org/
 [livesuse]:         https://livesuse.github.io/
 [iso]:              https://pt.wikipedia.org/wiki/Imagem_ISO
-[livedvd]:          {%post_url 2016-04-22-como-gravar-um-livedvd %}
-[liveusb]:          {%post_url 2016-02-21-como-preparar-um-liveusb %}
+[livedvd]:          {%post_url pt/2016-04-22-como-gravar-um-livedvd %}
+[liveusb]:          {%post_url pt/2016-02-21-como-preparar-um-liveusb %}
 [release-notes]:    http://doc.opensuse.org/release-notes/x86_64/openSUSE/Leap/42.2/RELEASE-NOTES.pt_BR.html

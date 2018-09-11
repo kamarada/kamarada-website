@@ -344,11 +344,11 @@ As I realized that this post is already very long, I decided to split it into tw
 
 Follow the Linux Kamarada Project to read the second part as soon as it's published!
 
-{% capture update %}[Sorry for the long wait, the second part of this tutorial is here. (click)]({%post_url 2018-03-15-how-to-install-opensuse-leap-linux-on-a-server-part-2 %}){% endcapture %}
+{% capture update %}[Sorry for the long wait, the second part of this tutorial is here. (click)]({%post_url en/2018-03-15-how-to-install-opensuse-leap-linux-on-a-server-part-2 %}){% endcapture %}
 {% include update.html date="15/03/2018" message=update %}
 
-[opensuse-leap-422]:            {%post_url 2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
-[how-to-install]:               {%post_url 2016-11-15-how-to-install-opensuse-leap-linux %}
+[opensuse-leap-422]:            {%post_url en/2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
+[how-to-install]:               {%post_url en/2016-11-15-how-to-install-opensuse-leap-linux %}
 [opensuse-leap-32bit]:          https://www.reddit.com/r/openSUSE/comments/3d711c/will_leap_42_support_32bit_machines_given_that/
 [system-requirements]:          https://doc.opensuse.org/documentation/leap/startup/html/book.opensuse.startup/art.opensuse.installquick.html#sec.osuse.installquick.sysreqs
 [virtualization]:               https://doc.opensuse.org/documentation/leap/virtualization/html/book.virt/cha.virt.support.html#virt.support.hosts
@@ -356,7 +356,7 @@ Follow the Linux Kamarada Project to read the second part as soon as it's publis
 [vmware-vsphere]:               https://www.vmware.com/products/vsphere-hypervisor.html
 [opensuse]:                     https://www.opensuse.org
 [opensuse-leap-422-download]:   https://software.opensuse.org/422/en
-[how-to-livedvd]:               {%post_url 2015-11-25-what-is-a-livecd-dvd-usb %}
+[how-to-livedvd]:               {%post_url en/2015-11-25-what-is-a-livecd-dvd-usb %}
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
 [free-software]:                https://www.gnu.org/philosophy/free-sw.en.html
 [official-repos]:               https://en.opensuse.org/Package_repositories#Official_Repositories
@@ -370,7 +370,7 @@ Follow the Linux Kamarada Project to read the second part as soon as it's publis
 [swap-opensuse-2]:              https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha.pmanage.html
 [swap-ubuntu]:                  https://help.ubuntu.com/community/SwapFaq
 [swap-redhat]:                  https://access.redhat.com/documentation/en-US/Red_Hat_Enterprise_Linux/7/html/Storage_Administration_Guide/ch-swapspace.html
-[how-to-ntp-client]:            {%post_url 2017-02-25-sync-your-system-time-with-ntp %}
+[how-to-ntp-client]:            {%post_url en/2017-02-25-sync-your-system-time-with-ntp %}
 [oss]:                          https://opensource.org/osd-annotated
 [libreoffice]:                  https://www.libreoffice.org/
 [firefox]:                      https://www.mozilla.org/en-US/firefox/

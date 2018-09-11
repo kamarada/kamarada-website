@@ -93,9 +93,9 @@ Faça bom proveito!
 [windows]:                  https://www.microsoft.com/pt-br/windows/
 [bb]:                       http://www.bb.com.br/
 [opensuse]:                 https://www.opensuse.org/
-[opensuse-leap-422]:        {%post_url 2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
+[opensuse-leap-422]:        {%post_url pt/2016-11-16-opensuse-leap-42-2-versao-otima-para-profissionais-linux %}
 [firefox]:                  https://www.mozilla.org/pt-BR/firefox/
-[how-to-sw-updates]:        {%post_url 2016-10-21-mantenha-seu-sistema-sempre-atualizado %}
+[how-to-sw-updates]:        {%post_url pt/2016-10-21-mantenha-seu-sistema-sempre-atualizado %}
 [chrome]:                   https://www.google.com.br/chrome/
 [seg-bb]:                   https://seg.bb.com.br/
 [deb]:                      https://pt.wikipedia.org/wiki/.deb
@@ -107,4 +107,3 @@ Faça bom proveito!
 [fedora]:                   https://getfedora.org/
 [yast]:                     https://pt.opensuse.org/Portal:YaST
 [seg-bb-duvidas]:           https://seg.bb.com.br/duvidas.html?question=8
-

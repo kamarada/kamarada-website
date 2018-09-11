@@ -22,7 +22,7 @@ Para utilizar o protocolo SSH, você precisa ter um cliente SSH instalado no seu
 Por desencargo de consciência, apenas para verificar, abra o terminal e execute:
 
 ```
-$ ssh -V 
+$ ssh -V
 ```
 
 Esse comando deve retornar informações sobre a versão do cliente SSH instalado:
@@ -92,7 +92,7 @@ Caso você já tenha uma chave privada, ele pergunta se deve sobrescrevê-la:
 
 ```
 /home/seunomedeusuario/.ssh/id_rsa already exists.
-Overwrite (y/n)? 
+Overwrite (y/n)?
 ```
 
 Nesse caso, digite `y` e tecle **Enter**.
@@ -100,8 +100,8 @@ Nesse caso, digite `y` e tecle **Enter**.
 Em seguida, você deve digitar e confirmar uma [frase-senha][passphrase] (do inglês *passphrase*, entenda como "uma senha longa"):
 
 ```
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 ```
 
 Digite a frase-senha e tecle **Enter**. Depois, faça isso de novo para confirmá-la.
@@ -113,9 +113,9 @@ Toda a interação deve gerar algo parecido com:
 ```
 seunomedeusuario@seucomputador:~> ssh-keygen -t rsa -b 4096 -C "seuemail@exemplo.com.br"
 Generating public/private rsa key pair.
-Enter file in which to save the key (/home/seunomedeusuario/.ssh/id_rsa): 
-Enter passphrase (empty for no passphrase): 
-Enter same passphrase again: 
+Enter file in which to save the key (/home/seunomedeusuario/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase):
+Enter same passphrase again:
 Your identification has been saved in /home/seunomedeusuario/.ssh/id_rsa.
 Your public key has been saved in /home/seunomedeusuario/.ssh/id_rsa.pub.
 The key fingerprint is:
@@ -160,7 +160,7 @@ $ ssh-add ~/.ssh/id_rsa
 Digite a frase-senha e tecle **Enter**:
 
 ```
-Enter passphrase for /home/seunomedeusuario/.ssh/id_rsa: 
+Enter passphrase for /home/seunomedeusuario/.ssh/id_rsa:
 ```
 
 O comando confirma que a chave foi adicionada ao agente:
@@ -248,7 +248,7 @@ Se você ainda não se conectou ao GitHub via SSH, o cliente SSH pergunta se pod
 ```
 The authenticity of host 'github.com (192.30.253.112)' can't be established.
 RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
-Are you sure you want to continue connecting (yes/no)? 
+Are you sure you want to continue connecting (yes/no)?
 ```
 
 Nesse caso, digite `yes` e tecle **Enter**. Essa pergunta só é feita na primeira vez. O cliente SSH adiciona o servidor do GitHub à lista de computadores conhecidos:
@@ -369,7 +369,7 @@ Espero que essas dicas possam ser úteis para você como têm sido para mim desd
 [ssh]:                      https://pt.wikipedia.org/wiki/Secure_Shell
 [opensuse]:                 https://www.opensuse.org/
 [openssh]:                  https://www.openssh.com/
-[how-to-server-config]:     {%post_url 2017-02-18-levante-um-servidor-com-o-linux-opensuse-leap-parte-2 %}
+[how-to-server-config]:     {%post_url pt/2017-02-18-levante-um-servidor-com-o-linux-opensuse-leap-parte-2 %}
 [passphrase]:               https://pt.wikipedia.org/wiki/Frase-passe
 [ssh-agent]:                https://pt.wikipedia.org/wiki/Ssh-agent
 [pid]:                      https://pt.wikipedia.org/wiki/Identificador_de_processo
@@ -380,4 +380,3 @@ Espero que essas dicas possam ser úteis para você como têm sido para mim desd
 [github-ssh]:               https://help.github.com/articles/connecting-to-github-with-ssh/
 [bitbucket-ssh]:            https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html
 [changing-a-remote-s-url]:  https://help.github.com/articles/changing-a-remote-s-url/
-
