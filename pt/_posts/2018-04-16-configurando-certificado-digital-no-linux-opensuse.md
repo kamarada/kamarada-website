@@ -235,7 +235,9 @@ Depois, clique em **Privacidade e Segurança** e, por último, no botão **Dispo
 
 {% include image.html src="/files/2018/04/token-06-pt.png" %}
 
-Em **Nome do módulo**, digite um nome que identifique o *token* (por exemplo, `eToken`).
+Na caixa de diálogo que aparece, **Gerenciador de dispositivos**, clique em **Carregar**.
+
+Na caixa de diálogo seguinte, em **Nome do módulo**, digite um nome que identifique o *token* (por exemplo, `eToken`).
 
 Em **Nome do arquivo do módulo**, informe o caminho para a biblioteca do *token*:
 
@@ -284,6 +286,13 @@ Verifique suas informações na parte superior da tela:
 Pronto! Agora você está no ambiente seguro da Receita Federal e sabe que configurou corretamente seu certificado digital no Linux openSUSE!
 
 Divirta-se bastante... (*have a lot of fun...*)
+
+{% capture atualizacao %}
+Veja outro uso interessante para o seu certificado digital:
+
+- [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
+{% endcapture %}
+{% include update.html date="24/09/2018" message=atualizacao %}
 
 ## Referências
 

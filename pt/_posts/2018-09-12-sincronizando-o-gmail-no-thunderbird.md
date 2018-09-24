@@ -3,7 +3,7 @@ date: 2018-09-12 18:55:00
 image: '/files/2018/09/thunderbird-gmail.png'
 layout: post
 published: true
-nickname: 'howto-thunderbird-gmail'
+nickname: 'how-to-thunderbird-gmail'
 title: 'Sincronizando o Gmail no Thunderbird'
 excerpt: 'O Thunderbird é o cliente de e-mail gratuito da Fundação Mozilla, a mesma que desenvolve o conhecido navegador Firefox. E o Gmail dispensa apresentações: é o serviço de e-mail gratuito da gigante Google. Nesse post, você verá como instalar e configurar o Thunderbird para sincronizar suas mensagens do Gmail.'
 ---
@@ -15,6 +15,13 @@ O [Thunderbird][thunderbird] é o cliente de *e-mail* gratuito da [Fundação Mo
 Nesse *post*, você verá como instalar e configurar o Thunderbird para sincronizar suas mensagens do Gmail.
 
 Bem verdade que as pessoas tem preferido utilizar navegadores em vez de clientes de *e-mail* para ler e enviar mensagens, por ser mais prático. No entanto, os clientes de *e-mail* nos fornecem algumas possibilidades interessantes, como veremos nos próximos *posts*.
+
+{% capture atualizacao %}
+Como prometido, eis aqui um uso interessante para o cliente de *e-mail*:
+
+- [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
+{% endcapture %}
+{% include update.html date="24/09/2018" message=atualizacao %}
 
 ## Instalando o Thunderbird
 
@@ -85,7 +92,7 @@ De volta à tela inicial do Thunderbird, perceba que agora é exibida sua conta 
 
 ## Alguns ajustes
 
-Por padrão, o Thunderbird mostra o painel de mensagens. Caso você deseje ocultá-lo, clique no botão de **Menu**, no canto superior direito da janela, aponte para **Opções**, depois para **Layout** e desmarque **Painel de mensagens**:
+Por padrão, o Thunderbird mostra o painel de mensagens. Caso você deseje ocultá-lo, clique no botão **Menu**, no canto superior direito da janela, aponte para **Preferências**, depois para **Layout** e desmarque **Painel de mensagens**:
 
 {% include image.html src="/files/2018/09/thunderbird-gmail-08.jpg" %}
 
@@ -97,7 +104,7 @@ Por padrão, o Thunderbird ordena as mensagens por data de forma crescente (mens
 
 Um problema que eu percebi usando o Thunderbird: ele não adiciona a assinatura aos e-mails encaminhados. Vejamos como corrigir.
 
-Clique no botão de **Menu**, no canto superior direito da janela, aponte para **Opções** e clique em **Configurações de conta**:
+Clique no botão **Menu**, no canto superior direito da janela, aponte para **Preferências** e clique em **Configurações de conta**:
 
 {% include image.html src="/files/2018/09/thunderbird-gmail-10.jpg" %}
 
@@ -123,4 +130,3 @@ Espero que tenha sido útil. Até a próxima!
 [smtp]:             https://pt.wikipedia.org/wiki/Simple_Mail_Transfer_Protocol
 [gmail-help-imap]:  https://support.google.com/mail/answer/7126229?hl=pt-BR
 [gmail-help-pop]:   https://support.google.com/mail/answer/7104828?hl=pt-BR
-

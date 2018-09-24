@@ -32,6 +32,11 @@ Como eu disse, no exemplo, o alerta foi mostrado apenas porque o navegador não 
 
 Vejamos como instalar o certificado de segurança da Autoridade Certificadora Raiz brasileira nos navegadores [Mozilla Firefox][firefox] e [Google Chrome][chrome] para que eles parem de exibir esse alerta para *sites* brasileiros, principalmente os do governo. Os passos para o Google Chrome também valem para seu equivalente [aberto][codigo-aberto], o [Chromium][chromium].
 
+{% capture atualizacao %}
+Caso precise instalar esse certificado no cliente de *e-mail* [Mozilla Thunderbird](https://www.thunderbird.net), leia [esse *post*]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %}).
+{% endcapture %}
+{% include update.html date="24/09/2018" message=atualizacao %}
+
 Primeiro, [clique aqui][icp-brasil-crt] para baixar o certificado de segurança da Autoridade Certificadora Raiz brasileira.
 
 ### Mozilla Firefox
