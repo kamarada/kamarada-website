@@ -521,6 +521,7 @@ Espero que tenha ajudado. Deixo as referências para o caso de você querer ler 
 
 - [How to Verify a Linux ISO's Checksum and Confirm It Hasn't Been Tampered With][howtogeek]
 - [How to Verify an Electrum Download on Windows - Bitzuma][bitzuma]
+- [How to verify the authenticity and integrity of a downloaded file on Linux - Xmodulo][xmodulo]
 - [SDB:Ajuda de download - openSUSE][opensuse-wiki]
 - [The GNU Privacy Handbook][gph]
 - [GnuPrivacyGuardHowto][ubuntu-wiki]
@@ -553,6 +554,7 @@ Espero que tenha ajudado. Deixo as referências para o caso de você querer ler 
 [google-translate]:         https://translate.google.com.br/
 [howtogeek]:                https://www.howtogeek.com/246332/how-to-verify-a-downloaded-linux-iso-file-wasnt-tampered-with/
 [bitzuma]:                  https://bitzuma.com/posts/how-to-verify-an-electrum-download-on-windows/
+[xmodulo]:                  http://xmodulo.com/verify-authenticity-integrity-downloaded-file.html
 [opensuse-wiki]:            https://pt.opensuse.org/SDB:Ajuda_de_download
 [ubuntu-wiki]:              https://help.ubuntu.com/community/GnuPrivacyGuardHowto
 [security]:                 https://security.stackexchange.com/a/120926
