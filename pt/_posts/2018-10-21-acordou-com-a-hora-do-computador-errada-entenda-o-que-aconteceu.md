@@ -1,11 +1,11 @@
 ---
-date: 2018-10-21 12:50:00 GMT-3
+date: 2018-10-21 13:00:00 GMT-3
 image: '/files/2018/10/tux-wrong-clock.png'
 layout: post
 published: true
 nickname: 'how-to-veracrypt'
 title: 'Acordou com a hora do computador errada? Entenda o que aconteceu'
-excerpt: ''
+excerpt: 'Muita gente que virou acordado a madrugada de ontem para hoje percebeu que o relógio do computador se adiantou em 1 hora sozinho. Quem estava com seu computador devidamente configurado e atualizado não teve problemas. Nesse post você vai entender o que aconteceu e como se prevenir.'
 ---
 
 {% include image.html src="/files/2018/10/tux-wrong-clock.png" style="max-width: 200px;" %}
