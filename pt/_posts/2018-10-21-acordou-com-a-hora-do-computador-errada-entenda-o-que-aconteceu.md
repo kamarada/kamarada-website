@@ -3,7 +3,7 @@ date: 2018-10-21 13:00:00 GMT-3
 image: '/files/2018/10/tux-wrong-clock.png'
 layout: post
 published: true
-nickname: 'how-to-veracrypt'
+nickname: 'horario-de-verao-2018'
 title: 'Acordou com a hora do computador errada? Entenda o que aconteceu'
 excerpt: 'Muita gente que virou acordado a madrugada de ontem para hoje percebeu que o relógio do computador se adiantou em 1 hora sozinho. Quem estava com seu computador devidamente configurado e atualizado não teve problemas. Nesse post você vai entender o que aconteceu e como se prevenir.'
 ---
@@ -22,11 +22,11 @@ No entanto, com o passar dos anos, a mudança na rotina dos brasileiros e o aque
 
 Por ora, o governo decidiu reduzir a duração do horário de verão.
 
-Em dezembro de 2017, o presidente Michel Temer assinou decreto que alterou o início do horário de verão em 2018 para 04 de novembro, um fim de semana após o segundo turno das eleições, que está marcado para 28 de outubro.
+Em dezembro de 2017, o presidente Michel Temer assinou [decreto][decreto] que alterou o início do horário de verão do terceiro domingo de outubro (21/10/2018) para o primeiro domingo de novembro (04/11/2018), um fim de semana após o segundo turno das eleições, que está marcado para 28/10/2018.
 
 Essa alteração foi feita a pedido do Tribunal Superior Eleitoral (TSE). O horário de verão em ano de eleição dificulta a apuração dos votos. Em 2014, por exemplo, a Justiça Eleitoral teve que adiar a divulgação do resultado para esperar a votação acabar no Acre.
 
-O final do horário de verão foi mantido no terceiro domingo de fevereiro de 2019 (dia 17).
+O final do horário de verão foi mantido no terceiro domingo de fevereiro (17/02/2019).
 
 Acontece que o Ministério da Educação (MEC) pediu que o início do horário de verão fosse adiado para 18 de novembro, a fim de evitar prejuízos aos estudantes que farão o Exame Nacional do Ensino Médio (Enem), cuja primeira prova está marcada para 04 de novembro. A necessidade de adiantar os relógios em uma 1 poderia confundir os candidatos.
 
@@ -34,7 +34,7 @@ O governo chegou a preparar o decreto e anunciar que faria essa nova alteração
 
 A razão para essa última decisão foi um protesto da Associação Brasileira das Empresas Aéreas (Abear), que alertou que a mudança poderia levar passageiros que compraram passagens com antecedência a perderem seus voos. Cerca de 42 mil voos poderiam ser afetados e pelo menos 3 milhões de passageiros poderiam ser prejudicados.
 
-Portanto, desde dezembro do ano passado, o início do horário de verão no Brasil já teve 3 mudanças: passou de 28/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.
+Portanto, desde o ano passado, o início do horário de verão no Brasil em 2018 já teve 3 mudanças: passou de 21/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.
 
 ## 2) Como saber se seu computador foi afetado
 
@@ -48,7 +48,7 @@ Como eu disse no início do *post*, quem estava com seu computador devidamente c
 
 Eu já expliquei em um *post* anterior como configurar o computador para sincronizar a data e a hora com a Internet usando o protocolo NTP:
 
-- [Mantenha a hora do seu computador sempre certa com o NTP][ntpbr]
+- [Mantenha a hora do seu computador sempre certa com o NTP][how-to-ntp-client]
 
 Se você ainda não fez essa configuração, recomendo que a faça. Com isso, nunca mais você terá que se preocupar em ajustar manualmente a data e a hora do seu computador no início e no fim do horário de verão.
 
@@ -101,6 +101,7 @@ Além das referências de jornais a seguir, que usei para me informar sobre o qu
 [g1]:                   https://g1.globo.com/politica/noticia/2018/10/15/planalto-informa-que-nao-havera-adiamento-e-que-horario-de-verao-comecara-no-proximo-dia-4.ghtml
 [horario-de-verao]:     https://pt.wikipedia.org/wiki/Hor%C3%A1rio_de_ver%C3%A3o
 [oglobo]:               https://oglobo.globo.com/economia/governo-voltara-discutir-se-acaba-com-horario-de-verao-22397585
+[decreto]:              http://www.planalto.gov.br/ccivil_03/_Ato2015-2018/2017/Decreto/D9242.htm
 [r7]:                   https://noticias.r7.com/sao-paulo/senado-propoe-acabar-com-o-horario-de-verao-no-brasil-20092018
 [ntpbr]:                http://ntp.br/
 [how-to-ntp-client]:    {% post_url pt/2016-10-15-mantenha-a-hora-do-seu-computador-sempre-certa-com-o-ntp %}
