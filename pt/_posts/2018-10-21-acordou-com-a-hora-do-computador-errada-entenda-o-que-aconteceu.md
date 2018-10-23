@@ -22,7 +22,7 @@ No entanto, com o passar dos anos, a mudança na rotina dos brasileiros e o aque
 
 Por ora, o governo decidiu reduzir a duração do horário de verão.
 
-Em dezembro de 2017, o presidente Michel Temer assinou [decreto][decreto] que alterou o início do horário de verão do terceiro domingo de outubro (21/10/2018) para o primeiro domingo de novembro (04/11/2018), um fim de semana após o segundo turno das eleições, que está marcado para 28/10/2018.
+Em dezembro de 2017, o presidente Michel Temer assinou o [Decreto nº 9.242][decreto] que alterou o início do horário de verão do terceiro domingo de outubro (21/10/2018) para o primeiro domingo de novembro (04/11/2018), um fim de semana após o segundo turno das eleições, que está marcado para 28/10/2018.
 
 Essa alteração foi feita a pedido do Tribunal Superior Eleitoral (TSE). O horário de verão em ano de eleição dificulta a apuração dos votos. Em 2014, por exemplo, a Justiça Eleitoral teve que adiar a divulgação do resultado para esperar a votação acabar no Acre.
 
@@ -87,6 +87,10 @@ Interpretando a saída desse comando, temos:
 - início do horário de verão em 03/11/2019.
 
 No caso do [Windows][windows], provavelmente a [Microsoft][microsoft] deve lançar atualizações conforme as datas de início e fim do horário de verão mudam.
+
+
+{% capture atualizacao %}Tem um *smartphone* ou *tablet* Android que também está com a hora errada? [Veja aqui como configurá-lo!]({%post_url pt/2018-10-22-mantenha-a-hora-do-android-sempre-certa %}){% endcapture %}
+{% include update.html date="22/10/2018" message=atualizacao %}
 
 ## Referências
 

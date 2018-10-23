@@ -85,6 +85,10 @@ Para configurar a data e hora manualmente, desative a opção **Data e hora auto
 
 Nesse caso, como sua configuração agora é totalmente manual, lembre-se de sempre ajustar a data e hora quando o horário de verão começar e terminar.
 
+## Referência
+
+- [How to fix the incorrect time on your Android phone - Android Central][androidcentral]
+
 [horario-de-verao-2018]:    {% post_url pt/2018-10-21-acordou-com-a-hora-do-computador-errada-entenda-o-que-aconteceu %}
 [pc]:                       https://pt.wikipedia.org/wiki/IBM_PC
 [linux]:                    https://www.vivaolinux.com.br/linux/
@@ -93,4 +97,4 @@ Nesse caso, como sua configuração agora é totalmente manual, lembre-se de sem
 [tecmundo1]:                https://www.tecmundo.com.br/dispositivos-moveis/135170-iphone-adianta-relogio-para-o-horario-verao.htm
 [tecmundo2]:                https://www.tecmundo.com.br/mercado/135399-celulares-erram-novo-entram-horario-verao-hora.htm
 [ntpbr]:                    http://ntp.br/
-
+[androidcentral]:           https://www.androidcentral.com/why-wont-my-phone-keep-right-time
