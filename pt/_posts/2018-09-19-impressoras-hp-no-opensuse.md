@@ -26,7 +26,7 @@ No openSUSE, ele é instalado pelo pacote de mesmo nome, [hplip][hplip-sw]:
 # zypper in hplip
 ```
 
-A versão 15.0 da distribuição openSUSE Leap fornece a versão 3.17.9 do *driver* HPLIP.
+A versão 15.0 da distribuição [openSUSE Leap][opensuse-leap] fornece a versão 3.17.9 do *driver* HPLIP.
 
 ## Adicionando a impressora HP
 
@@ -59,7 +59,7 @@ O assistente vai procurar sua impressora na rede.
 
 {% include image.html src="/files/2018/09/hp-printers-03.jpg" %}
 
-Se esse for o caso, clique em **OK** e depois em **Back** para voltar à tela anterior.
+Se esse for o caso, clique em **OK** para voltar à tela anterior.
 
 Verifique a configuração de rede da sua impressora. Como fazer isso é algo que pode variar de modelo para modelo. No caso da minha, eu toquei no ícone **Sem fio** (na parte de baixo, a figura de antena, no meio):
 
@@ -133,13 +133,14 @@ Para usar uma versão mais atual do *driver*, adicione o repositório do projeto
 
 Feito isso, experimente repetir a instalação do HPLIP e a adição da impressora.
 
-[hp]:       https://www.hp.com
-[hp-3836]:  https://support.hp.com/br-pt/product/hp-deskjet-ink-advantage-3830-all-in-one-printer-series/7172328/model/7429639
-[opensuse]: https://www.opensuse.org/
-[linux]:    http://www.vivaolinux.com.br/linux/
-[hplip]:    https://developers.hp.com/hp-linux-imaging-and-printing
-[hplip-sw]: https://software.opensuse.org/package/hplip
-[lpt]:      https://pt.wikipedia.org/wiki/Interface_paralela
-[evince]:   https://wiki.gnome.org/Apps/Evince
-[pdf]:      https://pt.wikipedia.org/wiki/Portable_Document_Format
-[printing]: https://build.opensuse.org/project/show/Printing
+[hp]:                   https://www.hp.com
+[hp-3836]:              https://support.hp.com/br-pt/product/hp-deskjet-ink-advantage-3830-all-in-one-printer-series/7172328/model/7429639
+[opensuse]:             https://www.opensuse.org/
+[linux]:                http://www.vivaolinux.com.br/linux/
+[hplip]:                https://developers.hp.com/hp-linux-imaging-and-printing
+[hplip-sw]:             https://software.opensuse.org/package/hplip
+[opensuse-leap]:        {% post_url pt/2018-05-25-baseado-no-codigo-do-enterprise-testado-milhoes-de-vezes-opensuse-leap-15-lancado %}
+[lpt]:                  https://pt.wikipedia.org/wiki/Interface_paralela
+[evince]:               https://wiki.gnome.org/Apps/Evince
+[pdf]:                  https://pt.wikipedia.org/wiki/Portable_Document_Format
+[printing]:             https://build.opensuse.org/project/show/Printing

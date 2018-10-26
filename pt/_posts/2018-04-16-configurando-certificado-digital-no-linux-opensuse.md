@@ -288,19 +288,20 @@ Pronto! Agora você está no ambiente seguro da Receita Federal e sabe que confi
 Divirta-se bastante... (*have a lot of fun...*)
 
 {% capture atualizacao %}
-Veja outro uso interessante para o seu certificado digital:
+Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE:
 
+- [Como transmitir a declaração do Imposto de Renda com certificado digital no Linux openSUSE]({% post_url pt/2018-04-16-como-transmitir-a-declaracao-do-imposto-de-renda-com-certificado-digital-no-linux-opensuse %})
 - [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
 {% endcapture %}
-{% include update.html date="24/09/2018" message=atualizacao %}
+{% include update.html date="26/10/2018" message=atualizacao %}
 
 ## Referências
 
-- [Certificado Digital | Certisign][certisign-certificado-digital]
-- [O que é Certificado Digital? | Serasa Experian][serasa-certificado-digital]
+- [Certificado Digital - Certisign][certisign-certificado-digital]
+- [O que é Certificado Digital? - Serasa Experian][serasa-certificado-digital]
 - [Certificados Digitais — Receita Federal][receita-certificados-digitais]
 - [Instalar eToken Alladin, usar sites do governo com certificado Digital e assinar documentos PDF — Dicas do cotidiano com linux][aladdin-etoken-ubuntu]
-- [Howto use Aladdin eToken under Linux | Rene Mayrhofer's virtual home][aladdin-etoken-linux]
+- [Howto use Aladdin eToken under Linux - Rene Mayrhofer's virtual home][aladdin-etoken-linux]
 - [Configuring Smart Card authentication on SUSE Linux Enterprise - SUSE Communities][smart-cards-sle]
 - [Aladdin eToken PRO · OpenSC/OpenSC Wiki · GitHub][aladdin-etoken-opensc]
 - [Unsuported Aladdin eToken PRO USB 72k Java · Issue #461 · OpenSC/OpenSC · GitHub][aladdin-etoken-opensc-issue]
