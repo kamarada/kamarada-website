@@ -5,7 +5,7 @@ layout: post
 published: true
 nickname: 'how-to-install-certificates'
 title: 'Como instalar certificados de segurança no Linux'
-excerpt: 'Já foi pego de surpresa ao acessar um site e ser alertado pelo navegador de que não é seguro? O que fazer se você é servidor público federal, acessa o SIGEPE, sistema do governo que o próprio departamento de pessoal te orientou acessar para consultar seu contracheque, e se depara com uma mensagem dessas? Será que seu departamento de pessoal cadastrou seus dados em um sistema inseguro e agora você corre perigo?'
+excerpt: 'Já foi pego de surpresa ao acessar um site e ser alertado pelo navegador de que não é seguro? O que fazer ao acessar um site do governo brasileiro e ver uma mensagem dessa? Às vezes, a conexão não é de fato insegura. Entenda o que acontece e aprenda a instalar certificados de segurança no Linux.'
 ---
 
 {% include update.html date="30/10/2018" message="O *post* foi revisado e reescrito em quase sua totalidade." %}
