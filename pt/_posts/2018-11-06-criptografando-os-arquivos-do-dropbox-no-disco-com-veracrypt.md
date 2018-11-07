@@ -32,17 +32,17 @@ Nenhuma das minhas partições possui sistema de arquivos Ext4. Portanto, a prin
 
 Mas como eu uso com muito mais frequência o Linux do que o Windows, decidi viabilizar a sincronização do Dropbox pelo Linux, ainda de quebra garantindo a segurança dos arquivos no disco: vou armazenar os arquivos do Dropbox em um [volume criptografado do VeraCrypt][how-to-veracrypt]. Dessa forma, os arquivos estão seguros contra acesso indevido caso o *notebook* seja roubado, por exemplo.
 
-**Observação:** essa solução garante a segurança dos arquivos apenas no disco. De posse de *e-mail* e senha, uma pessoa mal-intencionada ainda pode acessá-los usando o navegador.
-
-Essa pode ser uma alternativa inclusive para quem hoje armazena os arquivos do Dropbox em uma partição Ext4 criptografada, porque o VeraCrypt realiza a criptografia "nos bastidores", o Dropbox não é ciente que os arquivos são criptografados.
-
-Uma desvantagem dessa solução é que ela requer o trabalho manual de montar o volume e iniciar o Dropbox sempre que for necessário sincronizar. Por isso, recomendo que leia essa página até o final antes de começar, para ver se essa solução de fato te interessa.
-
 Já falamos sobre o *software* de criptografia de arquivos [VeraCrypt] aqui:
 
 - [Criptografia de arquivos com o VeraCrypt][how-to-veracrypt]
 
 Se você ainda não leu aquele *post*, leia antes de continuar.
+
+Essa pode ser uma alternativa inclusive para quem hoje armazena os arquivos do Dropbox em uma partição Ext4 criptografada, porque o VeraCrypt realiza a criptografia "nos bastidores", o Dropbox não é ciente que os arquivos são criptografados.
+
+**Observação:** o VeraCrypt garante apenas a segurança dos arquivos no disco contra acesso indevido. Por exemplo, sabendo *e-mail* e senha, uma pessoa mal-intencionada poderia acessar os mesmos arquivos pelo [*site* do Dropbox][dropbox] usando o navegador. O VeraCrypt também não dispensa o uso de outras ferramentas de segurança, como antivírus e *backup*.
+
+Uma desvantagem dessa solução é que ela requer o trabalho manual de montar o volume e iniciar o cliente do Dropbox sempre que for necessário sincronizar. Por isso, recomendo que leia essa página até o final antes de começar, para ver se essa solução de fato te interessa.
 
 ## Antes de começar
 
@@ -126,21 +126,20 @@ Quando for voltar a usar os arquivos do Dropbox, inicie o VeraCrypt, monte o vol
 - [Mover a pasta do Dropbox para um novo local - Ajuda do Dropbox][move-dropbox-folder]
 - [Quais são os requisitos de sistema para executar o Dropbox? - Ajuda do Dropbox][system-requirements]
 
-[dropbox]: https://www.dropbox.com
-[linux]: http://www.vivaolinux.com.br/linux/
-[windows]: https://www.microsoft.com/pt-br/windows/
-[ntfs]: https://pt.wikipedia.org/wiki/NTFS
-[dropboxforum]: https://www.dropboxforum.com/t5/Syncing-and-uploads/Linux-Dropbox-client-warn-me-that-it-ll-stop-syncing-in-Nov-why/m-p/290065/highlight/true#M42255
-[fs]: https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2016/02/entenda-o-que-e-sistema-de-arquivos-e-sua-utilidade-no-pc-e-no-celular.html
-[hfs+]: https://pt.wikipedia.org/wiki/HFS%2B
-[apfs]: https://pt.wikipedia.org/wiki/Apple_File_System
-[macosx]: http://www.apple.com/br/macosx/
-[ext4]: https://pt.wikipedia.org/wiki/Ext4
-[gparted]: https://gparted.org/
-[fdisk]: https://www.gnu.org/software/fdisk/
-[move-dropbox-folder]: https://www.dropbox.com/pt_BR/help/desktop-web/move-dropbox-folder
-[how-to-veracrypt]: {% post_url pt/2018-10-15-criptografia-de-arquivos-com-o-veracrypt %}
-[veracrypt]: https://www.veracrypt.fr/
-
-[itsfoss]: https://itsfoss.com/dropbox-linux-ext4-only/
-[system-requirements]: https://www.dropbox.com/help/desktop-web/system-requirements#desktop
+[dropbox]:              https://www.dropbox.com
+[linux]:                http://www.vivaolinux.com.br/linux/
+[windows]:              https://www.microsoft.com/pt-br/windows/
+[ntfs]:                 https://pt.wikipedia.org/wiki/NTFS
+[dropboxforum]:         https://www.dropboxforum.com/t5/Syncing-and-uploads/Linux-Dropbox-client-warn-me-that-it-ll-stop-syncing-in-Nov-why/m-p/290065/highlight/true#M42255
+[fs]:                   https://www.techtudo.com.br/dicas-e-tutoriais/noticia/2016/02/entenda-o-que-e-sistema-de-arquivos-e-sua-utilidade-no-pc-e-no-celular.html
+[hfs+]:                 https://pt.wikipedia.org/wiki/HFS%2B
+[apfs]:                 https://pt.wikipedia.org/wiki/Apple_File_System
+[macosx]:               http://www.apple.com/br/macosx/
+[ext4]:                 https://pt.wikipedia.org/wiki/Ext4
+[gparted]:              https://gparted.org/
+[fdisk]:                https://www.gnu.org/software/fdisk/
+[how-to-veracrypt]:     {% post_url pt/2018-10-15-criptografia-de-arquivos-com-o-veracrypt %}
+[veracrypt]:            https://www.veracrypt.fr/
+[itsfoss]:              https://itsfoss.com/dropbox-linux-ext4-only/
+[move-dropbox-folder]:  https://www.dropbox.com/pt_BR/help/desktop-web/move-dropbox-folder
+[system-requirements]:  https://www.dropbox.com/pt_BR/help/desktop-web/system-requirements#desktop
