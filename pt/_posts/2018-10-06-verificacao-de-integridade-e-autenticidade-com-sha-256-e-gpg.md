@@ -5,31 +5,31 @@ layout: post
 published: true
 nickname: 'how-to-verify-iso'
 title: 'Verificação de integridade e autenticidade com SHA-256 e GPG'
-excerpt: 'Por vezes pode ser importante verificar um arquivo obtido da Internet. Duas verificações comuns que reduzem a quase zero as chances de usar um arquivo corrompido ou adulterado são a soma de verificação e a assinatura digital. Nesse post, você verá como fazê-las com o sha256sum e o gpg, dois utilitários de linha de comando que por padrão já vem instalados na maioria das distribuições Linux. Se você nunca utilizou a interface textual (também conhecida como linha de comando ou terminal) do Linux, não se assuste: verá que não é tão difícil como dizem por aí.'
+excerpt: 'Por vezes pode ser importante verificar um arquivo obtido da Internet. Duas verificações comuns que reduzem bastante as chances de usar um arquivo corrompido ou adulterado são a soma de verificação e a assinatura digital. Nesse post, você verá como fazê-las com o sha256sum e o gpg, dois utilitários de linha de comando que por padrão já vem instalados na maioria das distribuições Linux. Se você nunca utilizou o terminal do Linux, não se assuste: verá que não é tão difícil como dizem por aí.'
 ---
 
 Por vezes pode ser importante verificar um arquivo obtido da Internet, por exemplo, a [imagem ISO][iso] de uma [distribuição Linux][linux-distro] - ela contém o sistema operacional que você vai utilizar ou instalar em seu computador, já pensou se o arquivo se corrompeu durante o *download* ou foi adulterado por um [ataque de homem no meio][man-in-the-middle]?
 
-Duas verificações comuns que reduzem a quase zero as chances de usar um arquivo corrompido ou adulterado são a [soma de verificação][checksum] e a [assinatura digital][gph]:
+Duas verificações comuns que reduzem bastante as chances de usar um arquivo corrompido ou adulterado são a [soma de verificação][checksum] e a [assinatura digital][gph]:
 
 - a **soma de verificação** (*checksum*) é uma soma feita antes do envio por quem cria o arquivo e verificada depois por quem baixa o arquivo, há alguns algoritmos para fazer essa soma, mas a ideia geral é somar os *bytes* do arquivo - ao verificar a soma de um arquivo, se houve modificação do arquivo ou da soma em si, a verificação falha, indicando que não é seguro usar o arquivo; e
 - a **assinatura digital** certifica um arquivo, tal qual uma assinatura à mão, mas por utilizar mecanismos de criptografia tem a vantagem de ser resistente a fraudes - ao verificar a assinatura de um arquivo, se houve modificação do arquivo ou da assinatura em si, ou se a assinatura foi feita com a chave de outra pessoa, a verificação falha, indicando que não é seguro usar o arquivo.
 
 Elas verificam, respectivamente, **integridade** e **autenticidade**, duas propriedades básicas da [segurança da informação][information-security].
 
-Comumente as distribuições Linux disponibilizam somas de verificação [SHA-256][sha-256] e assinaturas digitais [GPG][gpg] para verificar suas imagens ISO.
+Comumente as distribuições Linux disponibilizam somas de verificação [SHA-256] e assinaturas digitais [GPG] para verificar suas imagens ISO.
 
 Nesse *post*, você verá como fazer essas verificações com o [**sha256sum**][sha256sum-man] e o [**gpg**][gpg-man] (de [**GNU Privacy Guard**][gpg], também conhecido como **GnuPG** ou simplesmente **GPG**), dois utilitários de linha de comando que por padrão já vem instalados na maioria das distribuições Linux.
 
 {% include image.html src="/files/2018/10/how-to-verify-iso.png" %}
 
-Se você nunca utilizou a [interface textual][terminal] (também conhecida como **linha de comando** ou **terminal**) do [Linux][linux], não se assuste: verá que não é tão difícil como dizem por aí.
+Embora usemos aqui o exemplo da imagem ISO, qualquer arquivo pode ser verificado, contanto que a soma de verificação e a assinatura digital estejam disponíveis. É o caso, por exemplo, dos arquivos disponibilizados para *download* no *site* do programa [VeraCrypt].
 
-Embora usemos aqui o exemplo da imagem ISO, qualquer arquivo pode ser verificado, contanto que a soma de verificação e a assinatura digital estejam disponíveis. É o caso, por exemplo, dos arquivos disponibilizados para *download* no *site* do programa [VeraCrypt][veracrypt].
+**Dica:** se você ainda não usa [Linux] e está baixando uma imagem ISO de uma distribuição Linux no [Windows], leia [essa página][gpg4win] em vez desta.
 
 Para referência futura, aqui utilizo a distribuição Linux [openSUSE Leap 15.0][opensuse-leap] e as versões dos utilitários **sha256sum** e **gpg** instalados por padrão nessa versão da distribuição.
 
-**Dica:** se você ainda não usa Linux e está baixando uma imagem ISO de uma distribuição Linux no [Windows][windows], leia [essa página][gpg4win] em vez desta.
+Se você nunca utilizou a interface textual do Linux (também conhecida como **linha de comando** ou [**terminal**][terminal]), não se assuste: verá que não é tão difícil como dizem por aí.
 
 ## Visão geral
 
@@ -41,7 +41,7 @@ Como a verificação de uma imagem ISO não é um processo tão simples, primeir
 4. Fazer a soma de verificação da imagem ISO baixada e conferir com a soma de verificação esperada; e
 5. Verificar a assinatura digital, que pode ter sido feita em relação à imagem ISO, ou em relação à soma de verificação, o que estende a proteção à soma de verificação (o openSUSE é o segundo caso).
 
-O processo pode variar de acordo com a distribuição, mas geralmente segue essa linha. Por exemplo, há vários algoritmos de somas de verificação. O algoritmo [MD5][md5] era mais popular, mas tem sido substituído pelo [SHA-256][sha-256], que em tese é menos vulnerável. Também há distribuições que não fazem assinatura digital, nesses casos não é possível verificar a autenticidade da imagem ISO.
+O processo pode variar de acordo com a distribuição, mas geralmente segue essa linha. Por exemplo, há vários algoritmos de somas de verificação. O algoritmo [MD5] era mais popular, mas tem sido substituído pelo [SHA-256], que em tese é menos vulnerável. Também há distribuições que não fazem assinatura digital, nesses casos não é possível verificar a autenticidade da imagem ISO.
 
 ## Usando o Terminal
 
@@ -149,7 +149,7 @@ $ sha256sum -c openSUSE-Leap-15.0-NET-x86_64.iso.sha256
 
 (observe que é passado no comando o nome do arquivo da soma de verificação, que termina com `.iso.sha256`, não da imagem ISO, que termina com `.iso`)
 
-A saída do comando deve ser:
+O **sha256sum** demora um tempo calculando a soma de verificação da imagem ISO e depois confere essa soma com a presente no arquivo. A saída do comando deve ser:
 
 ```
 openSUSE-Leap-15.0-NET-x86_64.iso: SUCESSO
@@ -158,9 +158,9 @@ sha256sum: AVISO: 14 linhas estão formatadas inapropriadamente
 
 {% include image.html src="/files/2018/10/how-to-verify-iso-04-pt.jpg" %}
 
-Ele demora um tempo calculando a soma de verificação da imagem ISO e depois confere essa soma com a presente no arquivo. Nesse exemplo, a primeira linha informa que as somas foram conferidas com sucesso. Portanto, é seguro usar o arquivo.
+Nesse exemplo, a primeira linha da saída informa que as somas foram conferidas com sucesso. Portanto, do ponto de vista da integridade, é seguro usar a imagem ISO baixada. Você pode proceder à verificação de autentiticade.
 
-Se a saída do comando **sha256sum** for diferente para você, informando que a verificação falhou, não é seguro usar essa imagem ISO: você deve tentar baixá-la novamente.
+Se a saída do comando **sha256sum** for diferente para você, informando que a verificação falhou, não é seguro usar essa imagem ISO: durante o *download* ela se corrompeu e você deve baixá-la novamente.
 
 A segunda linha avisa que algumas das linhas do arquivo da soma de verificação estão formatadas impropriamente. O comando **sha256sum** dá esse aviso porque ele não entende as linhas que se referem à assinatura GPG, que o openSUSE coloca no mesmo arquivo.
 
@@ -172,7 +172,7 @@ Como é um arquivo de texto simples, podemos abri-lo com o próprio terminal:
 $ cat openSUSE-Leap-15.0-NET-x86_64.iso.sha256
 ```
 
-O comando **cat** exibe o conteúdo de um arquivo de texto. Veja:
+O comando [**cat**][cat-man] exibe o conteúdo de um arquivo de texto. Veja:
 
 ```
 -----BEGIN PGP SIGNED MESSAGE-----
@@ -237,7 +237,7 @@ Não se esqueça que o ficheiro com a assinatura (.sig ou .asc)
 deve ser o primeiro a ser dado na linha de comando.
 ```
 
-Se isso acontecer, não é seguro usar essa imagem ISO: você deve tentar baixá-la novamente.
+Se você recebeu essa saída, não é seguro usar essa imagem ISO: você deve verificar sua procedência e baixá-la novamente.
 
 ## 6) Opcionalidades
 
@@ -288,11 +288,11 @@ Change (N)ame, (E)mail, or (O)kay/(Q)uit?
 
 Se está tudo certo, digite `O` (de *OK*) e tecle **Enter**.
 
-O **gpg** solicita que seja criada uma senha (*passphrase*) para a nova chave. Por algum motivo aqui ele apresenta uma janela para a digitação da senha:
+O **gpg** solicita que seja criada uma senha (*passphrase*) para a nova chave. Por algum motivo aqui ele apresenta uma janela fora do terminal para a digitação da senha:
 
 {% include image.html src="/files/2018/10/how-to-verify-iso-06-pt.jpg" %}
 
-Digite a senha no campo de cima e depois digite mais uma vez no campo de baixo, para se certificar que não digitou errado, e clique em **OK**.
+Digite a senha no campo de cima e depois digite mais uma vez no campo de baixo, para se certificar que não digitou errado. Quando terminar, clique em **OK** (ou tecle **Enter**).
 
 Feito isso, sua chave pessoal foi criada:
 
@@ -321,7 +321,7 @@ Para assinar a chave pública do openSUSE, execute o comando:
 $ gpg --edit-key 3DBDC284
 ```
 
-O **gpg** inicia uma espécie de terminal próprio e mostra informações sobre a chave:
+O **gpg** inicia uma espécie de terminal próprio (`gpg>`) e mostra informações sobre a chave:
 
 ```
 gpg (GnuPG) 2.2.5; Copyright (C) 2018 Free Software Foundation, Inc.
@@ -424,7 +424,7 @@ Really sign? (y/N)
 
 Ele pergunta se você realmente deseja assinar essa chave, tecle **y** e depois **Enter**.
 
-Digite a senha da sua chave e clique em **OK**:
+Digite a senha da sua chave e clique em **OK** (ou tecle **Enter**):
 
 {% include image.html src="/files/2018/10/how-to-verify-iso-07-pt.jpg" %}
 
@@ -537,18 +537,19 @@ Espero que tenha ajudado. Deixo as referências para o caso de você querer ler 
 [gpg]:                      https://gnupg.org/
 [sha256sum-man]:            https://linux.die.net/man/1/sha256sum
 [gpg-man]:                  https://linux.die.net/man/1/gpg
-[terminal]:                 http://www.hardware.com.br/livros/linux/usando-terminal.html
+[veracrypt]:                {% post_url pt/2018-10-15-criptografia-de-arquivos-com-o-veracrypt %}
 [linux]:                    http://www.vivaolinux.com.br/linux/
-[opensuse-leap]:            {% post_url pt/2018-05-25-baseado-no-codigo-do-enterprise-testado-milhoes-de-vezes-opensuse-leap-15-lancado %}
-[veracrypt]:                https://www.veracrypt.fr/en/Downloads.html
 [windows]:                  https://www.microsoft.com/pt-br/windows/
 [gpg4win]:                  https://vinyanalista.github.io/blog/2018/10/05/verificacao-de-integridade-e-autenticidade-com-o-gpg4win/
+[opensuse-leap]:            {% post_url pt/2018-05-25-baseado-no-codigo-do-enterprise-testado-milhoes-de-vezes-opensuse-leap-15-lancado %}
+[terminal]:                 http://www.hardware.com.br/livros/linux/usando-terminal.html
 [download-leap]:            https://software.opensuse.org/distributions/leap
 [md5]:                      https://pt.wikipedia.org/wiki/MD5
 [gnome-terminal]:           https://help.gnome.org/users/gnome-terminal/stable/index.html.pt_BR
 [how-to-upgrade-to-42.3]:   {% post_url pt/2017-08-01-como-atualizar-do-opensuse-leap-422-para-o-423 %}
 [cmd]:                      https://pt.wikipedia.org/wiki/Prompt_de_comando
 [hexadecimal]:              https://pt.wikipedia.org/wiki/Sistema_de_numera%C3%A7%C3%A3o_hexadecimal
+[cat-man]:                  https://linux.die.net/man/1/cat
 [kleopatra]:                https://www.openpgp.org/software/kleopatra/
 [notepad]:                  https://notepad-plus-plus.org/
 [google-translate]:         https://translate.google.com.br/
