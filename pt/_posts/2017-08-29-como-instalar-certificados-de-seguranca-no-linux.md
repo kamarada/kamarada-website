@@ -59,7 +59,7 @@ Selecione **Privacidade e Segurança** à esquerda e clique no botão **Ver Cert
 
 Na caixa de diálogo **Gerenciador de certificados**, selecione a aba **Autoridades** e clique no botão **Importar**:
 
-{% include image.html src="/files/2018/10/certificados-firefox-4.png" %}
+{% include image.html src="/files/2018/10/certificados-firefox-4.jpg" %}
 
 Procure pelo certificado da AC que você quer importar.
 
