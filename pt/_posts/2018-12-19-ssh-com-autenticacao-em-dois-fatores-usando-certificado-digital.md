@@ -141,7 +141,7 @@ Se o *token* estiver plugado no computador cliente, será solicitada sua senha P
 
 ## Referências
 
-Quero agradecer ao meu colega [Leandro Peracchi][leandro] por ter compartilhado essa dica comigo.
+Quero agradecer ao sabe-tudo [Leandro Peracchi][leandro] por ter compartilhado essa dica comigo.
 
 Para escrever a explicação, consultei algumas páginas:
 
