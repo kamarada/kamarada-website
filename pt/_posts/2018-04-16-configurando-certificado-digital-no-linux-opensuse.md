@@ -249,7 +249,7 @@ Quando terminar, clique em **OK**:
 
 {% include image.html src="/files/2018/04/token-07-pt.png" %}
 
-Observe que o *token* é adicionado à lista de **Dispositivos e módulos de segurança**, clique em **OK**:
+O *token* é adicionado à lista de **Dispositivos e módulos de segurança**. Clique em **OK**:
 
 {% include image.html src="/files/2018/04/token-08-pt.png" %}
 

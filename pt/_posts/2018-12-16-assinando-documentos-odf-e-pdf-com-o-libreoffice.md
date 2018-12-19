@@ -10,7 +10,7 @@ excerpt: 'Se você possui um certificado digital, pode assinar documentos antes 
 
 {% include image.html src="/files/2018/12/libreoffice-signing.png" %}
 
-Se você possui um [certificado digital][how-to-install-certificates], pode assinar documentos antes de enviá-los para dar mais segurança a quem os recebe. Nesse *post*, você verá como fazer isso com a suíte de escritório [LibreOffice], que é capaz de assinar não só os documentos [ODF] criados na própria suíte, como documentos [PDF] quaisquer (mesmo os criados fora da suíte).
+Se você possui um [certificado digital][how-to-token], pode assinar documentos antes de enviá-los para dar mais segurança a quem os recebe. Nesse *post*, você verá como fazer isso com a suíte de escritório [LibreOffice], que é capaz de assinar não só os documentos [ODF] criados na própria suíte, como documentos [PDF] quaisquer (mesmo os criados fora da suíte).
 
 O LibreOffice utiliza a infraestrutura de certificados digitais do navegador [Mozilla Firefox][firefox]. Portanto, antes de assinar documentos com o LibreOffice, você deve ter o Firefox instalado (normalmente já vem na distribuição) e configurado para usar seu certificado digital. Esses dois *posts* mostram como fazer essa configuração:
 
@@ -128,12 +128,12 @@ O resto do procedimento é semelhante ao da assinatura de documentos ODF.
 - [Assinar com assinaturas digitais - LibreOffice Help][libreoffice-help-2]
 - [Signing existing PDF files in LibreOffice][vmiklos]
 
-[how-to-install-certificates]:  {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
+[how-to-token]:                 {%post_url pt/2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
 [libreoffice]:                  https://pt-br.libreoffice.org/
 [odf]:                          https://pt.wikipedia.org/wiki/OpenDocument
 [pdf]:                          https://pt.wikipedia.org/wiki/Portable_Document_Format
 [firefox]:                      https://www.mozilla.org/pt-BR/firefox/
-[how-to-token]:                 {%post_url pt/2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
+[how-to-install-certificates]:  {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
 [writer]:                       https://pt-br.libreoffice.org/descubra/writer/
 [calc]:                         https://pt-br.libreoffice.org/descubra/calc/
 [impress]:                      https://pt-br.libreoffice.org/descubra/impress/
