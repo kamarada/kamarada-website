@@ -4,7 +4,7 @@ image: '/files/2019/03/custom-commands-pt.jpg'
 layout: post
 published: true
 nickname: 'custom-commands'
-title: 'Como criar "comandos personalizados" no Linux'
+title: 'Como criar &quot;comandos personalizados&quot; no Linux'
 excerpt: 'Se você costuma usar o terminal e há comandos que você usa com frequência, saiba que pode economizar digitação criando scripts com nomes personalizados. Em vez de digitar um comando grande, ou digitar vários comandos, você chama o script e ele faz todo o trabalho. Veja nesse post como fazer isso.'
 ---
 
