@@ -57,7 +57,7 @@ Na caixa de diálogo **Configurações do serviço base**, informe em **Nome:** 
 
 {% include image.html src="/files/2019/03/chromecast-03-pt.jpg" %}
 
-De volta à tela principal, selecione a aba **Portas** e clique em **Adicionar**.
+De volta à tela principal, selecione o recém criado serviço **chromecast**, selecione a aba **Portas** e clique em **Adicionar**.
 
 No campo **Porta / Intervalo de portas**, informe `8008-8009`:
 
