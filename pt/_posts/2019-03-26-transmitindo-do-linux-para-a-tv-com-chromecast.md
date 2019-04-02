@@ -81,13 +81,15 @@ Selecione a aba **Zonas**. Depois, selecione a zona **home** (casa) e na aba **S
 
 Recarregue o *firewall* mais uma vez (menu **Opções**, opção **Recarregar Firewalld**).
 
-Por fim, selecione a conexão Wi-Fi à esquerda (**wlan1**) e clique em **Mudar Zona**. Selecione a zona **home** e clique em **OK**:
+Por fim, selecione a conexão Wi-Fi à esquerda (**wlan1**) e clique em **Mudar Zona**.
+
+Selecione a zona **home** e clique em **OK**:
 
 {% include image.html src="/files/2019/03/chromecast-08-pt.jpg" %}
 
 Com isso, você liberou no *firewall* conexões com dispositivos Chromecast em redes domésticas e informou que a rede atual é uma rede doméstica.
 
-Você pode classificar diferentes redes em diferentes tipos: casa, trabalho, pública. Por padrão, todas as redes são tratadas como públicas e poucos serviços são liberados, mas não vou entrar em detalhes sobre *firewall* agora.
+Você pode classificar diferentes redes em diferentes zonas: casa, trabalho, pública. Por padrão, todas as redes são tratadas como públicas e poucos serviços são liberados, mas não vou entrar em detalhes sobre *firewall* agora.
 
 Se você usa o navegador aberto Chromium, há mais uma configuração que precisa fazer. Por padrão, ele vem configurado para não procurar por dispositivos Chromecast na rede.
 
