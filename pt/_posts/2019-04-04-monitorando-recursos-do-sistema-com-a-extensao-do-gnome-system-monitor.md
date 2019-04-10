@@ -107,7 +107,7 @@ Faça bom proveito!
 - [paradoxxxzero/gnome-shell-system-monitor-applet - GitHub][github]
 
 [android]:                          https://www.android.com/
-[GNOME]:                            https://www.gnome.org/
+[gnome]:                            https://www.gnome.org/
 [system-monitor]:                   https://extensions.gnome.org/extension/120/system-monitor/
 [gnome-extensions]:                 https://extensions.gnome.org/
 [typelib1]:                         https://software.opensuse.org/package/typelib-1_0-GTop-2_0
