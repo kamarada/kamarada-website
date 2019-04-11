@@ -13,7 +13,7 @@ Integrar sua conta do [Google] ao *desktop* [GNOME] o torna mais inteligente, pr
 
 <!--more-->
 
-No [GNOME], as [contas *online*][goa] (a exemplo da [conta do Google][google-account]) são adicionadas pelo aplicativo **Configurações** e podem então ser usadas pelos demais aplicativos.
+No GNOME, as [contas *online*][goa] (a exemplo da [conta do Google][google-account]) são adicionadas pelo aplicativo **Configurações** e podem então ser usadas pelos demais aplicativos.
 
 O que vou mostrar aqui também vale se você trabalha em uma empresa ou estuda em uma escola que te fornece uma conta do [G Suite][gsuite].
 
@@ -39,7 +39,7 @@ Agora você pode fechar o aplicativo **Configurações**.
 
 Experimente abrir os aplicativos do GNOME e veja que seus dados do Google estão lá.
 
-Seus *e-mails* do Gmail estão no cliente de *e-mail* [**Evolution**][evolution]:
+Seus *e-mails* do Gmail estão no cliente de [*groupware*][groupware] (sistema colaborativo) [**Evolution**][evolution]:
 
 {% include image.html src="/files/2019/04/gnome-online-accounts-google-05-pt.jpg" caption="Evolution (*e-mail*)" %}
 
@@ -47,15 +47,15 @@ Seus *e-mails* do Gmail estão no cliente de *e-mail* [**Evolution**][evolution]
 
 - [Sincronizando o Gmail no Thunderbird][how-to-thunderbird-gmail]
 
-Pelo Evolution também é possível gerenciar seus [Contatos do Google][google-contacts] e eventos do [Google Agenda][google-calendar], mas o GNOME também possui aplicativos específicos, que são o [**Calendário**][gnome-calendar]:
+Pelo Evolution também é possível gerenciar seus [Contatos do Google][google-contacts] e eventos do [Google Agenda][google-calendar], mas o GNOME também possui aplicativos específicos, que são o [**Contatos**][gnome-contacts]:
 
-{% include image.html src="/files/2019/04/gnome-online-accounts-google-06-pt.jpg" caption="Calendário" %}
+{% include image.html src="/files/2019/04/gnome-online-accounts-google-06-pt.jpg" caption="Contatos" %}
 
-E o [**Contatos**][gnome-contacts]:
+E o [**Calendário**][gnome-calendar]:
 
-{% include image.html src="/files/2019/04/gnome-online-accounts-google-07-pt.jpg" caption="Contatos" %}
+{% include image.html src="/files/2019/04/gnome-online-accounts-google-07-pt.jpg" caption="Calendário" %}
 
-Você também pode consultar rapidamente seus eventos do Google Agenda clicando na **data e hora** na barra do topo do GNOME e selecionando qualquer data no calendário:
+Você também pode consultar rapidamente seus eventos do Google Agenda clicando na **data e hora** na **barra do topo** do GNOME e selecionando qualquer data no calendário:
 
 {% include image.html src="/files/2019/04/gnome-online-accounts-google-08-pt.jpg" %}
 
@@ -98,13 +98,14 @@ Se você trabalha em uma empresa cujo *e-mail* é servido pelo [Microsoft Exchan
 [google-account]:               https://myaccount.google.com/
 [gsuite]:                       https://gsuite.google.com
 [gmail]:                        https://gmail.com/
+[groupware]:                    https://pt.wikipedia.org/wiki/Software_colaborativo
 [evolution]:                    https://wiki.gnome.org/Apps/Evolution
 [thunderbird]:                  https://www.thunderbird.net
 [how-to-thunderbird-gmail]:     {%post_url pt/2018-09-12-sincronizando-o-gmail-no-thunderbird %}
 [google-contacts]:              https://contacts.google.com/
 [google-calendar]:              https://calendar.google.com/
-[gnome-calendar]:               https://wiki.gnome.org/Apps/Calendar
 [gnome-contacts]:               https://wiki.gnome.org/Apps/Contacts
+[gnome-calendar]:               https://wiki.gnome.org/Apps/Calendar
 [google-docs]:                  https://docs.google.com/
 [gnome-documents]:              https://wiki.gnome.org/Apps/Documents
 [google-drive]:                 https://drive.google.com/
@@ -115,9 +116,9 @@ Se você trabalha em uma empresa cujo *e-mail* é servido pelo [Microsoft Exchan
 [gnome-photos]:                 https://wiki.gnome.org/Apps/Photos
 [google-photos]:                https://photos.google.com/
 [photos-dont-sync]:             https://www.reddit.com/r/gnome/comments/60o9uv/online_accounts_google_photos/
-[exchange]:                     https://products.office.com/pt-BR/exchange/email
+[exchange]:                     https://products.office.com/exchange/email
 [office-365]:                   https://portal.office.com
 [how-to-evolution-office-365]:  {%post_url pt/2017-09-05-conecte-o-evolution-ao-office-365 %}
 [techrepublic-1]:               https://www.techrepublic.com/article/how-to-connect-ubuntu-18-04-to-your-google-account/
 [techrepublic-2]:               https://www.techrepublic.com/article/how-to-make-the-most-out-of-google-drive-on-gnome/
-[goa-help]:                     https://help.gnome.org/users/gnome-help/stable/accounts.html.en
+[goa-help]:                     https://help.gnome.org/users/gnome-help/stable/accounts.html.pt_BR
