@@ -5,13 +5,7 @@ layout: default
 <meta itemprop="headline name" content=" {% if site.data.t[page.lang].site.title %}{{ site.data.t[page.lang].site.title }}{% else %}{{ site.title }}{% endif %}">
 <link href="{{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}" itemprop="url">
 
-{% if paginator %}
-    {% assign post_list = paginator.posts | where: "lang", page.lang %}
-{% else %}
-    {% assign post_list = site.posts | where: "lang", page.lang %}
-{% endif %}
-
-{% for post in post_list %}
+{% for post in paginator.posts %}
     {% assign p = p | plus: 1 %}
     <div class="blog-post card mb-3" itemscope itemtype="http://schema.org/BlogPosting">
         <div class="card-header">
@@ -114,7 +108,7 @@ layout: default
         <ul class="pagination">
             {% if paginator.previous_page %}
                 <li class="latest page-item">
-                    <a class="page-link" href="{{ '/' | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Latest">
+                    <a class="page-link" href="{{ paginator.first_page_path | prepend: site.baseurl | replace: '//', '/' }}" aria-label="Latest">
                         &laquo;<span class="hidden-xs"> {% if site.data.t[page.lang].latest %}{{ site.data.t[page.lang].latest }}{% else %}{{ "Latest" }}{% endif %}</span>
                     </a>
                 </li>
@@ -142,7 +136,7 @@ layout: default
                     </a>
                 </li>
                 <li class="earliest page-item">
-                    <a class="page-link" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}" aria-label="Older">
+                    <a class="page-link" href="{{ paginator.last_page_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', paginator.total_pages }}" aria-label="Older">
                         <span class="hidden-xs">{% if site.data.t[page.lang].earliest %}{{ site.data.t[page.lang].earliest }}{% else %}{{ "Earliest" }}{% endif %} </span>&raquo;
                     </a>
                 </li>
