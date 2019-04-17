@@ -188,11 +188,6 @@ plugins:
     # matter variable.
     - jekyll-auto-image
 
-    # Jekyll Feed plugin
-    # https://github.com/jekyll/jekyll-feed
-    # Plugin to generate an Atom (RSS-like) feed of your Jekyll posts
-    - jekyll-feed
-
     # Last Modified At Plugin
     # https://github.com/gjtorikian/jekyll-last-modified-at
     # Plugin that makes available the last time a page was modified as a
