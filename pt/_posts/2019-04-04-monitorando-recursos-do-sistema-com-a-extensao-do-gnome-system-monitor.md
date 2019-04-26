@@ -13,7 +13,7 @@ Você é do tipo que consome muita memória RAM? Navegador com várias guias abe
 
 {% include image.html src="/files/2019/04/gnome-extension-system-monitor-01.jpg" caption="A extensão do GNOME System Monitor" style="max-width: 450px;" %}
 
-O ambiente [GNOME] foca na usabilidade e traz consigo apenas um conjunto essencial de recursos, em contrapartida apresenta um funcionamento bem estável. Mas você pode estendê-lo com [extensões][gnome-extensions], algumas bastante úteis. Caso ainda não conheça, visite:
+O ambiente GNOME foca na usabilidade e traz consigo apenas um conjunto essencial de recursos, em contrapartida apresenta um funcionamento bem estável. Mas você pode estendê-lo com [extensões][gnome-extensions], algumas bastante úteis. Caso ainda não conheça, visite:
 
 - [GNOME Shell Extensions][gnome-extensions]
 
@@ -21,7 +21,7 @@ Hoje vou mostrar como instalar a extensão System Monitor (do inglês *monitor d
 
 ## Instalando o suporte a extensões do GNOME
 
-Para personalizar o GNOME usando extensões, você vai precisar do aplicativo [**Ajustes**][tweaks] (*Tweaks*, não confundir com o aplicativo [**Configurações**][settings], *Settings*). Se você usa a distribuição [openSUSE] com o ambiente GNOME, provavelmente esse aplicativo já vem instalado por padrão. Mas caso precise, ele é fornecido pelo pacote [gnome-tweak-tool].
+Para personalizar o GNOME usando extensões, você vai precisar do aplicativo [**Ajustes**][tweaks] (*Tweaks*, não confundir com o aplicativo [**Configurações**][settings], *Settings*). Se você usa a distribuição [openSUSE] com o ambiente GNOME, esse aplicativo já vem instalado por padrão. Mas caso precise, ele é fornecido pelo pacote [gnome-tweak-tool].
 
 Há também algumas extensões que já fazem parte da própria distribuição e são fornecidas pelo pacote [gnome-shell-extensions-common].
 
@@ -35,9 +35,9 @@ Além disso, se você acessou o *site* [GNOME Shell Extensions][gnome-extensions
 
 (para controlar as extensões do GNOME Shell usando este *site* você deve instalar a integração do GNOME Shell que consiste em duas partes: extensão do navegador e aplicativo de mensagens nativas)
 
-Quanto à extensão do navegador, conforme o navegador que você usa, utilize os *links* a seguir para instalá-la:
+Quanto à extensão do navegador, você pode instalá-la clicando no *link* apresentado pela própria mensagem, ou clicar em um dos *links* a seguir, conforme o navegador que você usa:
 
-- Para [Google Chrome][chrome], [Chromium], [Opera] e [Vivaldi]: visite a [Chrome Web Store][chrome-web-store];
+- para [Google Chrome][chrome], [Chromium], [Opera] e [Vivaldi]: visite a [Chrome Web Store][chrome-web-store];
 - para [Mozilla Firefox][firefox]: visite o *site* [Mozilla Addons][mozilla-addons].
 
 A segunda parte, que é o aplicativo, também é fornecida pela própria distribuição por meio do pacote [chrome-gnome-shell].
