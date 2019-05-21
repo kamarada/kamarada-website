@@ -32,7 +32,7 @@ Neste *post*, veremos como atualizar os pacotes (*update*).
 
 No próximo *post*, veremos como atualizar a distribuição (*upgrade*).
 
-Atualmente, a distribuição openSUSE Leap está na versão 15.0. A próxima versão será a 15.1, com [lançamento previsto para 22 de maio][roadmap]. Por agora, você pode se preparar para a atualização da distribuição se certificando que possui as versões mais recentes dos pacotes para a distribuição atual. Esse é um dos pré-requisitos para atualizar a distribuição.
+Atualmente, a distribuição openSUSE Leap está na versão 15.0. A próxima versão será a 15.1, com [lançamento previsto para 22 de maio][mailing-list]. Por agora, você pode se preparar para a atualização da distribuição se certificando que possui as versões mais recentes dos pacotes para a distribuição atual. Esse é um dos pré-requisitos para atualizar a distribuição.
 
 ## Pela interface gráfica
 
@@ -170,7 +170,7 @@ $ su
 [firefox]:          https://www.mozilla.org/
 [libreoffice]:      https://pt-br.libreoffice.org/
 [gnome]:            https://www.gnome.org/
-[roadmap]:          https://progress.opensuse.org/projects/leap_151/roadmap
+[mailing-list]:     https://lists.opensuse.org/opensuse-factory/2019-05/msg00142.html
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [zypper]:           https://pt.opensuse.org/Portal:Zypper
 [gnome-terminal]:   https://help.gnome.org/users/gnome-terminal/stable/index.html.pt_BR
