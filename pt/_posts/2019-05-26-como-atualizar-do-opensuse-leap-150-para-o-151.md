@@ -290,7 +290,7 @@ Se você encontrou alguma dificuldade durante a atualização ou possui alguma d
 Até a próxima!
 
 [opensuse-leap]:            https://en.opensuse.org/Portal:Leap
-[opensuse-leap-15.1]:       https://kamarada.github.io/pt/2019/05/22/comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap/
+[opensuse-leap-15.1]:       {% post_url pt/2019-05-22-comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap %}
 [system-upgrade]:           https://en.opensuse.org/SDB:System_upgrade
 [howto-upgrade-to-42.2]:    {% post_url pt/2016-10-31-como-atualizar-do-opensuse-leap-421-para-o-422 %}
 [howto-upgrade-to-42.3]:    {% post_url pt/2017-08-01-como-atualizar-do-opensuse-leap-422-para-o-423 %}
