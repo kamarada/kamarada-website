@@ -74,11 +74,9 @@ Clique em **OK** para sair do Atualizador de pacotes.
 
 Normalmente, quando o processo de atualização acaba, não é necessário fazer mais nada, nem mesmo reiniciar o computador. As atualizações já passam a valer e você já as perceberá se abrir algum programa que foi atualizado.
 
-Em alguns casos, é possível que o Atualizador de pacotes solicite a você reiniciar a sessão ou o computador. Se isso acontecer, siga as instruções na tela.
+Em alguns casos, é possível que o Atualizador de pacotes solicite a você reiniciar a sessão ou o computador. Se isso acontecer, siga as instruções na tela:
 
-<!--
-{% include image.html src="/files/2017/08/how-to-upgrade-to-42.3-05-pt.jpg" %}
--->
+{% include image.html src="/files/2019/05/howto-update-06-pt.jpg" %}
 
 ## Pela interface de linha de comando
 
