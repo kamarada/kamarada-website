@@ -1,4 +1,4 @@
-<div class="alert alert-success atualizacao" role="alert">
+<div class="alert alert-success alert-update" role="alert">
     <i class="fas fa-sync-alt" aria-hidden="true"></i> <strong>{% if site.data.t[page.lang].update %}{{ site.data.t[page.lang].update }}{% else %}{{ 'Update' }}{% endif %}{% if include.date %} ({{ include.date }}){% endif %}:</strong>
     {{ include.message | markdownify }}
 </div>
