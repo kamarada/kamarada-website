@@ -5,7 +5,7 @@ layout: post
 published: true
 nickname: 'obs-and-github'
 title: 'Integrating the Open Build Service with GitHub'
-excerpt: ' Get your software built and available for download right after a git push!'
+excerpt: 'Get your software built and available for download right after a git push!'
 ---
 
 {% include image.html src="/files/2019/03/obs-and-github.jpg" %}
