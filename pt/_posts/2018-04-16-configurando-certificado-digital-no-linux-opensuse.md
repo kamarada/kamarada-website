@@ -5,17 +5,26 @@ layout: post
 published: true
 title: 'Configurando certificado digital no Linux openSUSE'
 nickname: 'how-to-token'
-excerpt: 'Um certificado digital permite identificar e autenticar pessoas físicas, empresas ou computadores em sites e sistemas. Ele garante princípios da segurança da informação às operações realizadas por meio dele, como autenticidade e não repúdio, atribuindo-lhes validade jurídica e dispensando o reconhecimento de firma.'
+excerpt: 'Um certificado digital permite identificar e autenticar pessoas físicas, empresas ou computadores em sites e sistemas. Ele garante princípios da segurança da informação às operações realizadas por meio dele, como autenticidade e não repúdio, atribuindo-lhes validade jurídica e dispensando o reconhecimento de firma. Neste post, você verá como utilizar um token para acessar um sistema do governo com certificado digital no Linux openSUSE.'
 ---
+
+{% capture atualizacao_2019_1 %}
+O *post* foi revisado para se aproximar da [versão em inglês]({%post_url en/2019-06-28-using-smart-cards-on-opensuse-linux %}), mais recente.
+{% endcapture %}
+{% include update.html date="28/06/2019" message=atualizacao_2019_1 %}
 
 Um [certificado digital][certificado-digital] permite **identificar** e **autenticar** pessoas físicas, empresas ou computadores em *sites* e sistemas. Ele garante princípios da [segurança da informação][seguranca-da-informacao] às operações realizadas por meio dele, como **autenticidade** e **não repúdio**, atribuindo-lhes validade jurídica e dispensando o reconhecimento de firma.
 
-Existem basicamente 2 tipos de certificado digital:
+A [ICP-Brasil] define [11 tipos de certificados digitais][doc-icp-04], dois quais 2 são mais comuns:
 
-- o **Certificado A1**, que é armazenado no computador (ou dispositivo móvel, como *smartphone* ou *tablet*) e tem validade de 1 ano; e
-- o **Certificado A3**, que é armazenado em uma mídia criptográfica ([cartão inteligente][smart-card] ou [token][token]) e tem validade de 1 a 3 anos.
+- o **Certificado A1**, que é um arquivo armazenado no computador ou dispositivo móvel (como *smartphone* ou *tablet*) e tem validade de 1 ano; e
+- o **Certificado A3**, que é armazenado em uma mídia criptográfica, como um [cartão inteligente (*smart card*)][smart-card] ou [*token*][token], e tem validade de 1 a 3 anos.
 
-{% include image.html src="/files/2018/04/etoken.jpg" caption="Um *token* parece um *pendrive*, mas é uma mídia criptográfica, serve apenas para armazenar um certificado digital" %}
+Você precisa de uma leitora de cartão para usar um cartão inteligente. Um *token* possui a mesma tecnologia, mas é um dispositivo completo que você pode plugar diretamente ao computador (como se fosse uma leitora de cartão com um cartão não removível dentro).
+
+{% include image.html src="/files/2019/06/smart-card.jpg" caption="Um cartão inteligente parece um cartão de crédito e requer o uso de uma leitora." %}
+
+{% include image.html src="/files/2018/04/etoken.jpg" caption="Um token parece um pendrive, mas é uma mídia criptográfica: armazena apenas certificados digitais." %}
 
 Algumas utilidades do certificado digital para pessoas físicas e jurídicas são:
 
@@ -26,13 +35,23 @@ Algumas utilidades do certificado digital para pessoas físicas e jurídicas sã
 - Enviar declarações de imposto de renda, seja de pessoa física ou jurídica; e
 - Realizar transações bancárias com mais segurança.
 
-Para uma lista completa de tipos de certificados digitais e suas possíveis utilizações para pessoas físicas e jurídicas, consulte [esta página][certisign-indicacoes].
+Para uma lista completa de tipos de certificados digitais e suas possíveis utilizações para pessoas físicas e jurídicas, consulte estas páginas:
 
-Há também os certificados digitais que identificam *sites*. Quando você acessa um *site* que apresenta um certificado digital, o navegador exibe o ícone de um cadeado verde, indicando que o *site* é autêntico e seguro. Já falamos um pouco sobre certificados de *sites* em [outro *post*][certificados-sites].
+- [Indicação de uso do Certificado Digital - Certisign][certisign-indicacoes]
+- [Cases - Instituto Nacional de Tecnologia da Informação][certificado-digital-cases]
 
-Neste *post*, você verá como utilizar um *token* para acessar um sistema do governo com certificado digital no [Linux openSUSE][opensuse]. Para referência, utilizo a versão [15.0 Beta][opensuse-leap-15].
+Há também os certificados digitais que identificam *sites*. Quando você acessa um *site* que apresenta um certificado válido, o navegador exibe o ícone de um cadeado verde, indicando que o *site* é autêntico e seguro. Já falamos sobre certificados de *sites* em [outro *post*][certificados-sites].
+
+Neste *post*, você verá como utilizar um *token* para acessar um sistema do governo com certificado digital no [Linux openSUSE][opensuse]. Para referência futura, utilizo a versão [15.0 Beta][opensuse-leap-15].
+
+{% capture atualizacao_2019_2 %}
+O passo-a-passo permanece o mesmo para o [openSUSE Leap 15.1]({%post_url pt/2019-05-22-comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap %}).
+{% endcapture %}
+{% include update.html date="28/06/2019" message=atualizacao_2019_2 %}
 
 Na demonstração, vou utilizar um *token* USB igual ao da imagem, modelo [eToken PRO][etoken], da fabricante [SafeNet][safenet] (antiga [Aladdin][aladdin]).
+
+Cartões inteligentes e *tokens* são semelhantes em funcionamento, instalação e uso. Se você possui um cartão e uma leitora, pode seguir essas mesmas instruções.
 
 ## Instalando os pacotes necessários
 
@@ -160,7 +179,7 @@ Failed to connect to card: Card is invalid or cannot be handled
 
 Vários *tokens* já são reconhecidos e funcionam bem com a dupla PC/SC e OpenSC, mas no caso específico do Aladdin/SafeNet eToken PRO é necessário instalar também um *software* proprietário da SafeNet, que é o [SafeNet Authentication Client][sac].
 
-O ideal é que você obtenha esse *software* da certificadora onde você adquiriu o *token*, mas você pode obtê-lo do *site* da [Soluti][soluti], que é uma das certificadoras que suportam a utilização de Linux.
+O ideal é que você obtenha esse *software* da certificadora onde adquiriu o *token*, mas você pode obtê-lo do *site* da [Soluti][soluti], que é uma certificadora que suporta a utilização de Linux.
 
 Acesse o [*site* da Soluti][soluti] e clique, na sequência, em:
 
@@ -217,9 +236,11 @@ logout and login to apply changes
 
 Reinicie o computador (fazer *logout* e *login* como sugere o *script* de instalação não funcionou ao menos para mim).
 
-Quando voltar, inicie o **SafeNet Authentication Client Tools** (o primeiro ícone):
+Quando voltar, inicie o **SafeNet Authentication Client Tools**:
 
 {% include image.html src="/files/2018/04/token-04-pt.jpg" %}
+
+(na dúvida, tente clicar em ambos os ícones, acontece comigo também)
 
 Observe que ele reconhece o *token* devidamente:
 
@@ -229,7 +250,11 @@ Observe que ele reconhece o *token* devidamente:
 
 Para poder utilizar o *token* no navegador [Mozilla Firefox][firefox], vamos cadastrá-lo como um dispositivo de segurança.
 
-Para isso, com o Firefox aberto, abra o **menu do Firefox** e clique em **Preferências**.
+Antes, certifique-se de adicionar o certificado da sua Autoridade Certificadora ao navegador, do contrário o navegador não conseguirá verificar a hierarquia e validar seu certificado. Para mais informações, leia:
+
+- [Como instalar certificados de segurança no Linux][certificados-sites]
+
+Para cadastrar seu *token* como um dispositivo de segurança, com o Firefox aberto, abra o **menu do Firefox** e clique em **Preferências**.
 
 Depois, clique em **Privacidade e Segurança** e, por último, no botão **Dispositivos de Segurança**, no final:
 
@@ -259,7 +284,9 @@ O [eCAC][ecac] é um sistema da Receita Federal que disponibiliza pela Internet 
 
 Alguns dos serviços mais úteis para pessoas físicas incluem consultar declarações e recibos já enviados do imposto de renda e [verificar se a declaração caiu na malha fina][malha-fina], assim como [tomar ações para regularizar a situação][malha-fina-regularizar].
 
-**Observação:** o eCAC é um sistema do governo assinado com um certificado de segurança próprio. Para acessá-lo, você deve instalar o certificado da Autoridade Certificadora Raiz Brasileira. Se ainda não fez isso, veja como fazer [nesse *post*][certificados-sites].
+**Observação:** o eCAC é um sistema do governo assinado com um certificado de segurança próprio. Para acessá-lo, você deve instalar o certificado da Autoridade Certificadora Raiz Brasileira. Se ainda não fez isso, veja como fazer neste *post*:
+
+- [Como instalar certificados de segurança no Linux][certificados-sites]
 
 Para acessar o eCAC, certifique-se de que o *token* está conectado ao computador.
 
@@ -292,8 +319,9 @@ Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE
 
 - [Como transmitir a declaração do Imposto de Renda com certificado digital no Linux openSUSE]({% post_url pt/2018-04-16-como-transmitir-a-declaracao-do-imposto-de-renda-com-certificado-digital-no-linux-opensuse %})
 - [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
+- [Assinando documentos ODF e PDF com o LibreOffice]({%post_url pt/2018-12-16-assinando-documentos-odf-e-pdf-com-o-libreoffice %})
 {% endcapture %}
-{% include update.html date="26/10/2018" message=atualizacao %}
+{% include update.html date="28/06/2019" message=atualizacao %}
 
 ## Referências
 
@@ -301,7 +329,7 @@ Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE
 - [O que é Certificado Digital? - Serasa Experian][serasa-certificado-digital]
 - [Certificados Digitais — Receita Federal][receita-certificados-digitais]
 - [Instalar eToken Alladin, usar sites do governo com certificado Digital e assinar documentos PDF — Dicas do cotidiano com linux][aladdin-etoken-ubuntu]
-- [Howto use Aladdin eToken under Linux - Rene Mayrhofer's virtual home][aladdin-etoken-linux]
+- [Howto use Aladdin eToken under Linux - René Mayrhofer][aladdin-etoken-linux]
 - [Configuring Smart Card authentication on SUSE Linux Enterprise - SUSE Communities][smart-cards-sle]
 - [Aladdin eToken PRO · OpenSC/OpenSC Wiki · GitHub][aladdin-etoken-opensc]
 - [Unsuported Aladdin eToken PRO USB 72k Java · Issue #461 · OpenSC/OpenSC · GitHub][aladdin-etoken-opensc-issue]
@@ -309,12 +337,15 @@ Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE
 
 [certificado-digital]:              https://pt.wikipedia.org/wiki/Certificado_digital
 [seguranca-da-informacao]:          https://pt.wikipedia.org/wiki/Seguran%C3%A7a_da_informa%C3%A7%C3%A3o
+[icp-brasil]:                       http://www.iti.gov.br/icp-brasil
+[doc-icp-04]:                       https://www.iti.gov.br/images/repositorio/legislacao/documentos-principais/DOC-ICP-04_-_Versao_7.0_-_REQUISITOS_MINIMOS_PARA_P.C.-1_VERS%C3%83O_WEBTRUST-consolida%C3%A7%C3%A3o.pdf
 [smart-card]:                       https://pt.wikipedia.org/wiki/Cart%C3%A3o_inteligente
 [token]:                            https://pt.wikipedia.org/wiki/Token_(chave_eletr%C3%B4nica)
 [nfe]:                              http://www.nfe.fazenda.gov.br/
 [ecac]:                             https://cav.receita.fazenda.gov.br/
 [receita-federal]:                  http://idg.receita.fazenda.gov.br/
 [certisign-indicacoes]:             https://www.certisign.com.br/certificado-digital/indicacao-uso
+[certificado-digital-cases]:        https://www.iti.gov.br/certificado-digital/cases
 [certificados-sites]:               {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
 [opensuse]:                         https://www.opensuse.org/
 [opensuse-leap-15]:                 https://news.opensuse.org/2018/01/31/opensuse-leap-15-reaches-beta-phase-snapshots/
@@ -334,7 +365,7 @@ Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE
 [serasa-certificado-digital]:       https://serasa.certificadodigital.com.br/o-que-e/
 [receita-certificados-digitais]:    http://idg.receita.fazenda.gov.br/orientacao/tributaria/senhas-e-procuracoes/senhas/certificados-digitais
 [aladdin-etoken-ubuntu]:            https://diadialinux.wordpress.com/2017/03/02/instalar-etoken-alladin-usar-sites-do-governo-com-certificado-digital-e-assinar-documentos-pdf/
-[aladdin-etoken-linux]:             https://www.mayrhofer.eu.org/aladdin-etoken-under-linux
+[aladdin-etoken-linux]:             https://www.mayrhofer.eu.org/post/aladdin-etoken-under-linux/
 [smart-cards-sle]:                  https://www.suse.com/c/configuring-smart-card-authentication-suse-linux-enterprise/
 [aladdin-etoken-opensc]:            https://github.com/OpenSC/OpenSC/wiki/Aladdin-eToken-PRO
 [aladdin-etoken-opensc-issue]:      https://github.com/OpenSC/OpenSC/issues/461
