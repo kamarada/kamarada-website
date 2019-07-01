@@ -7,11 +7,13 @@ image: '/files/2017/04/git-ssh.png'
 nickname: 'git-ssh'
 ---
 
-Esse *post* é para os desenvolvedores. Se você utiliza o sistema de controle de versão [Git][git] em conjunto com algum servidor como o [GitHub][github] ou o [Bitbucket][bitbucket] para hospedar e gerenciar seus projetos, deve saber que por padrão a conexão com esses servidores é feita pelo protocolo [HTTPS][https]. Isso obriga você a digitar usuário e senha toda vez que vai executar um comando como `git pull` ou `git push`.
+{% include update.html date="02/07/2019" message="Inclusão do [GitLab](https://gitlab.com/) e atualização das instruções para o [Bitbucket](https://bitbucket.org/)." %}
 
-Usando o protocolo [SSH][ssh], você pode se conectar a servidores remotos e se autenticar para utilizar seus serviços. Tanto o GitHub como o Bitbucket permitem que o Git se conecte a seus servidores via SSH em vez de HTTPS. A conexão feita com criptografia de chaves dispensa o fornecimento de usuário e senha para cada comando.
+Esse *post* é para os desenvolvedores. Se você utiliza o sistema de controle de versão [Git] em conjunto com algum servidor como o [GitHub], o [GitLab] ou o [Bitbucket] para hospedar e gerenciar seus projetos, deve saber que por padrão a conexão com esses servidores é feita pelo protocolo [HTTPS][https]. Isso obriga você a digitar usuário e senha toda vez que vai executar um comando como `git pull` ou `git push`.
 
-Veremos nesse *post* como utilizar o GitHub e o Bitbucket com chaves SSH.
+Usando o protocolo [SSH][ssh], você pode se conectar a servidores remotos e se autenticar para utilizar seus serviços. Os três servidores mencionados permitem ao Git se conectar via SSH em vez de HTTPS. A conexão feita com criptografia de chaves dispensa o fornecimento de usuário e senha para cada comando.
+
+Veremos nesse *post* como utilizar o GitHub, o GitLab e o Bitbucket com chaves SSH.
 
 {% include image.html src="/files/2017/04/git-ssh.png" %}
 
@@ -169,15 +171,11 @@ O comando confirma que a chave foi adicionada ao agente:
 Identity added: /home/seunomedeusuario/.ssh/id_rsa (/home/seunomedeusuario/.ssh/id_rsa)
 ```
 
-Feito isso, você já pode configurar a conexão via SSH com o GitHub ou o Bitbucket.
+## Adicione sua chave SSH à sua conta
 
-## Adicione sua chave SSH à sua conta do GitHub
+Com a chave SSH criada e adicionada ao agente, você já pode configurar a conexão via SSH. Vejamos como fazer isso para cada um dos três servidores: GitHub, GitLab e Bitbucket.
 
-Para se conectar ao GitHub utilizando SSH, você deve associar sua chave pública à sua conta do GitHub.
-
-Sua chave pública está no arquivo `~/.ssh/id_rsa.pub`.
-
-Para copiá-la, utilize o comando **xclip**:
+Nos três casos, o processo é semelhante. Comece copiando sua chave pública, que está no arquivo `~/.ssh/id_rsa.pub`, usando o comando **xclip**:
 
 ```
 $ xclip -sel clip < ~/.ssh/id_rsa.pub
@@ -190,6 +188,8 @@ Caso ele não esteja instalado no seu sistema, você pode instalá-lo executando
 ```
 # zypper install xclip
 ```
+
+### GitHub
 
 Usando o navegador, acesse a página inicial do GitHub em [github.com][github] e entre na sua conta clicando em **Sign in**. No canto superior direito da página, clique na sua foto de perfil e depois em **Settings** (configurações):
 
@@ -205,35 +205,43 @@ Agora a chave aparece na lista de chaves SSH associadas à conta:
 
 {% include image.html src="/files/2017/04/git-ssh-03.jpg" %}
 
-## Adicione sua chave SSH à sua conta do Bitbucket
+### GitLab
 
-O processo para o Bitbucket é bastante semelhante.
+Usando o navegador, acesse a página inicial do GitLab em [gitlab.com][gitlab] e entre na sua conta clicando em **Sign in**. No canto superior direito da página, clique na sua foto de perfil e depois em **Settings** (configurações):
 
-Copie sua chave pública utilizando o comando **xclip**:
+{% include image.html src="/files/2019/07/gitlab-ssh-01.jpg" %}
 
-```
-$ xclip -sel clip < ~/.ssh/id_rsa.pub
-```
+Na barra lateral, clique em **SSH Keys** (chaves SSH). Depois, cole sua chave pública no campo **Key** (chave). Preencha o campo **Title** (título) com um nome descritivo para a nova chave (pode ser, por exemplo, o nome do seu computador). Finalmente, clique em **Add key** (adicionar chave):
 
-Usando o navegador, acesse a página inicial do Bitbucket em [bitbucket.org][bitbucket] e entre na sua conta clicando em **Log in**. No canto superior direito da página, clique na sua foto de perfil e depois em **Bitbucket settings** (configurações do Bitbucket):
+{% include image.html src="/files/2019/07/gitlab-ssh-02.jpg" %}
 
-{% include image.html src="/files/2017/04/git-ssh-04-pt.jpg" %}
+Agora a chave aparece na lista de chaves SSH associadas à conta:
 
-Note que a interface do Bitbucket é traduzida, mas apenas em parte.
+{% include image.html src="/files/2019/07/gitlab-ssh-03.jpg" %}
+
+### Bitbucket
+
+Usando o navegador, acesse a página inicial do Bitbucket em [bitbucket.org][bitbucket] e entre na sua conta clicando em **Log in**. No canto inferior esquerdo da página, clique na sua foto de perfil e depois em **Bitbucket settings** (configurações do Bitbucket):
+
+{% include image.html src="/files/2019/07/bitbucket-ssh-01-pt.jpg" %}
+
+Você deve ter percebido que a interface do Bitbucket não é totalmente traduzida.
 
 Na barra lateral, na seção **Segurança**, clique em **Chaves SSH**. Depois, clique em **Adicionar chave**.
 
 Preencha o campo **Label** (rótulo) com um nome descritivo para a nova chave (pode ser, por exemplo, o nome do seu computador) e cole sua chave pública no campo **Key** (chave). Finalmente, clique em **Adicionar chave**:
 
-{% include image.html src="/files/2017/04/git-ssh-05-pt.jpg" %}
+{% include image.html src="/files/2019/07/bitbucket-ssh-02-pt.jpg" %}
 
 Agora a chave aparece na lista de chaves SSH associadas à conta:
 
-{% include image.html src="/files/2017/04/git-ssh-06-pt.jpg" %}
+{% include image.html src="/files/2019/07/bitbucket-ssh-03-pt.jpg" %}
 
 ## Teste a conexão via SSH
 
-Tanto no GitHub quanto no Bitbucket, é possível testar a conexão antes de usá-la propriamente com o Git.
+GitHub, GitLab e Bitbucket permitem que você teste a conexão antes de usá-la com o Git.
+
+### GitHub
 
 Se você adicionou sua chave SSH à sua conta do GitHub, abra o terminal e execute:
 
@@ -265,6 +273,23 @@ Hi seunomedeusuario! You've successfully authenticated, but GitHub does not prov
 
 Teste concluído com sucesso, você já pode utilizar o SSH com o GitHub.
 
+### GitLab
+
+Se você adicionou sua chave SSH à sua conta do GitLab, o teste é semelhante:
+
+```
+$ ssh -T git@gitlab.com
+The authenticity of host 'gitlab.com (35.231.145.151)' can't be established.
+ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'gitlab.com,35.231.145.151' (ECDSA) to the list of known hosts.
+Welcome to GitLab, @vinyanalista!
+```
+
+Teste efetuado com sucesso, você já pode utilizar o SSH com o GitLab.
+
+### Bitbucket
+
 Se você adicionou sua chave SSH à sua conta do Bitbucket, o teste é semelhante:
 
 ```
@@ -282,9 +307,11 @@ Teste efetuado com sucesso, você já pode utilizar o SSH com o Bitbucket.
 
 ## Clone um repositório via SSH
 
-Agora que sabemos que podemos conectar ao GitHub ou ao Bitbucket via SSH, vejamos como clonar um repositório utilizando o SSH em vez do HTTPS.
+Agora que sabemos que podemos conectar ao servidor via SSH, vejamos como clonar um repositório usando o SSH em vez do HTTPS.
 
-No GitHub, acesse o repositório de um projeto, clique em **Clone or download** e copie o [URL][url] para clonar o repositório usando SSH:
+### GitHub
+
+No [GitHub], acesse o repositório de um projeto, clique em **Clone or download** e copie o [URL][url] para clonar o repositório usando SSH:
 
 {% include image.html src="/files/2017/04/git-ssh-07-pt.jpg" %}
 
@@ -300,11 +327,31 @@ Observe que o Git clona o repositório via SSH sem pedir senha:
 
 {% include image.html src="/files/2017/04/git-ssh-08-pt.png" %}
 
-O processo é semelhante se você utiliza o Bitbucket.
+### GitLab
 
-No Bitbucket, acesse o repositório de um projeto e copie o URL para clonar o repositório usando SSH:
+No [GitLab], acesse o repositório de um projeto, clique em **Clone** e copie o URL para clonar o repositório usando SSH:
 
-{% include image.html src="/files/2017/04/git-ssh-09-pt.jpg" %}
+{% include image.html src="/files/2019/07/gitlab-ssh-04.jpg" %}
+
+O URL de um repositório do GitLab se parece com:
+
+```
+git@gitlab.com:seunomedeusuario/nomedoseuprojeto.git
+```
+
+Abra o terminal e execute o comando `git clone` passando o URL copiado:
+
+{% include image.html src="/files/2019/07/gitlab-ssh-05.png" %}
+
+Com o GitLab, o Git também clona o repositório via SSH sem pedir senha.
+
+### Bitbucket
+
+No [Bitbucket], acesse o repositório de um projeto, clique em **Clonar** e copie o comando para clonar o repositório usando SSH:
+
+{% include image.html src="/files/2019/07/bitbucket-ssh-04-pt.jpg" %}
+
+Note que, diferente do GitHub e do GitLab que informam o URL, o Bitbucket informa o comando `git clone` inteiro, contendo o URL.
 
 O URL de um repositório do Bitbucket se parece com:
 
@@ -312,9 +359,9 @@ O URL de um repositório do Bitbucket se parece com:
 git@bitbucket.org:seunomedeusuario/nomedoseuprojeto.git
 ```
 
-Abra o terminal e execute o comando `git clone` passando o URL copiado:
+Abra o terminal, cole e execute o comando `git clone` copiado:
 
-{% include image.html src="/files/2017/04/git-ssh-10-pt.png" %}
+{% include image.html src="/files/2019/07/bitbucket-ssh-05-pt.png" %}
 
 Com o Bitbucket, o Git também clona o repositório via SSH sem pedir senha.
 
@@ -335,21 +382,21 @@ $ git remote -v
 Sua saída deve ser parecida com:
 
 ```
-origin  https://github.com/seunomedeusuario/nomedoseuprojeto.git (fetch)
-origin  https://github.com/seunomedeusuario/nomedoseuprojeto.git (push)
+origin  https://seuservidor/seunomedeusuario/nomedoseuprojeto.git (fetch)
+origin  https://seuservidor/seunomedeusuario/nomedoseuprojeto.git (push)
 ```
 
 Mude o URL do seu repositório remoto com o comando:
 
 ```
-git remote set-url origin git@github.com:seunomedeusuario/nomedoseuprojeto.git
+$ git remote set-url origin git@seuservidor:seunomedeusuario/nomedoseuprojeto.git
 ```
 
 Execute o comando `git remote -v` mais uma vez para verificar que o URL do repositório remoto foi alterado:
 
 ```
-origin  git@github.com:seunomedeusuario/nomedoseuprojeto.git (fetch)
-origin  git@github.com:seunomedeusuario/nomedoseuprojeto.git (push)
+origin  git@seuservidor:seunomedeusuario/nomedoseuprojeto.git (fetch)
+origin  git@seuservidor:seunomedeusuario/nomedoseuprojeto.git (push)
 ```
 
 Pronto. Feito isso, o Git passará a utilizar o SSH em vez do HTTPS para sincronizar esse repositório local com o seu equivalente remoto.
@@ -358,13 +405,15 @@ Espero que essas dicas possam ser úteis para você como têm sido para mim desd
 
 ## Referências
 
-- [Connecting to GitHub with SSH - User Documentation - GitHub][github-ssh]
-- [Set up SSH for Git - Atlassian Documentation][bitbucket-ssh]
-- [Changing a remote's URL - User Documentation - GitHub][changing-a-remote-s-url]
+- [Connecting to GitHub with SSH - GitHub Help][github-ssh]
+- [Set up an SSH key - Atlassian Documentation][bitbucket-ssh]
+- [Changing a remote's URL - GitHub Help][changing-a-remotes-url]
+- [GitLab and SSH keys - GitLab][gitlab-help]
 
 [git]:                      https://git-scm.com/
 [github]:                   https://github.com/
 [bitbucket]:                https://bitbucket.org/
+[gitlab]:                   https://gitlab.com/
 [https]:                    https://pt.wikipedia.org/wiki/Hyper_Text_Transfer_Protocol_Secure
 [ssh]:                      https://pt.wikipedia.org/wiki/Secure_Shell
 [opensuse]:                 https://www.opensuse.org/
@@ -377,6 +426,7 @@ Espero que essas dicas possam ser úteis para você como têm sido para mim desd
 [clipboard]:                https://pt.wikipedia.org/wiki/%C3%81rea_de_transfer%C3%AAncia
 [gpg]:                      https://pt.wikipedia.org/wiki/GNU_Privacy_Guard
 [url]:                      https://pt.wikipedia.org/wiki/URL
-[github-ssh]:               https://help.github.com/articles/connecting-to-github-with-ssh/
+[github-ssh]:               https://help.github.com/en/articles/connecting-to-github-with-ssh
 [bitbucket-ssh]:            https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html
-[changing-a-remote-s-url]:  https://help.github.com/articles/changing-a-remote-s-url/
+[changing-a-remotes-url]:   https://help.github.com/en/articles/changing-a-remotes-url
+[gitlab-help]:              https://docs.gitlab.com/ee/ssh/
