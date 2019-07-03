@@ -16,16 +16,12 @@ In this post, you'll see how to install Thunderbird and set it up to sync your G
 
 Indeed people have preferred to use browsers instead of email clients to read and send messages, because it's more practical. However, email clients provide us some interesting possibilities, which we'll see in the next posts.
 
-<!--
+{% capture update %}
+As promised, here is an interesting use for the Thunderbird email client:
 
-{% capture atualizacao %}
-Como prometido, eis aqui um uso interessante para o cliente de *e-mail*:
-
-- [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
+- [Sending digitally signed emails with Thunderbird]({% post_url en/2019-07-02-sending-digitally-signed-emails-with-thunderbird %})
 {% endcapture %}
-{% include update.html date="24/09/2018" message=atualizacao %}
-
--->
+{% include update.html date="Jul 02, 2019" message=update %}
 
 ## Installing Thunderbird
 

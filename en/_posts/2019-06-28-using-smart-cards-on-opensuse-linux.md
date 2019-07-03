@@ -250,6 +250,13 @@ Check the website displays your information and you successfully logged in:
 
 Now you are ready to access websites with your smart card and use it in other applications.
 
+{% capture update %}
+See how you can use your digital certificate in openSUSE:
+
+- [Sending digitally signed emails with Thunderbird]({% post_url en/2019-07-02-sending-digitally-signed-emails-with-thunderbird %})
+{% endcapture %}
+{% include update.html date="Jul 02, 2019" message=update %}
+
 Have a lot of fun!
 
 ## References

@@ -345,7 +345,7 @@ As I realized that this post is already very long, I decided to split it into tw
 Follow the Linux Kamarada Project to read the second part as soon as it's published!
 
 {% capture update %}[Sorry for the long wait, the second part of this tutorial is here. (click)]({%post_url en/2018-03-15-how-to-install-opensuse-leap-linux-on-a-server-part-2 %}){% endcapture %}
-{% include update.html date="15/03/2018" message=update %}
+{% include update.html date="Mar 15, 2018" message=update %}
 
 [opensuse-leap-422]:            {%post_url en/2016-11-16-optimal-release-for-linux-professionals-arrives-with-opensuse-leap-42-2 %}
 [how-to-install]:               {%post_url en/2016-11-15-how-to-install-opensuse-leap-linux %}
