@@ -5,6 +5,7 @@ published: true
 title: 'Usando chaves SSH com o Git'
 image: '/files/2017/04/git-ssh.png'
 nickname: 'git-ssh'
+excerpt: 'Esse post é para os desenvolvedores. Se você utiliza o sistema de controle de versão Git em conjunto com algum servidor como o GitHub, o GitLab ou o Bitbucket para hospedar e gerenciar seus projetos, deve saber que por padrão a conexão com esses servidores é feita pelo protocolo HTTPS. Isso obriga você a digitar usuário e senha toda vez que vai executar um comando como git pull ou git push. Usando o protocolo SSH, você pode se conectar a servidores remotos e se autenticar para utilizar seus serviços. Os três servidores mencionados permitem ao Git se conectar via SSH em vez de HTTPS. A conexão feita com criptografia de chaves dispensa o fornecimento de usuário e senha para cada comando. Veremos nesse post como utilizar o GitHub, o GitLab e o Bitbucket com chaves SSH.'
 ---
 
 {% include update.html date="02/07/2019" message="Inclusão do [GitLab](https://gitlab.com/) e atualização das instruções para o [Bitbucket](https://bitbucket.org/)." %}
