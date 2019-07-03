@@ -22,7 +22,7 @@ Before starting, to get everyone on the same page, I recommend reading previous 
 
 ## Installing your CA certificate on Thunderbird
 
-Similarly as [we did][how-to-token] with [Mozilla Firefox][firefox], first we need to add our CA certificate to our email client, otherwise it won't be able to validate our certificate hierarchy.
+Similarly as [we did][how-to-token] with the [Firefox][firefox] web browser, first we need to add our CA certificate to our Thunderbird email client, otherwise it won't be able to validate our certificate hierarchy.
 
 Let's see how to add a CA certificate to Thunderbird.
 
@@ -30,25 +30,25 @@ To demonstrate, I'm going to import the certificate of the Brazilian root CA [IC
 
 Pull down the **Thunderbird menu** (top right corner of the window) and click **Preferences**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-01.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-01-en.jpg" %}
 
 On the **Thunderbird Preferences** dialog, select the **Advanced** tab, then the **Certificates** tab below and click **Manage Certificates**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-02.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-02-en.jpg" %}
 
 On the **Certificate Manager** dialog, select the **Authorities** tab and click **Import**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-03.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-03-en.jpg" %}
 
 Select the CA certificate file you want to import.
 
 Check all the options to fully trust the Certificate Authority and click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-04.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-04-en.jpg" %}
 
 Make sure your CA certificate appears listed and click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-05.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-05-en.jpg" %}
 
 Click **Close** to close the **Thunderbird Preferences** dialog.
 
@@ -62,23 +62,23 @@ On the **Thunderbird Preferences** dialog, select the **Advanced** tab, then the
 
 On the **Device Manager** dialog, click **Load**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-06.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-06-en.jpg" %}
 
 On the next dialog box, fill in the **Module Name** field with a name that identifies your token (for instance, `eToken`).
 
 Fill in the **Module filename** field with the path to your token's library:
 
-- if your token is supported by OpenSC, type `/usr/lib64/opensc-pkcs11.so`;
-- if you have a SafeNet token and needed to install SAC (like me), type `/usr/lib64/libeToken.so`;
+- if your token is supported by [OpenSC][how-to-token], type `/usr/lib64/opensc-pkcs11.so`;
+- if you have a SafeNet token and needed to install [SAC][how-to-token] (like me), type `/usr/lib64/libeToken.so`;
 - for other token models, ask your token vendor or your certificate authority which path should be informed.
 
 When you finish, click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-07.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-07-en.jpg" %}
 
 Your token is added to the list of **Security Modules and Devices**. Click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-08.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-08-en.jpg" %}
 
 Click **Close** to close the **Thunderbird Preferences** dialog.
 
@@ -92,19 +92,19 @@ Open the **Thunderbird menu** and go to **Preferences**, **Account Settings**:
 
 On the left panel, among the account settings, select **Security** and by the right, near **Digital Signing**, click **Select**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-09.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-09-en.jpg" %}
 
 Enter the PIN for your token and click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-10.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-10-en.jpg" %}
 
 Select the certificate to be used for digital signing and click **OK**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-11.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-11-en.jpg" %}
 
 As we are going to set up criptography just for sending, not for replying, choose **No**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-12.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-12-en.jpg" %}
 
 Back to the **Account Settings** dialog, in case you want to always sign the emails you send, check the **Digitally sign messages (by default)** option.
 
@@ -116,15 +116,13 @@ Right now, digital signing is set up and ready to be used!
 
 On the Thunderbird main window, click the **Write** button:
 
-{% include image.html src="/files/2019/07/thunderbird-token-13.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-13-en.jpg" %}
 
-As usual, fill in the **From** and **To** fields and type the message body.
+As usual, fill in the **From**, **To** and **Subject** fields and type the message body.
 
-Before sending, open the **Security** menu and make sure the **Digitally Sign This Message** option is checked:
+Before sending, open the **Security** menu and make sure the **Digitally Sign This Message** option is checked (if you have setup Thunderbird to always sign the emails you send, that option should be already checked by default):
 
-{% include image.html src="/files/2019/07/thunderbird-token-14.jpg" %}
-
-(if you have setup Thunderbird to always sign the emails you send, that option should be already checked by default)
+{% include image.html src="/files/2019/07/thunderbird-token-14-en.jpg" %}
 
 When you finish, click **Send**.
 
@@ -134,25 +132,25 @@ Thunderbird asks for the token PIN to sign the email right before sending.
 
 If the recipient uses Thunderbird, they can check the digital signature of the message:
 
-{% include image.html src="/files/2019/07/thunderbird-token-15.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-15-en.jpg" %}
 
-{% include image.html src="/files/2019/07/thunderbird-token-16.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-16-en.jpg" %}
 
-If Thunderbird tells the digital signature is not valid, the recipient may be missing your CA certificate. They need to add that certificate to their Thunderbird installation following the instructions presented on this page. After doing that, back to the message window, Thunderbird will be able to validate the signature.
+If Thunderbird tells the digital signature is not valid, the recipient may be missing your CA certificate. They need to add that certificate to their Thunderbird installation following the instructions presented on this page. After doing that, back to the message tab, Thunderbird will be able to validate the signature.
 
 If the recipient uses a webmail, it may allow to check the digital signature of the message. For instance, that is possible with [Gmail]:
 
-{% include image.html src="/files/2019/07/thunderbird-token-17.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-17-en.jpg" %}
 
 Note that Gmail does not trust a certificate that belongs to the hierarchy of the Brazilian root CA ICP-Brasil. Unfortunately, the definitive solution to this issue would require [Google] to install and trust the ICP-Brasil certificate on its servers.
 
 As a workaround, you can click the **Sender info** link and then click **Download certificates**:
 
-{% include image.html src="/files/2019/07/thunderbird-token-18.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-18-en.jpg" %}
 
 Open the downloaded file (the sender certificate) and check its hierarchy by yourself:
 
-{% include image.html src="/files/2019/07/thunderbird-token-19.jpg" %}
+{% include image.html src="/files/2019/07/thunderbird-token-19-en.jpg" %}
 
 ## Thunderbird bug: certificate could not be found
 
