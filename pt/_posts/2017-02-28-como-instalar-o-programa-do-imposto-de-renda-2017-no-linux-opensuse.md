@@ -92,7 +92,7 @@ Espero que essa dica possa ter sido útil. Se ficou alguma dúvida em relação 
 
 - [Instruções de Instalação — Secretaria da Receita Federal do Brasil][irpf-instalacao]
 - [IRPF 2017 no Linux - veja como instalar o programa][edivaldobrito.com.br]
-- [Receita libera programa do IR nesta quinta; entrega começa em 2 de março | Economia / Imposto de Renda / Imposto de Renda 2017 | G1][g1]
+- [Receita libera programa do IR nesta quinta; entrega começa em 2 de março - G1][g1]
 
 [g1]:                   http://g1.globo.com/economia/imposto-de-renda/2017/noticia/receita-libera-programa-do-ir-nesta-quinta-entrega-comeca-em-2-de-marco.ghtml
 [receita-federal]:      http://idg.receita.fazenda.gov.br/
