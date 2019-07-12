@@ -38,7 +38,7 @@ O [Mozilla Firefox][firefox] é um navegador gratuito, livre e multi-plataforma 
 
 Segundo o [StatCounter], serviço que analisa o tráfego da *web* desde 1999, atualmente o Firefox é usado por cerca de 9,78% dos usuários de *desktop* do mundo e 6,14% dos usuários de *desktop* brasileiros. É o navegador padrão das distribuições Linux mais populares.
 
-A distribuição [openSUSE Leap][leap] utiliza uma versão do Firefox desenvolvida especialmente para grandes organizações (como empresas, universidades e órgãos públicos) chamada [ESR][firefox-esr] (*Extended Support Release*, versão com suporte estendido). Essa versão recebe atualizações de segurança e estabilidade sempre, mas novas funcionalidades apenas de tempos em tempos. Portanto, é atualizada com menor frequência.
+A distribuição [openSUSE Leap][leap] utiliza uma versão do Firefox desenvolvida especialmente para grandes organizações (como empresas, universidades e órgãos públicos) chamada [ESR][firefox-esr] (*Extended Support Release*, versão com suporte estendido). Essa versão recebe atualizações de segurança sempre, mas novas funcionalidades apenas de tempos em tempos. Portanto, é atualizada com menor frequência.
 
 Você já deve ter o Firefox instalado no openSUSE, mas caso precise instalá-lo manualmente:
 
@@ -242,11 +242,15 @@ Para instalá-lo, tanto no Linux quanto no Windows, você deve baixá-lo do seu 
 
 Na parte 2, veremos mais programas feitos tanto para Linux quanto para Windows.
 
+{% capture atualizacao %}[A segunda parte já está aqui! (clique para acessá-la)]({%post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}){% endcapture %}
+{% include update.html date="12/07/2019" message=atualizacao %}
+
 ## Referências
 
 Para escolher os aplicativos, consultei páginas que listam programas populares ou indicados para usuários de Windows:
 
 - [Aplicativos mais populares - Microsoft Store][microsoft-store]
+- [Top Semanal de Downloads para Windows - Baixaki][baixaki]
 - [New PC? 15 Must-Have Windows Applications You Should Install First][makeuseof]
 - [20 of the best free Windows 7 apps 2019: bring your PC right up to date - TechRadar][techradar]
 - [Best free software for Windows 10 in 2019][thewindowsclub]
@@ -271,7 +275,7 @@ Espero que tenha ajudado. Ficou com alguma dúvida? Gostaria de sugerir algum pr
 
 [chrome]:               https://www.google.com/chrome/
 [proprietary-sw]:       https://pt.wikipedia.org/wiki/Software_propriet%C3%A1rio
-[google]:               https://www.google.com/
+[google]:               https://www.google.com.br/
 [chromium]:             https://www.chromium.org/
 
 [libreoffice]:          https://pt-br.libreoffice.org/
@@ -294,8 +298,8 @@ Espero que tenha ajudado. Ficou com alguma dúvida? Gostaria de sugerir algum pr
 
 [vlc]:                  https://www.videolan.org/vlc/
 [mp3]:                  https://pt.wikipedia.org/wiki/MP3
-[divx]:                 https://en.wikipedia.org/wiki/DivX
-[xvid]:                 https://en.wikipedia.org/wiki/Xvid
+[divx]:                 https://pt.wikipedia.org/wiki/DivX
+[xvid]:                 https://pt.wikipedia.org/wiki/XviD
 [packman]:              http://packman.links2linux.com/
 [vlc-codecs]:           http://packman.links2linux.com/package/vlc
 [codecs]:               https://pt.wikipedia.org/wiki/Codec
@@ -315,7 +319,9 @@ Espero que tenha ajudado. Ficou com alguma dúvida? Gostaria de sugerir algum pr
 
 [pdfsam]:               https://pdfsam.org/pt/
 [pdf]:                  https://pt.wikipedia.org/wiki/Portable_Document_Format
+
+[microsoft-store]:      https://www.microsoft.com/pt-br/store/most-popular/apps/pc
+[baixaki]:              https://www.baixaki.com.br/top-semanal.htm
 [makeuseof]:            https://www.makeuseof.com/tag/getting-a-new-pc-12-must-have-applications-to-install-first/
 [techradar]:            https://www.techradar.com/news/software/applications/20-windows-7-free-apps-to-download-today-648954
 [thewindowsclub]:       https://www.thewindowsclub.com/best-free-software-for-windows-10
-[microsoft-store]:      https://www.microsoft.com/pt-br/store/most-popular/apps/pc
