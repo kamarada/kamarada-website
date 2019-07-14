@@ -10,9 +10,9 @@ excerpt: 'Esse post é para os desenvolvedores. Se você utiliza o sistema de co
 
 {% include update.html date="02/07/2019" message="Inclusão do [GitLab](https://gitlab.com/) e atualização das instruções para o [Bitbucket](https://bitbucket.org/)." %}
 
-Esse *post* é para os desenvolvedores. Se você utiliza o sistema de controle de versão [Git] em conjunto com algum servidor como o [GitHub], o [GitLab] ou o [Bitbucket] para hospedar e gerenciar seus projetos, deve saber que por padrão a conexão com esses servidores é feita pelo protocolo [HTTPS][https]. Isso obriga você a digitar usuário e senha toda vez que vai executar um comando como `git pull` ou `git push`.
+Esse *post* é para os desenvolvedores. Se você utiliza o sistema de controle de versão [Git] em conjunto com algum servidor como o [GitHub], o [GitLab] ou o [Bitbucket] para hospedar e gerenciar seus projetos, deve saber que por padrão a conexão com esses servidores é feita pelo protocolo [HTTPS]. Isso obriga você a digitar usuário e senha toda vez que vai executar um comando como `git pull` ou `git push`.
 
-Usando o protocolo [SSH][ssh], você pode se conectar a servidores remotos e se autenticar para utilizar seus serviços. Os três servidores mencionados permitem ao Git se conectar via SSH em vez de HTTPS. A conexão feita com criptografia de chaves dispensa o fornecimento de usuário e senha para cada comando.
+Usando o protocolo [SSH], você pode se conectar a servidores remotos e se autenticar para utilizar seus serviços. Os três servidores mencionados permitem ao Git se conectar via SSH em vez de HTTPS. A conexão feita com criptografia de chaves dispensa o fornecimento de usuário e senha para cada comando.
 
 Veremos nesse *post* como utilizar o GitHub, o GitLab e o Bitbucket com chaves SSH.
 
@@ -250,9 +250,9 @@ Se você adicionou sua chave SSH à sua conta do GitHub, abra o terminal e execu
 $ ssh -T git@github.com
 ```
 
-Com esse comando, você vai tentar acessar remotamente o servidor do GitHub.
+Com esse comando, você vai tentar [acessar remotamente o servidor][how-to-server-config] do GitHub.
 
-Se você ainda não se conectou ao GitHub via SSH, o cliente SSH pergunta se pode confiar na chave fornecida pelo servidor do GitHub:
+Se você ainda não se conectou ao GitHub via SSH, o cliente SSH pergunta se pode confiar na chave pública fornecida pelo servidor do GitHub:
 
 ```
 The authenticity of host 'github.com (192.30.253.112)' can't be established.
@@ -274,17 +274,30 @@ Hi seunomedeusuario! You've successfully authenticated, but GitHub does not prov
 
 Teste concluído com sucesso, você já pode utilizar o SSH com o GitHub.
 
+Toda a interação deve gerar algo parecido com:
+
+```
+seunomedeusuario@seucomputador:~> ssh -T git@github.com
+The authenticity of host 'github.com (192.30.253.112)' can't be established.
+RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+Are you sure you want to continue connecting (yes/no)? yes
+Warning: Permanently added 'github.com,192.30.253.112' (RSA) to the list of known hosts.
+Hi seunomedeusuario! You've successfully authenticated, but GitHub does not provide shell access.
+seunomedeusuario@seucomputador:~>
+```
+
 ### GitLab
 
 Se você adicionou sua chave SSH à sua conta do GitLab, o teste é semelhante:
 
 ```
 $ ssh -T git@gitlab.com
+
 The authenticity of host 'gitlab.com (35.231.145.151)' can't be established.
 ECDSA key fingerprint is SHA256:HbW3g8zUjNSksFbqTiUWPWg2Bq1x8xdGUrliXFzSnUw.
 Are you sure you want to continue connecting (yes/no)? yes
 Warning: Permanently added 'gitlab.com,35.231.145.151' (ECDSA) to the list of known hosts.
-Welcome to GitLab, @vinyanalista!
+Welcome to GitLab, @seunomedeusuario!
 ```
 
 Teste efetuado com sucesso, você já pode utilizar o SSH com o GitLab.
@@ -295,6 +308,7 @@ Se você adicionou sua chave SSH à sua conta do Bitbucket, o teste é semelhant
 
 ```
 $ ssh -T git@bitbucket.org
+
 The authenticity of host 'bitbucket.org (104.192.143.1)' can't be established.
 RSA key fingerprint is SHA256:zzXQOXSRBEiUtuE8AikJYKwbHaxvSc0ojez9YXaGp1A.
 Are you sure you want to continue connecting (yes/no)? yes
@@ -312,7 +326,7 @@ Agora que sabemos que podemos conectar ao servidor via SSH, vejamos como clonar 
 
 ### GitHub
 
-No [GitHub], acesse o repositório de um projeto, clique em **Clone or download** e copie o [URL][url] para clonar o repositório usando SSH:
+No [GitHub], acesse o repositório de um projeto, clique em **Clone or download** e copie o [URL] para clonar o repositório usando SSH:
 
 {% include image.html src="/files/2017/04/git-ssh-07-pt.jpg" %}
 
@@ -332,7 +346,7 @@ Observe que o Git clona o repositório via SSH sem pedir senha:
 
 No [GitLab], acesse o repositório de um projeto, clique em **Clone** e copie o URL para clonar o repositório usando SSH:
 
-{% include image.html src="/files/2019/07/gitlab-ssh-04.jpg" %}
+{% include image.html src="/files/2019/07/gitlab-ssh-04-pt.jpg" %}
 
 O URL de um repositório do GitLab se parece com:
 
@@ -342,7 +356,7 @@ git@gitlab.com:seunomedeusuario/nomedoseuprojeto.git
 
 Abra o terminal e execute o comando `git clone` passando o URL copiado:
 
-{% include image.html src="/files/2019/07/gitlab-ssh-05.png" %}
+{% include image.html src="/files/2019/07/gitlab-ssh-05-pt.png" %}
 
 Com o GitLab, o Git também clona o repositório via SSH sem pedir senha.
 
