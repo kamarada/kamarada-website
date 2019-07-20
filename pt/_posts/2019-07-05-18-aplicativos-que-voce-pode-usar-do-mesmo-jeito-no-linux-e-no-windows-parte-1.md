@@ -91,7 +91,7 @@ Você já deve ter o LibreOffice instalado no openSUSE, mas caso precise instal�
 
 Para instalar o LibreOffice no Windows, baixe o instalador do *site* do LibreOffice:
 
-- [https://pt-br.libreoffice.org/baixe-ja/libreoffice-novo/](https://pt-br.libreoffice.org/baixe-ja/libreoffice-novo/)
+- [https://pt-br.libreoffice.org/](https://pt-br.libreoffice.org/)
 
 ## 4) Dropbox
 
@@ -99,7 +99,7 @@ Para instalar o LibreOffice no Windows, baixe o instalador do *site* do LibreOff
 
 O [Dropbox] é um serviço de armazenamento de arquivos na nuvem. Ele disponibiliza um programa cliente que cria uma pasta chamada Dropbox no computador e sincroniza os arquivos dessa pasta com os arquivos que estão na nuvem. O plano gratuito oferece 2GB de espaço. Há planos individuais e para empresas que oferecem mais espaço e recursos.
 
-**Dica:** inscreva-se no Dropbox por [este *link*][dropbox-referral] de indicação e ganhe 250MB de espaço extra!
+**Dica:** inscreva-se no Dropbox por [este *link* de indicação][dropbox-referral] e ganhe 500MB de espaço extra!
 
 Para instalar o cliente do Dropbox no Windows, baixe o instalador do *site*:
 
@@ -312,7 +312,7 @@ Espero que tenha ajudado. Ficou com alguma dúvida? Gostaria de sugerir algum pr
 [java]:                 https://www.java.com/pt_BR/
 [openjdk]:              https://openjdk.java.net/
 [oracle]:               https://www.oracle.com/br/
-[how-to-oracle-jre]:    {%post_url pt/2017-02-28-como-instalar-o-programa-do-imposto-de-renda-2017-no-linux-opensuse %}
+[how-to-oracle-jre]:    {%post_url pt/2017-02-28-como-instalar-o-java-da-oracle-no-linux-opensuse %}
 [irpf]:                 {%post_url pt/2017-02-28-como-instalar-o-programa-do-imposto-de-renda-2017-no-linux-opensuse %}
 [bb]:                   {%post_url pt/2017-06-03-como-acessar-o-netbanking-do-banco-do-brasil-no-opensuse %}
 [caixa]:                {%post_url pt/2017-06-04-como-acessar-o-netbanking-da-caixa-no-opensuse %}
