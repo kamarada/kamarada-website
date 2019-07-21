@@ -35,6 +35,9 @@
                 {% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
                     <a href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" class="addthis_button_twitter_follow" addthis:userid="{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
+                {% if site.instagram_username or site.data.t[page.lang].site.instagram_username %}
+                    <a href="https://instagram.com/{% if site.data.t[page.lang].site.instagram_username %}{{ site.data.t[page.lang].site.instagram_username }}{% else %}{{ site.instagram_username }}{% endif %}" class="addthis_button_instagram_follow" addthis:userid="{% if site.data.t[page.lang].site.instagram_username %}{{ site.data.t[page.lang].site.instagram_username }}{% else %}{{ site.instagram_username }}{% endif %}" itemprop="sameAs"></a>
+                {% endif %}
                 {% if site.linkedin_username or site.data.t[page.lang].site.linkedin_username %}
                     <a href="https://www.linkedin.com/in/{% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}" class="addthis_button_linkedin_follow" addthis:userid="{% if site.data.t[page.lang].site.linkedin_username %}{{ site.data.t[page.lang].site.linkedin_username }}{% else %}{{ site.linkedin_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
@@ -66,6 +69,13 @@
                     <li>
                         <a href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}" itemprop="sameAs">
                             <i class="fa fa-twitter"></i> {% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}
+                        </a>
+                    </li>
+                {% endif %}
+                {% if site.instagram_username or site.data.t[page.lang].site.instagram_username %}
+                    <li>
+                        <a href="https://instagram.com/{% if site.data.t[page.lang].site.instagram_username %}{{ site.data.t[page.lang].site.instagram_username }}{% else %}{{ site.instagram_username }}{% endif %}" itemprop="sameAs">
+                            <i class="fab fa-instagram"></i> {{ site.instagram_username }}
                         </a>
                     </li>
                 {% endif %}
