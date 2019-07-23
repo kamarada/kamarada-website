@@ -87,7 +87,7 @@ Commit changes:
 $ osc commit
 ```
 
-The commit automatically triggers the source service and the build process. If you go to [build.opensuse.org][buildoo], your project is already building:
+Commiting to OBS automatically triggers the source service and the build process. If you go to [build.opensuse.org][buildoo], your project is already building:
 
 {% include image.html src="/files/2019/03/obs-and-github-1.jpg" %}
 
