@@ -247,6 +247,9 @@ If you need help to install the Oracle JRE on openSUSE, take a look at:
 
 In part 2, we are going to see more apps made for both Linux and Windows.
 
+{% capture update_message %}[Part 2 is here! (click)]({%post_url en/2019-08-12-20-apps-you-can-use-the-same-way-on-both-linux-and-windows-part-2 %}){% endcapture %}
+{% include update.html date="Ago 12, 2019" message=update_message %}
+
 ## References
 
 To choose the applications presented here, I searched lists of popular or recommended programs for Windows:
