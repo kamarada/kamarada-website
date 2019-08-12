@@ -78,6 +78,8 @@ Se você instalou o openSUSE na máquina virtual, execute (na máquina virtual):
 
 Se a máquina virtual roda Windows ou outro sistema operacional (inclusive outras distribuições Linux), para instalar os adicionais de convidado, na janela da máquina virtual, abra o menu **Dispositivos** e clique em **Inserir imagem de CD dos Adicionais para Convidado**.
 
+{% include image.html src="/files/2019/07/virtualbox-guest-additions-pt.jpg" %}
+
 **Dica:** se você usa Windows e quer experimentar o Linux, pode instalar o VirtualBox, criar uma máquina virtual e instalar o Linux nela.
 
 ## 14) GIMP
