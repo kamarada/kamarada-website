@@ -70,49 +70,49 @@ Para iniciar o Snes9x, se você usa o ambiente [GNOME], clique em **Atividades**
 
 {% include image.html src="/files/2019/08/snes9x-launching-pt.jpg" %}
 
-{% include image.html src="/files/2019/08/snes9x-start-screen.png" caption="A tela inicial do Snes9x" %}
+{% include image.html src="/files/2019/08/snes9x-start-screen-pt.png" caption="A tela inicial do Snes9x" %}
 
 ## Configurando o Snes9x
 
 Existem algumas configurações que você precisa fazer antes de começar a jogar. Normalmente, elas são feitas apenas uma vez, no primeiro uso do emulador.
 
-Para acessar as configurações do Snes9x, abra o menu **Options** e clique em **Preferences**:
+Para acessar as configurações do Snes9x, abra o menu **Opções** e clique em **Preferências**:
 
-{% include image.html src="/files/2019/08/snes9x-preferences.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-preferences-pt.jpg" %}
 
 ### Configuração dos controles
 
-Para configurar os controles, selecione a aba **Joypads**:
+Para configurar os controles, selecione a aba **Controles**:
 
-{% include image.html src="/files/2019/08/snes9x-keyboard.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-keyboard-pt.jpg" %}
 
 Essa caixa de diálogo lista os botões do *joystick* do Super Nintendo e os botões correspondentes no computador. Para associar um botão do Super Nintendo, clique no campo e pressione a tecla do teclado ou o botão do *joystick* que deseja associar.
 
-Por padrão, o Snes9x muda para o botão seguinte, permitindo que você atribua os 12 botões com agilidade. Comece associando o primeiro botão (**Up**, cima). Depois que você associar o botão **Up**, o Snes9x muda para **Down** (baixo), depois para **Left** (esquerda), depois **Right** (direita), depois **Start** (iniciar) e assim sucessivamente.
+Por padrão, o Snes9x muda para o botão seguinte, permitindo que você atribua os 12 botões com agilidade. Comece associando o primeiro botão (**Cima**). Depois que você associar o botão **Cima**, o Snes9x muda para o botão **Baixo**, depois para **Esquerda**, depois **Direita**, depois **Start** e assim sucessivamente.
 
 **Dica:** se quiser uma sugestão de configuração, consulte essa imagem:
 
 {% include image.html src="/files/2019/08/snes9x-setup.jpg" %}
 
-Se você for jogar a dois, para configurar os controles do segundo jogador, mude **Joypad** para **2** e repita o processo. Para o segundo jogador, vou usar um *joystick* USB:
+Se você for jogar a dois, para configurar os controles do segundo jogador, mude **Controle** para **2** e repita o processo. Para o segundo jogador, vou usar um *joystick* USB:
 
-{% include image.html src="/files/2019/08/snes9x-joypad.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-joypad-pt.jpg" %}
 
 ### Configuração do som
 
 Precisamos fazer mais uma configuração antes de começar a jogar: indicar ao Snes9x qual sistema de som usar. No openSUSE, o sistema de som instalado por padrão é o [PulseAudio].
 
-Selecione a aba **Sound**. Na opção **Sound driver**, selecione **PulseAudio**:
+Selecione a aba **Som**. Na opção **Driver de som**, selecione **PulseAudio**:
 
-{% include image.html src="/files/2019/08/snes9x-sound.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-sound-pt.jpg" %}
 
 Clique em **OK** para salvar as configurações e fechar a caixa de diálogo de preferências.
 
 ## Abrindo uma ROM
 
-Para abrir uma ROM, abra o menu **File** e clique em **Open ROM Image**:
+Para abrir uma ROM, abra o menu **Arquivo** e clique em **Open ROM Image** (faltou a tradução):
 
-{% include image.html src="/files/2019/08/snes9x-open-rom-1.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-open-rom-1-pt.jpg" %}
 
 Navegue até a pasta onde está a ROM que deseja jogar e dê dois cliques nela. Normalmente é um arquivo com a extensão `.smc`, `.sfc` ou `.zip`:
 
@@ -120,7 +120,7 @@ Navegue até a pasta onde está a ROM que deseja jogar e dê dois cliques nela. 
 
 O jogo deve começar:
 
-{% include image.html src="/files/2019/08/snes9x-game-started.png" %}
+{% include image.html src="/files/2019/08/snes9x-game-started-pt.png" %}
 
 ## Salvando e retomando
 
@@ -128,17 +128,17 @@ Uma vantagem do emulador em relação ao *videogame* é que você pode salvar o 
 
 Jogando no Snes9x, você pode salvar da mesma forma que no Super Nintendo (usando o menu do próprio jogo), ou pode usar uma das 10 memórias que o emulador oferece.
 
-Para salvar o estado do jogo, abra o menu **File**, aponte para **Save State** e escolha uma das memórias (*slots*) disponíveis:
+Para salvar o estado do jogo, abra o menu **Arquivo**, aponte para **Salvar estado** e escolha uma das memórias (*slots*) disponíveis:
 
-{% include image.html src="/files/2019/08/snes9x-save-state.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-save-state-pt.jpg" %}
 
-Para retomar um estado previamente salvo, abra o menu **File**, aponte para **Load State** e escolha a memória que deseja retomar:
+Para retomar um estado previamente salvo, abra o menu **Arquivo**, aponte para **Carregar estado** e escolha a memória que deseja retomar:
 
-{% include image.html src="/files/2019/08/snes9x-load-state.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-load-state-pt.jpg" %}
 
-Para facilitar salvar e retomar, você pode criar atalhos do teclado para cada memória. Para isso, vá em **Options**, **Preferences**, **Shortcuts**, **Save states** e defina os atalhos de teclado, da mesma forma como definiu os controles:
+Para facilitar salvar e retomar, você pode criar atalhos do teclado para cada memória. Para isso, vá em **Opções**, **Preferências**, **Atalhos**, **Estados salvos** e defina os atalhos de teclado, da mesma forma como definiu os controles:
 
-{% include image.html src="/files/2019/08/snes9x-shortcuts.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-shortcuts-pt.jpg" %}
 
 Recomendo definir **Shift + F1** para salvar na memória 0 e **F1** para retomar da memória 0 e de forma análoga para as demais (para a memória 1, **Shift + F2** e **F2**, e assim sucessivamente).
 
@@ -146,7 +146,7 @@ Recomendo definir **Shift + F1** para salvar na memória 0 e **F1** para retomar
 
 ## Tela cheia
 
-Se quiser jogar em tela cheia, abra o menu **View** e clique em **Fullscreen**.
+Se quiser jogar em tela cheia, abra o menu **Visualizar** e clique em **Tela cheia**.
 
 Para sair do modo tela cheia, pressione **Esc**.
 

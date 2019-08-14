@@ -1,0 +1,30 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group>
+    <repositories>
+      <repository recommended="true">
+        <name>Emulators</name>
+        <summary>Emulators</summary>
+        <description></description>
+        <url>http://download.opensuse.org/repositories/Emulators/openSUSE_Leap_15.1/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Leap:15.1</name>
+        <summary>openSUSE Leap 15.1</summary>
+        <description></description>
+        <url>http://download.opensuse.org/distribution/leap/15.1/repo/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>snes9x</name>
+        <summary>Portable, freeware Super Nintendo Entertainment System (TM) emulator</summary>
+        <description>Snes9x is a portable, freeware Super Nintendo Entertainment System
+(SNES) emulator. It basically allows you to play most games designed
+for the SNES and Super Famicom Nintendo game systems on your PC.
+
+Additionally, this package contains Snes9x-GTK, a graphical front-end
+making the use of Snes9x a lot less difficult.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>

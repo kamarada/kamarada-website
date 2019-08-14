@@ -80,7 +80,7 @@ To start Snes9x, if you use the [GNOME] desktop environment, click **Activities*
 
 {% include image.html src="/files/2019/08/snes9x-launching-en.jpg" %}
 
-{% include image.html src="/files/2019/08/snes9x-start-screen.png" caption="The Snes9x main screen" %}
+{% include image.html src="/files/2019/08/snes9x-start-screen-en.png" caption="The Snes9x main screen" %}
 
 ## Setting up Snes9x
 
@@ -88,13 +88,13 @@ There are a few things you need to set up before you can start playing. Usually,
 
 To access Snes9x settings, open the **Options** menu and click **Preferences**:
 
-{% include image.html src="/files/2019/08/snes9x-preferences.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-preferences-en.jpg" %}
 
 ### Setting up controls
 
 To set up controls, select the **Joypads** tab:
 
-{% include image.html src="/files/2019/08/snes9x-keyboard.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-keyboard-en.jpg" %}
 
 This dialog box lists the Super Nintendo joypad buttons and the corresponding keyboard keys or joypad buttons on your computer. To assign a SNES button to a PC key or button, click the field you want to change, then press the desired key or button.
 
@@ -106,7 +106,7 @@ By default, Snes9x will jump to the next button after the one you just assigned,
 
 If you are going to play two-player games, to set up the second player controls, switch **Joypad** to **2** and repeat the process. I have set up a USB joypad for the second player:
 
-{% include image.html src="/files/2019/08/snes9x-joypad.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-joypad-en.jpg" %}
 
 ### Setting up sound
 
@@ -114,7 +114,7 @@ We need to set up one more thing before we can actually start playing: we need t
 
 Select the **Sound** tab and change **Sound driver** to **PulseAudio**:
 
-{% include image.html src="/files/2019/08/snes9x-sound.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-sound-en.jpg" %}
 
 Click **OK** to save settings and close the **Snes9x Preferences** dialog box.
 
@@ -122,7 +122,7 @@ Click **OK** to save settings and close the **Snes9x Preferences** dialog box.
 
 To open a ROM, open the **File** menu and click **Open ROM Image**:
 
-{% include image.html src="/files/2019/08/snes9x-open-rom-1.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-open-rom-1-en.jpg" %}
 
 Navigate to the folder where the ROM is and double click the ROM, which is usually a file with extension `.smc`, `.sfc` or `.zip`:
 
@@ -130,7 +130,7 @@ Navigate to the folder where the ROM is and double click the ROM, which is usual
 
 The game should start:
 
-{% include image.html src="/files/2019/08/snes9x-game-started.png" %}
+{% include image.html src="/files/2019/08/snes9x-game-started-en.png" %}
 
 ## Saving and loading game states
 
@@ -140,15 +140,15 @@ Playing on Snes9x, you can save the game state just like you would on Super Nint
 
 To save the game state, open the **File** menu, point to **Save State** and choose one of the available slots:
 
-{% include image.html src="/files/2019/08/snes9x-save-state.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-save-state-en.jpg" %}
 
 To resume a previously saved state, open the **File** menu, point to **Load State** and choose the slot where your save resides:
 
-{% include image.html src="/files/2019/08/snes9x-load-state.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-load-state-en.jpg" %}
 
 To make it easier to save and load states, you can assign them keyboard shortcuts. To do so, go to **Options**, **Preferences**, **Shortcuts**, and set up keyboard shortcuts the same way you set up controls:
 
-{% include image.html src="/files/2019/08/snes9x-shortcuts.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-shortcuts-en.jpg" %}
 
 I suggest you assign **Shift + F1** to save to **Slot 0** and **F1** to resume from **Slot 0**, and likewise for the other slots (**Shift + F2** and **F2** to save to and load from **Slot 1** and so on).
 
