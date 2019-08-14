@@ -14,7 +14,7 @@ O [**Super Nintendo Entertainment System**][snes] (**SNES**), mais conhecido sim
 
 Gostaria de relembrar algum desses clássicos? Sabia que há um programa próprio para isso, chamado de emulador?
 
-Um **emulador** é um programa que permite que seu computador execute programas feitos para outros dispositivos. Um emulador de um *videogame* permite que seu computador rode os jogos feitos para aquele *videogame*. Comumente, os arquivos que contém os jogos são chamados de **ROMs**. No caso do Super Nintendo, a ROM seria o conteúdo do cartucho.
+Um **emulador** é um programa que permite que seu computador execute programas feitos para outro dispositivo. Um emulador de um *videogame* permite que seu computador rode os jogos feitos para aquele *videogame*. Comumente, os arquivos que contém os jogos são chamados de **ROMs**. No caso do Super Nintendo, a ROM seria o conteúdo do cartucho.
 
 Existem alguns emuladores de Super Nintendo. Um dos mais conhecidos é o Snes9x.
 
@@ -34,9 +34,9 @@ Aparentemente, não há problema legal quanto aos emuladores, pois até o moment
 
 ## Onde baixar ROMs
 
-Uma simples pesquisa em mecanismos de busca como o [Google] revela *sites* que disponibilizam diversas [ROMs de jogos para Super Nintendo para *download*][google].
+Você não vai encontrar ROMs aqui. Pesquise em mecanismos de busca como o [Google] *sites* que disponibilizam [ROMs de Super Nintendo para *download*][google].
 
-## Requisitos mínimos do Snes9x
+## Requisitos de sistema do Snes9x
 
 Para emular jogos de Super Nintendo no Linux usando o Snes9x você não precisa de um supercomputador. A [documentação][snes9x-docs] fala em no mínimo um processador Pentium 2 300MHz com 16MB de memória RAM, ou um processador de 1GHz para uma experiência perfeita. Se seu computador tem 10 anos ou menos (pra dar uma noção, estamos falando de 2009, lançamento do [Windows 7][windows-7]), com certeza se encaixa nessas especificações.
 
@@ -68,8 +68,6 @@ Se você possui um *joystick* e pretende jogar com ele, conecte-o antes de inici
 
 Para iniciar o Snes9x, se você usa o ambiente [GNOME], clique em **Atividades**, no canto superior esquerdo da tela, comece a digitar `snes9x` e clique no ícone do emulador:
 
-[GNOME]: https://br.gnome.org/
-
 {% include image.html src="/files/2019/08/snes9x-launching-pt.jpg" %}
 
 {% include image.html src="/files/2019/08/snes9x-start-screen.png" caption="A tela inicial do Snes9x" %}
@@ -78,11 +76,11 @@ Para iniciar o Snes9x, se você usa o ambiente [GNOME], clique em **Atividades**
 
 Existem algumas configurações que você precisa fazer antes de começar a jogar. Normalmente, elas são feitas apenas uma vez, no primeiro uso do emulador.
 
-### Configuração dos controles
-
 Para acessar as configurações do Snes9x, abra o menu **Options** e clique em **Preferences**:
 
 {% include image.html src="/files/2019/08/snes9x-preferences.jpg" %}
+
+### Configuração dos controles
 
 Para configurar os controles, selecione a aba **Joypads**:
 
@@ -92,7 +90,7 @@ Essa caixa de diálogo lista os botões do *joystick* do Super Nintendo e os bot
 
 Por padrão, o Snes9x muda para o botão seguinte, permitindo que você atribua os 12 botões com agilidade. Comece associando o primeiro botão (**Up**, cima). Depois que você associar o botão **Up**, o Snes9x muda para **Down** (baixo), depois para **Left** (esquerda), depois **Right** (direita), depois **Start** (iniciar) e assim sucessivamente.
 
-Se quiser uma sugestão de configuração, consulte essa imagem:
+**Dica:** se quiser uma sugestão de configuração, consulte essa imagem:
 
 {% include image.html src="/files/2019/08/snes9x-setup.jpg" %}
 
@@ -118,7 +116,7 @@ Para abrir uma ROM, abra o menu **File** e clique em **Open ROM Image**:
 
 Navegue até a pasta onde está a ROM que deseja jogar e dê dois cliques nela. Normalmente é um arquivo com a extensão `.smc`, `.sfc` ou `.zip`:
 
-{% include image.html src="/files/2019/08/snes9x-open-rom-2.jpg" %}
+{% include image.html src="/files/2019/08/snes9x-open-rom-2-pt.jpg" %}
 
 O jogo deve começar:
 
@@ -144,13 +142,13 @@ Para facilitar salvar e retomar, você pode criar atalhos do teclado para cada m
 
 Recomendo definir **Shift + F1** para salvar na memória 0 e **F1** para retomar da memória 0 e de forma análoga para as demais (para a memória 1, **Shift + F2** e **F2**, e assim sucessivamente).
 
-**Dica:** se você usa um *joystick* USB parecido com um *joystick* de Playstation, deve ter notado que sobraram botões na configuração (ele tem mais botões que o *joystick* do Super Nintendo). Você pode associar os botões **L2** e **R2** a salvar e retomar um estado.
+**Dica:** se você usa um *joystick* USB parecido com um *joystick* de [Playstation], deve ter notado que sobraram botões na configuração (ele tem mais botões que o *joystick* do Super Nintendo). Você pode associar os botões **L2** e **R2** a salvar e retomar um estado.
 
 ## Tela cheia
 
 Se quiser jogar em tela cheia, abra o menu **View** e clique em **Fullscreen**.
 
-Para sair do moto tela cheia, pressione **Esc**.
+Para sair do modo tela cheia, pressione **Esc**.
 
 Encerro minha parte por aqui. Agora é com você: boa diversão!
 
@@ -180,7 +178,9 @@ Encerro minha parte por aqui. Agora é com você: boa diversão!
 [google]:           https://www.google.com.br/search?q=roms+de+super+nintendo
 [snes9x-docs]:      https://github.com/snes9xgit/snes9x/blob/master/unix/docs/readme_unix.html
 [windows-7]:        https://pt.wikipedia.org/wiki/Windows_7
+[gnome]:            https://br.gnome.org/
 [pulseaudio]:       https://www.freedesktop.org/wiki/Software/PulseAudio/
+[playstation]:      https://www.playstation.com/pt-br/
 [memoriabit1]:      https://www.memoriabit.com.br/emulando-velharias-como-jogar-games-do-snes-no-emulador-snes9x/
 [memoriabit2]:      https://www.memoriabit.com.br/snes9x-pt-br/
 [pcigames]:         http://pcigames.blogspot.com/2013/04/Configurando-o-emulador-Snes9x-para-melhor-grafico.html
