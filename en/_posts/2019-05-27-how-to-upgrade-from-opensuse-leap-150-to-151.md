@@ -276,7 +276,7 @@ Now you may return any repositories you removed. Remember to make the appropriat
 That done, you can delete your repositories backup:
 
 ```
-# rm -rf /etc/zypp/repos.d.antigos/
+# rm -rf /etc/zypp/repos.d.old/
 ```
 
 You may also try to install any program that perhaps has been removed during the upgrade.

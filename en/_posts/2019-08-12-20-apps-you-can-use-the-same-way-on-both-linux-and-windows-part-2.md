@@ -71,7 +71,7 @@ On the virtual machine, it is recommended to install the Guest Additions, which 
 If you have installed openSUSE on the virtual machine, run (on the virtual machine):
 
 ```
-# zypper in virtualbox-guest-tools
+# zypper in virtualbox-guest-{tools,x11}
 ```
 
 If you have installed other operating system on the virtual machine (e.g. Windows or a Linux distribution other than openSUSE), to install Guest Additions, on the virtual machine window, open the **Devices** menu and click **Insert Guest Additions CD image**.

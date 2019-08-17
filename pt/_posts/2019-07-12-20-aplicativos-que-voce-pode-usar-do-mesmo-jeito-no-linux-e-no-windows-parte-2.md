@@ -73,7 +73,7 @@ Na máquina virtual, é recomendado instalar os adicionais para convidado, que m
 Se você instalou o openSUSE na máquina virtual, execute (na máquina virtual):
 
 ```
-# zypper in virtualbox-guest-tools
+# zypper in virtualbox-guest-{tools,x11}
 ```
 
 Se a máquina virtual roda Windows ou outro sistema operacional (inclusive outras distribuições Linux), para instalar os adicionais de convidado, na janela da máquina virtual, abra o menu **Dispositivos** e clique em **Inserir imagem de CD dos Adicionais para Convidado**.
