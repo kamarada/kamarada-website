@@ -35,9 +35,13 @@ Em **Modo da tela**, selecione **Juntar as telas**.
 
 Em **Tela primária**, selecione **Tela embutida** (a tela do *notebook*).
 
-Se essas configurações já estavam assim, tudo bem. É só fechar a janela. Se não, caso você tenha alterado as configurações, aparecerá o botão **Aplicar** no canto superior direito. Clique nesse botão. Em seguida, na mensagem que aparece, clique em **Manter alterações**:
+Se essas configurações já estavam assim, tudo bem: é só fechar a janela. Se não, caso você tenha alterado as configurações, aparecerá o botão **Aplicar** no canto superior direito da janela. Nesse caso, clique nesse botão.
+
+As telas vão piscar. As novas configurações serão aplicadas por 20 segundos. Se estiver tudo certo, clique em **Manter alterações**:
 
 {% include image.html src="/files/2019/08/gnome-dual-monitor-03-pt.jpg" %}
+
+Se você não clicar, suas configurações antigas serão devolvidas automaticamente, de modo que você poderá tentar de novo.
 
 ## Configurando o VLC
 
@@ -61,11 +65,13 @@ Prontinho! Agora é só reproduzir o vídeo. Os controles aparecerão no *notebo
 
 {% include image.html src="/files/2019/08/vlc-dual-monitor.jpg" %}
 
-## Referência
+## Referências
 
+- [Conectando outro monitor a seu computador - GNOME Help][gnome-help]
 - [VLC 2.0.2 - Dual Monitor Full-Screen Playback In Windows - Inlet Technologies][inlet]
 
 [apps-linux-windows]:   {%post_url pt/2019-07-05-18-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-1 %}
 [vlc]:                  https://www.videolan.org/vlc/
 [gnome]:                https://br.gnome.org/
+[gnome-help]:           https://help.gnome.org/users/gnome-help/stable/display-dual-monitors.html.pt_BR
 [inlet]:                http://inlet.co.nz/support/tutorials/microsoft/19-vlc-2-0-2-dual-monitor-full-screen-playback-in-windows

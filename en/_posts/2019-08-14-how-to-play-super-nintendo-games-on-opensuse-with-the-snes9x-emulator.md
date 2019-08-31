@@ -70,7 +70,7 @@ Then, install the Snes9x package:
 # zypper in snes9x
 ```
 
-Right after installing, you should be able to launch the emulador.
+Right after installing, you should be able to launch the emulator.
 
 ## Starting Snes9x
 
