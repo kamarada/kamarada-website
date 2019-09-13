@@ -359,12 +359,12 @@ blockquote.pull-right .small:after {
 /* About */
 
 #about img {
-    max-width: 200px;
+    max-width: 115px;
 }
 
-@media (max-width: 991px) {
+@media (min-width: 991px) {
     #about img {
-        max-width: 100%;
+        max-width: 200px;
     }
 }
 
@@ -372,4 +372,15 @@ blockquote.pull-right .small:after {
     display: block;
     margin-left: auto;
     margin-right: auto;
+}
+
+/* Facebook Page Plugin */
+
+@media (min-width: 992px) {
+    #facebook-page-plugin-wrapper {
+        height: 450px;
+        min-width: 250px;
+        overflow: hidden;
+        width: 100%;
+    }
 }

@@ -4,6 +4,8 @@ en:
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
     comments: "Comments"
+    copy: "Copy"
+    copied: "Copied!"
     earlier: "Earlier"
     earliest: "Earliest"
     got_lost: "Got lost?"
@@ -21,7 +23,10 @@ en:
         navigation:
             -
                 title: "Download"
-                url: "/en/download/leap/42.2/"
+                url: "/en/download/"
+            -
+                title: "Help"
+                url: "/en/help/"
     subscribe_via_rss: "subscribe via RSS"
     translation: "This page in English"
     translations: "Translations"
@@ -33,6 +38,8 @@ pt:
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
     comments: "Comentários"
+    copy: "Copiar"
+    copied: "Copiado!"
     earlier: "Próxima"
     earliest: "Última"
     got_lost: "Se perdeu?"
@@ -53,15 +60,17 @@ pt:
         #     site: "http://seudominio.com.br"
         # title: "Seu título aqui"
         description: >
-            O Projeto Linux Kamarada é um projeto novo que visa divulgar e
-            promover o Linux como um sistema operacional robusto, seguro,
-            versátil e fácil de usar, adequado para o uso diário seja em casa,
-            no trabalho ou no servidor. Os focos do projeto são principalmente
-            distribuição e documentação.
+            O Projeto Linux Kamarada visa divulgar e promover o Linux como um
+            sistema operacional robusto, seguro, versátil e fácil de usar,
+            adequado para o uso diário seja em casa, no trabalho ou no servidor.
+            Os focos do projeto são principalmente distribuição e documentação.
         navigation:
             -
                 title: "Download"
-                url: "/pt/download/leap/42.2/"
+                url: "/pt/download/"
+            -
+                title: "Ajuda"
+                url: "/pt/ajuda/"
         # addthis_profile_id: "ra-examplo123456789"
         disqus_shortname: "kamarada"
         # facebook:

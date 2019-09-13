@@ -1,0 +1,84 @@
+---
+layout: page
+---
+
+<div class='no-ads-here'>
+    <p>{{ page.intro }}</p>
+    <ul class='list-unstyled'>
+        <li class='media'>
+            <img class="mr-3" src="/favicon.png" alt="{{ page.kamarada_help_title }}" style='max-width: 64px;'>
+            <div class="media-body">
+                <h4 class="mt-0 mb-1">{{ page.kamarada_help_title }}</h4>
+                {{ page.kamarada_help_desc }}
+                <ul class="list-unstyled">
+                    <li class="media my-4">
+                        <img class="mr-3" src="/assets/icons/Papirus/64x64/apps/preferences-system-search.svg" alt="{{ page.site_search_title }}" style='max-width: 48px;'>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1">{{ page.site_search_title }}</h6>
+                            {{ page.site_search_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href='{{ page.google_group_link }}'><img class="mr-3" src="/assets/icons/other/google-groups.png" alt="{{ page.google_group_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.google_group_link }}'>{{ page.google_group_title }}</a></h6>
+                            {{ page.google_group_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img class="mr-3" src="/assets/icons/Papirus/64x64/apps/facebook.svg" alt="{{ page.social_networks_title }}" style='max-width: 48px;'>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1">{{ page.social_networks_title }}</h6>
+                            {{ page.social_networks_desc }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+        <li class="media">
+            <img class="mr-3" src="/assets/icons/other/opensuse.png" alt="{{ page.opensuse_help_title }}" style='max-width: 64px;'>
+            <div class="media-body">
+                <h4 class="mt-0 mb-1">{{ page.opensuse_help_title }}</h4>
+                {{ page.opensuse_help_desc }}
+                <ul class="list-unstyled">
+                    <li class="media my-4">
+                        <a href='{{ page.opensuse_guide_link }}'><img class="mr-3" src="/assets/icons/Papirus/64x64/apps/accessories-ebook-reader.svg" alt="{{ page.opensuse_guide_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.opensuse_guide_link }}'>{{ page.opensuse_guide_title }}</a></h6>
+                            {{ page.opensuse_guide_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href='{{ page.telegram_group_link }}'><img class="mr-3" src="/assets/icons/Papirus/64x64/apps/telegram.svg" alt="{{ page.telegram_group_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.telegram_group_link }}'>{{ page.telegram_group_title }}</a></h6>
+                            {{ page.telegram_group_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href='{{ page.opensuse_mailing_lists_link }}'><img class="mr-3" src="/assets/icons/Papirus/64x64/apps/internet-mail.svg" alt="{{ page.opensuse_mailing_lists_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.opensuse_mailing_lists_link }}'>{{ page.opensuse_mailing_lists_title }}</a></h6>
+                            {{ page.opensuse_mailing_lists_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href='{{ page.opensuse_forum_link }}'><img class="mr-3" src="/assets/icons/other/opensuse.png" alt="{{ page.opensuse_forum_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.opensuse_forum_link }}'>{{ page.opensuse_forum_title }}</a></h6>
+                            {{ page.opensuse_forum_desc }}
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <a href='{{ page.opensuse_other_link }}'><img class="mr-3" src="/assets/icons/Papirus/64x64/apps/accessories-ebook-reader.svg" alt="{{ page.opensuse_other_title }}" style='max-width: 48px;'></a>
+                        <div class="media-body">
+                            <h6 class="mt-0 mb-1"><a href='{{ page.opensuse_other_link }}'>{{ page.opensuse_other_title }}</a></h6>
+                            {{ page.opensuse_other_desc }}
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </li>
+    </ul>
+    {{ content }}
+</div>

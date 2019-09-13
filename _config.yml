@@ -235,10 +235,10 @@ title: "Linux Kamarada"
 
 # Site description
 description: > # this means to ignore newlines until the text ends
-    The Linux Kamarada Project is a new project that aims to spread and promote
-    Linux as a robust, secure, versatile and easy to use operating system,
-    suitable for everyday usage be at home, at work or on the server. The
-    project focuses mainly on distribution and documentation.
+    The Linux Kamarada Project aims to spread and promote Linux as a robust,
+    secure, versatile and easy to use operating system, suitable for everyday
+    use be at home, at work or on the server. The project focuses mainly on
+    distribution and documentation.
 
 # Default site image
 # Image used as a default thumbnail for pages and posts which do not have an
@@ -304,7 +304,7 @@ facebook:
     # site's performance on Facebook using Facebook Insights. After the App is
     # created, inform the Facebook App ID here.
     # Default: not set (the site is not bound to any Facebook App)
-    # app_id: 123456789012345
+    app_id: 2998145206923971
 
     # For more info on Facebook Insights, please refer to
     # https://developers.facebook.com/docs/platforminsights/domains

@@ -5,3 +5,15 @@ function random_number(first, last) {
 $(document).ready(function(){
     $('body').bootstrapMaterialDesign();
 });
+
+// https://www.w3schools.com/howto/howto_js_copy_clipboard.asp
+function copyToClipboard(inputTextId, tooltipId = "") {
+    var copyText = document.getElementById(inputTextId);
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+    document.execCommand('copy');
+    if (tooltipId != "") {
+        $('#' + tooltipId).tooltip('show');
+        setTimeout(function() { $('#' + tooltipId).tooltip('hide'); }, 3000);
+    }
+}

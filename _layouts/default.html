@@ -8,6 +8,10 @@
 {% include head.html %}
 
 <body itemscope itemtype="http://schema.org/{% if page.is_post %}{{ "BlogPosting" }}{% else %}{{ "WebPage" }}{% endif %}">
+    <!-- Facebook SDK -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/{% if page.lang == 'pt' %}{{ "pt_BR" }}{% else %}{{ "en_US" }}{% endif %}/sdk.js#xfbml=1&version=v4.0&appId={{ facebook.app_id }}&autoLogAppEvents=1"></script>
+    <!-- End Facebook SDK -->
 
     {% include header.html %}
 
