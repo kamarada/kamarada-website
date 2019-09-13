@@ -132,7 +132,7 @@ Depois, instale o pacote **patterns-kamarada-gnome**:
 
 Se você já usa a área de trabalho GNOME, a mesma usada por padrão pelo Linux Kamarada, provavelmente será necessário baixar poucos pacotes. Se você usa outra área de trabalho, o tamanho do _download_ será maior.
 
-Quando a instalação terminar, se você criar um novo usuário, perceberá que ele receberá as configurações padrão do Linux Kamarada (como tema, papel de parede, etc.) Usuários já existentes podem seguir usando suas personalizações ou ajustar a aparência do sistema (por exemplo, usando os aplicativos **Ajustes** e **Configurações**).
+Quando a instalação terminar, se você criar um novo usuário, perceberá que ele receberá as configurações padrão do Linux Kamarada (como tema, papel de parede, etc.). Usuários já existentes podem seguir usando suas personalizações ou ajustar a aparência do sistema (por exemplo, usando os aplicativos **Ajustes** e **Configurações**).
 
 ## Onde obtenho ajuda?
 
@@ -156,7 +156,7 @@ O Projeto Linux Kamarada é formado por uma equipe de uma pessoa só — em outr
     <img src='/files/2019/09/vinyanalista.jpg' alt='Antônio Vinícius' class='img-fluid img-thumbnail rounded-circle'>
 </p>
 
-Meu nome é Antônio Vinícius (me chamam por um nome ou outro). Nasci em 1992, no dia do [santo][santo-antonio]. Sou brasileiro de [Aracaju (SE)][aracaju], mas atualmente moro em Florianópolis (SC) e trabalho como analista de sistemas no [TJSC]. Sou formado como técnico em Informática e cientista da Computação. Uso Linux há 12 anos (desde 2007). Sou usuário entusiasta de Linux e _softwares_ livres em geral. Curioso, estou sempre em busca de conhecer novas tecnologias e adquirir conhecimentos, que compartilho neste _blog_ do Linux Kamarada e no meu outro [_blog_ pessoal][vinyanalista].
+Meu nome é Antônio Vinícius (me chamam por um nome ou outro). Nasci em 1992 em [Aracaju (SE)][aracaju], no dia do [santo][santo-antonio]. Sou formado como técnico em Informática e cientista da Computação. Atualmente moro em Florianópolis (SC) e trabalho como analista de sistemas no [TJSC]. Uso Linux há 12 anos (desde 2007). Sou usuário entusiasta de Linux e _softwares_ livres em geral. Curioso, estou sempre em busca de conhecer novas tecnologias e adquirir conhecimentos, que compartilho neste _blog_ do Linux Kamarada e no meu [_blog_ pessoal][vinyanalista].
 
 [beta]:                     https://pt.wikipedia.org/wiki/Ciclo_de_vida_de_libera%C3%A7%C3%A3o_de_software#Beta
 [linux]:                    https://www.vivaolinux.com.br/linux/
