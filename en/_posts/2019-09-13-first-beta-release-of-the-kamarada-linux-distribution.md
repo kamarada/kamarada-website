@@ -223,7 +223,7 @@ My name is Antônio Vinícius (people call me by one name or the other). I was b
 [brazil]:                   {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 [sf.net]:                   https://sourceforge.net/projects/kamarada/
 [patterns-kamarada-gnome]:  https://software.opensuse.org/package/patterns-kamarada-gnome
-[help]:                     /pt/ajuda
+[help]:                     /en/help
 [google-group]:             https://groups.google.com/forum/#!forum/linuxkamarada-ww
 [github]:                   https://github.com/kamarada
 [obs]:                      https://build.opensuse.org/project/subprojects/home:kamarada

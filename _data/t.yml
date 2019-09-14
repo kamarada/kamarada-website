@@ -23,10 +23,10 @@ en:
         navigation:
             -
                 title: "Download"
-                url: "/en/download/"
+                url: "/en/download"
             -
                 title: "Help"
-                url: "/en/help/"
+                url: "/en/help"
     subscribe_via_rss: "subscribe via RSS"
     translation: "This page in English"
     translations: "Translations"
@@ -67,10 +67,10 @@ pt:
         navigation:
             -
                 title: "Download"
-                url: "/pt/download/"
+                url: "/pt/download"
             -
                 title: "Ajuda"
-                url: "/pt/ajuda/"
+                url: "/pt/ajuda"
         # addthis_profile_id: "ra-examplo123456789"
         disqus_shortname: "kamarada"
         # facebook:
