@@ -15,7 +15,7 @@ version_desc: 'Download the latest version of Linux Kamarada, for desktop PCs an
 language_label: 'Language'
 language_icon: '/assets/icons/other/usa-24.png'
 language_value: 'English'
-other_language: 'Se você fala Português Brasileiro, <a href="/pt/download/">clique aqui</a>.'
+other_language: 'Se você fala Português Brasileiro, <a href="/pt/download">clique aqui</a>.'
 
 filename_label: 'Filename'
 filename_value: 'Linux_Kamarada-15.1-x86_64-Build5.1-en_US.iso'

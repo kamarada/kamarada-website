@@ -15,7 +15,7 @@ version_desc: 'Baixe a versão mais recente do Linux Kamarada, para PCs e <i>not
 language_label: 'Idioma'
 language_icon: '/assets/icons/other/brazil-24.png'
 language_value: 'Português Brasileiro'
-other_language: 'If you speak another language, <a href="/en/download/">click here</a>.'
+other_language: 'If you speak another language, <a href="/en/download">click here</a>.'
 
 filename_label: 'Nome do arquivo'
 filename_value: 'Linux_Kamarada-15.1-x86_64-Build5.1-pt_BR.iso'
