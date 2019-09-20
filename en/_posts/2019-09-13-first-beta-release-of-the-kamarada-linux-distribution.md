@@ -212,7 +212,7 @@ My name is Antônio Vinícius (people call me by one name or the other). I was b
 [raspberry-pi-products]:    https://www.raspberrypi.org/products/
 [raspberry-pi-3]:           https://en.opensuse.org/HCL:Raspberry_Pi3
 [raspberry-pi-4]:           https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
-[aliexpress]:               http://s.click.aliexpress.com/e/KkS77oEk
+[aliexpress]:               http://bit.ly/kamarada-rpi-4b
 [chrome]:                   https://www.google.com/chrome/
 [free-software]:            https://www.gnu.org/philosophy/free-sw.html
 [firefox]:                  https://mozilla.org/firefox

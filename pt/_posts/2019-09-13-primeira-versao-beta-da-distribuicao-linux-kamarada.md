@@ -210,7 +210,7 @@ Meu nome é Antônio Vinícius (me chamam por um nome ou outro). Nasci em 1992 e
 [raspberry-pi-products]:    https://www.raspberrypi.org/products/
 [raspberry-pi-3]:           https://en.opensuse.org/HCL:Raspberry_Pi3
 [raspberry-pi-4]:           https://www.raspberrypi.org/products/raspberry-pi-4-model-b/
-[aliexpress]:               http://s.click.aliexpress.com/e/KkS77oEk
+[aliexpress]:               http://bit.ly/kamarada-rpi-4b
 [chrome]:                   https://www.google.com/chrome/
 [firefox]:                  https://mozilla.org/firefox
 [music]:                    https://wiki.gnome.org/Apps/Music
