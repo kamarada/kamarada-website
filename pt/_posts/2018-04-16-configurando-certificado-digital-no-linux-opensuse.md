@@ -222,6 +222,7 @@ Instale os requisitos do SafeNet Authentication Client:
 E, por fim, instale o SafeNet Authentication Client em si:
 
 ```
+# cd safenet_rpm/x86_64
 # ./install.sh
 ################################# [100%]
 Updating / installing...
@@ -247,6 +248,11 @@ Observe que ele reconhece o *token* devidamente:
 {% include image.html src="/files/2018/04/token-05-pt.jpg" %}
 
 ## Configurando o token no Firefox
+
+{% capture chrome %}
+Se você procura instruções para os navegadores [Google Chrome](https://www.google.com/chrome/) ou [Chromium](https://www.chromium.org/), [clique aqui]({% post_url pt/2019-09-26-configurando-certificado-digital-no-navegador-google-chrome-chromium %}).
+{% endcapture %}
+{% include update.html date="26/09/2019" message=chrome %}
 
 Para poder utilizar o *token* no navegador [Mozilla Firefox][firefox], vamos cadastrá-lo como um dispositivo de segurança.
 
@@ -320,8 +326,9 @@ Agora que configurou seu certificado digital, veja como pode usá-lo no openSUSE
 - [Como transmitir a declaração do Imposto de Renda com certificado digital no Linux openSUSE]({% post_url pt/2018-04-16-como-transmitir-a-declaracao-do-imposto-de-renda-com-certificado-digital-no-linux-opensuse %})
 - [Assinando e-mails enviados com certificado digital no Thunderbird]({%post_url pt/2018-09-24-assinando-emails-enviados-com-certificado-digital-no-thunderbird %})
 - [Assinando documentos ODF e PDF com o LibreOffice]({%post_url pt/2018-12-16-assinando-documentos-odf-e-pdf-com-o-libreoffice %})
+- [SSH com autenticação em dois fatores usando certificado digital]({%post_url pt/2018-12-19-ssh-com-autenticacao-em-dois-fatores-usando-certificado-digital %})
 {% endcapture %}
-{% include update.html date="28/06/2019" message=atualizacao %}
+{% include update.html date="26/09/2019" message=atualizacao %}
 
 ## Referências
 
