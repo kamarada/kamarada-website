@@ -182,6 +182,13 @@ Install the downloaded RPM package using YaST's **Install/Remove Software**:
 
 {% include image.html src="/files/2019/06/token-03-en.jpg" %}
 
+I don't know why that RPM package does not declare some libraries it requires. You need to install them manually:
+
+```
+# zypper in libcrypto43 openssl
+# ln -s /usr/lib64/libcrypto.so.1.1 /usr/lib64/libcrypto.so.6
+```
+
 Then, to start SAC, click on **Activities**, on the top-left screen corner, start typing `safenet` and click on the **SafeNet Authentication Client Tools** icon:
 
 {% include image.html src="/files/2019/06/token-04-en.jpg" %}
@@ -201,6 +208,11 @@ Before that, make sure to add your CA certificate to your browser, otherwise it 
 - [How to install website certificates on Linux][how-to-install-certificates]
 
 Let's see how to set up the [Mozilla Firefox][firefox] browser to use your token.
+
+{% capture chrome %}
+If you are looking for instructions for either [Google Chrome](https://www.google.com/chrome/) or [Chromium](https://www.chromium.org/) browsers, [click here]({% post_url en/2019-09-26-setting-up-smart-card-authentication-on-google-chrome-chromium %}).
+{% endcapture %}
+{% include update.html date="26/09/2019" message=chrome %}
 
 Start **Mozilla Firefox**. Open the **Firefox menu** (top right corner of the window) and click **Preferences**.
 

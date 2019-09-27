@@ -11,16 +11,20 @@ Nesse _post_, veremos como configurar o navegador [Google Chrome][google-chrome]
 
 {% include image.html src="/files/2019/09/chrome-token.png" %}
 
+Para referência futura, aqui uso o [Linux Kamarada 15.1 Beta][kamarada-15.1-beta] (baseado no [openSUSE Leap 15.1][leap-15.1]).
+
 ## Pré-requisitos
 
 Antes, para deixar todo mundo na mesma página, recomendo a leitura de *posts* anteriores falando sobre certificados digitais:
 
 - [Como instalar certificados de segurança no Linux][how-to-install-certificates]: aqui você verá como instalar o certificado da AC no Chrome
-- [Configurando certificado digital no Linux openSUSE][how-to-token]: aqui você verá como instalar os programas necessários para o _token_ funcionar (não é necessário ler a parte que fala sobre a configuração do navegador, que é o que faremos aqui, só que no Chrome, em vez do [Mozilla Firefox][mozilla-firefox], que foi usado naquele _post_)
+- [Configurando certificado digital no Linux openSUSE][how-to-token]: aqui você verá como instalar os programas necessários para o _token_ funcionar (não é necessário ler a partir da parte que fala sobre a configuração do navegador, que é o que faremos aqui, só que no Chrome, em vez do [Mozilla Firefox][mozilla-firefox], que foi usado naquele _post_)
 
 ## Configurando o token no Chrome
 
 A configuração do Chrome para o uso de certificados digitais é semelhante à do Firefox, porém o Chrome não dispõe de uma interface gráfica para realizá-la, motivo pelo qual faremos todo o procedimento usando a linha de comando.
+
+Conecte seu _token_ antes de continuar.
 
 Primeiro, comece abrindo o terminal e instalando as [ferramentas NSS da Mozilla][mozilla-nss-tools] (é possível que já estejam instaladas em seu sistema):
 
@@ -31,6 +35,7 @@ Primeiro, comece abrindo o terminal e instalando as [ferramentas NSS da Mozilla]
 Depois, certifique-se que está em sua pasta pessoal (_home_) e execute o comando a seguir (fazendo as devidas substituições) para adicionar o _token_ à lista de dispositivos e módulos de segurança:
 
 ```
+$ cd
 $ modutil -dbdir sql:.pki/nssdb/ -add "nome_do_token" -libfile /caminho/para/biblioteca
 ```
 
@@ -161,7 +166,7 @@ Confirme o certificado a ser utilizado e clique em **OK**:
 
 Já dentro do sistema, verifique suas informações na parte superior da tela:
 
-{% include image.html src="/files/2019/09/chrome-token-04.jpg" %}
+{% include image.html src="/files/2019/09/chrome-token-04-pt.jpg" %}
 
 Pronto! Agora você está no ambiente seguro da Receita Federal e sabe que configurou corretamente seu certificado digital no Google Chrome!
 
@@ -184,8 +189,10 @@ Agora que configurou seu certificado digital, veja como pode usá-lo:
 [google-chrome]:                https://www.google.com/chrome/
 [chromium]:                     https://www.chromium.org/
 [free-software]:                https://www.gnu.org/philosophy/free-sw.pt-br.html
-[how-to-install-certificates]:  {%post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
-[how-to-token]:                 {%post_url pt/2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
+[kamarada-15.1-beta]:           {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
+[leap-15.1]:                    {% post_url pt/2019-05-22-comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap %}
+[how-to-install-certificates]:  {% post_url pt/2017-08-29-como-instalar-certificados-de-seguranca-no-linux %}
+[how-to-token]:                 {% post_url pt/2018-04-16-configurando-certificado-digital-no-linux-opensuse %}
 [mozilla-firefox]:              https://www.mozilla.org/pt-BR/firefox/
 [mozilla-nss-tools]:            https://developer.mozilla.org/pt-BR/docs/Mozilla/Projects/NSS/Tools
 [etoken]:                       https://safenet.gemalto.com/multi-factor-authentication/authenticators/pki-usb-authentication/etoken-5110-usb-token/
