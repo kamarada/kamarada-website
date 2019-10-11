@@ -9,7 +9,7 @@ nickname: 'virtualbox'
 
 {% include image.html src="/files/2019/07/virtualbox-pt.jpg" %}
 
-O [VirtualBox] permite que você use o [Linux] dentro de uma janela, como um programa no sistema operacional que você já usa. Com essa facilidade, você pode ter seu primeiro contato com o Linux sem precisar instalá-lo no computador ou mesmo reiniciar para usar um [LiveDVD/USB][live]: quer usar o Linux? Só iniciar o programa. Terminou de usar? Só fechar a janela.
+O [VirtualBox] permite que você use o [Linux] dentro de uma janela, como um programa no sistema operacional que você já usa. Com essa facilidade, você pode ter seu primeiro contato com o Linux sem precisar instalá-lo ou mesmo reiniciar o computador para usar um [LiveDVD/USB][live]: quer usar o Linux? Só iniciar o programa. Terminou de usar? Só fechar a janela.
 
 Na verdade essa "janela", explicada assim de forma simplificada, tecnicamente falando é uma **máquina virtual** (do inglês _virtual machine_, comumente abreviada por **VM**): é um computador que, fisicamente falando, não existe, mas pode ser usado para instalar sistemas operacionais e aplicativos. O sistema operacional (SO) que está na máquina virtual "pensa" que está em um computador "de verdade".
 
@@ -19,11 +19,11 @@ O sistema operacional da máquina real é chamado de **hospedeiro** (_host_): el
 
 Essa tecnologia é chamada de **virtualização**. E o VirtualBox nada mais é que um programa que permite a você fazer virtualização de forma fácil em seu computador.
 
+O VirtualBox é um [_software_ livre][free-software], gratuito e multi-plataforma de virtualização desenvolvido pela [Oracle]. Ele pode ser instalado no seu [PC][ibm-pc], quer você use Windows, [macOS], Linux ou [Solaris], e suporta diversos sistemas operacionais convidados, incluindo, mas não limitado a: Windows (3.x, 95, 98, NT, 2000, XP, Server 2003, Vista, 7, 8, 8.1, 10, Server 2008, Server 2012, Server 2016), DOS, Linux (2.4, 2.6, 3.x e 4.x), Solaris, OpenSolaris, OS/2 e OpenBSD.
+
 Já falamos um pouco sobre o VirtualBox no _post_:
 
 - [20 aplicativos que você pode usar do mesmo jeito no Linux e no Windows — parte 2][apps-linux-windows-2]
-
-O VirtualBox é um [_software_ livre][free-software], gratuito e multi-plataforma de virtualização desenvolvido pela [Oracle]. Ele pode ser instalado no seu [PC][ibm-pc], quer você use Windows, [macOS], Linux ou [Solaris], e suporta diversos sistemas operacionais convidados, incluindo, mas não limitado a: Windows (3.x, 95, 98, NT, 2000, XP, Server 2003, Vista, 7, 8, 8.1, 10, Server 2008, Server 2012, Server 2016), DOS, Linux (2.4, 2.6, 3.x e 4.x), Solaris, OpenSolaris, OS/2 e OpenBSD.
 
 Hoje veremos como instalar o VirtualBox no Windows, criar uma máquina virtual e iniciar nela uma [imagem _live_][live] do Linux. Vou usar como exemplo a distribuição [Linux Kamarada][kamarada-15.1-beta], cuja imagem _live_ pode ser baixada na página [Download].
 
@@ -37,7 +37,7 @@ Para o _post_ não ficar muito extenso, decidi dividi-lo em três partes:
 
 Essa sequência de _posts_ é dedicada principalmente a usuários de Windows que ainda não tiveram seu primeiro contato com o Linux e desejam experimentá-lo por meio do VirtualBox.
 
-Se você já usa Linux, também pode instalar o VirtualBox para experimentar outra distribuição ou mesmo para outras finalidades.
+Se você já usa Linux, também pode instalar o VirtualBox para experimentar outra distribuição ou mesmo para [outras finalidades][virt-why-useful].
 
 ## Baixando o VirtualBox no Windows
 
@@ -45,7 +45,7 @@ Para baixar o instalador do VirtualBox para Windows, acesse o _site_ oficial do 
 
 - [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
-E clique no botão **Download VirtualBox 6.0**:
+E clique no _banner_ **Download VirtualBox 6.0**:
 
 {% include image.html src="/files/2019/10/virtualbox-01.jpg" %}
 
@@ -95,7 +95,7 @@ Na tela seguinte, informe a quantidade de memória RAM que deseja reservar para 
 
 {% include image.html src="/files/2019/10/virtualbox-08-pt.jpg" %}
 
-No exemplo da imagem, minha máquina real dispõe de 16GB de RAM e eu decidi reservar 2GB para a máquina virtual. Com isso, o sistema operacional convidado "pensará" que está sendo executado em um computador com 2GB de RAM. Já o SO hospedeiro poderá usar apenas 14GB de RAM para executar outros programas e máquinas virtuais.
+No exemplo da imagem, minha máquina real tem um total de 16GB de RAM (16384MB) e eu decidi reservar 2GB para a VM. No futuro, enquanto eu estiver usando essa VM, o SO convidado “pensará” que está sendo executado em um computador com 2GB de RAM e restarão 14GB de RAM para o SO hospedeiro executar programas e outras máquinas virtuais.
 
 Divida a memória RAM de modo que não falte memória nem para a máquina virtual, nem para a máquina real. Na tela, a barra verde indica o limite de memória considerado seguro. No exemplo, algo em torno de 10,5GB (fazendo as contas, 2/3 ou 66% do total de 16GB).
 
@@ -125,7 +125,7 @@ Veja que você pode configurar várias características da máquina virtual (mem
 
 ## Inserindo a imagem ISO no leitor de DVD virtual
 
-Vamos inserir a imagem ISO no leitor de DVD da máquina virtual, como quem insere um DVD em um leitor de DVD de um computador de verdade.
+Vamos inserir a imagem ISO da distribuição Linux no leitor de DVD da máquina virtual, como quem insere um DVD em um leitor de DVD de um computador de verdade.
 
 Para isso, na tela inicial, que mostra as configurações da VM, clique em **Armazenamento**.
 
@@ -175,15 +175,13 @@ Caso deseje, você pode alterar a tecla Hospedeiro nas configurações do Virtua
 
 ## Desligando a máquina virtual
 
-Quando terminar de usar a máquina virtual, desligue-a normalmente, da mesma forma como você faria em uma máquina real. Se na VM você está usando o Linux Kamarada, que vem por padrão com a área de trabalho [GNOME], para desligar a VM, clique no **menu do sistema**, no canto superior direito da tela, e depois, no menu que aparece, clique no ícone **Desligar**:
+Quando terminar de usar a máquina virtual, desligue-a normalmente, da mesma forma como você faria em uma máquina real. Se seu SO convidado é o Linux Kamarada, que vem por padrão com a área de trabalho [GNOME], para desligar a VM, clique no **menu do sistema**, no canto superior direito da tela da VM, e depois, no menu que aparece, clique no ícone **Desligar**:
 
 {% include image.html src="/files/2019/10/virtualbox-18-pt.jpg" %}
 
-Caso a máquina virtual trave e você precise forçar seu desligamento, clique no botão de fechar (como se fosse fechar a janela) e o VirtualBox perguntará o que deseja fazer:
+Caso a máquina virtual trave e você precise forçar seu desligamento, clique no botão de fechar da janela da VM (como se fosse fechar a janela) e o VirtualBox perguntará o que deseja fazer, selecione **Desligar a máquina** em clique em **OK**:
 
 {% include image.html src="/files/2019/10/virtualbox-19-pt.png" %}
-
-Selecione **Desligar a máquina** em clique em **OK**.
 
 Isso equivale, em um computador de verdade, a apertar e segurar o botão de ligar/desligar por alguns segundos, até que o computador desligue (de modo forçado).
 
@@ -209,7 +207,7 @@ Para referência futura, aqui utilizei as seguintes versões de _softwares_:
 
 - Microsoft Windows 10, versão 1903
 - Oracle VM VirtualBox 6.0.12
-- Linux Kamarada 15.1 Beta
+- Linux Kamarada 15.1 Beta Build 16.1
 
 Todas são as versões mais recentes no momento da escrita.
 
@@ -218,16 +216,17 @@ Para escrever esse _post_, consultei o manual do VirtualBox:
 - [Oracle VM VirtualBox - User Manual - Chapter 1 - First Steps][virtualbox-manual]
 
 [virtualbox]:           https://www.virtualbox.org/
-[linux]:                http://www.vivaolinux.com.br/linux/
+[linux]:                https://www.vivaolinux.com.br/linux/
 [live]:                 {% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}
 [windows]:              https://www.microsoft.com/pt-br/windows/
-[apps-linux-windows-2]: {%post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}
+[apps-linux-windows-2]: {% post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}
 [free-software]:        https://www.gnu.org/philosophy/free-sw.pt-br.html
 [oracle]:               https://www.oracle.com/br/
 [ibm-pc]:               https://pt.wikipedia.org/wiki/IBM_PC
-[macos]:                http://www.apple.com/br/macos/
+[macos]:                https://www.apple.com/br/macos/
 [solaris]:              https://www.oracle.com/solaris/
 [kamarada-15.1-beta]:   {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 [download]:             /pt/download
+[virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful
 [gnome]:                https://br.gnome.org/
 [virtualbox-manual]:    https://www.virtualbox.org/manual/ch01.html
