@@ -220,12 +220,12 @@ To write this post, I consulted:
 [linux]:                https://www.kernel.org/linux.html
 [live]:                 {% post_url en/2015-11-25-what-is-a-livecd-dvd-usb %}
 [windows]:              https://www.microsoft.com/windows/
-[apps-linux-windows-2]: {% post_url en/2019-08-12-20-apps-you-can-use-the-same-way-on-both-linux-and-windows-part-2 %}
 [foss]:                 https://en.wikipedia.org/wiki/Free_and_open-source_software
 [oracle]:               https://www.oracle.com/
 [ibm-pc]:               https://en.wikipedia.org/wiki/IBM_Personal_Computer
 [macos]:                https://www.apple.com/macos/
 [solaris]:              https://www.oracle.com/solaris/
+[apps-linux-windows-2]: {% post_url en/2019-08-12-20-apps-you-can-use-the-same-way-on-both-linux-and-windows-part-2 %}
 [kamarada-15.1-beta]:   {% post_url en/2019-09-13-first-beta-release-of-the-kamarada-linux-distribution %}
 [download]:             /en/download
 [virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful

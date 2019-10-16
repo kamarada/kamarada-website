@@ -32,7 +32,7 @@ Hoje veremos como instalar o VirtualBox no Windows, criar uma máquina virtual e
 Para o _post_ não ficar muito extenso, decidi dividi-lo em três partes:
 
 1. nessa primeira parte, veremos como instalar o VirtualBox no Windows e o básico de como usá-lo para iniciar o Linux dentro de uma máquina virtual;
-2. na segunda parte, veremos como instalar o VirtualBox no Linux;
+2. na [segunda parte][virtualbox-linux], veremos como instalar o VirtualBox no Linux;
 3. na terceira parte, veremos algumas dicas para uso diário do VirtualBox.
 
 Essa sequência de _posts_ é dedicada principalmente a usuários de Windows que ainda não tiveram seu primeiro contato com o Linux e desejam experimentá-lo por meio do VirtualBox.
@@ -199,7 +199,12 @@ Ou abra o **menu Iniciar**, digite `virtualbox` e clique em seu ícone:
 
 ## Continua...
 
-Na segunda parte, veremos como instalar o VirtualBox no Linux. Até lá!
+Na [segunda parte][virtualbox-linux], veremos como instalar o VirtualBox no Linux. Até lá!
+
+{% capture atualizacao %}
+A [segunda parte]({% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %}) já está disponível!
+{% endcapture %}
+{% include update.html date="16/10/2019" message=atualizacao %}
 
 ## Referências
 
@@ -219,14 +224,15 @@ Para escrever esse _post_, consultei o manual do VirtualBox:
 [linux]:                https://www.vivaolinux.com.br/linux/
 [live]:                 {% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}
 [windows]:              https://www.microsoft.com/pt-br/windows/
-[apps-linux-windows-2]: {% post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}
 [free-software]:        https://www.gnu.org/philosophy/free-sw.pt-br.html
 [oracle]:               https://www.oracle.com/br/
 [ibm-pc]:               https://pt.wikipedia.org/wiki/IBM_PC
 [macos]:                https://www.apple.com/br/macos/
 [solaris]:              https://www.oracle.com/solaris/
+[apps-linux-windows-2]: {% post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}
 [kamarada-15.1-beta]:   {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 [download]:             /pt/download
+[virtualbox-linux]:     {% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %}
 [virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful
 [gnome]:                https://br.gnome.org/
 [virtualbox-manual]:    https://www.virtualbox.org/manual/ch01.html
