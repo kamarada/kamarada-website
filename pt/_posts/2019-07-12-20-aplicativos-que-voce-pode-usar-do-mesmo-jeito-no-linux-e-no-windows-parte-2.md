@@ -68,6 +68,13 @@ Se a máquina hospedeira roda Windows, baixe o instalador do VirtualBox seu *sit
 
 - [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
+{% capture mais_virtualbox %}
+Quer saber mais sobre como instalar e usar o VirtualBox no Windows e no Linux? Confira esses _posts_:
+- [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo]({% post_url pt/2019-10-08-virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo %})
+- [Instalando o VirtualBox no Linux]({% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %})
+{% endcapture %}
+{% include update.html date="16/10/2019" message=mais_virtualbox %}
+
 Na máquina virtual, é recomendado instalar os adicionais para convidado, que melhoram a interação entre máquina real e virtual por meio do VirtualBox.
 
 Se você instalou o openSUSE na máquina virtual, execute (na máquina virtual):

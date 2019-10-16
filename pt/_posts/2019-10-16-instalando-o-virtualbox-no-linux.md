@@ -288,6 +288,12 @@ $ sudo Downloads/VirtualBox-6.0.12-133076-Linux_amd64.run
 
 Na dúvida, verifique se a distribuição que você usa fornece instruções sobre como instalar o VirtualBox.
 
+## Ainda tem mais...
+
+Agora usuários de Windows e de Linux todos estamos na mesma página, ou seja, já sabemos instalar o VirtualBox nos sistemas que usamos e conseguimos criar máquinas virtuais.
+
+Na terceira parte, veremos como criar um disco rígido virtual e instalar o Linux na máquina virtual, assim como dicas para usar o VirtualBox no dia-a-dia.
+
 ## Referências
 
 Para referência futura, aqui utilizei as seguintes versões de _softwares_:
