@@ -27,6 +27,8 @@ Veja um exemplo curioso de automação: acoplado a sensores e motores apropriado
 
 **Curiosidade:** o nome [Raspberry] ([framboesa], em inglês) vem de uma tradição de usar nomes de frutas na computação – veja, por exemplo, a [Apple] (maçã) – e Pi vem da linguagem de programação [Python], a ideia inicial era criar um computador que pudesse ser programado usando essa linguagem. Há quem acredite que Pi tem relação também com o [número π][pi] (3,14...) ou que Raspberry Pi seja um trocadilho com _raspberry pie_ (torta de framboesa).
 
+{% include image.html src="/files/2019/10/raspberry-pi-4-and-raspberry-pie.jpg" caption="Uma torta de framboesa (raspberry pie) e um computador Raspberry Pi" style="max-width: 400px" %}
+
 ## Arquitetura ARM
 
 O Raspberry Pi é diferente dos computadores tradicionais não apenas no formato, mas também na **[arquitetura]**, ou seja, _hardware_ e _software_ funcionam de forma totalmente diferente. Enquanto os _desktops_ e _notebooks_ são, na essência, iguais ao [IBM PC][ibm-pc] lançado em 1981 e se baseiam nas arquiteturas [x86] (PCs de 32 _bits_) ou [x86-64] (PCs de 64 _bits_), o Raspberry Pi se baseia na arquitetura [ARM], a mesma usada por _smartphones_ com [Android].
