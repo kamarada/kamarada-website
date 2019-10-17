@@ -371,7 +371,7 @@ Instalei cada dissipador de calor no _chip_ de mesmo tamanho. Assim, colei os di
 
 {% include image.html src="/files/2019/09/raspberry-pi-4-heat-sinks.jpg" %}
 
-{% include update.html date="17/10/2019" message="Somente depois, por acaso, eu descobri que a capa de acrílico vinha com adesivos protetores. De fato, ela é transparente, mas é necessário remover os adesivos." %}
+{% include update.html date="17/10/2019" message="Só depois, por acaso, eu descobri que a capa de acrílico vinha com adesivos protetores. Ela é de fato transparente, mas precisa remover os adesivos." %}
 
 Cada peça da capa de acrílico vem com dois adesivos protetores, um de cada lado, remova-os:
 
@@ -385,7 +385,9 @@ Caso não tenha dado para identificar os pinos pelas fotos, esse diagrama pode a
 
 {% include image.html src="/files/2019/09/raspberry-pi-4-pinout.jpg" caption="Imagem extraída do site [Raspberry Pi GPIO Pinout](https://pinout.xyz/)" %}
 
-Foi super fácil instalar a capa de acrílico: exceto pela ventoinha, que foi aparafusada (enrosquei com a mão mesmo), o resto foi tudo encaixado. Não foi preciso sequer aparafusar a placa: ela ficou justa na capa, que foi feita sob medida. Não precisa usar força para encaixar as peças. Se algo não está encaixando naturalmente, pare, olhe e pense: provavelmente você está tentando encaixar algo errado.
+Foi super fácil instalar a capa de acrílico: exceto pela ventoinha, que foi aparafusada (enrosquei com a mão mesmo), o resto foi tudo encaixado. Não foi preciso sequer aparafusar a placa: ela ficou justa na capa, que foi feita sob medida.
+
+Você não precisa usar força para encaixar as peças. Se algo não está encaixando naturalmente, pare, olhe e pense: provavelmente você está tentando encaixar algo errado.
 
 ## Isso é tudo, pessoal!
 

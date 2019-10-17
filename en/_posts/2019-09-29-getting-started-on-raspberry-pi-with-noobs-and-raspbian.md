@@ -22,6 +22,8 @@ Here is an interesting example of home automation: a bark activated automatic do
 
 **Fun fact:** the name [Raspberry] is a reference to a fruit naming tradition in the old days of microcomputers. A lot of computer companies were named after fruits – e.g. [Apple]. Pi is a reference to the [Python] programming language. The initial idea was to create a computer that could be programmed only using that language. Some people believe that Pi may be also related to the [number π][pi] (3.14...) or that Raspberry Pi is a pun with _raspberry pie_.
 
+{% include image.html src="/files/2019/10/raspberry-pi-4-and-raspberry-pie.jpg" caption="A raspberry pie and a Raspberry Pi" style="max-width: 400px" %}
+
 ## ARM architecture
 
 Raspberry Pi is different from a traditional computer not only in size, but also in **[architecture]**. That means that their hardware and software work totally differently. While most today's desktops and laptops are, in essence, equal to the first [IBM PC][ibm-pc], released in 1981, and are based on [x86] (32-bit PCs) or [x86-64] (64-bit PCs) architectures, Raspberry Pi is based on [ARM] architecture, on which most [Android] smartphones are based too.
@@ -369,9 +371,15 @@ As for the heat sinks, I installed each of them on the chip that looked the same
 
 {% include image.html src="/files/2019/09/raspberry-pi-4-heat-sinks.jpg" %}
 
+{% include update.html date="Oct 17, 2019" message="Only later, by chance, I realized that the acrylic case came with protective films. In fact, the case is transparent, I should have peeled the protective films off before." %}
+
+Each piece of the acrylic case comes with two protective films, one on each side, peel them off:
+
+{% include image.html src="/files/2019/10/raspberry-pi-4-acrylic-shell-case.jpg" %}
+
 Plug the fan into the GPIO pins: connect the phase wire (red) to the pin 4 and the ground wire (black) to the pin 6. The phase wire is also indicated by an arrow on the plastic socket:
 
-{% include image.html src="/files/2019/09/raspberry-pi-4-fan.jpg" %}
+{% include image.html src="/files/2019/10/raspberry-pi-4-fan.jpg" %}
 
 In case that photo didn't help you identify which pins to use, try this diagram:
 
@@ -379,11 +387,13 @@ In case that photo didn't help you identify which pins to use, try this diagram:
 
 It was very easy to install the acrylic shell case: except for the fan that was screwed on (I did it simply by hand), the six acrylic panels were all attached to each other. There was no need to screw the card, which fit tightly into the case.
 
+You don't need to use force to fit the pieces together. If something is not fitting naturally, stop, look and think: you are probably doing something wrong.
+
 ## That's all, folks!
 
 Now that both Raspberry Pi and Raspbian are ready, it's time to use them!
 
-{% include image.html src="/files/2019/09/raspberry-pi-4-case.jpg" style="max-height: 440px" %}
+{% include image.html src="/files/2019/10/raspberry-pi-4-final.jpg" style="max-height: 440px" %}
 
 {% include image.html src="/files/2019/09/raspbian-final-en.jpg" %}
 
