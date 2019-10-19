@@ -11,7 +11,7 @@ Nessa parte 2 de uma trilogia de _posts_ sobre o [VirtualBox], você verá como 
 
 <!--more-->
 
-Na [parte 1][virtualbox], vimos o que é o VirtualBox, o que é virtualização, como instalar o VirtualBox no Windows, como criar uma máquina virtual e como usá-la para experimentar o Linux.
+Na [parte 1][virtualbox], vimos o que é virtualização, o que é o VirtualBox, como instalar o VirtualBox no Windows, como criar uma máquina virtual e como usá-la para experimentar o Linux.
 
 Caso você tenha caído aqui de paraquedas, comece sua leitura pela parte 1:
 
@@ -25,7 +25,12 @@ Normalmente, eu falaria aqui da distribuição [openSUSE] (que equivale a falar 
 
 Vejamos como instalar o VirtualBox no [Ubuntu] e em distribuições derivadas, dentre as quais temos: [Linux Mint][linuxmint], [elementary OS][elementary], [Zorin OS][zorinos] e as brasileiras [BigLinux] e [Linux Educacional][le].
 
-A distribuição Ubuntu disponibiliza o VirtualBox no repositório oficial  **multiverse**. Obtê-lo desse repositório é a forma mais fácil de instalar o VirtualBox no Ubuntu e derivados. A versão disponibilizada nesse repositório é sempre a mais recente ou próxima dela.
+A distribuição Ubuntu disponibiliza o VirtualBox no repositório oficial **multiverse**. Obtê-lo desse repositório é a forma mais fácil de instalar o VirtualBox no Ubuntu e derivados. A versão disponibilizada nesse repositório é sempre a mais recente ou próxima dela.
+
+{% capture ubuntu %}
+O Ubuntu 19.10 (Eoan Ermine) foi lançado em 17/10, justo 1 dia depois da publicação deste _post_ (16/10). Deu pena mantê-lo desatualizado por 1 dia. Assim, achei por bem atualizar as imagens. As instruções continuam as mesmas.
+{% endcapture %}
+{% include update.html date="19/10/2019" message=ubuntu %}
 
 Comece habilitando o repositório multiverse. O modo mais fácil de fazer isso é abrindo o aplicativo **Programas e atualizações** e marcando a opção **Aplicativos restritos por copyright ou questões legais (multiverse)**, na aba **Aplicativos Ubuntu**:
 
@@ -96,7 +101,7 @@ E instale o VirtualBox:
 $ sudo apt install virtualbox-6.0
 ```
 
-Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo.
+Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo (veja instruções na [parte 1][virtualbox]).
 
 Esse repositório sempre disponibiliza a versão mais recente do VirtualBox.
 
@@ -122,7 +127,7 @@ deb https://download.virtualbox.org/virtualbox/debian buster contrib
 
 Vejamos como instalar o VirtualBox no [Linux Kamarada][kamarada], que é baseado na distribuição [openSUSE]. Outro derivado brasileiro do openSUSE que merece menção é o [RegataOS]. As instruções a seguir também devem funcionar no [SUSE Linux Enterprise][suse].
 
-A distribuição openSUSE disponibiliza a versão mais recente do VirtualBox em seus repositórios oficiais.
+A distribuição openSUSE disponibiliza a versão mais recente do VirtualBox em seus repositórios oficiais (ou uma versão próxima da mais recente).
 
 Para instalar o VirtualBox usando a interface gráfica, abra o menu **Atividades**, no canto superior esquerdo da tela, digite `software` e clique em **Gerenciamento de software**:
 
@@ -132,7 +137,7 @@ Aguarde a lista de pacotes disponíveis ser atualizada:
 
 {% include image.html src="/files/2019/10/virtualbox-29-pt.jpg" %}
 
-No campo de texto, digite `virtualbox` e clique em **Pesquisar** (ou tecle **Enter**), marque o pacote **virtualbox** para instalação e clique em **Aceitar**:
+No campo de texto, digite `virtualbox` e clique no botão **Pesquisar** (ou tecle **Enter**), marque o pacote **virtualbox** para instalação e clique em **Aceitar**:
 
 {% include image.html src="/files/2019/10/virtualbox-30-pt.jpg" %}
 
@@ -161,7 +166,7 @@ Com o VirtualBox instalado, para iniciá-lo, abra o menu **Atividades**, digite 
 
 Caso sua conta de usuário não pertença ao grupo de usuários `vboxusers`, aparece essa mensagem de erro, clique em **OK** para fechá-la:
 
-{% include image.html src="/files/2019/10/virtualbox-35-pt.jpg" style="    max-height: 200px;" %}
+{% include image.html src="/files/2019/10/virtualbox-35.jpg" style=" max-height: 200px;" %}
 
 Usando o menu **Atividades**, abra o **Gerenciamento de usuários e grupos**.
 
@@ -179,7 +184,7 @@ Encerre sua sessão e faça _log in_ novamente para o sistema perceber seu novo 
 
 Inicie o VirtualBox novamente. O sistema pergunta se deseja habilitar o acesso a dispositivos USB (_USB passthrough_), essa mensagem aparece apenas no primeiro uso do VirtualBox:
 
-{% include image.html src="/files/2019/10/virtualbox-38-pt.jpg" style="max-height: 430px;" %}
+{% include image.html src="/files/2019/10/virtualbox-38.jpg" style="max-height: 430px;" %}
 
 A menos que você seja aficionado por segurança, creio que não há porque se preocupar. Clique em **Enable** para seguir.
 
@@ -241,7 +246,7 @@ E, por fim, instale o VirtualBox propriamente dito:
 $ sudo dnf install VirtualBox-6.0
 ```
 
-Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo.
+Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo (veja instruções na [parte 1][virtualbox]).
 
 Esse repositório sempre disponibiliza a versão mais recente do VirtualBox.
 
@@ -257,7 +262,7 @@ Para instalar o VirtualBox no Arch Linux ou no Manjaro, execute o comando:
 $ sudo pacman -Sy virtualbox $(pacman -Qsq "^linux" | grep "^linux[0-9]*[-rt]*$" | awk '{print $1"-virtualbox-host-modules"}' ORS=' ')
 ```
 
-Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo.
+Feito isso, você já pode iniciar o VirtualBox e começar a usá-lo (veja instruções na [parte 1][virtualbox]).
 
 ## VirtualBox em outras distribuições
 
@@ -273,7 +278,7 @@ Na página seguinte, abaixo de _VirtualBox binaries_ (binários do VirtualBox), 
 
 Nessa página, clique no _link_ correspondente à distribuição que você usa (note que ela pode não estar na lista, mas ser baseada em uma das que estão):
 
-{% include image.html src="/files/2019/10/virtualbox-40-pt.jpg" %}
+{% include image.html src="/files/2019/10/virtualbox-40.jpg" %}
 
 Uma vez baixado o pacote, use a ferramenta apropriada da sua distribuição para instalá-lo.
 
@@ -298,8 +303,8 @@ Na terceira parte, veremos como criar um disco rígido virtual e instalar o Linu
 
 Para referência futura, aqui utilizei as seguintes versões de _softwares_:
 
-- Ubuntu 19.04 (Disco Dingo) com VirtualBox 6.0.6
-- Debian 10.1 (Buster) com VirtualBox 6.0.14
+- Ubuntu 19.10 (Eoan Ermine) com VirtualBox 6.0.14
+- Debian 10.1.0 (Buster) com VirtualBox 6.0.14
 - Linux Kamarada 15.1 Beta Build 16.1 com VirtualBox 6.0.12
 - Fedora Workstation 30 com VirtualBox 6.0.14
 - Manjaro GNOME 18.1.1 com VirtualBox 6.0.12

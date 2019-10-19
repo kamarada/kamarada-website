@@ -32,7 +32,7 @@ Today we are going to see how to install VirtualBox on Windows, create a virtual
 For the post not to be too long, I decided to split it into three parts:
 
 1. in this first part, you are going to install VirtualBox on Windows, learn its basics and start using Linux inside a virtual machine;
-2. in the second part, you will see how to install VirtualBox on Linux;
+2. in the [second part][virtualbox-linux], you will see how to install VirtualBox on Linux;
 3. in the third part, you will see some useful tips for using VirtualBox daily.
 
 This sequence of posts is devoted mainly to Windows users who haven't had their first contact with Linux yet and want to try it using the safety of VirtualBox.
@@ -49,7 +49,7 @@ Click the **Download VirtualBox 6.0** banner:
 
 {% include image.html src="/files/2019/10/virtualbox-01.jpg" %}
 
-Below **VirtualBox binaries**, click **Windows hosts**:
+Under **VirtualBox binaries**, click **Windows hosts**:
 
 {% include image.html src="/files/2019/10/virtualbox-02.jpg" %}
 
@@ -199,7 +199,10 @@ Or open the **Start menu**, type `virtualbox` and click its icon:
 
 ## To be continued...
 
-In part 2, we are going to see how to install VirtualBox on Linux. See you!
+In [part 2][virtualbox-linux], we are going to see how to install VirtualBox on Linux. See you!
+
+{% capture part2 %}[Part 2 is here! (click)]({% post_url en/2019-10-19-installing-virtualbox-on-linux %}){% endcapture %}
+{% include update.html date="Oct 19, 2019" message=part2 %}
 
 ## References
 
@@ -228,6 +231,7 @@ To write this post, I consulted:
 [apps-linux-windows-2]: {% post_url en/2019-08-12-20-apps-you-can-use-the-same-way-on-both-linux-and-windows-part-2 %}
 [kamarada-15.1-beta]:   {% post_url en/2019-09-13-first-beta-release-of-the-kamarada-linux-distribution %}
 [download]:             /en/download
+[virtualbox-linux]:     {% post_url en/2019-10-19-installing-virtualbox-on-linux %}
 [virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful
 [gnome]:                https://www.gnome.org/
 [techterms]:            https://techterms.com/definition/virtual_machine

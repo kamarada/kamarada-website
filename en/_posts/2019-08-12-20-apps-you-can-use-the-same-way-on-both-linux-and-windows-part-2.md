@@ -66,6 +66,13 @@ If the host operating system is Windows, download the VirtualBox installer from 
 
 - [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
+{% capture more_virtualbox %}
+Do you want to know more about installing and using VirtualBox on both Linux and Windows? Check these out:
+- [VirtualBox: the easiest way to try Linux without installing it]({% post_url en/2019-10-10-virtualbox-the-easiest-way-to-try-linux-without-installing-it %})
+- [Installing VirtualBox on Linux]({% post_url en/2019-10-19-installing-virtualbox-on-linux %})
+{% endcapture %}
+{% include update.html date="Oct 19, 2019" message=more_virtualbox %}
+
 On the virtual machine, it is recommended to install the Guest Additions, which improve the integration between real and virtual machines through VirtualBox.
 
 If you have installed openSUSE on the virtual machine, run (on the virtual machine):
