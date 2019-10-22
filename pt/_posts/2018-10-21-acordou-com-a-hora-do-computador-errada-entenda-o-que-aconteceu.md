@@ -36,6 +36,13 @@ A razão para essa última decisão foi um protesto da Associação Brasileira d
 
 Portanto, desde o ano passado, o início do horário de verão no Brasil em 2018 já teve 3 mudanças: passou de 21/10 para 04/11, depois para 18/11, e por fim foi mantido em 04/11.
 
+{% capture atualizacao %}
+Mantive esse _post_ como foi escrito, mas o uso do horário de verão no Brasil foi encerrado em 2019. Para mais informações, leia:
+
+- [Não temos mais horário de verão: seu computador já sabe disso?]({% post_url pt/2019-10-21-nao-temos-mais-horario-de-verao-seu-computador-ja-sabe-disso %})
+{% endcapture %}
+{% include update.html date="21/10/2019" message=atualizacao %}
+
 ## 2) Como saber se seu computador foi afetado
 
 Você pode verificar se a data e a hora do seu computador estão corretas acessando o *site* do projeto [NTP.br][ntpbr], que mantém servidores de hora que os computadores podem consultar para sincronizar seus relógios:
@@ -59,6 +66,13 @@ No caso da distribuição Linux [openSUSE Leap][opensuse-leap], o pacote que con
 Também já expliquei em um *post* anterior como manter o sistema sempre atualizado, recomendo a leitura:
 
 - [Mantenha seu sistema sempre atualizado][how-to-sw-updates]
+
+{% capture atualizacao %}
+Uma versão mais atual desse mesmo _post_:
+
+- [Como obter atualizações para o Linux openSUSE]({% post_url pt/2019-05-14-como-obter-atualizacoes-para-o-linux-opensuse %})
+{% endcapture %}
+{% include update.html date="21/10/2019" message=atualizacao %}
 
 Você pode verificar se as mudanças de horário estão corretamente configuradas executando o comando:
 

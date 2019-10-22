@@ -237,6 +237,17 @@ Se o fuso horário sugerido não estiver correto, você pode mudá-lo. Para isso
 
 {% include image.html src="/files/2016/10/mapa-horario-de-verao-2016-2017.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
 
+{% capture atualizacao %}
+Mantive esse _post_ como foi escrito, mas o uso do horário de verão no Brasil foi encerrado em 2019.
+
+Se você usa um sistema que não recebe mais atualizações (por exemplo, um servidor com o [openSUSE 13.2](https://en.opensuse.org/Portal:13.2)), para desativar o horário de verão, escolha um fuso horário que historicamente não adotou o horário de verão (por exemplo, o fuso de **Maceió**).
+
+Para mais informações sobre o fim do horário de verão no Brasil, leia:
+
+- [Não temos mais horário de verão: seu computador já sabe disso?]({% post_url pt/2019-10-21-nao-temos-mais-horario-de-verao-seu-computador-ja-sabe-disso %})
+{% endcapture %}
+{% include update.html date="21/10/2019" message=atualizacao %}
+
 Como seu servidor executará apenas Linux, mantenha marcada a opção **Relógio do hardware definido para UTC**. Note que ela já vem habilitada por padrão. Para mais informações sobre essa opção, leia o *post* [Mantenha a hora do seu computador sempre certa com o NTP][how-to-ntp-client].
 
 Quando terminar, selecione **Próximo** (**Alt + X**).

@@ -51,6 +51,17 @@ Consulte o mapa abaixo para saber se seu estado adota ou não o horário de ver�
 
 {% include image.html src="/files/2016/10/mapa-horario-de-verao-2016-2017.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
 
+{% capture atualizacao %}
+Mantive esse _post_ como foi escrito, mas o uso do horário de verão no Brasil foi encerrado em 2019.
+
+Caso o fabricante não disponibilize atualização de _software_ (o que é comum em dispositivos Android) e, mesmo após seguir as instruções nessa paǵina, o dispositivo insista em adiantar o relógio, experimente utilizar um fuso horário que historicamente não adotou o horário de verão (por exemplo, o fuso horário de **Maceió**).
+
+Para mais informações sobre o fim do horário de verão no Brasil, leia:
+
+- [Não temos mais horário de verão: seu computador já sabe disso?]({% post_url pt/2019-10-21-nao-temos-mais-horario-de-verao-seu-computador-ja-sabe-disso %})
+{% endcapture %}
+{% include update.html date="21/10/2019" message=atualizacao %}
+
 Para configurar o fuso horário manualmente, desative a opção **Fuso horário automático** e toque em **Selecionar fuso horário**. Na tela seguinte, toque em **Fuso horário**:
 
 {% include image.html src="/files/2018/10/howto-android-clock-2-pt.jpg" %}

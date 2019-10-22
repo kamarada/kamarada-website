@@ -7,7 +7,7 @@ image: /files/2016/10/tux-time.png
 nickname: 'how-to-ntp-client'
 ---
 
-Nesse domingo 16 de outubro de 2016 começa o [horário de verão][dst]. Ele vai até o dia 19 de fevereiro do ano que vem. Já sabe quando e como vai mudar a hora do seu computador? Ano que vem você vai ter que desfazer essa mudança. 
+Nesse domingo 16 de outubro de 2016 começa o [horário de verão][dst]. Ele vai até o dia 19 de fevereiro do ano que vem. Já sabe quando e como vai mudar a hora do seu computador? Ano que vem você vai ter que desfazer essa mudança.
 
 Que tal fazermos melhor? Vamos configurar o computador para sincronizar a data e a hora com a Internet, para nunca mais termos que nos preocupar com essas mudanças. Para isso, vamos utilizar o protocolo NTP.
 
@@ -21,7 +21,7 @@ Como você vai configurar seu computador para sincronizar seu relógio com o do 
 
 Se você utiliza apenas o Linux [openSUSE][opensuse], ou possui mais de um Linux instalado no computador (openSUSE e [Ubuntu][ubuntu], por exemplo), recomendo que o Linux que você utiliza com mais frequência seja configurado para sincronizar a hora do computador. Você também pode configurar os demais Linux para sincronizar, sem problemas.
 
-Se você utiliza Linux e [Windows][windows], recomendo que o Linux seja configurado para sincronizar a hora do computador e o Windows seja ajustado para que ambos consigam se entender. Essa configuração, apesar de ser a recomendada, é um pouco mais trabalhosa. Se você utiliza o Windows com mais frequência, pode ser mais fácil configurar o Windows para sincronizar a hora e o Linux para "apenas observar". 
+Se você utiliza Linux e [Windows][windows], recomendo que o Linux seja configurado para sincronizar a hora do computador e o Windows seja ajustado para que ambos consigam se entender. Essa configuração, apesar de ser a recomendada, é um pouco mais trabalhosa. Se você utiliza o Windows com mais frequência, pode ser mais fácil configurar o Windows para sincronizar a hora e o Linux para "apenas observar".
 
 Mostrarei todos os casos a seguir.
 
@@ -49,6 +49,17 @@ Verifique se o fuso horário selecionado está correto. Se não, você pode mud�
 - se você mora no Nordeste ou no Norte, pode selecionar o fuso horário de **Maceió**.
 
 {% include image.html src="/files/2016/10/mapa-horario-de-verao-2016-2017.jpg" caption="Estados que adotam horário de verão no Brasil (referências: [G1](http://g1.globo.com/economia/noticia/2016/10/horario-de-verao-comeca-em-16-de-outubro-e-vai-ate-19-de-fevereiro.html) e [Decreto nº 8.112](http://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/Decreto/D8112.htm), mapa derivado do [mapa do Brasil em branco disponível na WikiMedia](https://commons.wikimedia.org/wiki/File:Brazil_Blank_Map_light.svg))" %}
+
+{% capture atualizacao %}
+Mantive esse _post_ como foi escrito, mas o uso do horário de verão no Brasil foi encerrado em 2019.
+
+Se você usa um sistema que não recebe mais atualizações (por exemplo, um computador de 32 _bits_ com o [openSUSE 13.2](https://en.opensuse.org/Portal:13.2)), para desativar o horário de verão, utilize um fuso horário que historicamente não adotou o horário de verão (por exemplo, o fuso horário de **Maceió**).
+
+Para mais informações sobre o fim do horário de verão no Brasil, leia:
+
+- [Não temos mais horário de verão: seu computador já sabe disso?]({% post_url pt/2019-10-21-nao-temos-mais-horario-de-verao-seu-computador-ja-sabe-disso %})
+{% endcapture %}
+{% include update.html date="21/10/2019" message=atualizacao %}
 
 Certifique-se de que a opção **Relógio do Hardware Definido como UTC** está marcada. Sem ela, a sincronização de hora não funciona no Linux. Explico mais adiante.
 
@@ -191,7 +202,7 @@ Até a próxima!
 - [Economia - Horário de verão começa em 16 de outubro e vai até 19 de fevereiro - G1][g1]
 - [Decreto nº 8.112][decreto]
 - [SDB:Configuring the clock - openSUSE][opensuse-wiki]
-- [Time Synchronization with NTP | Reference | openSUSE Leap 42.2][opensuse-doc]
+- [Time Synchronization with NTP - Reference - openSUSE Leap 42.2][opensuse-doc]
 - [UbuntuTime - Community Help Wiki][ubuntu-wiki]
 - [Time - ArchWiki][arch-wiki]
 - [Why does Windows keep your BIOS clock on local time? - The Old New Thing][win-localtime]
