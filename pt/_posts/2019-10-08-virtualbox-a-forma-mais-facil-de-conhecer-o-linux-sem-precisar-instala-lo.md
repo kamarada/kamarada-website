@@ -33,7 +33,7 @@ Para o _post_ não ficar muito extenso, decidi dividi-lo em três partes:
 
 1. nessa primeira parte, veremos como instalar o VirtualBox no Windows e o básico de como usá-lo para iniciar o Linux dentro de uma máquina virtual;
 2. na [segunda parte][virtualbox-linux], veremos como instalar o VirtualBox no Linux;
-3. na terceira parte, veremos algumas dicas para uso diário do VirtualBox.
+3. na [terceira parte][virtualbox-tips], veremos algumas dicas para uso diário do VirtualBox.
 
 Essa sequência de _posts_ é dedicada principalmente a usuários de Windows que ainda não tiveram seu primeiro contato com o Linux e desejam experimentá-lo por meio do VirtualBox.
 
@@ -175,6 +175,18 @@ Caso deseje, você pode alterar a tecla Hospedeiro nas configurações do Virtua
 
 ## Desligando a máquina virtual
 
+<div class="alert alert-danger" role="alert">
+{% markdown %}
+
+**Atenção:** como você está usando uma [imagem _live_][live] do Linux, **quaisquer alterações feitas no sistema operacional convidado serão perdidas ao desligar a máquina virtual**. Se você criou algum arquivo importante na máquina virtual, envie-o por _e-mail_ ou salve-o em algum serviço de armazenamento em nuvem, como o [Dropbox] ou o [Google Drive][drive], antes de desligá-la.
+
+[live]:     {% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}
+[dropbox]:  https://www.dropbox.com/
+[drive]:    https://drive.google.com/
+
+{% endmarkdown %}
+</div>
+
 Quando terminar de usar a máquina virtual, desligue-a normalmente, da mesma forma como você faria em uma máquina real. Se seu SO convidado é o Linux Kamarada, que vem por padrão com a área de trabalho [GNOME], para desligar a VM, clique no **menu do sistema**, no canto superior direito da tela da VM, e depois, no menu que aparece, clique no ícone **Desligar**:
 
 {% include image.html src="/files/2019/10/virtualbox-18-pt.jpg" %}
@@ -233,6 +245,7 @@ Para escrever esse _post_, consultei o manual do VirtualBox:
 [kamarada-15.1-beta]:   {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 [download]:             /pt/download
 [virtualbox-linux]:     {% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %}
+[virtualbox-tips]:      {% post_url pt/2019-10-30-dicas-para-usar-o-virtualbox-no-dia-a-dia %}
 [virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful
 [gnome]:                https://br.gnome.org/
 [virtualbox-manual]:    https://www.virtualbox.org/manual/ch01.html
