@@ -33,7 +33,7 @@ For the post not to be too long, I decided to split it into three parts:
 
 1. in this first part, you are going to install VirtualBox on Windows, learn its basics and start using Linux inside a virtual machine;
 2. in the [second part][virtualbox-linux], you will see how to install VirtualBox on Linux;
-3. in the third part, you will see some useful tips for using VirtualBox daily.
+3. in the [third part][virtualbox-tips], you will see some useful tips for using VirtualBox daily.
 
 This sequence of posts is devoted mainly to Windows users who haven't had their first contact with Linux yet and want to try it using the safety of VirtualBox.
 
@@ -175,6 +175,18 @@ You can change the default Host key in the VirtualBox preferences, if you want.
 
 ## Shutting the virtual machine down
 
+<div class="alert alert-danger" role="alert">
+{% markdown %}
+
+**Warning:** as you are using a Linux [live image][live], **any changes you make to the guest operating system will be lost when you shut the virtual machine down**. If you created any file on the virtual machine you think is important to keep, send it by email or upload it to some cloud storage service, such as [Dropbox] or [Google Drive][drive], before shutting the virtual machine down.
+
+[live]:     {% post_url en/2015-11-25-what-is-a-livecd-dvd-usb %}
+[dropbox]:  https://db.tt/4VzN0K26
+[drive]:    https://drive.google.com/
+
+{% endmarkdown %}
+</div>
+
 When you are finished using the virtual machine, shut it down as usual, in the same way you would shutdown a physical machine. In case your guest OS is Linux Kamarada, which comes with the [GNOME] desktop out-of-the-box, to shut the VM down, click the **system menu**, in the upper right corner of the VM screen, and then click the **Shutdown** icon:
 
 {% include image.html src="/files/2019/10/virtualbox-18-en.jpg" %}
@@ -232,6 +244,7 @@ To write this post, I consulted:
 [kamarada-15.1-beta]:   {% post_url en/2019-09-13-first-beta-release-of-the-kamarada-linux-distribution %}
 [download]:             /en/download
 [virtualbox-linux]:     {% post_url en/2019-10-19-installing-virtualbox-on-linux %}
+[virtualbox-tips]:      {% post_url en/2019-11-01-tips-for-using-virtualbox-every-day %}
 [virt-why-useful]:      https://www.virtualbox.org/manual/ch01.html#virt-why-useful
 [gnome]:                https://www.gnome.org/
 [techterms]:            https://techterms.com/definition/virtual_machine

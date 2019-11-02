@@ -15,7 +15,7 @@ Nessa parte 3 de uma trilogia de _posts_ sobre o [VirtualBox], você verá como 
 
 Nos textos anteriores, vimos o que é virtualização, o que é o VirtualBox, como instalá-lo no [Windows] e no Linux, como criar uma máquina virtual e como usá-la para experimentar o Linux.
 
-Caso você tenha caído aqui de paraquedas, recomento que leia os textos anteriores:
+Caso você tenha caído aqui de paraquedas, recomendo que leia os textos anteriores:
 
 - [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo][virtualbox]
 - [Instalando o VirtualBox no Linux][virtualbox-linux]
@@ -30,7 +30,7 @@ Em um computador "de verdade", o LiveDVD é ejetado nesse momento.
 
 Em uma máquina virtual do VirtualBox, o leitor de DVD virtual fica vazio. Para iniciar a VM novamente, você teria que mais uma vez inserir a imagem ISO no leitor de DVD virtual, como vimos na [parte 1][virtualbox]. Se você está iniciando a VM várias vezes pela mídia _live_, ter que reinserir a imagem ISO toda hora é desnecessariamente trabalhoso.
 
-Felizmente, o VirtualBox tem uma opção para prevenir a ejeção da mídia. Para ativá-la, selecione a máquina virtual na tela inicial, clique em **Configurações**, abra a seção **Armazenamento**, selecione o leitor de DVD e ative a opção **LiveCD/DVD**:
+Felizmente, o VirtualBox tem uma opção para prevenir a ejeção da mídia. Para ativá-la, selecione a máquina virtual na tela inicial, clique em **Configurações**, abra a seção **Armazenamento**, selecione o leitor de DVD virtual e ative a opção **LiveCD/DVD**:
 
 {% include image.html src="/files/2019/10/virtualbox-42-pt.jpg" %}
 
@@ -57,7 +57,7 @@ O VirtualBox suporta alguns tipos de discos rígidos virtuais. Provavelmente voc
 Um disco rígido virtual, para o SO hospedeiro, é um arquivo. Você pode escolher se deseja:
 
 - criar um arquivo do tamanho total do disco (por exemplo, um disco de 20GB seria, já de início, um arquivo de 20GB) — opção **Tamanho Fixo** — ou
-- criar um arquivo do tamanho dos dados de fato armazenados (o arquivo começa pequeno e cresce conforme o disco é usado, até o limite de 20GB) — opção **Dinamicamente alocado**.
+- criar um arquivo do tamanho dos dados de fato armazenados (o arquivo começa pequeno e cresce conforme o disco virtual é usado, até o limite de 20GB) — opção **Dinamicamente alocado**.
 
 Eu recomendo que você mantenha selecionada a opção **Dinamicamente alocado** e clique em **Próximo**:
 
@@ -67,13 +67,13 @@ Informe uma localização e tamanho para o disco rígido virtual — 20GB são s
 
 {% include image.html src="/files/2019/10/virtualbox-47-pt.jpg" %}
 
-Pronto: disco rígido virtual criado. De volta à caixa de diálogo **Configurações**, clique em **OK** para fechá-la e voltar para a tela inicial do VirtualBox.
+Pronto: disco rígido virtual criado e pronto para ser usado. De volta à caixa de diálogo **Configurações**, clique em **OK** para fechá-la e voltar para a tela inicial do VirtualBox.
 
 ## Instalando o Linux na máquina virtual
 
-Certifique-se que a imagem ISO está no leitor de DVD virtual e inicie a VM.
+Certifique-se que a imagem ISO do Linux está no leitor de DVD virtual e inicie a VM.
 
-Para iniciar a instalação do Linux Kamarada, inicie o instalador clicando em seu ícone na _dock_:
+Inicie o instalador do Linux Kamarada clicando em seu ícone na _dock_:
 
 {% include image.html src="/files/2019/10/virtualbox-48-pt.jpg" %}
 
@@ -180,7 +180,7 @@ PING 10.0.0.10 (10.0.0.10) 56(84) bytes of data.
 rtt min/avg/max/mdev = 0.219/0.496/0.697/0.173 ms
 ```
 
-(pressione **Ctrl + C** para interromper o comando)
+(pressione **Ctrl + C** para interromper o comando **[ping]**)
 
 Funciona. Agora tente do SO hospedeiro "pingar" a máquina virtual:
 
@@ -198,7 +198,7 @@ Esse é o modo de rede mais simples do VirtualBox. Normalmente não requer confi
 
 Mas o VirtualBox é bastante flexível em como ele virtualiza a rede e oferece outros modos.
 
-O modo que eu costumo usar é o modo **ponte** (_[bridge]_): nesse modo, o VirtualBox envia requisições de rede usando a placa de rede da máquina real diretamente, sem passar pelo _software_ de rede do SO hospedeiro. Na prática, é como se a máquina real e a máquina virtual estivessem conectadas diretamente ao _modem_ de casa. O hospedeiro deixa de estar "entre" o convidado e a rede e passa a estar "do lado" do convidado.
+O modo que eu costumo usar é o modo **ponte** (_[bridge]_): nesse modo, o VirtualBox envia requisições de rede do SO convidado usando a placa de rede da máquina real diretamente, sem passar pelo _software_ de rede do SO hospedeiro. Na prática, é como se a máquina real e a máquina virtual estivessem conectadas diretamente ao _modem_ de casa. O hospedeiro deixa de estar "entre" o convidado e a rede e passa a estar "do lado" do convidado.
 
 {% include image.html src="/files/2019/10/virtualbox-63-pt.jpg" %}
 
@@ -218,7 +218,7 @@ Além dos modos NAT e ponte, o VirtualBox oferece outros modos de rede, que pode
 
 O _software_ VirtualBox é dividido em duas partes: um pacote principal, com todos os componentes de [código aberto][opensource] licenciados sob a [GPLv2], e um **pacote de extensões** (_Extension Pack_), com alguns componentes adicionais proprietários da [Oracle].
 
-Para mim, a principal vantagem de instalar as extensões é poder virtualizar portas USB 2.0 e 3.0 (o pacote principal suporta apenas USB 1.1). O pacote de extensões adiciona mais algumas funcionalidades, que você pode conferir no [manual do VirtualBox][virtualbox-manual-extpack], se desejar.
+Para mim, a principal vantagem de instalar as extensões é poder virtualizar portas USB 2.0 e USB 3.0 (o pacote principal suporta apenas USB 1.1). O pacote de extensões adiciona mais algumas funcionalidades, que você pode conferir no [manual do VirtualBox][virtualbox-manual-extpack], se desejar.
 
 O pacote principal foi o que baixamos e instalamos nos _posts_ anteriores.
 
@@ -280,7 +280,7 @@ O VirtualBox oferece _drivers_ que podem ser instalados na máquina virtual para
 
 Se o SO convidado é o Linux Kamarada, saiba que os adicionais para convidado já vem instalados por padrão.
 
-Se o SO convidado é o openSUSE, a forma mais fácil de instalar os adicionais para convidado é obtê-los dos repositórios oficiais da distribuição, o que pode ser feito executando o comando a seguir (no SO convidado):
+Se o SO convidado é o openSUSE, a forma mais fácil de instalar os adicionais para convidado é obtê-los dos repositórios oficiais da distribuição, o que pode ser feito executando o comando a seguir (no SO convidado, como _root_):
 
 ```
 # zypper in virtualbox-guest-{tools,x11}
@@ -290,23 +290,23 @@ De modo geral, o VirtualBox disponibiliza uma imagem ISO com os adicionais para 
 
 {% include image.html src="/files/2019/10/virtualbox-75-pt.jpg" %}
 
-Se o SO convidado é o Windows, o instalador dos adicionais para convidado deve ser iniciado automaticamente quando a imagem ISO é inserida, ou você pode iniciá-lo a partir do leitor de DVD virtual:
+Se o SO convidado é o Windows, o instalador dos adicionais para convidado deve ser iniciado automaticamente quando a imagem ISO é inserida, ou você pode iniciá-lo manualmente a partir do leitor de DVD virtual:
 
 {% include image.html src="/files/2019/10/virtualbox-76-pt.jpg" %}
 
-Se o SO convidado é o Ubuntu, o sistema pergunta se deseja instalar os adicionais para convidado quando a imagem ISO é inserida:
+Se o SO convidado é o Ubuntu, o sistema pergunta se deseja executar o instalador dos adicionais para convidado quando a imagem ISO é inserida:
 
 {% include image.html src="/files/2019/10/virtualbox-77-pt.jpg" %}
 
 Se precisar de mais informações sobre como instalar os adicionais para convidado, consulte a documentação do SO convidado ou o [manual do VirtualBox][virtualbox-manual-guestadd-1].
 
-**Observação:** se o SO hospedeiro é o openSUSE, o VirtualBox não vem com a imagem ISO dos adicionais para convidado e pergunta se você deseja baixá-la.
+**Observação:** se o SO hospedeiro é o Linux Kamarada ou o openSUSE, o VirtualBox não vem com a imagem ISO dos adicionais para convidado e pergunta se você deseja baixá-la.
 
 {% include image.html src="/files/2019/10/virtualbox-78-pt.jpg" %}
 
 Clicando em **Baixar**, o _download_ é iniciado, mas sempre termina com erro:
 
-{% include image.html src="/files/2019/10/virtualbox-79-pt.jpg" %}
+{% include image.html src="/files/2019/10/virtualbox-79-pt.jpg" caption="A operação de rede falhou com o seguinte erro: Durante um pedido de rede Razão desconhecida." %}
 
 Esse é um _bug_ conhecido do openSUSE e já há pessoas trabalhando nele:
 
@@ -324,7 +324,7 @@ Com os adicionais para convidado instalados, se você redimensiona a janela da m
 
 Por exemplo, se a máquina virtual roda o Linux Kamarada com uma resolução de 1024x768 e você redimensiona a janela da máquina virtual tornando-a 100 _pixels_ mais larga, os adicionais para convidado ajustam a resolução da tela automaticamente para 1124x768.
 
-**Observação:** se seu SO convidado é o Linux Kamarada ou o openSUSE, pode ser que você redimensione a janela e a resolução não seja ajustada de imediato.
+**Observação:** se o SO convidado é o Linux Kamarada ou o openSUSE, pode ser que você redimensione a janela da VM e a resolução não seja ajustada de imediato.
 
 Esse é outro _bug_ conhecido do openSUSE:
 
@@ -381,6 +381,7 @@ Para escrever esse _post_, consultei o manual do VirtualBox:
 [yast]:                         https://yast.opensuse.org/
 [yast-firstboot]:               https://en.opensuse.org/YaST_Firstboot
 [opensuse-license]:             https://en.opensuse.org/openSUSE:License
+[ping]:                         https://linux.die.net/man/8/ping
 [nat]:                          https://pt.wikipedia.org/wiki/Network_address_translation
 [bridge]:                       https://pt.wikipedia.org/wiki/Bridge_(redes_de_computadores)
 [virtualbox-manual-networking]: https://www.virtualbox.org/manual/ch06.html

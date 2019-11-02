@@ -68,13 +68,6 @@ Se a máquina hospedeira roda Windows, baixe o instalador do VirtualBox seu *sit
 
 - [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
-{% capture mais_virtualbox %}
-Quer saber mais sobre como instalar e usar o VirtualBox no Linux e no Windows? Confira esses _posts_:
-- [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo]({% post_url pt/2019-10-08-virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo %})
-- [Instalando o VirtualBox no Linux]({% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %})
-{% endcapture %}
-{% include update.html date="19/10/2019" message=mais_virtualbox %}
-
 Na máquina virtual, é recomendado instalar os adicionais para convidado, que melhoram a interação entre máquina real e virtual por meio do VirtualBox.
 
 Se você instalou o openSUSE na máquina virtual, execute (na máquina virtual):
@@ -88,6 +81,14 @@ Se a máquina virtual roda Windows ou outro sistema operacional (inclusive outra
 {% include image.html src="/files/2019/07/virtualbox-guest-additions-pt.jpg" %}
 
 **Dica:** se você usa Windows e quer experimentar o Linux, pode instalar o VirtualBox, criar uma máquina virtual e instalar o Linux nela.
+
+{% capture mais_virtualbox %}
+Quer saber mais sobre como instalar e usar o VirtualBox no Linux e no Windows? Confira esses _posts_:
+- [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo]({% post_url pt/2019-10-08-virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo %})
+- [Instalando o VirtualBox no Linux]({% post_url pt/2019-10-16-instalando-o-virtualbox-no-linux %})
+- [Dicas para usar o VirtualBox no dia a dia]({% post_url pt/2019-10-30-dicas-para-usar-o-virtualbox-no-dia-a-dia %})
+{% endcapture %}
+{% include update.html date="01/11/2019" message=mais_virtualbox %}
 
 ## 14) GIMP
 

@@ -11,7 +11,7 @@ This is the part 2 of our trilogy of posts about [VirtualBox]! You are going to 
 
 <!--more-->
 
-In [part 1][virtualbox], you've seen what virtualization is, what VirtualBox is, how to install VirtualBox on Windows, how to create a virtual machine and how to use it to try Linux.
+In [part 1][virtualbox], you've seen what virtualization is, what VirtualBox is, how to install VirtualBox on [Windows], how to create a virtual machine and how to use it to try Linux.
 
 If you fell into this page, start reading the first part:
 
@@ -294,7 +294,10 @@ If you are in doubt, search your distribution documentation for instructions on 
 
 Now, Windows and Linux users are all on the same page: we already know how to install VirtualBox on the operating systems we use and we are able to create virtual machines.
 
-In part 3, we are going to see how to create a virtual hard disk and install Linux on the virtual machine, as well as tips for using VirtualBox daily.
+In [part 3][virtualbox-tips], we are going to see how to create a virtual hard disk and install Linux on the virtual machine, as well as tips for using VirtualBox daily.
+
+{% capture part3 %}[Part 3 is here! (click)]({% post_url en/2019-11-01-tips-for-using-virtualbox-every-day %}){% endcapture %}
+{% include update.html date="Nov 01, 2019" message=part3 %}
 
 ## References
 
@@ -321,6 +324,7 @@ To write this post, I consulted:
 
 [virtualbox]:                   {% post_url en/2019-10-10-virtualbox-the-easiest-way-to-try-linux-without-installing-it %}
 [linux]:                        https://www.kernel.org/linux.html
+[windows]:                      https://www.microsoft.com/windows/
 [opensuse]:                     https://www.opensuse.org/
 [kamarada]:                     {% post_url en/2019-09-13-first-beta-release-of-the-kamarada-linux-distribution %}
 
@@ -345,6 +349,8 @@ To write this post, I consulted:
 [arch]:                         https://www.archlinux.org/
 [manjaro]:                      https://manjaro.org/
 [rolling-release]:              https://en.wikipedia.org/wiki/Rolling_release
+
+[virtualbox-tips]:              {% post_url en/2019-11-01-tips-for-using-virtualbox-every-day %}
 
 [virtualbox-linux-downloads]:   https://www.virtualbox.org/wiki/Linux_Downloads
 [virtualbox-manual]:            https://www.virtualbox.org/manual/ch02.html#install-linux-host

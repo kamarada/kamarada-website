@@ -181,7 +181,7 @@ Caso deseje, você pode alterar a tecla Hospedeiro nas configurações do Virtua
 **Atenção:** como você está usando uma [imagem _live_][live] do Linux, **quaisquer alterações feitas no sistema operacional convidado serão perdidas ao desligar a máquina virtual**. Se você criou algum arquivo importante na máquina virtual, envie-o por _e-mail_ ou salve-o em algum serviço de armazenamento em nuvem, como o [Dropbox] ou o [Google Drive][drive], antes de desligá-la.
 
 [live]:     {% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}
-[dropbox]:  https://www.dropbox.com/
+[dropbox]:  https://db.tt/4VzN0K26
 [drive]:    https://drive.google.com/
 
 {% endmarkdown %}

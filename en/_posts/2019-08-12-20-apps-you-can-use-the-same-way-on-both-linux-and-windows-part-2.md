@@ -66,13 +66,6 @@ If the host operating system is Windows, download the VirtualBox installer from 
 
 - [https://www.virtualbox.org/](https://www.virtualbox.org/)
 
-{% capture more_virtualbox %}
-Do you want to know more about installing and using VirtualBox on both Linux and Windows? Check these out:
-- [VirtualBox: the easiest way to try Linux without installing it]({% post_url en/2019-10-10-virtualbox-the-easiest-way-to-try-linux-without-installing-it %})
-- [Installing VirtualBox on Linux]({% post_url en/2019-10-19-installing-virtualbox-on-linux %})
-{% endcapture %}
-{% include update.html date="Oct 19, 2019" message=more_virtualbox %}
-
 On the virtual machine, it is recommended to install the Guest Additions, which improve the integration between real and virtual machines through VirtualBox.
 
 If you have installed openSUSE on the virtual machine, run (on the virtual machine):
@@ -86,6 +79,14 @@ If you have installed other operating system on the virtual machine (e.g. Window
 {% include image.html src="/files/2019/07/virtualbox-guest-additions-en.jpg" %}
 
 **Tip:** if you use Windows and want to try Linux, you can install VirtualBox on Windows, create a virtual machine, and install Linux on the virtual machine.
+
+{% capture more_virtualbox %}
+Do you want to know more about installing and using VirtualBox on both Linux and Windows? Check these out:
+- [VirtualBox: the easiest way to try Linux without installing it]({% post_url en/2019-10-10-virtualbox-the-easiest-way-to-try-linux-without-installing-it %})
+- [Installing VirtualBox on Linux]({% post_url en/2019-10-19-installing-virtualbox-on-linux %})
+- [Tips for using VirtualBox every day]({% post_url en/2019-11-01-tips-for-using-virtualbox-every-day %})
+{% endcapture %}
+{% include update.html date="Nov 01, 2019" message=more_virtualbox %}
 
 ## 14) GIMP
 
