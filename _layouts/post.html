@@ -71,37 +71,39 @@ layout: default
         {% endif %}
 
         {% if site.disqus_shortname or site.data.t[page.lang].site.disqus_shortname %}
-            <!-- Disqus -->
-            <div class="gap"></div>
-            <h2>
-                {% if site.data.t[page.lang].comments %}
-                    {{ site.data.t[page.lang].comments }}
-                {% else %}
-                    {{ "Comments" }}
-                {% endif %}
-            </h2>
-            <div id="disqus_thread"></div>
-            <script>
-                var disqus_config = function () {
-                    {% if site.lang or page.lang %}
-                        this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
+            {% if jekyll.environment == "production" %}
+                <!-- Disqus -->
+                <div class="gap"></div>
+                <h2>
+                    {% if site.data.t[page.lang].comments %}
+                        {{ site.data.t[page.lang].comments }}
+                    {% else %}
+                        {{ "Comments" }}
                     {% endif %}
-                    this.page.url = '{{ page.url | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}';
-                };
+                </h2>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        {% if site.lang or page.lang %}
+                            this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
+                        {% endif %}
+                        this.page.url = '{{ page.url | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}';
+                    };
 
-                (function() {
-                    var d = document, s = d.createElement('script');
+                    (function() {
+                        var d = document, s = d.createElement('script');
 
-                    s.src = '//{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}.disqus.com/embed.js';
+                        s.src = '//{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}.disqus.com/embed.js';
 
-                    s.setAttribute('data-timestamp', +new Date());
-                    (d.head || d.body).appendChild(s);
-                })();
-            </script>
-            <noscript>
-                <p>Please <a href="http://www.enable-javascript.com/" target="_blank">enable JavaScript</a> to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus</a>.</p>
-            </noscript>
-            <!-- Disqus End -->
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>
+                    <p>Please <a href="http://www.enable-javascript.com/" target="_blank">enable JavaScript</a> to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus</a>.</p>
+                </noscript>
+                <!-- Disqus End -->
+            {% endif %}
         {% endif %}
     </article>
 </div><!-- .blog-post -->
