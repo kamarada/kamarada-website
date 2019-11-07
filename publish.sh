@@ -7,7 +7,7 @@ set -e
 git add --all .
 git stash
 LAST_COMMIT_HASH=`git rev-parse HEAD`
-bundle exec jekyll build
+JEKYLL_ENV=production bundle exec jekyll build
 cd "../$TARGET"
 git pull
 git rm -rf *

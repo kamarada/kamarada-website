@@ -19,28 +19,30 @@
 {% endif %}
 
 {% if site.disqus_shortname or site.data.t[page.lang].site.disqus_shortname %}
-    <!-- Disqus -->
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        {% if site.lang or page.lang %}
-            var disqus_config = function () {
-                this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
-            };
-        {% endif %}
-        var disqus_shortname = '{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}';
+    {% if jekyll.environment == "production" %}
+        <!-- Disqus -->
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES * * */
+            {% if site.lang or page.lang %}
+                var disqus_config = function () {
+                    this.language = "{% if page.lang %}{{ page.lang }}{% else %}{{ site.lang }}{% endif %}";
+                };
+            {% endif %}
+            var disqus_shortname = '{% if site.data.t[page.lang].site.disqus_shortname %}{{ site.data.t[page.lang].site.disqus_shortname }}{% else %}{{ site.disqus_shortname }}{% endif %}';
 
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function () {
-            var s = document.createElement('script'); s.async = true;
-            s.type = 'text/javascript';
-            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
-            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
-        }());
-    </script>
-    <!-- Disqus End -->
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var s = document.createElement('script'); s.async = true;
+                s.type = 'text/javascript';
+                s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+                (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+            }());
+        </script>
+        <!-- Disqus End -->
+    {% endif %}
 {% endif %}
 
-{% if site.google.adsense.publisher_id %}
+{% if site.google.adsense.publisher_id and jekyll.environment == "production" %}
     <!-- Google AdSense -->
     {% if site.google.adsense.content_ad_unit_2 %}
         {% include adsense.html id="content_ad_unit_2" ad_slot=site.google.adsense.content_ad_unit_2 %}

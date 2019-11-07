@@ -124,7 +124,7 @@
     </div><!-- .card-body -->
 </div><!-- .card -->
 
-{% if site.google.adsense.sidebar_ad_unit %}
+{% if site.google.adsense.sidebar_ad_unit and jekyll.environment == "production" %}
     <div class="card mb-3">
         <div class="card-body">
             {% include adsense.html id="sidebar_ad_unit" ad_slot=site.google.adsense.sidebar_ad_unit %}
@@ -132,32 +132,36 @@
     </div><!-- .row -->
 {% endif %}
 
-<div class="card mb-3 d-none d-lg-block">
-    <div class="card-header">
-        <h3>
-            Facebook
-        </h3>
-    </div>
-    <div class="card-body">
-        <div id="facebook-page-plugin-wrapper">
-            <!-- Facebook Page Plugin -->
-            <div class="fb-page" data-href="https://www.facebook.com/LinuxKamarada/" data-tabs="timeline" data-width="" data-height="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/LinuxKamarada/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LinuxKamarada/">Linux Kamarada</a></blockquote></div>
-        </div><!-- #facebook-page-plugin-wrapper -->
-    </div><!-- .card-body -->
-</div><!-- .card -->
-
-{% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
+{% if jekyll.environment == "production" %}
     <div class="card mb-3 d-none d-lg-block">
         <div class="card-header">
             <h3>
-                Twitter
+                Facebook
             </h3>
         </div>
         <div class="card-body">
-            <!-- Twitter Embedded Timeline -->
-            <a class="twitter-timeline" data-height="450" data-theme="light" data-link-color="#4caf50" href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}?ref_src=twsrc%5Etfw">Tweets by {% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <div id="facebook-page-plugin-wrapper">
+                <!-- Facebook Page Plugin -->
+                <div class="fb-page" data-href="https://www.facebook.com/LinuxKamarada/" data-tabs="timeline" data-width="" data-height="450" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/LinuxKamarada/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LinuxKamarada/">Linux Kamarada</a></blockquote></div>
+            </div><!-- #facebook-page-plugin-wrapper -->
         </div><!-- .card-body -->
     </div><!-- .card -->
+{% endif %}
+
+{% if site.twitter_username or site.data.t[page.lang].site.twitter_username %}
+    {% if jekyll.environment == "production" %}
+        <div class="card mb-3 d-none d-lg-block">
+            <div class="card-header">
+                <h3>
+                    Twitter
+                </h3>
+            </div>
+            <div class="card-body">
+                <!-- Twitter Embedded Timeline -->
+                <a class="twitter-timeline" data-height="450" data-theme="light" data-link-color="#4caf50" href="https://twitter.com/{% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}?ref_src=twsrc%5Etfw">Tweets by {% if site.data.t[page.lang].site.twitter_username %}{{ site.data.t[page.lang].site.twitter_username }}{% else %}{{ site.twitter_username }}{% endif %}</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+            </div><!-- .card-body -->
+        </div><!-- .card -->
+    {% endif %}
 {% endif %}
 
 <div class="card mb-3">
