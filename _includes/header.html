@@ -1,6 +1,17 @@
 <!-- Fixed navbar -->
 <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-primary">
     <div class="container">
+        <button type="button" class="navbar-toggler" data-toggle="drawer" data-target="#drawer">
+            <span class="sr-only">
+                {% if site.data.t[page.lang].toggle-drawer %}
+                    {{ site.data.t[page.lang].toggle-drawer }}
+                {% else %}
+                    {{ 'Toggle drawer' }}
+                {% endif %}
+            </span>
+            <i class="material-icons">menu</i>
+        </button>
+
         <a class="navbar-brand" href="{{ site.baseurl }}/">
             {% if site.data.t[page.lang].site.title %}
                 {{ site.data.t[page.lang].site.title }}
@@ -8,10 +19,6 @@
                 {{ site.title }}
             {% endif %}
         </a>
-
-        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
 
         <div class="collapse navbar-collapse" id="navbar">
             <ul class="navbar-nav m-auto">
@@ -37,7 +44,7 @@
                     {% endfor %}
                 {% endif %}
             </ul>
-            <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" class="form-inline" id="search-form" method="get" role="search">
+            <form action="{% if site.google.cse_id %}{% assign search_result_page = site.pages | where: 'layout', 'search' | where: 'lang', page.lang | first %}{{ search_result_page.url }}{% else %}https://www.google.com/search{% endif %}" class="form-inline search-form" id="navbar-search-form" method="get" role="search">
                 {% if site.google.cse_id %}
                 {% else %}
                     <input type="hidden" name="as_sitesearch" value="{{ site.baseurl | prepend: site.url }}" />
@@ -50,9 +57,9 @@
                     {% endif %}
                 {% endif %}
                 <div class="input-group">
-                    <input class="form-control" id="search-field" name="q" placeholder="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}" type="text" aria-label="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}">
+                    <input class="form-control search-field" id="navbar-search-field" name="q" placeholder="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}" type="text" aria-label="{% if site.data.t[page.lang].search %}{{ site.data.t[page.lang].search }}{% else %}{{ 'Search' }}{% endif %}">
                     <div class="input-group-append">
-                        <button class="btn btn-secondary btn-number" id="search-button" type="submit">
+                        <button class="btn btn-secondary btn-number search-button" id="navbar-search-button" type="submit">
                             <i class="fa fa-search"></i>
                         </button>
                     </div>
