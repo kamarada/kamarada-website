@@ -80,12 +80,12 @@ body {
     background-image: linear-gradient(0deg,hsla(0,0%,100%,.75) 2px,rgba(63,81,181,0) 0),linear-gradient(0deg,hsla(0,0%,100%,.5) 1px,transparent 0);
 }
 
-#navbar-search-button, #language-button {
+#navbar-search-button, #navbar-language-button {
     color: hsla(0,0%,100%,.5);
     padding: .5rem;
 }
 
-#navbar-search-field, #navbar-search-button:focus, #navbar-search-button:hover, #language-button:hover {
+#navbar-search-field, #navbar-search-button:focus, #navbar-search-button:hover, #navbar-language-button:hover {
     color: hsla(0,0%,100%,.75);
 }
 
@@ -105,6 +105,10 @@ body {
 
 #drawer-search-form {
     padding: 1.125rem 1.125rem 0 1.125rem;
+}
+
+#language-modal .list-group .list-group-item:not(.disabled) {
+    padding-left: 2.5rem;
 }
 
 /* Pagination */

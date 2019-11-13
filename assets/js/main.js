@@ -5,6 +5,12 @@ function random_number(first, last) {
 $(document).ready(function(){
     $('body').bootstrapMaterialDesign();
 
+    $('#drawer-language-button').click(function(){
+        //$('#drawer').hide(); // isn't enough
+        $('.bmd-layout-backdrop').click(); // simulates a touch outside the drawer
+        $('#language-modal').modal();
+    });
+
     $('#fab').click(function(){
         var enterDesignMode = ($('#fab button i').text() == "visibility");
         $('#fab button i').text(enterDesignMode ? "edit" : "visibility");

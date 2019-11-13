@@ -1,0 +1,35 @@
+<div class="modal fade" id="language-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-globe-americas" aria-hidden="true"></i> {% if site.data.t[page.lang].translations %}{{ site.data.t[page.lang].translations }}{% else %}{{ 'Translations' }}{% endif %}</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+
+                <div class="list-group list-group-flush bmd-list-group-sm">
+                    {% if page.is_post %}
+                        {% assign translations = site.posts | where: 'nickname', page.nickname %}
+                    {% else %}
+                        {% assign translations = site.pages | where: 'nickname', page.nickname %}
+                    {% endif %}
+                    {% for lang in site.data.t %}
+                        <a href="#" class="list-group-item list-group-item-action disabled">{{ lang[1].language }}</a>
+                        {% assign translation = translations | where: 'lang', lang[1].language_tag | first %}
+                        {% if translation %}
+                            <a class="list-group-item list-group-item-action translation-{{ lang[1].language_tag }}" href="{{ translation.url | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                        {% else %}
+                            <a class="list-group-item list-group-item-action" href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&tl={{ lang[1].language_tag }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].translation }}</a>
+                        {% endif %}
+                        <a class="list-group-item list-group-item-action" href="{{ '/' | prepend: lang[1].language_tag | prepend: '/' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">{{ lang[1].home_page }}</a>
+                    {% endfor %}
+                    <a href="#" class="list-group-item list-group-item-action disabled">Other languages (by Google Translate)</a>
+                    <a class="list-group-item list-group-item-action" href="http://translate.google.com/translate?js=n&sl={{ page.lang }}&u={{ page.url | replace:'index.html', '' | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}">Translate this page</a>
+                </div>
+
+            </div><!--.modal-body-->
+        </div><!--.modal-content-->
+    </div><!--.modal-dialog-->
+</div><!--#language-modal-->

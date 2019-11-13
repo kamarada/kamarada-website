@@ -55,4 +55,10 @@
             {% endfor %}
         {% endif %}
     </ul>
-</div>
+
+    <div class="btn-group mb-3 mt-3">
+        <button type="button" class="btn btn-secondary" id="drawer-language-button">
+            <i class="fas fa-globe-americas" aria-hidden="true"></i> {% if site.data.t[page.lang].language %}{{ site.data.t[page.lang].language }}{% elsif site.data.t[page.lang].translations %}{{ site.data.t[page.lang].translations }}{% else %}{{ 'Translations' }}{% endif %}
+        </button>
+    </div>
+</div><!--.drawer-->
