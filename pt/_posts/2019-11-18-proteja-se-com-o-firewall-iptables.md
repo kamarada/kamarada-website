@@ -28,7 +28,7 @@ _Firewalls_ podem ser instalados em diversos lugares com diferentes finalidades,
 Com base na camada do [modelo TCP/IP][tcp-ip] em que atuam, _firewalls_ podem ser classificados em:
 
 - **filtro de pacotes** (_packet filter_): atua nas camadas 2 (rede) e 3 (transporte), permite ou bloqueia pacotes com base em suas características (endereço/porta/interface de origem/destino, protocolo usado — se é TCP, UDP, ICMP, etc). É o tipo de _firewall_ mais antigo, simples e limitado, mas já oferece um nível de segurança significativo.
-- **_firewall_ de aplicação**, mais conhecido como ***proxy***: atua na camada 4 (aplicação) e é capaz de bloquear pacotes com base em seu conteúdo. Por exemplo, um _proxy_ HTTP consegue bloquear o acesso a uma página se ela contiver determinada palavra no _link_, ou se ela é conhecida por apresentar pirataria, jogo, pornografia, _malware_, etc.
+- **_firewall_ de aplicação**, mais conhecido como ***[proxy]***: atua na camada 4 (aplicação) e é capaz de bloquear pacotes com base em seu conteúdo. Por exemplo, um _proxy_ HTTP consegue bloquear o acesso a uma página se ela contiver determinada palavra no _link_, ou se ela é conhecida por apresentar pirataria, jogo, pornografia, _malware_, etc.
 
 ## Como é o firewall no Linux
 
@@ -40,7 +40,7 @@ O **iptables** é, a princípio, um _firewall_ em nível de pacotes, mas dispõe
 
 A versão original do módulo `ip_tables` e da ferramenta **iptables** lida apenas com IPv4. Existem também os análogos `ip6_tables` e **[ip6tables]** para lidar com IPv6.
 
-Algumas distribuições trazem uma ferramenta alternativa para configurar o _firewall_ que é o **[firewalld]**, que pode ser usada tanto pela linha de comando quanto pela interface gráfica (que algumas pessoas podem achar mais fácil de usar). Por padrão, o openSUSE vem com o **iptables** e o **firewalld** quando instalado em _desktops_, mas apenas com o **iptables** (sem o **firewalld**) quando instalado em servidores. O Linux Kamarada, que é focado em _desktops_ e usuários iniciantes de Linux, também traz o **iptables** e o **firewalld** instalados por padrão.
+Muitas distribuições trazem ferramentas alternativas para configurar o _firewall_, como o **[firewalld]**, que pode ser usado tanto pela linha de comando quanto pela interface gráfica (que algumas pessoas podem achar mais fácil de usar). Por padrão, o openSUSE vem com o **iptables** e o **firewalld** quando instalado em _desktops_, mas apenas com o **iptables** (sem o **firewalld**) quando instalado em servidores. O Linux Kamarada, que é focado em _desktops_ e usuários iniciantes de Linux, também traz o **iptables** e o **firewalld** instalados por padrão.
 
 Hoje, vamos falar apenas do **iptables**. Oportunamente, podemos falar do **firewalld**, mas já mencionamos ele em um _post_, se você quiser ter uma ideia de como é a tela dele, veja:
 
@@ -66,16 +66,16 @@ Já as **tabelas** são conjuntos de _chains_. O **iptables** tem 4 tabelas que 
 
 Note que os nomes das _chains_ são sensíveis à capitalização (_case sensitive_). Portanto, `INPUT`, `input` e `Input`, por exemplo, seriam 3 _chains_ diferentes. As _chains_ predefinidas do **iptables** são sempre escritas em caixa alta (por exemplo, `INPUT`).
 
-Quando recebe um pacote, o _firewall_ analisa as regras buscando uma regra que descreva aquele pacote. As regras são analisadas na ordem em que foram inseridas na _chain_. Quando o _firewall_ analisa uma regra, se o pacote não corresponde à descrição, ele passa para a próxima regra. Se o pacote corresponde, então o _firewall_ verifica na regra para onde enviar o pacote, que é o ***target*** (alvo).
+Quando recebe um pacote, o **iptables** analisa as regras buscando uma regra que descreva aquele pacote. As regras são analisadas na ordem em que foram inseridas na _chain_. Quando o **iptables** analisa uma regra, se o pacote não corresponde à descrição, ele passa para a próxima regra. Se o pacote corresponde, então o **iptables** verifica na regra para onde enviar o pacote, que é o ***target*** (alvo).
 
-O _target_ pode ser o nome de uma _chain_ do usuário — nesse caso, o _firewall_ vai continuar analisando as regras dessa _chain_ — ou pode ser um desses valores especiais, que informam ao **iptables** o que fazer com o pacote imediatamente:
+O _target_ pode ser o nome de uma _chain_ do usuário — nesse caso, o **iptables** vai continuar analisando as regras dessa _chain_ — ou pode ser um desses valores especiais, diante dos quais o **iptables** para de analisar as regras da _chain_ atual e age sobre o pacote imediatamente:
 
 - `ACCEPT`: aceitar o pacote, deixá-lo (permiti-lo) passar
 - `DROP`: descartar (excluir, ignorar) o pacote — na prática, significa impedi-lo de passar
 - `QUEUE`: passar o pacote para um programa do espaço de usuário (fora do _kernel_), que irá processar o pacote
 - `RETURN`: interrompe o processamento das regras da _chain_ atual e retorna o processamento das regras para a regra seguinte na _chain_ anterior (a que chamou a _chain_ atual)
 
-Por fim, se o _firewall_ já analisou todas as regras da _chain_ e não encontrou uma regra que descreve o pacote, ele vai adotar a **política padrão** predefinida para aquela _chain_, que pode ser somente um dos quatro _targets_ especiais acima.
+Por fim, se o **iptables** já analisou todas as regras da _chain_ e não encontrou uma regra que descreve o pacote, ele vai adotar a **política padrão** predefinida para aquela _chain_, que pode ser somente um dos quatro _targets_ especiais acima.
 
 Há ainda o _target_ `REJECT`, que é semelhante ao `DROP`, mas só pode ser usado em regras das _chains_ da tabela `filter`. Falaremos mais sobre o _target_ `REJECT` adiante.
 
@@ -108,7 +108,7 @@ target     prot opt source               destination
 
 Essa é a configuração padrão do **iptables**: a política padrão (_policy_) de todas as _chains_ é aceitar (`ACCEPT`) e elas não possuem regras de antemão. Ou seja, qualquer pacote que deseja entrar no sistema ou sair dele, o **iptables** deixa passar.
 
-Se a saída para você é diferente, é possível que o administrador já tenha adicionado regras, que a distribuição que você usa tenha outra configuração padrão, ou que você esteja usando o **firewalld**, que cria suas próprias _chains_ no **iptables**. Veremos como excluir essas regras.
+Se a saída para você é diferente, é possível que o administrador já tenha adicionado regras, que a distribuição que você usa tenha outra configuração padrão, ou que você esteja usando o **firewalld**, que cria suas próprias _chains_. A seguir, veremos como excluir essas regras.
 
 Por padrão, são listadas as regras da tabela `filter`. Para listar as regras de outra tabela, adicione o parâmetro `-t` (ou `--table`) seguido do nome da tabela. Por exemplo:
 
@@ -140,7 +140,9 @@ target     prot opt source               destination
 Como a ordem das regras importa para o **iptables**, é comum iniciar sua configuração excluindo quaisquer regras que estejam em uso.
 
 <div class="alert alert-danger" role="alert">
-Não teste os comandos desse tutorial em um servidor que você acessa remotamente via SSH: você corre o risco de perder o acesso ao servidor.
+{% markdown %}
+**Não** teste os comandos desse tutorial em um servidor que você acessa remotamente via SSH: você corre o risco de perder o acesso ao servidor.
+{% endmarkdown %}
 </div>
 
 <div class="alert alert-info" role="alert">
@@ -149,7 +151,7 @@ Para acompanhar este tutorial, recomendo que você use uma máquina virtual. Com
 
 Para mais informações, leia:
 
-- [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo](https://kamarada.github.io/pt/2019/10/08/virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo/)
+- [VirtualBox: a forma mais fácil de conhecer o Linux sem precisar instalá-lo]({% post_url pt/2019-10-08-virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo %})
 {% endmarkdown %}
 </div>
 
@@ -231,10 +233,10 @@ Agora, adicione a regra:
 Leiamos esse comando por partes:
 
 - como nos comandos anteriores, poderíamos usar o parâmetro `-t` para especificar uma tabela, como não fizemos isso, usamos a tabela `filter` por padrão
-- o parâmetro `-A` inicia a adição de uma nova regra
+- o parâmetro `-A` inicia a adição de uma nova regra ao final da _chain_
 - `INPUT` é a _chain_ onde a regra está sendo adicionada — nesse caso, estamos interessados nos pacotes que chegam à máquina
 - o parâmetro `-d` (poderia ser também `--dst` ou `--destination`) indica o destino — nesse caso, filtramos pacotes com destino a `127.0.0.1` (a própria máquina)
-- o parâmetro `-j` (poderia ser também `--jump`) indica o que fazer com o pacote (o _target_) — nesse caso, descartar (`DROP`).
+- o parâmetro `-j` (poderia ser também `--jump`) indica o que fazer com o pacote (o _target_) — nesse caso, descartar (`DROP`)
 
 Agora, depois de adicionada a regra, tente novamente usar o **ping**:
 
@@ -246,7 +248,7 @@ PING 127.0.0.1 (127.0.0.1) 56(84) bytes of data.
 2 packets transmitted, 0 received, 100% packet loss, time 1006ms
 ```
 
-Viu só? Não funcionou. O **iptables** está bloqueando esse pacote com base na regra que acabamos de adicionar.
+Viu só? Não funcionou. O **iptables** está bloqueando esses pacotes com base na regra que acabamos de adicionar.
 
 <div class="alert alert-warning" role="alert">
 {% markdown %}
@@ -300,7 +302,7 @@ Vejamos alguns parâmetros que podemos usar para descrever pacotes na hora de cr
 
 - **destino:** já vimos o parâmetro `-d` (ou `--dst`, ou `--destination`), que permite filtrar um pacote pelo seu destino, que pode ser expresso na forma de:
   - o endereço IP de um _host_ (por exemplo, `157.240.12.35`);
-  - o endereço IP de uma rede/sub-rede acompanhado da máscara de rede, em notação tradicional (por exemplo, `157.240.12.0/255.255.255.0`) ou [CIDR]  (`157.240.12.0/24`);
+  - o endereço IP de uma rede/sub-rede acompanhado da máscara de rede, em notação tradicional (por exemplo, `157.240.12.0/255.255.255.0`) ou [CIDR] (`157.240.12.0/24`);
   - nome de rede (_hostname_, por exemplo, `www`); ou
   - nome de domínio completo (do inglês _fully qualified domain name_ ou [FQDN], por exemplo, `www.facebook.com`).
 
@@ -378,7 +380,7 @@ Ou, se preferir ler no navegador:
 
 - [iptables(8) - Linux man page][man]
 
-A seguinte lista também pode ser útil enquanto estiver criando regras:
+A seguinte lista de portas também pode ser útil enquanto estiver criando regras:
 
 - [Lista de portas dos protocolos TCP e UDP - Wikipédia][port-numbers]
 
@@ -502,7 +504,7 @@ Pro nosso _firewall_ ficar perfeito, só falta um detalhe: as regras devem ser a
 
 Em distribuições com **[systemd]**, como é o caso do openSUSE e do Linux Kamarada, a melhor forma de executar um _script_ como o `meu-firewall.sh` durante o _boot_ é criar um serviço.
 
-Crie um serviço do **systemd** chamado `meu-firewall.service` na pasta `/etc/systemd/system/` usando seu editor de texto preferido:
+Por exemplo, crie um serviço do **systemd** chamado `meu-firewall.service` na pasta `/etc/systemd/system/` usando seu editor de texto preferido:
 
 ```
 # nano /etc/systemd/system/meu-firewall.service
@@ -550,13 +552,14 @@ Espero que esse texto tenha sido útil. Se você o leu todo até aqui, já disp�
 - [Guia Foca GNU/Linux - Firewall iptables][guiafoca]
 - [O que é firewall? - Conceito, tipos e arquiteturas - InfoWester][infowester]
 - [IPTables - Desvendando o mistério - Viva o Linux][vivaolinux]
-- [Basic iptables Tutorial - SUSE Communities][suse]
 - [iptables(8) - Linux man page][man]
+- [Basic iptables Tutorial - SUSE Communities][suse]
 - [Linux Iptables block incoming access to selected or specific ip address - nixCraft][cyberciti]
 - [DROP ou REJECT no iptables? - Viva o Linux][drop-vs-reject]
 - [How to automatically execute shell script at startup boot on systemd Linux - LinuxConfig.org][linuxconfig]
 
 [tcp-ip]:           https://pt.wikipedia.org/wiki/TCP/IP
+[proxy]:            https://pt.wikipedia.org/wiki/Proxy
 [linux]:            https://www.vivaolinux.com.br/linux/
 [kernel]:           https://www.kernel.org/
 [iptables]:         https://netfilter.org/projects/iptables/
