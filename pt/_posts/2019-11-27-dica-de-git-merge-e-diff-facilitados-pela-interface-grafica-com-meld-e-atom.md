@@ -195,7 +195,7 @@ $ git config --global difftool.prompt false
 [github]:           https://github.com/
 [sublimetext]:      https://www.sublimetext.com/
 [free-sw]:          https://www.gnu.org/philosophy/free-sw.pt-br.html
-[kamarada]:         TODO
+[kamarada]:         {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 [opensuse]:         https://www.opensuse.org/
 [git-mergetool]:    https://git-scm.com/docs/git-mergetool
 [git-diff]:         https://git-scm.com/docs/git-diff
