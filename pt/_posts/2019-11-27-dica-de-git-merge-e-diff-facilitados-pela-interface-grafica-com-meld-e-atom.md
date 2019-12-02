@@ -63,7 +63,7 @@ Unmerged paths:
 	both modified:   assets/css/main.css
 ```
 
-Em caso de conflito durante o _merge_, você deve editar os arquivos conflituosos, comparando as alterações que você e o seu colega fizeram, elaborar a versão final do arquivo e, por fim, executar [**git commit**][git-commit] para concluir o _merge_.
+Em caso de conflito durante o _merge_, você deve editar manualmente os arquivos conflituosos, comparando as alterações que você e o seu colega fizeram, elaborar a versão final do arquivo e, por fim, executar [**git commit**][git-commit] para concluir o _merge_.
 
 ## Resolvendo conflitos com o Atom
 
@@ -87,7 +87,7 @@ O [Meld] é uma ferramenta gráfica de _diff_ e _merge_ feita para desenvolvedor
 # zypper in meld meld-lang
 ```
 
-Você pode usar o Meld sozinho, abrindo o aplicativo e selecionando os arquivos que deseja comparar, mas não vou entrar em detalhes nesse sentido, porque nosso objetivo aqui é ver como usá-lo integrado ao Git.
+Você pode usar o Meld sozinho, abrindo o aplicativo e selecionando os arquivos ou pastas que deseja comparar, mas não vou entrar em detalhes nesse sentido, porque nosso objetivo aqui é ver como usar o Meld integrado ao Git.
 
 Para resolver conflitos com o Meld, execute o comando [**git mergetool**][git-mergetool]:
 
@@ -110,9 +110,9 @@ Normal merge conflict for '_includes/footer.html':
 Hit return to start merge resolution tool (meld):
 ```
 
-A função do comando **git mergetool** é iniciar uma ferramenta apropriada para a resolução de conflitos. Ele exibe essa mensagem comprida na primeira utilização porque ainda não configuramos uma ferramenta. Note que ele suporta várias ferramentas, dentre elas o Meld, que é a primeira da lista e é a que ele sugere usar. Tecle **Enter** para iniciar o Meld.
+A função do comando **git mergetool** é iniciar uma ferramenta apropriada para a resolução de conflitos. Ele exibe essa mensagem comprida na primeira utilização porque ainda não configuramos uma ferramenta. Note que ele suporta várias ferramentas, dentre elas o Meld, que é a primeira da lista e é também a que ele sugere usar. Tecle **Enter** para iniciar o Meld.
 
-O Meld abre o arquivo conflituoso em três vias: a versão anterior do _branch_ atual à esquerda (nesse exemplo, o _branch_ `master1`), a versão mesclada no meio (esse é o resultado que irá no _commit_ do _merge_), e a versão do _branch_ que está sendo mesclado à direita (`upstream1`):
+O Meld abre o arquivo conflituoso em três vias: à esquerda, a versão anterior do _branch_ atual (nesse exemplo, o _branch_ `master1`); no meio, a versão mesclada (esse é o resultado que irá no _commit_ do _merge_); e à direita, a versão do _branch_ que está sendo mesclado (`upstream1`):
 
 {% include image.html src="/files/2019/11/git-mergetool-meld-pt.png" %}
 
@@ -129,7 +129,7 @@ $ git config --global merge.tool meld
 $ git config --global mergetool.prompt false
 ```
 
-Feito isso, aquela mensagem comprida não aparecerá mais: ao executar **git mergetool**, o Git indicará qual arquivo está mesclando e já abrirá o Meld (você não precisará teclar **Enter**).
+Feito isso, aquela mensagem comprida não aparecerá mais ao executar **git mergetool**: o Git indicará qual arquivo está mesclando e já abrirá o Meld (você não precisará teclar **Enter**).
 
 Além de resolver conflitos, o Meld pode ser usado para comparar versões de arquivos controladas pelo Git.
 
