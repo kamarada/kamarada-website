@@ -71,6 +71,9 @@ exclude:
     - README.md
     - publish.sh
 
+include:
+    - .well-known
+
 # Markdown renderer
 # Sets the Markdown renderer to be used by Jekyll (kramdown, redcarpet or your
 # own)
