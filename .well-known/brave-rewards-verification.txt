@@ -1,0 +1,4 @@
+This is a Brave Rewards publisher verification file.
+
+Domain: kamarada.github.io
+Token: 754c5cffd8dd6ccdd253ca96363bdeaa3d3846970f071df12566c43049dbe4c6
