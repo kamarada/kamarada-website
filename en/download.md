@@ -18,19 +18,19 @@ language_value: 'English'
 other_language: 'Se você fala Português Brasileiro, <a href="/pt/download">clique aqui</a>.'
 
 filename_label: 'Filename'
-filename_value: 'Linux_Kamarada-15.1-x86_64-Build20.2-en_US.iso'
-download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build20.2-en_US.iso'
+filename_value: 'Linux_Kamarada-15.1-x86_64-Build25.1-en_US.iso'
+download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build25.1-en_US.iso'
 download: 'Download'
 
 date_label: 'Date'
-date_value: 'Oct, 29 2019'
+date_value: 'Dez, 13 2019'
 
 size_label: 'Size'
-size_value: '1.36 GB'
+size_value: '1.39 GB'
 
 sha256sum_label: 'SHA256 sum'
-sha256sum_value: '8f81d60737c0d80ccd4e6bc486ec1d16307390eb6dae7f88b781b7dba53db842'
-sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build20.2-en_US.iso.sha256'
+sha256sum_value: '962ed292140c65d223266590d4a2f669c4b0af534de1ad3a96ea2c97b8456b41'
+sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build25.1-en_US.iso.sha256'
 
 system_requirements_title: 'Recommended system requirements'
 system_requirements_list: '<li>2 Ghz dual core processor or better</li>
