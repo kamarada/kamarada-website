@@ -11,7 +11,7 @@ nickname: 'fail2ban'
 
 Tradicionalmente, sistemas cujo acesso é restrito autenticam seus usuários por uma combinação de nome de usuário (mais conhecido como _login_) e senha.
 
-Um [ataque de força bruta][brute-force-attack] (do inglês _brute force attack_) é um tipo de ataque que consiste em tentar adivinhar uma combinação de _login_ e senha que libere o acesso ao sistema. Se o invasor souber pelo menos um _login_, já tem meio caminho andado, porque aí só precisa descobrir a senha. Normalmente, isso é feito na base da tentativa e erro, testando todas as combinações de senhas possíveis (por exemplo, `aaaa`, `aaab`, `aaac` ... `1234`, `1235`, etc).
+Um [**ataque de força bruta**][brute-force-attack] (do inglês _brute force attack_) é um tipo de ataque que consiste em tentar adivinhar uma combinação de _login_ e senha que libere o acesso ao sistema. Se o invasor souber pelo menos um _login_, já tem meio caminho andado, porque aí só precisa descobrir a senha. Normalmente, isso é feito na base da tentativa e erro, testando todas as combinações de senhas possíveis (por exemplo, `aaaa`, `aaab`, `aaac` ... `1234`, `1235`, etc).
 
 É um dos tipos de ataque mais simples e antigos, mas que ainda acontece e — pasme — por vezes funciona, uma vez que muitos usuários criam senhas curtas, fracas, fáceis de adivinhar ou mesmo óbvias. Dependendo do tamanho e da complexidade da senha, um ataque de força bruta pode levar segundos ou séculos para descobri-la.
 
@@ -207,7 +207,7 @@ A opção `mta` define o programa que deve ser usado para enviar as notificaçõ
 action = %(action_)s
 ```
 
-A opção `action` define a ação que o **fail2ban** deve tomar  ao perceber um comportamento suspeito de um _host_. Na seção `[DEFAULT]`, essa opção define a ação padrão para todas as jaulas. No arquivo `jail.local`, acima da opção `action`, são definidas algumas opções de ações (`action_`, `action_mw`, `action_mwl`, etc). O valor padrão é `action_`, que corresponde à ação mais básica (apenas bloquear). Se você configurou o envio de _e-mail_, talvez queira mudar esse valor para `action_mw`, que corresponde a bloquear e notificar por _e-mail_.
+A opção `action` define a ação que o **fail2ban** deve tomar ao perceber um comportamento suspeito de um _host_. Na seção `[DEFAULT]`, essa opção define a ação padrão para todas as jaulas. No arquivo `jail.local`, acima da opção `action`, são definidas algumas opções de ações (`action_`, `action_mw`, `action_mwl`, etc). O valor padrão é `action_`, que corresponde à ação mais básica (apenas bloquear). Se você configurou o envio de _e-mail_, talvez queira mudar esse valor para `action_mw`, que corresponde a bloquear e notificar por _e-mail_.
 
 ### Configuração da jaula SSH
 
@@ -229,7 +229,7 @@ Comece adicionando `enabled = true` para habilitar essa jaula.
 
 A opção `port` define a porta na qual o serviço escuta. Se o serviço escuta na porta padrão (no caso do SSH, a porta 22), deixe o valor padrão, que é o nome do serviço (`ssh`). Se o serviço escuta em uma porta diferente da padrão, informe aqui o número da porta.
 
-A opção `logpath` define o caminho para o arquivo de _log_. De forma análoga, só mude o valor dessa opção se o serviço registra seu _log_ em um arquivo diferente do padrão.
+A opção `logpath` define o caminho para o arquivo de _log_ do serviço. De forma análoga, só mude o valor dessa opção se o serviço registra seu _log_ em um arquivo diferente do padrão.
 
 ## Iniciando o fail2ban
 
@@ -350,13 +350,13 @@ Pode acontecer de um usuário legítimo do servidor ter esquecido sua senha e te
 Para desfazer um bloqueio a um _host_ feito anteriormente pelo **fail2ban**, execute:
 
 ```
-$ fail2ban-client set JAULA unbanip ENDERECO_IP
+# fail2ban-client set JAULA unbanip ENDERECO_IP
 ```
 
 Por exemplo:
 
 ```
-$ fail2ban-client set sshd unbanip 10.0.0.10
+# fail2ban-client set sshd unbanip 10.0.0.10
 ```
 
 Se você tentar novo acesso remoto via SSH, dessa vez informando a senha certa, conseguirá conectar ao servidor.
@@ -369,7 +369,7 @@ Se por qualquer motivo você precisar interromper o monitoramento do **fail2ban*
 $ systemctl stop fail2ban
 ```
 
-Note que isso também exclui as regras adicionadas ao **iptables** pelo **fail2ban**, liberando o acesso de quaisquer _hosts_ que antes estavam bloqueados.
+Note que isso também exclui as regras adicionadas ao **iptables** pelo **fail2ban**, permitindo que _hosts_ que antes estavam bloqueados façam novas tentativas de acesso ao servidor.
 
 ## Incrementando o script do iptables
 
@@ -392,7 +392,20 @@ iptables -t mangle -X
 iptables -t raw -F
 iptables -t raw -X
 
-...
+# Politica padrao: bloquear todas as conexoes de entrada
+iptables -P FORWARD DROP
+iptables -P INPUT DROP
+iptables -P OUTPUT ACCEPT
+
+# Aceitar conexoes estabelecidas previamente
+iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
+
+# Aceitar tudo vindo da interface de loopback
+iptables -A INPUT -i lo -j ACCEPT
+
+# SSH (porta 22/TCP,UDP)
+iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+iptables -A INPUT -p udp --dport 22 -j ACCEPT
 
 # HTTP (porta 80/TCP)
 iptables -A INPUT -p tcp --dport 80 -j ACCEPT
@@ -405,7 +418,7 @@ systemctl start fail2ban
 
 Espero que esse texto tenha sido útil. Oportunamente, conforme estudemos diversos servidores (servidor _web_, banco de dados, servidor de FTP, servidor de _e-mail_, etc), veremos como podemos protegê-los usando a dupla **iptables** e **fail2ban**.
 
-Se tiver alguma dúvida ou informação útil a acrescentar, deixe um comentário.
+Se tiver alguma dúvida ou informação útil a acrescentar, por favor, deixe um comentário.
 
 Até mais!
 

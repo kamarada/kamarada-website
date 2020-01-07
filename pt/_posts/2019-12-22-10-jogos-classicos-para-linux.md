@@ -420,7 +420,7 @@ No próximo _post_ (que publicarei provavelmente quando voltar do recesso), most
 [lxde]:                 https://lxde.org/
 [budgie]:               https://budgie-desktop.org/
 [foss]:                 https://pt.wikipedia.org/wiki/Software_livre_e_de_c%C3%B3digo_aberto
-[kamarada]:             https://kamarada.github.io/pt/2019/09/13/primeira-versao-beta-da-distribuicao-linux-kamarada/
+[kamarada]:             {% post_url pt/2019-09-13-primeira-versao-beta-da-distribuicao-linux-kamarada %}
 
 [solitaire]:            https://pt.wikipedia.org/wiki/Paci%C3%AAncia_(jogo)
 [klondike]:             https://pt.wikipedia.org/wiki/Klondike_(solitaire)

@@ -420,7 +420,7 @@ And there are more to come! Follow Linux Kamarada to know more games for Linux!
 [lxde]:                 https://lxde.org/
 [budgie]:               https://budgie-desktop.org/
 [foss]:                 https://en.wikipedia.org/wiki/Free_and_open-source_software
-[kamarada]:             https://kamarada.github.io/en/2019/09/13/first-beta-release-of-the-kamarada-linux-distribution/
+[kamarada]:             {% post_url en/2019-09-13-first-beta-release-of-the-kamarada-linux-distribution %}
 
 [solitaire]:            https://en.wikipedia.org/wiki/Solitaire
 [klondike]:             https://en.wikipedia.org/wiki/Klondike_(solitaire)
