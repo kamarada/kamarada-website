@@ -9,7 +9,7 @@ intro: 'Linux Kamarada is completely <a href="https://www.gnu.org/philosophy/fre
 based_on_opensuse: 'Powered by openSUSE'
 based_on_opensuse_desc: 'It is a Linux distribution based on the great <a href="/en/2019/05/22/opensuse-community-releases-leap-15-1-version/">openSUSE Leap</a> — the hybrid enterprise-community version of <a href="https://www.opensuse.org/">openSUSE</a> — and contain customizations.'
 
-version_title: 'Linux Kamarada 15.1 Beta'
+version_title: 'Linux Kamarada 15.1 RC'
 version_desc: 'Download the latest version of Linux Kamarada, for desktop PCs and laptops.'
 
 language_label: 'Language'
@@ -18,19 +18,19 @@ language_value: 'English'
 other_language: 'Se você fala Português Brasileiro, <a href="/pt/download">clique aqui</a>.'
 
 filename_label: 'Filename'
-filename_value: 'Linux_Kamarada-15.1-x86_64-Build27.1-en_US.iso'
-download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build27.1-en_US.iso'
+filename_value: 'Linux_Kamarada-15.1-x86_64-Build36.1-en_US.iso'
+download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build36.1-en_US.iso'
 download: 'Download'
 
 date_label: 'Date'
-date_value: 'Dez, 18 2019'
+date_value: 'Jan, 13 2020'
 
 size_label: 'Size'
-size_value: '1.40 GB'
+size_value: '1.43 GB'
 
 sha256sum_label: 'SHA256 sum'
-sha256sum_value: '61af8fc39884c9c3a8f4e88cdf24775cd979cbc90398923e10c3b293e925997d'
-sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build27.1-en_US.iso.sha256'
+sha256sum_value: '91b4e720193111dc53e63b88d0251352ae5f089e37eb8e08f661f6f4c30cc05c'
+sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build36.1-en_US.iso.sha256'
 
 system_requirements_title: 'Recommended system requirements'
 system_requirements_list: '<li>2 Ghz dual core processor or better</li>
