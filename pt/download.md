@@ -9,7 +9,7 @@ intro: 'O Linux Kamarada é totalmente <a href="https://www.gnu.org/philosophy/f
 based_on_opensuse: 'Baseada no openSUSE'
 based_on_opensuse_desc: 'É uma distribuição Linux baseada no excelente <a href="/pt/2019/05/22/comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap">openSUSE Leap</a> — distribuição híbrida de empresa e comunidade do <a href="http://opensuse.org">openSUSE</a> — e contém personalizações.'
 
-version_title: 'Linux Kamarada 15.1 RC'
+version_title: 'Linux Kamarada 15.1 RC 2'
 version_desc: 'Baixe a versão mais recente do Linux Kamarada, para PCs e <i>notebooks</i>.'
 
 language_label: 'Idioma'
@@ -18,19 +18,19 @@ language_value: 'Português Brasileiro'
 other_language: 'If you speak another language, <a href="/en/download">click here</a>.'
 
 filename_label: 'Nome do arquivo'
-filename_value: 'Linux_Kamarada-15.1-x86_64-Build36.1-pt_BR.iso'
-download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build36.1-pt_BR.iso'
+filename_value: 'Linux_Kamarada-15.1-x86_64-Build37.8-pt_BR.iso'
+download_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build37.8-pt_BR.iso'
 download: 'Baixar'
 
 date_label: 'Data'
-date_value: '13/01/2020'
+date_value: '24/01/2020'
 
 size_label: 'Tamanho'
-size_value: '1,45 GB'
+size_value: '1,46 GB'
 
 sha256sum_label: 'Soma SHA256'
-sha256sum_value: '3f8ecd4a40635e007a98ca612a70cb93d8482d166f45814d34ecae26a5b6df56'
-sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build36.1-pt_BR.iso.sha256'
+sha256sum_value: 'efe02a2f3314d576eaddaaa68e1d107e8bea0a6505f10cddabf9be77f24fe23e'
+sha256sum_link: 'https://osdn.net/projects/kamarada/storage/15.1/images/iso/Linux_Kamarada-15.1-x86_64-Build37.8-pt_BR.iso.sha256'
 
 system_requirements_title: 'Requisitos de sistema recomendados'
 system_requirements_list: '<li>Processador 2 GHz dual core ou melhor</li>
