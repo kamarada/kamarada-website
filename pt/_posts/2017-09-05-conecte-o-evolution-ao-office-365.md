@@ -63,7 +63,7 @@ Faça bom proveito!
 
 ## Referências
 
-- [Use Evolution to Connect to Microsoft Exchange on Linux | Linux.com | The source for Linux information][linux.com]
+- [Use Evolution to Connect to Microsoft Exchange on Linux - Linux.com][linux.com]
 - [Office 365 (Evolution) - Configure Evolution][kb.wisc.edu]
 
 [exchange]:                 https://products.office.com/pt-BR/exchange
