@@ -13,7 +13,7 @@ excerpt: 'In this post, you are going to see how to install support for smart ca
 Digital certificates can be stored:
 
 - as files in computers or mobile devices (common file extensions include `.crt`, `.cer` and `.pem`); or
-- in criptographic media, such as [smart cards][smart-card] (which look like credit cards) or [tokens][token] (which look like USB sticks).
+- in cryptographic media, such as [smart cards][smart-card] (which look like credit cards) or [tokens][token] (which look like USB sticks).
 
 You need a smart card reader to use smart cards. USB tokens are standalone devices with a smart card chip inside (like a smart card reader with one non-removable smart card present).
 

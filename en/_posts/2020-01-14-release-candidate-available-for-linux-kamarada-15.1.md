@@ -21,7 +21,7 @@ It is not recommended to use Linux Kamarada on servers, although it is possible.
 
 A [**release candidate**][rc] (**RC**) is a software version that is almost ready to be released to the market as a stable product. This release may become the final release, unless significant bugs are detected. At this stage of development, all features planned at the beginning are already present and no new features are added.
 
-A release candidate is also a kind of [beta] version. Therefore, bugs are expected. Therefore, bugs are expected. If you find a bug, please report it on the [Linux Kamarada Google group][google-group] or on [GitHub].
+A release candidate is also a kind of [beta] version. Therefore, bugs are expected. If you find a bug, please report it on the [Linux Kamarada Google group][google-group] or on [GitHub].
 
 Of course, bugs can be found and fixed anytime, but the sooner the better!
 
