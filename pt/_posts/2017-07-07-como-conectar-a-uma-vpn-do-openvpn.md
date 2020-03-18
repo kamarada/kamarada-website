@@ -75,7 +75,7 @@ De volta às configurações de **Rede**, ative a conexão:
 
 {% include image.html src="/files/2017/07/openvpn-client-08-pt.jpg" %}
 
-Se o estado não conexão não mudou para **Conectado**, clique no botão de configurações (ícone de engrenagem no canto inferior direito) e verifique as configurações da VPN.
+Se o estado da conexão não mudou para **Conectado**, clique no botão de configurações (ícone de engrenagem no canto inferior direito) e verifique as configurações da VPN.
 
 Quando não precisar mais usar a VPN, desconecte clicando no menu do sistema, no canto superior direito da tela, depois na VPN e por último em **Desligar**:
 
