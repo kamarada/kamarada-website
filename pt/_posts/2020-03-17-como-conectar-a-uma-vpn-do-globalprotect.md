@@ -16,7 +16,7 @@ VPNs são usadas por organizações (por exemplo, empresas, universidades) para 
 
 - [Como conectar a uma VPN do OpenVPN][vpn]
 
-Naquela ocasião, falamos sobre o OpenVPN, outro tipo de VPN.
+Naquela ocasião, falamos sobre o [OpenVPN][vpn], outro tipo de VPN.
 
 Hoje, vamos falar sobre o GlobalProtect.
 
@@ -51,7 +51,7 @@ Para isso, primeiro adicione o repositório _network_:
 # zypper ar http://download.opensuse.org/repositories/network/openSUSE_Leap_15.1/ network
 ```
 
-Então, instale o OpenConnect (informando que deseja baixá-lo do repositório _network_)
+Então, instale o OpenConnect (informando que deseja baixá-lo do repositório _network_):
 
 ```
 # zypper in network:openconnect
