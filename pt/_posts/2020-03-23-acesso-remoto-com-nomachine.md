@@ -12,7 +12,7 @@ Existem alguns programas que podem ser usados para fazer acesso remoto. Hoje, ve
 
 {% include image.html src='/files/2020/03/nomachine.jpg' %}
 
-O **[NoMachine]** é uma solução de acesso remoto desenvolvida pela empresa de mesmo nome, que tem sede em Luxemburgo e existe desde 2003. É [**multiplataforma**][cross-platform] (pode ser usada em vários sistemas operacionais, incluindo Linux, Windows, macOS, Android, e iOS), **gratuita** para uso pessoal e dispõe de opções pagas com mais recursos para empresas.
+O **[NoMachine]** é uma solução de acesso remoto desenvolvida pela empresa de mesmo nome, que tem sede em Luxemburgo e existe desde 2003. É [**multiplataforma**][cross-platform] (pode ser usada em vários sistemas operacionais, incluindo [Linux], [Windows], [macOS], [Android] e [iOS]), **gratuita** para uso pessoal e dispõe de opções pagas com mais recursos para empresas.
 
 ## Licença
 
@@ -45,7 +45,7 @@ Nos exemplos anteriores, para acessar remotamente o computador do trabalho, voc�
 - [Como conectar a uma VPN do OpenVPN][vpn]
 - [Como conectar a uma VPN do GlobalProtect][globalprotect]
 
-Já para acessar remotamente o computador de casa, você precisaria configurar redirecionamento de portas no seu roteador. Para verificar se isso é possível, assim como obter instruções sobre como fazer, consulte seu provedor de Internet.
+Já para acessar remotamente o computador de casa, você precisaria configurar redirecionamento de portas no seu roteador de casa. Para verificar se isso é possível, assim como obter instruções sobre como fazer, consulte seu provedor de Internet.
 
 Sem mais delongas, vamos por a mão na massa!
 
@@ -181,7 +181,7 @@ Estabelecida a conexão, o NoMachine apresenta algumas telas com dicas para seu 
 
 Em cada tela, leia atentamente seu conteúdo, marque a opção **Não mostrar novamente esta mensagem** e clique em **OK**.
 
-Finalmente, você verá a área de trabalho do computador servidor:
+Finalmente, você verá a tela do computador servidor na janela do cliente do NoMachine:
 
 {% include image.html src='/files/2020/03/nomachine-20-pt.jpg' %}
 
@@ -270,12 +270,17 @@ Forneça a senha de administrador para iniciar o serviço.
 - [NoMachine - Default ports used by NoMachine 4 or later][nomachine-firewall]
 - [NoMachine - How to shutdown NoMachine and disable the automatic startup at boot time][nomachine-shutdown]
 
-É isso, pessoal! Espero que esse texto possa ajudá-los em seus acessos remotos. O aplicativo é bastante fácil de usar e intuitivo. Mas se surgir dúvidas, podem deixar comentários.
+É isso, pessoal! Espero que esse texto possa ajudá-los em seus acessos remotos. O aplicativo é bastante fácil de usar e intuitivo. Mas se surgirem dúvidas, podem deixar comentários.
 
 Até a próxima!
 
 [nomachine]:            https://www.nomachine.com/pt-pt/
 [cross-platform]:       https://pt.wikipedia.org/wiki/Multiplataforma
+[linux]:                https://www.vivaolinux.com.br/linux/
+[windows]:              https://www.microsoft.com/pt-br/windows/
+[macos]:                https://www.apple.com/br/macos/
+[android]:              https://www.android.com/
+[ios]:                  https://www.apple.com/br/ios/
 [free-sw]:              https://www.gnu.org/philosophy/free-sw.pt-br.html
 [non-free-sw]:          https://pt.wikipedia.org/wiki/Software_proprietário
 [licensing]:            https://www.nomachine.com/pt-pt/licensing-6
