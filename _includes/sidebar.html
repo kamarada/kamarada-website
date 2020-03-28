@@ -50,6 +50,9 @@
                 {% if site.foursquare_username or site.data.t[page.lang].site.foursquare_username %}
                     <a href="https://foursquare.com/{% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}" class="addthis_button_foursquare_follow" addthis:userid="{% if site.data.t[page.lang].site.foursquare_username %}{{ site.data.t[page.lang].site.foursquare_username }}{% else %}{{ site.foursquare_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}
+                {% if site.telegram_username or site.data.t[page.lang].site.telegram_username %}
+                    <a href="https://github.com/{% if site.data.t[page.lang].site.telegram_username %}{{ site.data.t[page.lang].site.telegram_username }}{% else %}{{ site.telegram_username }}{% endif %}" class="addthis_button_telegram_follow" addthis:userid="{% if site.data.t[page.lang].site.telegram_username %}{{ site.data.t[page.lang].site.telegram_username }}{% else %}{{ site.telegram_username }}{% endif %}" itemprop="sameAs"></a>
+                {% endif %}
                 {% if site.github_username or site.data.t[page.lang].site.github_username %}
                     <a href="https://github.com/{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" class="addthis_button_github_follow" addthis:userid="{% if site.data.t[page.lang].site.github_username %}{{ site.data.t[page.lang].site.github_username }}{% else %}{{ site.github_username }}{% endif %}" itemprop="sameAs"></a>
                 {% endif %}

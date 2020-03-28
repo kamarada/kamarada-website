@@ -354,6 +354,11 @@ instagram_username: "Kamarada_Linux"
 # Default: not set (LinkedIn public profile URL is not displayed)
 # linkedin_username: "username"
 
+# Telegram username
+# Example: username, if your Telegram link is https://t.me/username
+# Default: not set (Telegram link is not displayed)
+telegram_username: "LinuxKamaradaNews"
+
 # Twitter username
 # Example: jekyllrb, if your Twitter URL is https://twitter.com/jekyllrb
 # Default: not set (Twitter URL is not displayed)
