@@ -470,6 +470,9 @@ iptables -A INPUT -m state --state ESTABLISHED,RELATED -j ACCEPT
 # Aceitar tudo vindo da interface de loopback
 iptables -A INPUT -i lo -j ACCEPT
 
+# ICMP (ping)
+iptables -A INPUT -p icmp -j ACCEPT
+
 # SSH (porta 22/TCP,UDP)
 iptables -A INPUT -p tcp --dport 22 -j ACCEPT
 iptables -A INPUT -p udp --dport 22 -j ACCEPT
