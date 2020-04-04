@@ -6,7 +6,7 @@ image: '/files/2020/04/vlc-chromecast.jpg'
 nickname: 'vlc-chromecast'
 ---
 
-O [VLC] é o reprodutor multimídia padrão do [Linux Kamarada][kamarada-15.1]. Já o elogiei algumas vezes aqui com relação a seu suporte a vários formatos multimídia e sua quantidade de recursos, ele é realmente inteligente! Dentre esses recursos, hoje mostrarei como transmitir vídeos ou músicas do VLC para o [Chromecast].
+O [VLC] é o reprodutor multimídia padrão do [Linux Kamarada][kamarada-15.1]. Já o elogiei algumas vezes aqui com relação a seu suporte a vários formatos multimídia e sua quantidade de recursos, ele é realmente inteligente! Dentre esses recursos, hoje mostrarei como transmitir vídeos ou músicas do VLC para a TV por meio do [Chromecast].
 
 <!--more-->
 
