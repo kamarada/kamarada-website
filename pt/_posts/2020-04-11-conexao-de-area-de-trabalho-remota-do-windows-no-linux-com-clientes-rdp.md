@@ -25,6 +25,8 @@ Você pode escolher o que mais te agrada ou melhor se adequa às suas necessidad
 
 A título de curiosidade, o FreeRDP é um aplicativo, mas também uma biblioteca, que disponibiliza funcionalidades para outros aplicativos. Exceto pelo rdesktop, os demais clientes acima usam a biblioteca do FreeRDP.
 
+{% include update.html date="20/04/2020" message="Postagem revisada, uma imagem foi adicionada." %}
+
 ## Habilitando a área de trabalho remota no Windows
 
 Antes de mais nada, você deve configurar o computador ao qual deseja se conectar para que ele permita conexões remotas. Para isso, nesse computador, com Windows, usando uma conta de administrador, abra o **menu Iniciar** e clique em **Configurações**. Na janela que aparece, abra a categoria **Sistema** e, depois, **Área de Trabalho Remota**. Por fim, ative-a:
@@ -65,27 +67,33 @@ Para se conectar de forma prática, selecione o protocolo **RDP**, digite o ende
 
 (observe que a interface do Remmina é traduzida, mas não completamente...)
 
-Na tela seguinte, informe seu **Nome de usuário** e **Senha** no computador acessado. Se necessário, informe também o **Domínio**. Opcionalmente, você também pode optar por **Salvar a senha**. Quando estiver pronto para iniciar a conexão, clique em **OK**:
+Na primeira conexão ao computador, o Remmina pergunta se deve confiar no certificado:
 
 {% include image.html src="/files/2020/04/remmina-03-pt.png" %}
 
+Responda que sim clicando em **Yes** (sim, em inglês).
+
+Na tela seguinte, informe seu **Nome de usuário** e **Senha** no computador acessado. Se necessário, informe também o **Domínio**. Opcionalmente, você também pode optar por **Salvar a senha**. Quando estiver pronto para iniciar a conexão, clique em **OK**:
+
+{% include image.html src="/files/2020/04/remmina-04-pt.png" %}
+
 Você verá a tela do computador acessado na janela do Remmina:
 
-{% include image.html src="/files/2020/04/remmina-04-pt.jpg" %}
+{% include image.html src="/files/2020/04/remmina-05-pt.jpg" %}
 
 A partir de agora, você está usando o computador, mas à distância, remotamente, sem estar sentado na frente dele. Cada clique e digitação são processados no computador remoto. Se ele é um _desktop_ Windows, a tela fica bloqueada durante o acesso remoto.
 
 Se você pretende acessar esse computador com frequência, considere cadastrar os dados da conexão, para que ela possa ser facilmente iniciada. Para isso, na tela inicial do Remmina, clique no botão de adicionar conexão, no canto superior esquerdo da janela:
 
-{% include image.html src="/files/2020/04/remmina-05-pt.jpg" %}
+{% include image.html src="/files/2020/04/remmina-06-pt.jpg" %}
 
 Na tela seguinte, dê um **Nome** para identificar a conexão, selecione **RDP** no campo **Protocolo** e informe os dados da conexão: **Servidor**, **Nome de usuário**, **User password** (senha) e **Domínio** (se necessário). Quando terminar, clique em **Save** (salvar):
 
-{% include image.html src="/files/2020/04/remmina-06-pt.png" %}
+{% include image.html src="/files/2020/04/remmina-07-pt.png" %}
 
 Feito isso, essa conexão passará a ser listada na tela inicial do Remmina:
 
-{% include image.html src="/files/2020/04/remmina-07-pt.png" %}
+{% include image.html src="/files/2020/04/remmina-08-pt.png" %}
 
 Quando quiser acessar remotamente esse computador, basta dar um duplo-clique nele.
 
@@ -150,6 +158,7 @@ Do you trust the above certificate? (Y/T/N)
 Digite `Y` (de _yes_, sim) e tecle **Enter**. Em seguida, digite a senha (_password_) e tecle **Enter**:
 
 ```
+Do you trust the above certificate? (Y/T/N) Y
 Password:
 [10:24:21:706] [9439:9440] [INFO][com.freerdp.gdi] - Local framebuffer format  PIXEL_FORMAT_BGRX32
 [10:24:21:706] [9439:9440] [INFO][com.freerdp.gdi] - Remote framebuffer format PIXEL_FORMAT_RGB16
@@ -183,7 +192,7 @@ $ xfreerdp /?
 
 O [rdesktop] foi o primeiro cliente RDP para Linux e por muitos anos foi o mais usado. Desde [novembro de 2019][rdesktop-group], o projeto está procurando um novo responsável para mantê-lo.
 
-Em contraste, o FreeRDP surgiu em [2009][freerdp-blog] como uma ramificação (um _fork_) do rdesktop, quando a [Microsoft] decidiu abrir as especificações do protocolo RDP, e com o tempo e o avanço do projeto, se tornou o cliente RDP padrão em outros sistemas que não o Windows.
+Em contraste, [o FreeRDP surgiu em 2009][freerdp-blog] como uma ramificação (um _fork_) do rdesktop, quando a [Microsoft] decidiu abrir as especificações do protocolo RDP, e com o tempo e o avanço do projeto, se tornou o cliente RDP padrão em sistemas onde um cliente oficial da Microsoft não está disponível.
 
 Eu apresento o rdesktop aqui mais a título de informação. A menos que você tenha um bom motivo para usá-lo, o recomendado é usar algum dos outros clientes, baseados no FreeRDP.
 
@@ -209,7 +218,7 @@ Failed to connect, CredSSP required by server.
 
 Em determinado momento, a Microsoft lançou uma atualização para o Windows que desde então tornou obrigatório por padrão o uso de Autenticação no Nível da Rede (do inglês [_Network Level Authentication_][nla] — NLA). O FreeRDP suporta NLA, ao passo em que o rdesktop, não. Ainda é possível usar o rdesktop para acesso remoto, contanto que você desabilite a NLA no computador a ser acessado. Note que isso torna a conexão menos segura.
 
-Para desabilitar a NLA, no computador a ser acessado, com Windows, usando uma conta de administrador, abra o **Painel de Controle**, clique na categoria **Sistema e Segurança**, depois no item **Sistema**. Na tela seguinte, clique no _link_ **Configurações remotas**, à esquerda. Na caixa de diálogo que aparece, selecione a aba **Remoto**. Por fim, desative a opção **Permitir conexões somente de computadores que estejam executando a Área de Trabalho Remota com Autenticação no Nível da Rede** (no final) e clique em **OK**:
+Para desabilitar a NLA no computador Windows a ser acessado, usando uma conta de administrador, abra o **Painel de Controle**, clique na categoria **Sistema e Segurança**, depois no item **Sistema**. Na tela seguinte, clique no _link_ **Configurações remotas**, à esquerda. Na caixa de diálogo que aparece, selecione a aba **Remoto**. Por fim, desative a opção **Permitir conexões somente de computadores que estejam executando a Área de Trabalho Remota com Autenticação no Nível da Rede** (no final) e clique em **OK**:
 
 {% include image.html src="/files/2020/04/windows-rdp-03-pt.jpg" %}
 
@@ -245,7 +254,14 @@ Ao tentar uma conexão RDP, o Vinagre apenas exibe uma tela preta, como eu repor
 
 Em algumas distribuições, a exemplo do [Debian], o Vinagre funciona. Creio que essas distribuições aplicaram alguma correção (_patch_) ao Vinagre.
 
-Provavelmente, na próxima versão do Linux Kamarada, eu devo substituir o Vinagre pelo Remmina, assim como fez a distribuição Ubuntu. Por isso, eu apresento o Vinagre aqui mais a título de informação também.
+Provavelmente, na [próxima versão do Linux Kamarada][kamarada-15.2-beta], eu devo substituir o Vinagre pelo Remmina, assim como fez a distribuição Ubuntu.
+
+Por isso, eu apresento o Vinagre aqui mais a título de informação também.
+
+{% capture beta %}
+Quando terminar de ler, dê uma conferida no [Linux Kamarada 15.2 Beta]({% post_url pt/2020-04-14-linux-kamarada-15.2-beta-deixa-o-seu-desktop-ainda-mais-verde %})!
+{% endcapture %}
+{% include update.html date="20/04/2020" message=beta %}
 
 O Vinagre já vem instalado por padrão no Linux Kamarada e no openSUSE, se você optou pelo ambiente GNOME, mas caso você precise ou queira instalá-lo, pode fazer isso com o comando:
 
@@ -257,7 +273,7 @@ Para iniciar o Vinagre, que aparece na lista de aplicativos como **Visualizador 
 
 {% include image.html src="/files/2020/04/vinagre-01-pt.jpg" %}
 
-Na tela inicial do **Vinagre**, clique em **Conectar**:
+Na tela inicial do Vinagre, clique em **Conectar**:
 
 {% include image.html src="/files/2020/04/vinagre-02-pt.jpg" %}
 
@@ -334,6 +350,7 @@ Como o acesso remoto a computadores com Windows 10 Home não é possível, para 
 [spice]:                    https://en.wikipedia.org/wiki/Simple_Protocol_for_Independent_Computing_Environments
 [opensuse-mailing-list]:    https://lists.opensuse.org/opensuse-factory/2020-01/msg00308.html
 [debian]:                   https://www.debian.org/
+[kamarada-15.2-beta]:       {% post_url pt/2020-04-14-linux-kamarada-15.2-beta-deixa-o-seu-desktop-ainda-mais-verde %}
 [opensuse-docs]:            https://doc.opensuse.org/documentation/leap/reference/html/book.opensuse.reference/cha-vnc.html
 [umbler]:                   https://blog.umbler.com/br/acesso-remoto-por-rdp/
 [virtualbox]:               {% post_url pt/2019-10-08-virtualbox-a-forma-mais-facil-de-conhecer-o-linux-sem-precisar-instala-lo %}
