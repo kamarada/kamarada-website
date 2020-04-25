@@ -17,7 +17,7 @@ The [Download] page has been updated to offer both releases for download:
 - 15.1 Final, which you can install on your home or work computer; and
 - 15.2 Beta, which you can test if you want to help in development.
 
-I want to emphasize that the version 15.2 is still in beta phase. Therefore, bugs are expected and this version is not ready for daily use. If you find a bug , please report it. Take a look at the [Help] page to see how to get in touch.
+I want to emphasize that the version 15.2 is still in beta phase. Therefore, bugs are expected and this version is not ready for daily use. If you find a bug, please report it. Take a look at the [Help] page to see how to get in touch.
 
 Of course, bugs can be found and fixed anytime, but the sooner the better!
 
