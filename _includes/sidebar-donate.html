@@ -1,0 +1,69 @@
+{% if page.lang == "pt" %}
+
+    <p>Você pode fazer uma doação única rapidamente usando o <a href='{{ site.data.t[page.lang].paypal_url }}' title='PayPal' target='_blank'>PayPal</a>:</p>
+    <p class="text-center">
+        <a href='{{ site.data.t[page.lang].paypal_url }}' title='PayPal' target='_blank'>
+            <img src='{{ "/assets/img/paypal-pt.gif" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='PayPal'>
+        </a>
+    </p>
+    <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top" class="text-center">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="8VDPEA3ADF222" />
+        <input type="hidden" name="business" value="linuxkamarada@gmail.com" />
+        <input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
+        <img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+    </form>-->
+
+    <p>Ou fazer doações mensais por meio de um desses serviços:</p>
+    <div class="row text-center">
+        <div class="col">
+            <a href='{{ site.padrim_url }}' title='Padrim' target='_blank'>
+                <p><img src='{{ "/assets/img/padrim.jpg" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='Padrim' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'></p>
+                <p>Padrim</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href='{{ site.apoiase_url }}' title='APOIA.se' target='_blank'>
+                <p><img src='{{ "/assets/img/apoiase.jpg" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='APOIA.se' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'></p>
+                <p>APOIA.se</p>
+            </a>
+        </div>
+    </div>
+
+    <a href="/pt/contribuir">Mais informações e outras formas de contribuir ›</a>
+
+{% else %}
+
+    <p>You can make a one-time donation quickly with <a href='{{ site.data.t[page.lang].paypal_url }}' title='PayPal' target='_blank'>PayPal</a>:</p>
+    <p class="text-center">
+        <a href='{{ site.data.t[page.lang].paypal_url }}' title='PayPal'>
+            <img src='{{ "/assets/img/paypal-en.gif" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='PayPal' target='_blank'>
+        </a>
+    </p>
+    <!--<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+        <input type="hidden" name="cmd" value="_s-xclick" />
+        <input type="hidden" name="hosted_button_id" value="6MZ4CVA2WXLKA" />
+        <input type="hidden" name="business" value="linuxkamarada@gmail.com" />
+        <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+        <img alt="" border="0" src="https://www.paypal.com/en_BR/i/scr/pixel.gif" width="1" height="1" />
+    </form>-->
+
+    <p>Or make monthly donations via one of these services:</p>
+    <div class="row text-center">
+        <div class="col">
+            <a href='{{ site.patreon_url }}' title='Patreon' target='_blank'>
+                <p><img src='{{ "/assets/img/patreon.png" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='Padrim' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'></p>
+                <p>Patreon</p>
+            </a>
+        </div>
+        <div class="col">
+            <a href='{{ site.kofi_url }}' title='Ko-fi' target='_blank'>
+                <p><img src='{{ "/assets/img/ko-fi.jpg" | prepend: site.baseurl | replace: "//", "/" | prepend: site.url }}' alt='APOIA.se' class='img-fluid img-thumbnail rounded-circle' style='width: 100px'></p>
+                <p>Ko-fi</p>
+            </a>
+        </div>
+    </div>
+
+    <a href="/en/contribute">More info and other ways to contribute ›</a>
+
+{% endif %}

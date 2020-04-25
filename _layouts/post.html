@@ -70,6 +70,8 @@ layout: default
             <!-- AddThis Sharing Buttons End -->
         {% endif %}
 
+        {% include buymeacoffee.html %}
+
         {% if site.disqus_shortname or site.data.t[page.lang].site.disqus_shortname %}
             {% if jekyll.environment == "production" %}
                 <!-- Disqus -->

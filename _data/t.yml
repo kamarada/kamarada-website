@@ -3,9 +3,12 @@ en:
     author: "Author"
     all_rights_reserved: "All rights reserved"
     based_on: "Based on"
+    buymeacoffee: "Would you buy me a coffee?"
+    buymeacoffee_desc: 'If you really liked it, if it was really helpful for you, is it worth a coffee? If you want, you can "buy me a coffee" with <a href="#" title="PayPal" target="_blank">PayPal</a> or <a href="#">contribute to the project in other ways</a>.'
     comments: "Comments"
     copy: "Copy"
     copied: "Copied!"
+    donate: "Donate"
     earlier: "Earlier"
     earliest: "Earliest"
     got_lost: "Got lost?"
@@ -14,6 +17,7 @@ en:
     language_tag: "en"
     later: "Later"
     latest: "Latest"
+    paypal_url: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J7F5GPWZX7CJA&no_shipping=1&lc=US"
     read_more: "Read more"
     search: "Search"
     search_form_above: "Please, use the search form above."
@@ -27,6 +31,9 @@ en:
             -
                 title: "Help"
                 url: "/en/help"
+            -
+                title: "Contribute"
+                url: "/en/contribute"
     subscribe_via_rss: "subscribe via RSS"
     toggle-drawer: "Toggle drawer"
     translation: "This page in English"
@@ -38,9 +45,12 @@ pt:
     author: "Autor"
     all_rights_reserved:  "Todos os direitos reservados"
     based_on: "Baseado no"
+    buymeacoffee: "Me paga um café?"
+    buymeacoffee_desc: 'Se você gostou muito, se foi muito útil pra você, será que vale um café? Se quiser, você pode "me pagar um café" pelo <a href="#" title="PayPal" target="_blank">PayPal</a> ou <a href="#">contribuir com o projeto de outras formas</a>.'
     comments: "Comentários"
     copy: "Copiar"
     copied: "Copiado!"
+    donate: "Doações"
     earlier: "Próxima"
     earliest: "Última"
     got_lost: "Se perdeu?"
@@ -49,6 +59,7 @@ pt:
     language_tag: "pt"
     later: "Anterior"
     latest: "Primeira"
+    paypal_url: "https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J7F5GPWZX7CJA&no_shipping=1&currency_code=BRL&lc=BR"
     read_more: "Leia mais"
     search: "Pesquisar"
     search_form_above: "Por favor, use a pesquisa no topo da página."
@@ -72,6 +83,9 @@ pt:
             -
                 title: "Ajuda"
                 url: "/pt/ajuda"
+            -
+                title: "Contribuir"
+                url: "/pt/contribuir"
         # addthis_profile_id: "ra-examplo123456789"
         disqus_shortname: "kamarada"
         # facebook:

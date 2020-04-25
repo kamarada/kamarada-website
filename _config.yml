@@ -378,6 +378,11 @@ youtube:
     # Default: not set (YouTube URL is not displayed)
     # name: "username"
 
+padrim_url: 'https://www.padrim.com.br/LinuxKamarada'
+apoiase_url: 'https://apoia.se/LinuxKamarada'
+patreon_url: 'https://www.patreon.com/bePatron?u=34177146'
+kofi_url: 'https://ko-fi.com/LinuxKamarada'
+
 #####################
 # YAML Front Matter #
 #####################
