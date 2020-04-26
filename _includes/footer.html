@@ -54,6 +54,7 @@
         $(document).ready(function(){
             {% if site.google.adsense.content_ad_unit_2 %}
                 var $ad = $('#content_ad_unit_2');
+                var $please_allow_ads = $('#content_ad_unit_2 + .please-allow-ads');
                 var $posts = $('.blog-post');
                 if (($posts.length > 1) || ($('.blog-archive-title').length > 0)) {
                     // Post listing
@@ -64,6 +65,7 @@
                         post = 2;
                     }
                     $posts.eq(post - 1).find('.blog-post-content .row').after($ad);
+                    $('#content_ad_unit_2').after($please_allow_ads);
                 } else {
                     // Page or post
                     var $paragraphs = $('.blog-post-content p').filter(function() {
@@ -77,14 +79,21 @@
                             paragraph = 1;
                         }
                         $paragraphs.eq(paragraph - 1).after($ad);
+                        $('#content_ad_unit_2').after($please_allow_ads);
                     } else {
                         $ad.remove();
+                        $please_allow_ads.remove();
                     }
                 }
             {% endif %}
-            $('.adsbygoogle').each(function(index, element){
-                adsbygoogle.push({});
-            });
+            if (window.canRunAds === undefined) {
+                // Ad blocker detected
+                $('.please-allow-ads').removeClass('d-none');
+            } else {
+                $('.adsbygoogle').each(function(index, element){
+                    adsbygoogle.push({});
+                });
+            }
         });
     </script>
     <!-- Google AdSense End -->
