@@ -83,11 +83,11 @@ Você verá a tela do computador acessado na janela do Remmina:
 
 A partir de agora, você está usando o computador, mas à distância, remotamente, sem estar sentado na frente dele. Cada clique e digitação são processados no computador remoto. Se ele é um _desktop_ Windows, a tela fica bloqueada durante o acesso remoto.
 
-Se você pretende acessar esse computador com frequência, considere cadastrar os dados da conexão, para que ela possa ser facilmente iniciada. Para isso, na tela inicial do Remmina, clique no botão de adicionar conexão, no canto superior esquerdo da janela:
+Se você pretende acessar esse computador com frequência, considere cadastrar as configurações da conexão, para que ela possa ser facilmente iniciada. Para isso, na tela inicial do Remmina, clique no botão de adicionar conexão, no canto superior esquerdo da janela:
 
 {% include image.html src="/files/2020/04/remmina-06-pt.jpg" %}
 
-Na tela seguinte, dê um **Nome** para identificar a conexão, selecione **RDP** no campo **Protocolo** e informe os dados da conexão: **Servidor**, **Nome de usuário**, **User password** (senha) e **Domínio** (se necessário). Quando terminar, clique em **Save** (salvar):
+Na tela seguinte, dê um **Nome** para identificar a conexão, selecione **RDP** no campo **Protocolo** e informe as configurações da conexão: **Servidor**, **Nome de usuário**, **User password** (senha) e **Domínio** (se necessário). Quando terminar, clique em **Save** (salvar):
 
 {% include image.html src="/files/2020/04/remmina-07-pt.png" %}
 
@@ -302,7 +302,7 @@ Nesse momento, você deveria ver a área de trabalho do computador remoto, que i
 
 {% include image.html src="/files/2020/04/vinagre-06-pt.png" %}
 
-Assim como o Remmina, o Vinagre permite que você memorize os dados dessa conexão, para conectar-se de novo de forma prática no futuro. Para isso, na tela da conexão, abra o menu **Marcadores** e clique em **Adicionar marcador**.
+Assim como o Remmina, o Vinagre permite que você memorize as configurações dessa conexão, para conectar-se de novo de forma prática no futuro. Para isso, na tela da conexão, abra o menu **Marcadores** e clique em **Adicionar marcador**.
 
 Criado o marcador, essa conexão passará a ser listada no menu **Marcadores**. Quando quiser acessar remotamente esse computador, basta abrir esse menu e clicar no marcador.
 

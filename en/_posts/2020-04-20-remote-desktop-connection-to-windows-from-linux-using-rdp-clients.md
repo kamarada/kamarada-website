@@ -81,11 +81,11 @@ From now on, you are using that computer, but remotely, without sitting in front
 
 If the remote computer is a Windows desktop, its screen is locked during remote access.
 
-If you are going to access this computer often, consider saving the connection data, so that remote access can be easily initiated. To do this, click the **Create a new connection profile** button on the top-left corner of the Remmina main window:
+If you are going to access this computer often, consider saving the connection settings, so that remote access can be easily initiated. To do this, click the **Create a new connection profile** button on the top-left corner of the Remmina main window:
 
 {% include image.html src="/files/2020/04/remmina-06-en.jpg" %}
 
-On the next screen, give a **Name** to identify the connection, select **RDP** in the **Protocol** field and enter the connection data: **Server**, **User name**, **User password** and **Domain** (if necessary). When you're finished, click **Save**:
+On the next screen, give a **Name** to identify the connection, select **RDP** in the **Protocol** field and enter the connection settings: **Server**, **User name**, **User password** and **Domain** (if necessary). When you're finished, click **Save**:
 
 {% include image.html src="/files/2020/04/remmina-07-en.png" %}
 
@@ -272,7 +272,7 @@ On the Vinagre main screen, click **Connect**:
 
 {% include image.html src="/files/2020/04/vinagre-02-en.jpg" %}
 
-Fill in the next screen fields with the connection data:
+Fill in the next screen fields with the connection settings:
 
 {% include image.html src="/files/2020/04/vinagre-03-en.jpg" %}
 
@@ -297,7 +297,7 @@ At this point, you should see the remote computer's desktop. You can notice it h
 
 {% include image.html src="/files/2020/04/vinagre-06-en.png" %}
 
-Like Remmina, Vinagre allows you to memorize the connection data, to easily connect to the same computer again in the future. To do this, during the remote access, open the **Bookmarks** menu and click **Add Bookmark**.
+Like Remmina, Vinagre allows you to memorize the connection settings, to easily connect to the same computer again in the future. To do this, during the remote access, open the **Bookmarks** menu and click **Add Bookmark**.
 
 After you created the bookmark, it will now be listed on the **Bookmarks** menu. When you want to remotely access this computer again, just open this menu and click the bookmark.
 

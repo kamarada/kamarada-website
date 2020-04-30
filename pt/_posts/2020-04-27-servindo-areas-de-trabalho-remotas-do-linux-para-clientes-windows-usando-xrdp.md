@@ -6,13 +6,13 @@ image: '/files/2020/04/rdp-server.jpg'
 nickname: 'rdp-server'
 ---
 
-No [_post_ anterior][rdp-client], vimos como usar clientes RDP no [Linux] para acessar áreas de trabalho remotas do [Windows] ou [Terminal Services][ts] do [Windows Server][windows-server]. Mas se você precisa disponibilizar áreas de trabalho remotas do Linux para clientes com Windows (uma espécie de "Terminal Service às avessas"), é possível fazer isso?
+No [_post_ anterior][rdp-client], vimos como usar clientes RDP no [Linux] para acessar áreas de trabalho remotas do [Windows] ou [Terminal Services][ts] do [Windows Server][windows-server]. Mas se você precisa disponibilizar áreas de trabalho remotas do Linux para clientes com Windows (uma espécie de "Terminal Services do Linux"), é possível fazer isso?
 
 {% include image.html src="/files/2020/04/rdp-server.jpg" %}
 
 É possível sim! Hoje você verá como fazer no [Linux Kamarada][kamarada-15.1] e no [openSUSE] usando o XRDP.
 
-O [XRDP] é um servidor de áreas de trabalho remotas para Linux baseado no protocolo [RDP] (_Remote Desktop Protocol_, “protocolo de área de trabalho remota”). Esse é o mesmo protocolo usado pelo aplicativo **Conexão de Área de Trabalho Remota** do Windows e pelos clientes RDP que vimos no [_post_ anterior][rdp-client].
+O [XRDP] é um servidor de áreas de trabalho remotas para Linux baseado no protocolo [RDP] (_Remote Desktop Protocol_, "protocolo de área de trabalho remota"). Esse é o mesmo protocolo usado pelo aplicativo [**Conexão de Área de Trabalho Remota**][rdc] do Windows e pelos clientes RDP que vimos no [_post_ anterior][rdp-client].
 
 ## Instalando o XRDP
 
@@ -37,7 +37,7 @@ Você também pode iniciar o XRDP imediatamente, não precisa reiniciar o servid
 
 ## Instalando o VNC
 
-Para prover conexão via RDP, um protocolo nativo do Windows, o XRDP utiliza nos bastidores o [VNC], um protocolo de acesso remoto mais comum no Linux. Por isso, antes de usar o XRDP propriamente dito, devemos instalar o VNC, o que é fácil fazer no Linux Kamarada e no openSUSE por meio do [Centro de controle do YaST][yast].
+Para prover conexões via RDP, um protocolo nativo do Windows, o XRDP utiliza nos bastidores o [VNC], um protocolo de acesso remoto mais comum no Linux. Por isso, antes de usar o XRDP propriamente dito, devemos instalar o VNC, o que é fácil fazer no Linux Kamarada e no openSUSE por meio do [Centro de controle do YaST][yast].
 
 Abra o Centro de controle do YaST. Para fazer isso no Linux Kamarada, abra o menu **Atividades**, no canto superior esquerdo da tela, digite `yast` e clique no ícone correspondente:
 
@@ -88,7 +88,7 @@ Note que você só precisa fazer essa configuração no servidor. Se ela fosse n
 
 ## Encerrando a sessão no servidor
 
-Enquanto usa a área de trabalho remota do Windows, você não pode usar o servidor e acessa-lo remotamente ao mesmo tempo: se você inicia um acesso remoto, a tela no servidor é bloqueada. Bem assim, se você faz _logon_ no servidor, o acesso remoto é interrompido.
+Enquanto usa a área de trabalho remota do Windows, você não pode usar o servidor (sentando-se em frente a ele) e acessa-lo remotamente ao mesmo tempo: se você inicia um acesso remoto, a tela no servidor é bloqueada. Bem assim, se você faz _logon_ no servidor, o acesso remoto é interrompido.
 
 O XRDP funciona de forma semelhante, com a diferença que o encerramento da sessão não é feito de forma automática, mas manual. Antes de iniciar um acesso remoto a um servidor XRDP, você deve encerrar sua sessão nesse servidor.
 
@@ -98,7 +98,7 @@ Para encerrar sua sessão no Linux Kamarada, abra o **menu do sistema**, no cant
 
 ## Acesso remoto a partir do Windows
 
-No computador com Windows a partir do qual você fará o acesso remoto, abra o **menu Iniciar**, no canto inferior esquerdo da tela, digite `conexao` e clique no ícone do aplicativo **Conexão de Área de Trabalho Remota**:
+No computador com Windows a partir do qual você fará o acesso remoto, abra o **menu Iniciar**, digite `conexao` e clique no ícone do aplicativo **Conexão de Área de Trabalho Remota**:
 
 {% include image.html src="/files/2020/04/rdp-server-07-pt.jpg" %}
 
@@ -112,7 +112,7 @@ O aplicativo pergunta se pode confiar na conexão com o computador remoto. Marqu
 
 O cliente de área de trabalho remota do Windows mostra a tela de _login_ do XRDP:
 
-{% include image.html src="/files/2020/04/rdp-server-10-pt.png" %}
+{% include image.html src="/files/2020/04/rdp-server-10.png" %}
 
 Digite seu nome de usuário (_username_) e senha (_password_) no servidor Linux acessado e clique em **OK**.
 
@@ -126,21 +126,25 @@ Quando não precisar mais do acesso remoto, lembre-se de encerrar sua sessão no
 
 ## Dica: criando um atalho para a conexão
 
-Se pretende acessar esse servidor Linux com frequência, você pode, para a sua conveniência, salvar os dados da conexão em algum local de fácil acesso, como a Área de Trabalho.
+Se pretende acessar esse servidor Linux com frequência, você pode, para a sua conveniência, salvar as configurações da conexão em algum local de fácil acesso, como a Área de Trabalho.
 
 Para isso, na tela inicial do aplicativo Conexão de Área de Trabalho Remota, clique em **Mostrar Opções**. Digite o endereço IP ou nome de rede do **Computador** remoto com Linux. Digite também seu **Nome de usuário** nesse computador. Opcionalmente, marque a opção **Permitir salvar minhas credenciais** se você também deseja salvar a senha. Por fim, clique em **Salvar como**:
 
 {% include image.html src="/files/2020/04/rdp-server-12-pt.png" %}
 
-O aplicativo pergunta se pode confiar na conexão com o computador remoto. Marque a opção **Não perguntar novamente sobre conexões com este computador** e clique em **Conectar**:
+Escolha um local e um nome para o arquivo e salve-o.
+
+Em seguida, clique em **Conectar**. Vamos fazer uma conexão apenas para salvar a senha.
+
+O aplicativo pergunta se você confia conectar com o computador remoto. Marque a opção **Não perguntar novamente sobre conexões com este computador** e clique em **Conectar**:
 
 {% include image.html src="/files/2020/04/rdp-server-13-pt.png" %}
 
-Se você optou por salvar a senha, digite-a na caixa de diálogo seguinte, marque a opção **Lembrar-me** e clique em **OK**:
+Se você optou por salvar a senha, digite-a na caixa de diálogo seguinte, certifique-se de que a opção **Lembrar-me** esteja marcada (por padrão, está) e clique em **OK**:
 
 {% include image.html src="/files/2020/04/rdp-server-14-pt.png" %}
 
-Escolha um local e um nome para o arquivo e salve-o.
+Agora você terá acesso à área de trabalho remota. Apenas encerre sua sessão.
 
 Pronto! Feito isso, para se conectar novamente a esse servidor, é só dar duplo-clique no arquivo:
 
@@ -148,7 +152,7 @@ Pronto! Feito isso, para se conectar novamente a esse servidor, é só dar duplo
 
 ## Acesso remoto a partir do Linux
 
-Se seu computador com Linux possui um cliente RDP instalado, pode acessar remotamente outro computador ou servidor com Linux que serve áreas de trabalho pelo XRDP:
+Se seu computador com Linux possui um cliente RDP instalado, pode acessar remotamente outro computador ou servidor com Linux rodando o XRDP — ou seja, uma conexão RDP Linux para Linux:
 
 {% include image.html src="/files/2020/04/rdp-server-16-pt.jpg" %}
 
@@ -158,9 +162,9 @@ Para mais informações sobre os clientes RDP existentes para Linux, consulte o 
 
 ## Conclusão
 
-Como vimos, o XRDP é uma forma prática de prover acesso remoto ao Linux a partir do Windows, uma vez que não é necessário instalar _software_ adicional no computador com Windows, que já está pronto para atuar como cliente.
+Como vimos, o XRDP é uma forma prática de prover acesso remoto ao Linux a partir do Windows, uma vez que não é necessário instalar _software_ adicional no Windows, que já possui um cliente RDP nativo.
 
-De certa forma, é também uma forma prática de prover acesso remoto entre computadores com Linux. Basta instalar no servidor o XRDP e nos clientes, um dos programas listados no [_post_ anterior][rdp-client].
+De certa forma, é também uma forma prática de prover acesso remoto de Linux para Linux. Basta instalar no servidor o XRDP e nos clientes, um dos clientes RDP listados no [_post_ anterior][rdp-client].
 
 ## Referências
 
@@ -171,7 +175,7 @@ De certa forma, é também uma forma prática de prover acesso remoto entre comp
 - [How To Save Password in A Remote Desktop Connection in Windows 8 - Next of Windows][nextofwindows]
 - [Virtual Desktop Infrastructure by xrdp - openSUSE - YouTube][youtube]
 
-[rdp-client]:       {% post_url pt/2020-04-27-servindo-areas-de-trabalho-remotas-do-linux-para-clientes-windows-usando-xrdp %}
+[rdp-client]:       {% post_url pt/2020-04-11-conexao-de-area-de-trabalho-remota-do-windows-no-linux-com-clientes-rdp %}
 [linux]:            https://www.vivaolinux.com.br/linux/
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [ts]:               https://pt.wikipedia.org/wiki/Remote_Desktop_Services
@@ -180,6 +184,7 @@ De certa forma, é também uma forma prática de prover acesso remoto entre comp
 [opensuse]:         https://www.opensuse.org/
 [xrdp]:             http://xrdp.org/
 [rdp]:              https://pt.wikipedia.org/wiki/Remote_Desktop_Protocol
+[rdc]:              https://support.microsoft.com/pt-br/help/4028379/windows-10-how-to-use-remote-desktop
 [vnc]:              https://pt.wikipedia.org/wiki/Virtual_Network_Computing
 [yast]:             http://yast.opensuse.org/
 [firewalld]:        https://firewalld.org/
