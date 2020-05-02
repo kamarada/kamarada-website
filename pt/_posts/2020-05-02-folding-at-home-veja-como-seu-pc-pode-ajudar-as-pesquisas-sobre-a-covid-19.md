@@ -258,13 +258,13 @@ Se quiser, você pode rotacionar a imagem 3D usando o _mouse_.
 [tinker]:           http://dasher.wustl.edu
 [amber]:            http://ambermd.org/
 [mpich]:            http://www-unix.mcs.anl.gov/mpi/mpich/
-[kamarada-15.1]:    TODO
-[opensuse]:         TODO
+[kamarada-15.1]:    {% post_url pt/2020-02-24-kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia %}
+[opensuse]:         https://www.opensuse.org/
 [redhat]:           https://www.redhat.com/pt-br/technologies/linux-platforms/enterprise-linux
 [centos]:           https://www.centos.org/
 [fedora]:           https://getfedora.org/pt_BR/
 [bzip2]:            http://www.bzip.org/
-[gpg]:              TODO
+[gpg]:              {% post_url pt/2018-10-06-verificacao-de-integridade-e-autenticidade-com-sha-256-e-gpg %}
 [htop]:             http://hisham.hm/htop/
 [gnome]:            https://br.gnome.org/
 [techtudo]:         https://www.techtudo.com.br/dicas-e-tutoriais/2020/03/coronavirus-saiba-como-usar-seu-pc-para-combater-a-pandemia.ghtml
