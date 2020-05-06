@@ -6,7 +6,7 @@ image: '/files/2020/05/fah.jpg'
 nickname: 'fah'
 ---
 
-No mundo todo, muitas pessoas estão dando seu melhor para combater a atual pandemia da [Covid-19] das mais diferentes maneiras: seja [fabricando viseiras protetoras com impressoras 3D][face-shields], [máscaras caseiras de pano][face-masks] ou [ventiladores alternativos mais baratos][ventilator], a quantidade de ideias e colaborações tem sido impressionante e motivante. Nas universidades, os pesquisadores tentam modelar e entender o coronavírus, tarefa que envolve muitas contas e processamento, e que também tem recebido ajuda de voluntários.
+No mundo todo, muitas pessoas estão dando seu melhor para combater a atual pandemia da [Covid-19] das mais diferentes (e criativas) maneiras: seja [fabricando viseiras protetoras com impressoras 3D][face-shields], [máscaras caseiras de pano][face-masks] ou [ventiladores alternativos mais baratos][ventilator], a quantidade de ideias e colaborações tem sido impressionante e motivante. Nas universidades, os pesquisadores tentam modelar e entender o coronavírus, tarefa que envolve muitas contas e processamento, e que também tem recebido ajuda de voluntários.
 
 Nesse sentido, o projeto mais conhecido é o [**Folding@home**][fah], também chamado abreviadamente **F@h** ou **FAH**. Ele disponibiliza um programa em seu _site_ que qualquer pessoa pode baixar e instalar em seu computador para contribuir com a pesquisa doando parte do seu poder computacional. O programa baixa uma tarefa para fazer, trabalha nessa tarefa e envia de volta o resultado, contribuindo para a tarefa maior, que é modelar o vírus.
 
@@ -18,7 +18,7 @@ O projeto Folding@home foi criado em 2000 pelo [Pande Lab][pandelab] da [Univers
 
 O projeto já produziu descobertas impressionantes, relatadas em [224 artigos científicos][fah-papers], que incluem trabalhos sobre bactérias resistentes a antibióticos e proteínas do [vírus Ebola][ebola].
 
-Em janeiro de 2020, o Folding@home contava com a colaboração de 30 mil usuários, o que já era bom, mas saltou para 400 mil em março, com o interesse das pessoas em ajudar as pesquisas sobre o coronavírus. Boa parte dessas pessoas embarcou no projeto junto com a [NVIDIA], que o divulgou em suas redes sociais. No pico do seu [desempenho][fah-stats], o Folding@home atingiu a marca de 1,5 [exaFLOPs], tornando-o sete vezes mais rápido que [o supercomputador mais rápido do mundo atualmente, o IBM Summit][summit].
+Em janeiro de 2020, o Folding@home contava com a colaboração de 30 mil usuários, o que já era bom, mas rapidamente saltou para 400 mil em março, com o interesse das pessoas em ajudar as pesquisas sobre o coronavírus. Muitas dessas pessoas embarcaram no projeto junto com a [NVIDIA], que o divulgou em suas redes sociais. No pico do seu [desempenho][fah-stats], o Folding@home atingiu a marca de 1,5 [exaFLOPs], tornando-o sete vezes mais rápido que [o supercomputador mais rápido do mundo atualmente, o IBM Summit][summit].
 
 <div class="d-flex justify-content-center">
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">PC Gamers, let’s put those GPUs to work. <br><br>Join us and our friends at <a href="https://twitter.com/OfficialPCMR?ref_src=twsrc%5Etfw">@OfficialPCMR</a> in supporting folding@home and donating unused GPU computing power to fight against COVID-19! <br><br>Learn more → <a href="https://t.co/EQE4u7xTZT">https://t.co/EQE4u7xTZT</a> <a href="https://t.co/uO0ZCq8PEv">pic.twitter.com/uO0ZCq8PEv</a></p>&mdash; NVIDIA GeForce (@NVIDIAGeForce) <a href="https://twitter.com/NVIDIAGeForce/status/1238496311776653312?ref_src=twsrc%5Etfw">March 13, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -32,9 +32,9 @@ Observe que as tarefas fazem uso intensivo do processador, o que pode esquentar 
 
 ## Esse programa é código aberto?
 
-Talvez isso seja importante para você, por isso acho que vale a pena observar: o programa do Folding@home **não** é código aberto, embora use componentes de código aberto, dentre os quais são [mencionados][fah-opensource] pelo _site_ do projeto: [Gromacs], [TINKER], [Amber] e [MPICH]. O projeto afirma que quaisquer modificações que faz nesses componentes são contribuídas de volta.
+Talvez isso seja importante para você, por isso acho que vale a pena observar: o programa do Folding@home **não** é [código aberto][opensource], embora use componentes de código aberto, dentre os quais são [mencionados][fah-opensource] pelo _site_ do projeto: [Gromacs], [TINKER], [Amber] e [MPICH]. O projeto afirma que quaisquer modificações que faz nesses componentes são contribuídas de volta.
 
-A [justificativa][fah-faq] do projeto para não divulgar o código-fonte do programa é a preocupação com a integridade científica, uma vez que pessoas modificando o programa poderiam levar à produção de resultados científicos errados, o que tornaria todo o projeto inútil.
+A [justificativa][fah-faq] do projeto para não divulgar o código-fonte do programa é a preocupação com a integridade científica, uma vez que pessoas mal intencionadas poderiam modificar o código para produzir resultados científicos errados, o que tornaria todo o projeto inútil.
 
 Não vou discutir se concordo ou não, apenas repassei a informação como encontrei no _site_ do projeto.
 
@@ -82,7 +82,7 @@ Problema: nada fornece bzip2-libs que é necessário a fahclient-7.6.9-1.x86_64
 Escolha uma das opções acima pelo número ou cancele [1/2/c/d/?] (c):
 ```
 
-Lembre-se que o pacote RPM do **fahclient** não foi feito para o openSUSE. Nessa distribuição, as bibliotecas do **[bzip2]** estão no pacote **libbz2-1**, que já vem instalado por padrão. Portanto, digite `2` (que equivale a ignorar a dependência não satisfeita) e pressione **Enter**:
+Lembre-se que esse pacote RPM não foi feito para o openSUSE, que fornece as bibliotecas do **[bzip2]** em um pacote chamado **libbz2-1**, que já vem instalado por padrão. Portanto, digite `2` (que aqui equivale a ignorar a dependência não satisfeita) e pressione **Enter**:
 
 ```
 Escolha uma das opções acima pelo número ou cancele [1/2/c/d/?] (c): 2
@@ -98,9 +98,9 @@ adicionais serão utilizados.
 Continuar? [s/n/v/...? exibe todas as opções] (s):
 ```
 
-Tecle **Enter** para aceitar a opção padrão (`s`, que equivale a "sim, continuar").
+Tecle **Enter** para aceitar a opção padrão (`s`, que aqui significa "sim, continuar").
 
-Na sequência, o **zypper** se depara com outro problema: o pacote não está assinado e, por isso, não é possível fazer a [verificação de autenticidade][gpg]:
+Na sequência, o **zypper** se depara com outro problema. O pacote não está assinado e, por isso, não é possível fazer a [verificação de autenticidade][gpg]:
 
 ```
 Baixando pacote fahclient-7.6.9-1.x86_64
@@ -140,7 +140,7 @@ usage:
 Starting fahclient ... FAIL
 ```
 
-Ao final, o **zypper** mostra mais algumas mensagens de erro. Mais uma vez, lembremos que esse pacote RPM não foi feito para o openSUSE. Embora uma dessas mensagens de erro indique que não conseguiu iniciar o cliente, isso não procede.
+O **zypper** conclui a instalação, mas mostra mais algumas mensagens de erro. Mais uma vez, lembremos que esse pacote RPM não foi feito para o openSUSE. Embora uma dessas mensagens de erro indique que não conseguiu iniciar o cliente, isso não procede.
 
 Se você usar o comando **[htop]**, perceberá que não só o cliente está em execução, como em pouco tempo põe seu processador pra trabalhar, atingindo 100% de uso:
 
@@ -200,7 +200,7 @@ Uma vez instalado, para iniciar o FAHControl, se você usa o ambiente [GNOME], c
 
 Note que esse aplicativo apresenta as mesmas opções da interface _web_ e mais:
 
-{% include image.html src="/files/2020/05/fahcontrol-02.jpg" %}
+{% include image.html src="/files/2020/05/fahcontrol-02-pt.jpg" %}
 
 Se precisar, você pode pausar o trabalho do cliente do FAH a qualquer momento usando o botão **Pause**, ou para-lo completamente usando o botão **Finish**. Em ambos os casos, para retomar o trabalho, clique em **Fold**.
 
@@ -241,18 +241,19 @@ Se quiser, você pode rotacionar a imagem 3D usando o _mouse_.
 [pandelab]:         https://www.pandelab.org/
 [stanford]:         https://www.stanford.edu/
 [pande]:            https://profiles.stanford.edu/vijay-pande
-[alzheimer]:        https://pt.wikipedia.org/wiki/Doen%C3%A7a_de_Alzheimer
-[cancer]:           https://pt.wikipedia.org/wiki/C%C3%A2ncer
+[alzheimer]:        https://pt.wikipedia.org/wiki/Doença_de_Alzheimer
+[cancer]:           https://pt.wikipedia.org/wiki/Câncer
 [bowman]:           https://bowmanlab.biochem.wustl.edu/
 [wustl]:            https://wustl.edu/
 [fah-papers]:       https://foldingathome.org/papers-results/
-[ebola]:            https://pt.wikipedia.org/wiki/V%C3%ADrus_Ebola
+[ebola]:            https://pt.wikipedia.org/wiki/Vírus_Ebola
 [nvidia]:           https://www.nvidia.com/
 [fah-stats]:        https://stats.foldingathome.org/os
 [exaflops]:         https://pt.wikipedia.org/wiki/FLOPS
 [summit]:           https://www.techtudo.com.br/noticias/2018/06/ibm-cria-summit-supercomputador-mais-rapido-do-mundo-de-200-petaflops.ghtml
 [fah-faq]:          https://foldingathome.org/support/faq/project-details/
 [amd]:              https://www.amd.com/
+[opensource]:       https://pt.wikipedia.org/wiki/Software_de_código_aberto
 [fah-opensource]:   https://foldingathome.org/support/faq/opensource/
 [gromacs]:          http://www.gromacs.org
 [tinker]:           http://dasher.wustl.edu

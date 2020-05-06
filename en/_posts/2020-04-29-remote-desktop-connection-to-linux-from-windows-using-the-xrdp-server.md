@@ -1,7 +1,7 @@
 ---
+date: '2020-04-29 21:25:00 GMT-3'
 layout: post
 title: 'Remote Desktop Connection to Linux from Windows using the XRDP server'
-date: 2020-04-30 00:25:00
 image: '/files/2020/04/rdp-server.jpg'
 nickname: 'rdp-server'
 ---
