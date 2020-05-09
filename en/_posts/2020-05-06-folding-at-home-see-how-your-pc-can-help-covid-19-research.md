@@ -186,6 +186,36 @@ Note that closing this browser tab does not stop FAHClient's work, which runs in
 
 That's it, congratulations! You are already contributing to researches. If you want, you can stop here, the following steps are optional. Follow me the curious ones!
 
+{% include update.html date="May 09, 2020" message="Next, I added some lines talking about identity and teams (optional)." %}
+
+By default, you contribute to the project anonymously, you don't need to register. But, optionally, you can choose a username for yourself, as well as indicate that you belong to a team. If you want to do this, in your FAHClient's web interface, click the **Change Identity** link.
+
+Fill in the **Name** and the **Team Number** fields with a username — it's recommended that you stick to just letters, numbers and underscore — and the number of the team you have joined. Examples of teams include:
+
+- [openSUSE Users team][team-opensuse] \#35676 (at the time of writing, position 389 in the [team ranking][team-stats], among almost 253 thousand registered teams)
+- [Team SUSE][team-suse] \#12841 (position 212 in the team ranking)
+
+{% include image.html src="/files/2020/05/fahclient-04.jpg" %}
+
+Now your name and team appear on the web interface and you start earning points for you and your team as your computer advances in tasks:
+
+{% include image.html src="/files/2020/05/fahclient-05.jpg" %}
+
+Maybe these points cannot be exchanged for any concrete reward, but they encourage competition between teams to see which one contributes the most to the project.
+
+The searchable team ranking is available on the project's [Stats][team-stats] page:
+
+{% include image.html src="/files/2020/05/fahclient-06.jpg" %}
+
+It caught my attention that [Petrobras] (a Brazilian oil company) has a [team][team-petrobras], which is 59th in the team ranking. Googling, I found out that [two of the company's high performance computers are contributing to  Folding@home][petrobras-fah]. Points to Brazil!
+
+People of the [openSUSE] project and the [SUSE] company are committed to helping the Folding@home project and combating Covid-19. If you want more information, see:
+
+- [Folding@home - openSUSE Wiki][opensuse-wiki]
+- [SUSE's Commitment to Combat COVID-19 - SUSE Blog][suse-covid]
+- [Folding@home with openSUSE to assist with COVID-19 - openSUSE - reddit][reddit]
+- [TUMBLEWEED FAH ( Folding@Home) packages for TW - openSUSE Forums][opensuse-forums]
+
 ## FAHControl
 
 You can install the **fahcontrol** package the same way:
@@ -269,6 +299,17 @@ If you want, you can rotate the protein 3D image using the mouse.
 [gpg]:              {% post_url en/2018-11-08-verifying-data-integrity-and-authenticity-using-sha-256-and-gpg %}
 [htop]:             http://hisham.hm/htop/
 [gnome]:            https://www.gnome.org/
+[team-opensuse]:    https://stats.foldingathome.org/team/35676
+[team-stats]:       https://stats.foldingathome.org/teams
+[team-suse]:        https://stats.foldingathome.org/team/12841
+[petrobras]:        https://petrobras.com.br/
+[team-petrobras]:   https://stats.foldingathome.org/team/247463
+[petrobras-fah]:    https://tecnoblog.net/331130/petrobras-supercomputadores-pesquisas-folding-home-covid-19/
+[suse]:             https://www.suse.com/pt-br/
+[opensuse-wiki]:    https://en.opensuse.org/Folding@Home
+[suse-covid]:       https://suse.com/c/suses-commitment-to-combat-covid-19/
+[reddit]:           https://www.reddit.com/r/openSUSE/comments/fsoh6h/foldinghome_with_opensuse_to_assist_with_covid19/
+[opensuse-forums]:  https://forums.opensuse.org/showthread.php/539432-FAH-(-Folding-Home)-packages-for-TW
 [medium]:           https://medium.com/syncedreview/folding-home-how-your-pc-can-help-in-the-fight-against-covid-19-69ed30a5a144
 [wikipedia]:        https://en.wikipedia.org/wiki/Folding@home
 [hackaday]:         https://hackaday.com/2020/04/14/so-what-is-protein-folding-anyway/

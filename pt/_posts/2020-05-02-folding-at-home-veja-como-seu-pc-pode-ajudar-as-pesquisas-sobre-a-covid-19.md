@@ -186,6 +186,36 @@ Note que fechar essa aba do navegador não interrompe o trabalho do cliente do F
 
 Você já está contribuindo com o trabalho dos pesquisadores, parabéns! Se quiser, pode parar por aqui, os passos seguintes são opcionais. Sigam-me os curiosos!
 
+{% include update.html date="09/05/2020" message="A seguir, adicionei algumas linhas em que falo sobre identidade e equipes (opcional)." %}
+
+Por padrão, você contribui para o projeto de forma anônima, não precisa se cadastrar. Mas, opcionalmente, você pode definir um nome de usuário para si, assim como indicar que pertence a um time (_team_). Caso queira fazer isso, na interface _web_ do cliente do FAH, clique no _link_ **Change Identity** (mudar identidade).
+
+Em **Name** (nome), informe um nome de usuário — você pode usar letras, números e _underline_ ( `_` ) — e em **Team Number** informe o número do seu time, depois clique em **Save** (salvar). Exemplos de times:
+
+- [Time de usuários do openSUSE][team-opensuse]: número 35676 (no momento da escrita, posição 389 no [_ranking_ de times][team-stats], dentre quase 253 mil times cadastrados)
+- [Time SUSE][team-suse]: número 12841 (posição 212 no _ranking_)
+
+{% include image.html src="/files/2020/05/fahclient-04.jpg" %}
+
+Feito isso, seu nome e time passam a aparecer na interface _web_, assim como você começa a juntar pontos para você e seu time à medida em que seu computador avança nas tarefas:
+
+{% include image.html src="/files/2020/05/fahclient-05.jpg" %}
+
+Creio que esses pontos não podem ser trocados por alguma recompensa concreta, mas estimulam uma competição entre os times pra ver qual contribui mais para o projeto.
+
+O _site_ do projeto disponibiliza o [_ranking_ dos times][team-stats], no qual você também pode pesquisar por times existentes:
+
+{% include image.html src="/files/2020/05/fahclient-06.jpg" %}
+
+Me chamou a atenção que a [Petrobras] possui um [time][team-petrobras], que está em 59º no _ranking_. Pesquisando, descobri que [a empresa brasileira contribui com dois de seus supercomputadores para o Folding@home][petrobras-fah]. É do Brasil!
+
+As pessoas do projeto [openSUSE] e da empresa [SUSE] estão empenhadas em ajudar o projeto Folding@home e combater a Covid-19. Se quiser mais informações, veja:
+
+- [Folding@home - openSUSE Wiki][opensuse-wiki]
+- [SUSE's Commitment to Combat COVID-19 - SUSE Blog][suse-covid]
+- [Folding@home with openSUSE to assist with COVID-19 - openSUSE - reddit][reddit]
+- [TUMBLEWEED FAH ( Folding@Home) packages for TW - openSUSE Forums][opensuse-forums]
+
 ## Controle do Folding@home (FAHControl)
 
 A instalação do pacote **fahcontrol** é semelhante:
@@ -268,6 +298,17 @@ Se quiser, você pode rotacionar a imagem 3D usando o _mouse_.
 [gpg]:              {% post_url pt/2018-10-06-verificacao-de-integridade-e-autenticidade-com-sha-256-e-gpg %}
 [htop]:             http://hisham.hm/htop/
 [gnome]:            https://br.gnome.org/
+[team-opensuse]:    https://stats.foldingathome.org/team/35676
+[team-stats]:       https://stats.foldingathome.org/teams
+[team-suse]:        https://stats.foldingathome.org/team/12841
+[petrobras]:        https://petrobras.com.br/
+[team-petrobras]:   https://stats.foldingathome.org/team/247463
+[petrobras-fah]:    https://tecnoblog.net/331130/petrobras-supercomputadores-pesquisas-folding-home-covid-19/
+[suse]:             https://www.suse.com/pt-br/
+[opensuse-wiki]:    https://en.opensuse.org/Folding@Home
+[suse-covid]:       https://suse.com/c/suses-commitment-to-combat-covid-19/
+[reddit]:           https://www.reddit.com/r/openSUSE/comments/fsoh6h/foldinghome_with_opensuse_to_assist_with_covid19/
+[opensuse-forums]:  https://forums.opensuse.org/showthread.php/539432-FAH-(-Folding-Home)-packages-for-TW
 [techtudo]:         https://www.techtudo.com.br/dicas-e-tutoriais/2020/03/coronavirus-saiba-como-usar-seu-pc-para-combater-a-pandemia.ghtml
 [wikipedia]:        https://en.wikipedia.org/wiki/Folding@home
 [hackaday]:         https://hackaday.com/2020/04/14/so-what-is-protein-folding-anyway/
