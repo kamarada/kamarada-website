@@ -142,7 +142,7 @@ Para facilitar salvar e retomar, você pode criar atalhos do teclado para cada m
 
 Recomendo definir **Shift + F1** para salvar na memória 0 e **F1** para retomar da memória 0 e de forma análoga para as demais (para a memória 1, **Shift + F2** e **F2**, e assim sucessivamente).
 
-**Dica:** se você usa um *joystick* USB parecido com um *joystick* de [Playstation], deve ter notado que sobraram botões na configuração (ele tem mais botões que o *joystick* do Super Nintendo). Você pode associar os botões **L2** e **R2** a salvar e retomar um estado.
+**Dica:** se você usa um *joystick* USB parecido com um *joystick* de [PlayStation], deve ter notado que sobraram botões na configuração (ele tem mais botões que o *joystick* do Super Nintendo). Você pode associar os botões **L2** e **R2** a salvar e retomar um estado.
 
 ## Tela cheia
 
