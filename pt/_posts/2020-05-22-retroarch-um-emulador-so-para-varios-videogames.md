@@ -44,6 +44,8 @@ O RetroArch não vem com ROMs. Também não há ROMs para _download_ aqui no _si
 
 Experimente pesquisar, por exemplo, por `roms de mega drive`.
 
+**Dica:** se você baixar uma ROM compactada como um arquivo ZIP, não é necessário descompacta-la, o RetroArch consegue abri-la como está.
+
 ## Instalando o RetroArch
 
 Você pode instalar o RetroArch no openSUSE de duas formas: pela interface gráfica, usando a instalação com 1 clique (*1-Click Install*), ou pelo terminal, usando o gerenciador de pacotes **zypper**. Escolha a que prefere.
@@ -92,15 +94,15 @@ Se for jogar com um controle, conecte-o. O RetroArch deve detecta-lo:
 
 {% include image.html src="/files/2020/05/retroarch-joystick-detected-pt.jpg" %}
 
-O RetroArch também é capaz de configurar automaticamente a maioria dos controles. Possivelmente, seu controle já está pronto pra uso e você já pode sair jogando.
+O RetroArch também é capaz de configurar automaticamente a maioria dos controles: você conecta seu controle e ele simplesmente funciona, como em um _videogame_ de verdade. Possivelmente, seu controle já está pronto pra uso e você já pode sair jogando.
 
 Para navegar pelo menu do RetroArch, você pode usar o teclado, o _mouse_ ou o controle que acabou de conectar. Para usar o _mouse_, basta sair clicando onde deseja ir.
 
 Para navegar pelo menu usando o teclado, use as **setas** para se mover pelas opções, **Enter** para avançar, **Backspace** para voltar e **Esc** para sair do RetroArch.
 
-Para navegar pelo menu usando o controle, use as **setas** para se mover pelas opções, **O** (bola) para avançar e **X** para voltar.
+Para navegar pelo menu usando o controle, use as **setas** para se mover pelas opções, **O** (círculo) para avançar e **X** (cruz) para voltar.
 
-Se quiser alterar a configuração dos controles, vá em **Configurações**, depois em **Entrada**, e por fim em **Vínculos de entrada do usuário 1**:
+Se quiser alterar o mapeamento do seu teclado ou controle para o RetroPad, vá em **Configurações**, depois em **Entrada**, e por fim em **Vínculos de entrada do usuário 1**:
 
 {% include image.html src="/files/2020/05/retroarch-setup-1-pt.png" %}
 
@@ -128,8 +130,6 @@ Selecione o arquivo do jogo:
 
 {% include image.html src="/files/2020/05/retroarch-open-rom-2-pt.jpg" %}
 
-**Dica:** se você baixou a ROM compactada como um arquivo ZIP, não é necessário descompactar, o RetroArch consegue abrir a ROM como está.
-
 No caso de um arquivo ZIP, o RetroArch oferece **Navegar no arquivo** ou **Carregar arquivo**:
 
 {% include image.html src="/files/2020/05/retroarch-open-rom-3-pt.jpg" %}
@@ -144,9 +144,9 @@ Selecione o núcleo adequado. Como exemplo, estou carregando um jogo de Mega Dri
 
 O jogo é iniciado:
 
-{% include image.html src="/files/2020/05/retroarch-open-rom-5-pt.png" %}
+{% include image.html src="/files/2020/05/retroarch-open-rom-5.png" %}
 
-## Acessando o menu
+## Acessando o menu durante o jogo
 
 Se no meio do jogo você precisar acessar o menu do RetroArch, tecle **F1**.
 
@@ -156,7 +156,7 @@ Se no meio do jogo você precisar acessar o menu do RetroArch, tecle **F1**.
 
 Uma vantagem do emulador em relação ao _videogame_ é que você pode salvar o estado do jogo a qualquer momento, assim como retomar a qualquer momento do ponto em que salvou.
 
-Jogando no RetroArch, você pode salvar da mesma forma que no _videogame_ (usando o menu do próprio jogo), ou pode usar uma das memórias do RetroArch.
+Jogando no RetroArch, você pode salvar da mesma forma que no _videogame_ de verdade (usando o menu do próprio jogo), ou pode usar uma das memórias do RetroArch.
 
 Geralmente, os _videogames_ oferecem apenas uma memória para salvar o jogo, de modo que só um jogo pode ser salvo. O RetroArch oferece dezenas de memórias (compartimentos).
 
@@ -197,13 +197,15 @@ Depois, para acessar seus jogos favoritos, use o menu **Favoritos**:
 
 ## Requisitos de sistema
 
-O RetroArch é, grosso modo, uma interface gráfica feita de menus. Por isso não possui requisitos mínimos e pode ser instalado em qualquer computador. Mas cada emulador tem seus requisitos. Portanto, quais _videogames_ seu computador é capaz de emular depende do seu _hardware_.
+O RetroArch é, grosso modo, uma interface gráfica feita de menus. Por isso não possui requisitos mínimos e pode ser instalado em qualquer computador.
+
+Mas cada emulador tem seus próprios requisitos. Portanto, quais _videogames_ seu computador é capaz de emular depende do seu _hardware_.
 
 Pra você ter uma ideia, é possível usar o RetroArch no [Raspberry Pi 4][rpi4] de forma simples por meio da distribuição [RetroPie] (falaremos dela oportunamente). Você pode conferir as especificações técnicas do Raspberry Pi 4 no texto que escrevi sobre ele:
 
 - [Primeiros passos no Raspberry Pi com NOOBS e Raspbian][rpi4]
 
-O Raspberry Pi 4 possui um poder computacional considerável para um computador do tamanho de um cartão de crédito, ainda assim é mais simples que a maioria dos PCs (_desktops_ e _notebooks_) atuais. Mas consegue emular PlayStation perfeitamente.
+O Raspberry Pi 4 possui um poder computacional considerável para um computador do tamanho de um cartão de crédito. Mas, ainda que seja mais simples que a maioria dos PCs (_desktops_ e _notebooks_) atuais, um Raspberry Pi 4 já consegue emular um PlayStation perfeitamente.
 
 Qualquer computador hoje em dia deve ser capaz de emular _videogames_ da quinta geração, como o PlayStation (lançado em 1994) e o [Nintendo 64][n64] (1996), ou mais antigos, como o Super Nintendo (1990) e o Mega Drive (1988).
 
@@ -211,7 +213,7 @@ Para uma lista completa de _videogames_ classificados por gerações, consulte a
 
 - [Lista de consoles de videogame – Wikipédia, a enciclopédia livre][wikipedia]
 
-A emulação de _videogames_ mais recentes e mais "pesados", como o [PlayStation 2][ps2] (2000), o [GameCube][gc] (2001), o [Nintendo DS][nds] (2004) e o [Nintendo Wii][wii] (2006) certamente vai exigir computadores mais poderosos. Nesses casos, convém consultar os requisitos nos _sites_ dos emuladores para saber se seu computador consegue emular esses _videogames_.
+A emulação de _videogames_ mais recentes e mais "pesados", como o [PlayStation 2][ps2] (2000), o [GameCube][gc] (2001), o [Nintendo DS][nds] (2004) e o [Nintendo Wii][wii] (2006), certamente vai exigir computadores mais poderosos. Nesses casos, convém consultar os requisitos nos _sites_ dos emuladores para saber se seu computador consegue emular esses _videogames_.
 
 ## Referências
 

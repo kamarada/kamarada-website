@@ -14,7 +14,7 @@ excerpt: 'Relive your childhood playing classic games of the 90s!'
 
 Would you like to remember any of those classics? Did you know it is possible using a program called emulator?
 
-An **emulator** is a software that allows your computer to run software made for another device. A video game emulator allows your computer to run games made for that video game. Files which contain games are called **ROMs**. In the case of Super Nintendo, a ROM would contain the content dumped from a cartridge.
+An **emulator** is a software that allows your computer to run software made for another device. A video game emulator allows your computer to run games made for that video game. Files that contain games are called **ROMs**. In the case of Super Nintendo, a ROM would contain the content dumped from a cartridge.
 
 There are some Super Nintendo emulators out there. One of the most popular is Snes9x.
 
