@@ -1,0 +1,9 @@
+<div class="alert alert-success no-ads-here" role="alert">
+    <div class="media">
+        <img class="mr-3" src="/favicon.png" style="max-width: 64px;">
+        <div class="media-body">
+            <h6 class="alert-heading mt-0">{{ site.data.t[page.lang].note }}</h6>
+            {{ include.text | markdownify }}
+        </div>
+    </div>
+</div>
