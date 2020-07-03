@@ -4,7 +4,7 @@ image: /files/2020/07/Leap-container.png
 layout: post
 nickname: 'opensuse-15.2-release-announcement'
 published: true
-title: openSUSE Leap "15.2" Release Brings Exciting New Artificial Intelligence (AI), Machine Learning, and Container Packages
+title: openSUSE Leap 15.2 Release Brings Exciting New Artificial Intelligence (AI), Machine Learning, and Container Packages
 excerpt: 'The openSUSE release team is proud to announce the availability of community-developed openSUSE Leap 15.2. Professional users, from desktops and data-center servers to container hosts and Virtual Machines (VM), will be able to use Leap 15.2 as a high-quality, easy-to-use, enterprise-grade Linux operating system.'
 ---
 
