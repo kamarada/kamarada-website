@@ -159,7 +159,7 @@ Se o destinatário utiliza o *webmail*, pode ser que o *webmail* possibilite ver
 
 {% include image.html src="/files/2018/09/thunderbird-token-19.jpg" %}
 
-Note que o Gmail também não reconhece a assinatura, muito provavelmente pelo menos motivo: não conhece o certificado da ICP-Brasil. Infelizmente, a solução definitiva para isso demandaria ao [Google][google] instalar esse certificado em seus servidores.
+Note que o Gmail também não reconhece a assinatura, muito provavelmente pelo mesmo motivo: não conhece o certificado da ICP-Brasil. Infelizmente, a solução definitiva para isso demandaria ao [Google][google] instalar esse certificado em seus servidores.
 
 Ainda assim, o Gmail te possibilita, clicando em **Informações do remetente**, baixar o certificado do remetente:
 
