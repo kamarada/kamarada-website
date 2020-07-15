@@ -198,6 +198,11 @@ plugins:
     # https://github.com/sverrirs/jekyll-paginate-v2
     - jekyll-paginate-v2
 
+    # Jekyll Liquify
+    # https://github.com/gemfarmer/jekyll-liquify
+    # A Jekyll filter that can parse Liquid in front matter
+    - jekyll-liquify
+
 # Jekyll Archives plugin configuration
 jekyll-archives:
     enabled: all

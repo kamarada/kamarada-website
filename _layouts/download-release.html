@@ -42,9 +42,9 @@ layout: page
                     <i class="fas fa-compact-disc"></i>
                 </div>
             </div>
-            <input id="filename" name="filename" type="text" readonly class="form-control" value="{{ page.filename_value }}">
+            <input id="filename" name="filename" type="text" readonly class="form-control" value="{{ page.filename_value | liquify }}">
             <div class="input-group-append">
-                <a class="btn btn-outline-primary" href="{{ page.download_link }}"><i class="fas fa-download"></i> {{ page.download }}</a>
+                <a class="btn btn-outline-primary" href="{{ page.download_link | liquify }}"><i class="fas fa-download"></i> {{ page.download }}</a>
             </div>
         </div>
     </div>
@@ -58,7 +58,7 @@ layout: page
                         <i class="fa fa-calendar"></i>
                     </div>
                 </div>
-              <input id="date" name="date" type="text" readonly class="form-control-plaintext" value="{{ page.date_value }}">
+              <input id="date" name="date" type="text" readonly class="form-control-plaintext" value="{{ page.date_value | liquify }}">
             </div>
         </div>
         <div class="form-group col">
@@ -69,7 +69,7 @@ layout: page
                         <i class="fa fa-info"></i>
                     </div>
                 </div>
-                <input id="size" name="size" type="text" readonly class="form-control-plaintext" value="{{ page.size_value }}">
+                <input id="size" name="size" type="text" readonly class="form-control-plaintext" value="{{ page.size_value | liquify }}">
             </div>
         </div>
     </div><!-- .form-row -->
@@ -82,10 +82,10 @@ layout: page
                     <i class="fa fa-search"></i>
                 </div>
             </div>
-            <input id="sha256sum" name="sha256sum" type="text" readonly class="form-control" value="{{ page.sha256sum_value }}">
+            <input id="sha256sum" name="sha256sum" type="text" readonly class="form-control" value="{{ page.sha256sum_value | liquify }}">
             <div class="input-group-append">
                 <a class="btn btn-outline-secondary" id="copy" href="#" onclick='copyToClipboard("sha256sum", "copy")' data-toggle="tooltip" data-placement="top" data-trigger="manual" title="{{ site.data.t[page.lang].copied }}"><i class="far fa-copy"></i> {{ site.data.t[page.lang].copy }}</a>
-                <a class="btn btn-outline-secondary" href="{{ page.sha256sum_link }}"><i class="fas fa-download"></i> {{ page.download }}</a>
+                <a class="btn btn-outline-secondary" href="{{ page.sha256sum_link | liquify }}"><i class="fas fa-download"></i> {{ page.download }}</a>
             </div>
         </div>
     </div><!-- .form-group -->
@@ -96,6 +96,8 @@ layout: page
     </ul>
 
     <p>{{ page.hosted-by }} <a href="https://osdn.net/projects/kamarada/">OSDN</a>.</p>
+
+    {{ content }}
 
     {% include buymeacoffee.html %}
 </div>
