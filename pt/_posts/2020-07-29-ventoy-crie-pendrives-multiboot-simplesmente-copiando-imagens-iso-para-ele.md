@@ -4,7 +4,7 @@ image: '/files/2020/07/ventoy-01.jpg'
 layout: post
 published: true
 nickname: 'ventoy'
-title: 'Ventoy: crie pendrives multiboot simplesmente copiando imagens ISO para ele'
+title: 'Ventoy: crie um pendrive multiboot simplesmente copiando imagens ISO para ele'
 ---
 
 Sabia que você pode instalar [Windows] e [Linux] usando o mesmo _pendrive_, sem precisar formatá-lo duas vezes? Assim como usar o mesmo _pendrive_ para testar [imagens _live_][live] de várias distribuições Linux, sem formatá-lo de novo e de novo? É bem verdade que existem várias ferramentas para criar _pendrives_ inicializáveis (ou "bootáveis", na gíria técnica), dentre as quais [já falamos aqui][liveusb] sobre o [Rufus] (para Windows), o [SUSE Studio Imagewriter][imagewriter] e o **[dd]** (para Linux), mas nenhuma delas é mais fácil de usar que o recém-chegado Ventoy.
@@ -195,7 +195,7 @@ Após alguns segundos ou minutos, a instalação do Ventoy no _pendrive_ é conc
 
 No Linux Kamarada 15.1, uma mensagem de erro foi exibida, como você pode ver acima. Isso ocorreu porque o Ventoy formata o _pendrive_ com o sistema de arquivos [exFAT] e o suporte a esse sistema de arquivos não vem instalado por padrão no Linux Kamarada 15.1.
 
-Caso você se depare com essa mensagem no Linux Kamarada 15.1, no [openSUSE Leap 15.1][leap-15.1], ou em outra distribuição baseada no [openSUSE], instale o suporte ao exFAT com:
+Caso você se depare com essa mensagem no Linux Kamarada 15.1, no [openSUSE Leap][leap], ou em outra distribuição baseada no [openSUSE], instale o suporte ao exFAT com:
 
 ```
 # zypper in fuse-exfat
@@ -221,8 +221,8 @@ Depois de instalar o Ventoy no _pendrive_ e copiar imagens ISO para ele, é hora
 
 [windows]:              https://www.microsoft.com/pt-br/windows/
 [linux]:                https://www.vivaolinux.com.br/linux/
-[live]:                 https://kamarada.github.io/pt/2015/11/25/o-que-e-um-livecd-um-livedvd-um-liveusb/
-[liveusb]:              https://kamarada.github.io/pt/2016/02/21/como-preparar-um-liveusb/
+[live]:                 {% post_url pt/2015-11-25-o-que-e-um-livecd-um-livedvd-um-liveusb %}
+[liveusb]:              {% post_url pt/2016-02-21-como-preparar-um-liveusb %}
 [rufus]:                https://rufus.ie/
 [imagewriter]:          https://github.com/openSUSE/imagewriter
 [dd]:                   https://man7.org/linux/man-pages/man1/dd.1.html
@@ -235,17 +235,17 @@ Depois de instalar o Ventoy no _pendrive_ e copiar imagens ISO para ele, é hora
 [secure-boot]:          https://www.vivaolinux.com.br/artigo/UEFI-e-Boot-Seguro-Conceitos-basicos
 [mbr]:                  https://www.vivaolinux.com.br/artigo/UEFI-e-Boot-Seguro-Conceitos-basicos
 [gpt]:                  https://www.vivaolinux.com.br/artigo/UEFI-e-Boot-Seguro-Conceitos-basicos
-[kamarada-15.2-beta]:   https://kamarada.github.io/pt/2020/04/14/linux-kamarada-15.2-beta-deixa-o-seu-desktop-ainda-mais-verde/
+[kamarada-15.2-beta]:   {% post_url pt/2020-04-14-linux-kamarada-15.2-beta-deixa-o-seu-desktop-ainda-mais-verde %}
 [kingston]:             https://vinyanalista.github.io/blog/2020/07/24/como-resolver-o-problema-do-satafirm-s11-do-ssd-kingston-a400-e-outros-modelos/
 [ventoy-news]:          https://www.ventoy.net/en/doc_news.html
-[kamarada-15.1-iso]:    https://kamarada.github.io/pt/download/15.1/
+[kamarada-15.1-iso]:    /pt/download/15.1/
 [windows-10-iso]:       https://www.microsoft.com/pt-br/software-download/windows10
 [pc]:                   https://pt.wikipedia.org/wiki/Computador_pessoal
 [7-zip]:                https://www.7-zip.org/
-[kamarada-15.1]:        https://kamarada.github.io/pt/2020/02/24/kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia/
+[kamarada-15.1]:        {% post_url pt/2020-02-24-kamarada-15.1-vem-com-tudo-que-voce-precisa-para-usar-o-linux-no-dia-a-dia %}
 [fdisk]:                https://man7.org/linux/man-pages/man8/fdisk.8.html
 [exfat]:                https://pt.wikipedia.org/wiki/ExFAT
-[leap-15.1]:            https://kamarada.github.io/pt/2019/05/22/comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap/
+[leap]:                 {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
 [opensuse]:             https://www.opensuse.org/
 [diolinux]:             https://www.youtube.com/watch?v=YxW_L2Us0Is
 [vivaolinux]:           https://www.vivaolinux.com.br/artigo/Ventoy-crie-pendrives-multiboot-para-quantas-e-quais-ISOs-quiser/
