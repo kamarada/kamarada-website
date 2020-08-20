@@ -23,7 +23,7 @@ A solução, no caso do Linux Kamarada e do openSUSE Leap, se resume a:
 
 1. Adicionar o repositório do projeto [Packman], caso você ainda não tenha esse repositório adicionado no seu sistema;
 2. Obter a lista atualizada de pacotes disponíveis nos repositórios; e
-3. Atualizar os pacotes do sistema permitindo a mudança de fornecedor, o que deve fazer com que alguns pacotes fornecidos pelo openSUSE sejam substituídos por pacotes do Packman, que contém os  _codecs_ proprietários faltantes.
+3. Atualizar os pacotes do sistema permitindo a [mudança de fornecedor][vendor-change], o que deve fazer com que alguns pacotes fornecidos pelo openSUSE sejam substituídos por pacotes do Packman, que contém os  _codecs_ proprietários faltantes.
 
 Há pelo menos duas formas de fazer isso: pela interface gráfica, que pode ser mais amigável especialmente para os iniciantes, ou pela interface de linha de comando.
 
@@ -133,7 +133,7 @@ Se você usa o Firefox, talvez tenha reparado que ele tem um _plugin_ chamado "C
 
 [OpenH264] é o nome da implementação do _codec_ do H.264 feita pela [Cisco]. Essa implementação tem seu [código aberto][opensource], porém também não é um _software_ livre, visto que seus binários são lançados sob uma licença da Cisco, que cobre os custos de licenciamento junto à MPEG LA para fornecer esse _codec_ de graça. Por isso, ele deve ser baixado da Cisco.
 
-A Mozilla fez uma parceria com a Cisco para que o Firefox possa usar o OpenH264. Quando você usa o Firefox pela primeira vez, ele baixa o _plugin_ do OpenH264 do _site_ da Cisco.
+A [Mozilla] fez uma parceria com a Cisco para que o Firefox possa usar o OpenH264. Quando você usa o Firefox pela primeira vez, ele baixa o _plugin_ do OpenH264 do _site_ da Cisco.
 
 O OpenH264 implementa apenas a parte mais básica (_baseline profile_) do formato H.264, de modo que só é usado pelo Firefox para dar suporte a chamadas de vídeo, como as feitas usando a tecnologia [WebRTC]. Exemplos de serviços de chamadas de vídeo que usam essa tecnologia incluem o [Google Meet][google-meet], o [Google Hangouts][google-hangouts], o [Facebook Messenger][messenger] e o [Discord].
 
@@ -147,15 +147,17 @@ Portanto, o _plugin_ OpenH264 do Firefox nada tem a ver com os vídeos que não 
 - [Por que existe um plugin OpenH264 no Firefox? \| Ajuda do Firefox][mozilla-kb]
 - [\[opensuse-factory\] Status of x264 libraries in the standard distribution][opensuse-factory]
 - [OpenH264 - Fedora Project Wiki][fedora]
+- [MP4 vs H.264, difference between MP4 and H.264 format - iOrgsoft][iorgsoft]
 - [10 Massive Applications Using WebRTC - BlogGeek.me][bloggeek]
 
 [firefox]:              https://www.mozilla.org/pt-BR/firefox/
 [chromium]:             https://www.chromium.org/
-[kamarada-15.2-rc]:     https://kamarada.github.io/pt/2020/08/08/linux-kamarada-libera-versao-candidata-a-lancamento-15.2-rc/
+[kamarada-15.2-rc]:     {% post_url pt/2020-08-08-linux-kamarada-libera-versao-candidata-a-lancamento-15.2-rc %}
 [linux]:                https://www.vivaolinux.com.br/linux/
-[leap-15.2]:            https://kamarada.github.io/pt/2020/07/01/versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers/
+[leap-15.2]:            {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
 [opensuse]:             https://www.opensuse.org/
 [packman]:              http://packman.links2linux.com/
+[vendor-change]:        https://en.opensuse.org/SDB:Vendor_change_update
 [zypper]:               https://pt.opensuse.org/Portal:Zypper
 [yast]:                 http://yast.opensuse.org/
 [mp4]:                  https://pt.wikipedia.org/wiki/MP4
@@ -170,6 +172,7 @@ Portanto, o _plugin_ OpenH264 do Firefox nada tem a ver com os vídeos que não 
 [openh264]:             http://www.openh264.org/
 [cisco]:                https://www.cisco.com/c/pt_br/index.html
 [opensource]:           https://pt.wikipedia.org/wiki/Software_de_código_aberto
+[mozilla]:              https://www.mozilla.org/pt-BR/
 [webrtc]:               https://webrtc.org/
 [google-meet]:          https://meet.google.com/
 [google-hangouts]:      https://hangouts.google.com/
@@ -181,4 +184,5 @@ Portanto, o _plugin_ OpenH264 do Firefox nada tem a ver com os vídeos que não 
 [mozilla-kb]:           https://support.mozilla.org/pt-BR/kb/por-que-existe-um-plugin-openh264-no-firefox
 [opensuse-factory]:     https://lists.opensuse.org/opensuse-factory/2018-02/msg00846.html
 [fedora]:               https://fedoraproject.org/wiki/OpenH264
+[iorgsoft]:             http://www.iorgsoft.com/compare/mp4-vs-h.264-comparison.html
 [bloggeek]:             https://bloggeek.me/massive-applications-using-webrtc/
