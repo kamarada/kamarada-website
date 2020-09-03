@@ -4,9 +4,9 @@ nickname: download
 permalink: /pt/download
 title: Download
 
-stable_title: 'Linux Kamarada 15.1 Final'
-stable_desc: 'Versão estável do Linux Kamarada, pronta para usar em computadores pessoais, seja em casa ou no trabalho, em empresas privadas ou órgãos públicos.'
+stable_title: 'Linux Kamarada 15.2 Final'
+stable_desc: 'Versão estável, pronta para usar em computadores pessoais, seja em casa ou no trabalho, em empresas privadas ou órgãos públicos.'
 
-dev_title: 'Linux Kamarada 15.2 RC'
-dev_desc: 'Próxima versão do Linux Kamarada, em desenvolvimento, não recomendada para uso diário. Como essa é uma versão candidata a lançamento (pode ser considerada um tipo de versão beta), é esperado que tenha _bugs_. Baixe-a se deseja testá-la e contribuir com o desenvolvimento do Linux Kamarada. Se você encontrar um _bug_, por favor, reporte. Consulte a página [Ajuda](/pt/ajuda) para saber como entrar em contato.'
+old_151_title: 'Linux Kamarada 15.1 (versão antiga)'
+old_151_desc: 'Essa não é a versão mais recente do Linux Kamarada, mas está disponível para que você possa baixar, caso por algum motivo precise.'
 ---
