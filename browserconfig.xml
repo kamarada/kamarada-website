@@ -5,8 +5,8 @@ layout: null
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="{{ "/mstile-150x150.png?v=4" | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}"/>
-            <TileColor>#4caf50</TileColor>
+            <square150x150logo src="{{ "/mstile-150x150.png?v=5" | prepend: site.baseurl | replace: '//', '/' | prepend: site.url }}"/>
+            <TileColor>#43a047</TileColor>
         </tile>
     </msapplication>
 </browserconfig>
