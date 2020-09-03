@@ -86,7 +86,7 @@ That list is not exhaustive, but it gives a notion of what can be found in the d
 
 ## About Linux Kamarada
 
-The Linux Kamarada Project aims to spread and promote Linux as a robust, secure, versatile and easy to use operating system, suitable for everyday use be at home, at work or on the server. It started as a blog about [openSUSE], which is the Linux distribution I've been using for 8 years (since April 2012, when I installed openSUSE 11.4 and then upgraded to 12.1). Now the project offers its own Linux distribution, which brings much of the software presented on the blog pre-installed and ready for use.
+The Linux Kamarada Project aims to spread and promote Linux as a robust, secure, versatile and easy to use operating system, suitable for everyday use be at home, at work or on the server. It started as a blog about [openSUSE], which is the Linux distribution I've been using for 8 years (since [April 2012][vinyanalista], when I installed openSUSE 11.4 and then upgraded to 12.1). Now the project offers its own Linux distribution, which brings much of the software presented on the blog pre-installed and ready for use.
 
 The Kamarada Linux distribution is based on openSUSE Leap and is intended for use on desktops at home and at work, in both private companies and government entities. It features the essential software selection for any Linux installation and a nice looking modern desktop.
 
@@ -117,3 +117,4 @@ Follow Linux Kamarada on [social networks](#about) to be notified of new release
 [keepassxc]:            https://keepassxc.org/
 [tor]:                  https://www.torproject.org/
 [opensuse]:             https://www.opensuse.org/
+[vinyanalista]:         https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/

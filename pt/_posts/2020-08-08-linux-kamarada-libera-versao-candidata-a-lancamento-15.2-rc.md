@@ -86,7 +86,7 @@ Essa lista não é exaustiva, mas já dá uma noção do que se encontra na dist
 
 ## Sobre o Linux Kamarada
 
-O Projeto Linux Kamarada visa divulgar e promover o Linux como um sistema operacional robusto, seguro, versátil e fácil de usar, adequado para o uso diário seja em casa, no trabalho ou no servidor. O projeto começou como um _blog_ sobre o [openSUSE], que é a distribuição Linux que eu uso há 8 anos (desde abril de 2012, na época eu instalei o openSUSE 11.4 e depois atualizei para o 12.1). Agora o projeto disponibiliza sua própria distribuição Linux, que traz vários programas apresentados no _blog_ já instalados e prontos para uso.
+O Projeto Linux Kamarada visa divulgar e promover o Linux como um sistema operacional robusto, seguro, versátil e fácil de usar, adequado para o uso diário seja em casa, no trabalho ou no servidor. O projeto começou como um _blog_ sobre o [openSUSE], que é a distribuição Linux que eu uso há 8 anos (desde [abril de 2012][vinyanalista], na época eu instalei o openSUSE 11.4 e depois atualizei para o 12.1). Agora o projeto disponibiliza sua própria distribuição Linux, que traz vários programas apresentados no _blog_ já instalados e prontos para uso.
 
 A distribuição Linux Kamarada é baseada no openSUSE Leap e se destina ao uso em _desktops_ em casa e no trabalho, seja em empresas privadas ou em órgãos públicos. Contém os programas essenciais a qualquer instalação do Linux e uma área de trabalho com visual moderno e agradável.
 
@@ -116,3 +116,4 @@ Siga o Linux Kamarada nas [redes sociais](#about) para ser notificado sobre nova
 [keepassxc]:            https://keepassxc.org/
 [tor]:                  https://www.torproject.org/
 [opensuse]:             https://www.opensuse.org/
+[vinyanalista]:         https://vinyanalista.github.io/blog/2012/04/21/problemas-envolvendo-bootloaders-mbr-e-tabela-de-particoes/
