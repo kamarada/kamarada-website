@@ -28,4 +28,33 @@
       </item>
     </software>
   </group>
+  <group distversion="openSUSE Leap 15.2">
+    <repositories>
+      <repository recommended="true">
+        <name>kamarada</name>
+        <summary>Linux Kamarada</summary>
+        <description></description>
+        <url>https://osdn.mirror.constant.com/storage/g/k/ka/kamarada/$releasever/openSUSE_Leap_$releasever/</url>
+      </repository>
+      <repository recommended="true">
+        <name>repo-oss</name>
+        <summary>Main Repository</summary>
+        <description></description>
+        <url>http://download.opensuse.org/distribution/leap/$releasever/repo/oss/</url>
+      </repository>
+      <repository recommended="true">
+        <name>repo-update</name>
+        <summary>Main Update Repository</summary>
+        <description></description>
+        <url>http://download.opensuse.org/update/leap/$releasever/oss/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>patterns-kamarada-gnome</name>
+        <summary>Linux Kamarada with GNOME desktop</summary>
+        <description>Install this package to have a fully functional Linux Kamarada installation with GNOME desktop.</description>
+      </item>
+    </software>
+  </group>
 </metapackage>
