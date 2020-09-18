@@ -13,7 +13,7 @@ Você acha fácil instalar programas no seu _smartphone_ com [Android] (ou [iOS]
 
 O aplicativo **Programas** permite instalar e atualizar aplicativos e extensões do sistema.
 
-Vejamos como alguém pode usá-lo para instalar o [GIMP], por exemplo. Se você ainda não o conhece, GIMP é a sigla de _GNU Image Manipulation Program_ (programa de manipulação de imagens do GNU). O GIMP é um editor de imagens gratuito e livre, que pode ser visto como uma alternativa ao [Photoshop] (desse provavelmente você já ouviu falar).
+Vejamos como alguém pode usá-lo para instalar o [GIMP], por exemplo. Se você ainda não o conhece, GIMP é a sigla de _GNU Image Manipulation Program_ (programa de manipulação de imagens do GNU). O GIMP é um editor de imagens gratuito e [livre][free-sw], que pode ser visto como uma alternativa ao [Photoshop] (desse provavelmente você já ouviu falar).
 
 O GIMP é apenas um exemplo, você não precisa de fato instalá-lo, se não precisa dele. O objetivo aqui é apenas mostrar como instalar programas no Linux usando o aplicativo **Programas**. Aprenda como fazer e instale quantos e quais programas quiser dessa forma.
 
@@ -31,9 +31,9 @@ Clique no botão de pesquisar, no canto superior esquerdo da janela, e digite o 
 
 {% include image.html src='/files/2020/09/gnome-software-03-pt.jpg' %}
 
-Perceba que enquanto você digita, os programas já são pesquisados e listados. Clique no programa desejado.
+Perceba que enquanto você digita os programas já são pesquisados e listados. Clique no programa desejado.
 
-Na tela seguinte, você pode conferir imagens do programa, sua descrição, a nota dada pelos usuários, comentários dos usuários, o _site_ do programa, entre outras informações.
+Na tela seguinte, você pode conferir informações detalhadas sobre o programa: capturas de tela, descrição, _site_, avaliações e comentários dos usuários, entre outras informações.
 
 {% include image.html src='/files/2020/09/gnome-software-04-pt.jpg' %}
 
@@ -53,7 +53,7 @@ Pronto! Agora é só usar:
 
 {% include image.html src='/files/2020/09/gnome-software-08-pt.jpg' %}
 
-**Dica:** quer um caminho mais curto ainda para instalar programas? Da próxima vez, experimente abrir o menu **Atividades** e pesquisar pelo programa que você ainda não tem instalado e deseja instalar. A própria área de trabalho GNOME o sugere. É só clicar no programa desejado para abrir o aplicativo **Programas** com todas as informações sobre ele.
+**Dica:** quer um caminho ainda mais curto para instalar programas? Da próxima vez, experimente abrir o menu **Atividades** e pesquisar pelo programa que você ainda não tem instalado e deseja instalar. A própria área de trabalho GNOME o sugere. É só clicar no programa desejado para abrir o aplicativo **Programas** com todas as informações sobre ele.
 
 Vou usar como exemplo outro programa que não vem instalado por padrão no Linux Kamarada, o [Inkscape]. Se você ainda não o conhece, o Inkscape também é um editor de imagens gratuito e livre, mas para um tipo diferente de imagem: [imagem vetorial][vector-graphics]. Se o GIMP faz lembrar o Photoshop, o Inkscape faz lembrar o [CorelDRAW].
 
@@ -71,11 +71,12 @@ Dedico esse texto aos usuários iniciantes de Linux, espero que possa ter ajudad
 [app-store]:        https://www.apple.com/br/ios/app-store/
 [linux]:            https://www.vivaolinux.com.br/linux/
 [gnome]:            https://br.gnome.org/
-[kamarada-15.2]:    https://kamarada.github.io/pt/2020/09/11/linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca/
+[kamarada-15.2]:    {% post_url pt/2020-09-11-linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca %}
 [software]:         https://wiki.gnome.org/Apps/Software
-[gimp]:             https://kamarada.github.io/pt/2019/07/12/20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2/#14-gimp
+[gimp]:             {% post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}#14-gimp
+[free-sw]:          https://www.gnu.org/philosophy/free-sw.html
 [photoshop]:        https://www.adobe.com/br/products/photoshop/
-[inkscape]:         https://kamarada.github.io/pt/2019/07/12/20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2/#15-inkscape
+[inkscape]:         {% post_url pt/2019-07-12-20-aplicativos-que-voce-pode-usar-do-mesmo-jeito-no-linux-e-no-windows-parte-2 %}#15-inkscape
 [vector-graphics]:  https://pt.wikipedia.org/wiki/Desenho_vetorial
 [coreldraw]:        https://www.coreldraw.com/br/
 [windows]:          https://www.microsoft.com/pt-br/windows/
