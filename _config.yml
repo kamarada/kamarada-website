@@ -372,7 +372,7 @@ twitter_username: "LinuxKamaradaWW"
 youtube:
     # What kind of YouTube profile you have (it can be "user" or "channel")
     # Default: not set (YouTube URL is not displayed)
-    # profile: "user"
+    profile: "channel"
 
     # YouTube user or channel name
     # Examples:
@@ -381,7 +381,7 @@ youtube:
     # channelname, if your YouTube channel is at
     # https://www.youtube.com/channel/channelname
     # Default: not set (YouTube URL is not displayed)
-    # name: "username"
+    name: "UCr8wzi89iS3F5I-PF0YmxwQ"
 
 padrim_url: 'https://www.padrim.com.br/LinuxKamarada'
 apoiase_url: 'https://apoia.se/LinuxKamarada'

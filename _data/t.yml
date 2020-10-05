@@ -106,8 +106,8 @@ pt:
         telegram_username: "LinuxKamaradaNoticias"
         twitter_username: "LinuxKamarada"
         youtube:
-            # profile: "user"
-            # name: "nomedeusuario"
+            profile: "channel"
+            name: "UCSv0jYFQP8vzOJwKN_8LrNg"
     subscribe_via_rss: "inscreva-se via RSS"
     toggle-drawer: "Exibir/esconder navegação"
     translation: "Esta página em Português"
