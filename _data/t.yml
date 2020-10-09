@@ -94,7 +94,8 @@ pt:
             -
                 title: "Contribuir"
                 url: "/pt/contribuir"
-        # addthis_profile_id: "ra-examplo123456789"
+        # addthis_profile_id: "ra-exemplo123456789"
+        addthis_inline_follow_id: "6ft6"
         disqus_shortname: "kamarada"
         # facebook:
             # username: "nomedeusuario"

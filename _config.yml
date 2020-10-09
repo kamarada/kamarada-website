@@ -291,6 +291,9 @@ addthis_profile_id: "ra-563f92aa117815bd"
 # For more info on AddThis, please refer to
 # http://support.addthis.com/
 
+## AddThis Follow Buttons - Inline Tool ID
+addthis_inline_follow_id: "7gt3"
+
 # Disqus shortname
 # Disqus is a blog comment hosting service for websites. A Disqus shortname is
 # the unique identifier assigned to a Disqus site. All the comments posted to a
