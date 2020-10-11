@@ -359,7 +359,7 @@ Na caixa de diálogo **Shutdown options** (opções de desligamento), clique em 
 
 {% include image.html src="/files/2019/09/raspbian-shutdown-02.jpg" %}
 
-**Aguarde** até que o Raspberry Pi desligue completamente. Repare nas luzes LED: primeiro a PWR apaga e a ACT pisca, depois a ACT paga e apenas a PWR fica acesa, indicando que o Raspberry Pi tem energia, mas não faz nada. Aí sim você pode desconectar a fonte de alimentação.
+**Aguarde** até que o Raspberry Pi desligue completamente. Repare nas luzes LED: primeiro a PWR apaga e a ACT pisca, depois a ACT apaga e apenas a PWR fica acesa, indicando que o Raspberry Pi tem energia, mas não faz nada. Aí sim você pode desconectar a fonte de alimentação.
 
 **Observação:** portas micro-USB tendem a ser frágeis. Por isso, dê preferência a remover a fonte de alimentação da tomada em vez de removê-la do Raspberry Pi.
 

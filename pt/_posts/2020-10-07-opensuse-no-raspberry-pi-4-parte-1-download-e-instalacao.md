@@ -210,6 +210,9 @@ Na tela de _login_, use as credenciais `root` como nome de usuário e `linux` co
 
 Como percebi que o _post_ já estava grande, decidi dividi-lo em duas partes. Deixei as configurações básicas para o próximo _post_.
 
+{% capture atualizacao %}[A segunda parte desse tutorial já está aqui! (clique para acessá-la)]({%post_url pt/2020-10-10-opensuse-no-raspberry-pi-4-parte-2-configuracoes-basicas %}){% endcapture %}
+{% include update.html date="10/10/2020" message=atualizacao %}
+
 Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publicada!
 
 ## Referências
