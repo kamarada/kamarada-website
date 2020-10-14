@@ -162,7 +162,7 @@ Há uma [imagem _multiboot_][multiboot] que permite o teste de 13 distribuiçõe
 [mobian]:               https://mobian-project.org/
 [pureos]:               https://pureos.net/
 [fedora]:               https://getfedora.org/pt_BR/
-[arch]:                 https://www.archlinux.org/
+[arch]:                 https://archlinuxarm.org
 [pinephone-opensuse]:   https://wiki.pine64.org/index.php?title=PinePhone_Software_Releases#openSUSE
 [gentoo]:               https://www.gentoo.org/
 [multiboot]:            https://xnux.eu/p-boot-demo/
@@ -229,6 +229,8 @@ Porém, o câmbio e o IOF ainda não são nem o maior problema para nós, brasil
 [google]:           https://www.google.com/search?q=cotação+dólar+real
 
 ## Minha experiência e os impostos...
+
+{% include image.html src='/files/2020/10/my-pinephone.jpg' caption='Meu PinePhone' style='max-width: 400px' %}
 
 Eu comprei a edição comunitária do PinePhone com postmarketOS e a _dock_, assim como uma [capa rígida][pinestore-hard-case] (10 dólares) e uma [película de vidro][pinestore-glass-protector] (5 dólares). Como expliquei, devido à questão da bateria de íon-lítio, fiz 2 pedidos: um com o celular e o outro com os acessórios. Comprei ambos em 03 de agosto.
 
