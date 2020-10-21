@@ -290,6 +290,12 @@ Para brasileiros, o PinePhone não é tão barato. Antes de comprá-lo, é preci
 
 Vejamos o que a comunidade do PinePhone é capaz de fazer. Provavelmente não o veremos nas prateleiras das grandes lojas ou operadoras tão cedo. Mas para as pessoas que apreciam a combinação, perfeita para privacidade, de _software_ livre e interruptores de _hardware_, que permitem total controle do usuário sobre o celular, o PinePhone certamente já é uma opção muito promissora.
 
+{% capture video %}
+Quer ver o PinePhone em ação? Confira esse vídeo do canal do Linux Kamarada no YouTube:
+{% include youtube.html id="Jo9nL-p2J6I" %}
+{% endcapture %}
+{% include update.html date="20/10/2020" message=video %}
+
 ## Referências
 
 Além dos vários _links_ espalhados pela página, pra escrever este texto eu também consultei os seguintes:
