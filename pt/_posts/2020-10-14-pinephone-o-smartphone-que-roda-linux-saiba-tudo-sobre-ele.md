@@ -1,8 +1,9 @@
 ---
 date: '2020-10-14 03:00:00 GMT-3'
-layout: post
-title: 'PinePhone, o smartphone que roda Linux: saiba tudo sobre ele'
 image: '/files/2020/10/pinephone-manjaro-banner.jpg'
+layout: post
+nickname: 'pinephone'
+title: 'PinePhone, o smartphone que roda Linux: saiba tudo sobre ele'
 ---
 
 {% include image.html src='/files/2020/10/pinephone-manjaro-banner.jpg' %}
@@ -27,7 +28,7 @@ A [PINE64] é uma empresa voltada para a comunidade com foco na criação de dis
 A linha de produtos da PINE64 baseados na arquitetura ARM e sistema Linux inclui:
 
 * os computadores de placa única [PINE A64][pine-a64] e [ROCK64];
-* o _notebook_ [Pinebook];
+* o _notebook_ [PineBook];
 * o _smartphone_ [PinePhone];
 * o _tablet_ [PineTab]; e
 * o _smartwatch_ [PineTime].
@@ -50,7 +51,7 @@ Isso quer dizer, então, que vou poder usar meus aplicativos baixados da [Play S
 
 Observe que os sistemas operacionais são diferentes: é verdade que [o Android é baseado no _kernel_ Linux][tecmundo], mas isso não faz do Android uma distribuição Linux como o [openSUSE] ou o [Ubuntu]. Os aplicativos para Android são desenvolvidos para o Android, não para o Linux. Mesma lógica se aplica aos aplicativos para Linux. Portanto, se você copiar um programa de um _smartphone_ com Android para o PinePhone com Linux (ou vice-versa), não vai funcionar.
 
-É o mesmo que acontece se você tem um computador com Windows e outro com Linux: até podem ser da mesma arquitetura, mas como os sistemas são diferentes, não dá pra simplesmente copiar programas de um pro outro.
+É o mesmo que acontece se você tem um computador com [Windows] e outro com Linux: até podem ser da mesma arquitetura, mas como os sistemas são diferentes, não dá pra simplesmente copiar programas de um pro outro.
 
 Por isso, não espere que você vai tirar o PinePhone da caixa e já instalar e usar [WhatsApp] ou [Instagram], por exemplo. Se você precisa usar aplicativos do Android no PinePhone, no momento, há duas soluções que você pode tentar:
 
@@ -64,6 +65,7 @@ Você pode tentar, mas não é garantido que vá funcionar. Eu, particularmente,
 [tecmundo]:     https://www.tecmundo.com.br/software/127038-android-linux-kernel.htm
 [opensuse]:     https://www.opensuse.org/
 [ubuntu]:       https://ubuntu.com/
+[windows]:      https://www.microsoft.com/pt-br/windows/
 [whatsapp]:     https://www.whatsapp.com/?lang=pt_br
 [instagram]:    https://www.instagram.com/?hl=pt-br
 [glodroid]:     https://github.com/GloDroid/glodroid_manifest
@@ -72,9 +74,9 @@ Você pode tentar, mas não é garantido que vá funcionar. Eu, particularmente,
 
 ## PinePhone BraveHeart Edition
 
-A PINE64 começou a vender o PinePhone para o público em geral em [novembro][braveheart-orders] de 2019 e enviou as unidades compradas em [janeiro de 2020][braveheart-shipping]. A primeira edição do PinePhone foi batizada de BraveHeart ("Coração Valente", em inglês) e era destinada a desenvolvedores e entusiastas. Ela não vinha com sistema operacional, apenas um [programa de teste de fábrica][factorytest], o usuário precisava baixar e instalar uma distribuição Linux — ou mesmo criar uma.
+A PINE64 começou a vender o PinePhone para o público em geral em [novembro de 2019][braveheart-orders] e enviou as unidades compradas em [janeiro de 2020][braveheart-shipping]. A primeira edição do PinePhone foi batizada de BraveHeart ("Coração Valente", em inglês) e era destinada a desenvolvedores e entusiastas. Ela não vinha com sistema operacional, apenas um [programa de teste de fábrica][factorytest], o usuário precisava baixar e instalar uma distribuição Linux — ou mesmo criar uma.
 
-{% include image.html src='/files/2020/10/pinephone-factory-test.jpg' caption='O programa de teste de fábrica que vinha no PinePhone BraveHeart.' style='max-width: 400px;' %}
+{% include image.html src='/files/2020/10/pinephone-factory-test.jpg' caption='O programa de teste de fábrica que vinha no PinePhone BraveHeart' style='max-width: 400px;' %}
 
 Algumas das distribuições que já suportavam o PinePhone desde esse início incluíam: [Ubuntu Touch (UBports)][ubports], [postmarketOS], [KDE Neon (Plasma Mobile)][plasma-mobile] e [LuneOS].
 
@@ -107,15 +109,22 @@ A segunda edição comunitária foi anunciada em [junho][postmarketos-orders], t
 
 {% include image.html src='/files/2020/10/pinephone-postmarketos.png' style='max-height: 400px;' %}
 
-Essa edição trouxe uma novidade: o celular poderia ser adquirido junto de uma _dock_ opcional, que permite a conexão de monitor, _mouse_ e teclado ao celular que então pode ser usado como se fosse um computador. O conjunto do celular mais a _dock_ é chamado de _Convergence Package_ ("Pacote de Convergência"). O celular vendido nesse conjunto também vem com mais memória RAM e mais memória interna.
+Essa edição trouxe uma nova versão opcional chamada de _Convergence Package_ ("Pacote de Convergência") com mais memória RAM (3GB em vez de 2GB), o dobro de memória interna (32GB versus 16GB) e uma _dock_ USB-C que permite a conexão de monitor, _mouse_ e teclado ao celular, que então pode ser usado como se fosse um computador _desktop_.
 
 {% include youtube.html id="yBeza4UNOm8" %}
 
-A terceira edição comunitária, à venda desde [setembro][manjaro-orders] e ainda disponível para compra, traz a distribuição [Manjaro] e também permite a aquisição do celular apenas ou do celular junto da _dock_. Ainda não se sabe com qual interface de usuário essa edição virá, mas será uma das três que o Manjaro suporta nesse momento: Lomiri, Phosh ou Plasma Mobile. Para quem comprar essa edição, a PINE64 deve enviar no início de novembro.
+A terceira edição comunitária, à venda desde [setembro][manjaro-orders], traz a distribuição [Manjaro] com a interface Phosh e também permite a aquisição do celular apenas (versão regular) ou do celular melhorado junto da _dock_ (_Convergence Package_). O envio das unidades compradas [já começou][manjaro-shipping], mas ele ainda está disponível para compra.
 
 {% include image.html src='/files/2020/10/pinephone-manjaro.png' style='max-height: 400px;' %}
 
-É interessante observar que o _hardware_ do PinePhone recebe pequenas [revisões][pinephone-revisions] a cada edição. O BraveHeart foi considerado a versão 1.1. A edição com Ubuntu Touch, a versão 1.2. As edições com postmarketOS e Manjaro correspondem à versão 1.2a. Essas revisões não mudaram as especificações, mas trouxeram pequenas correções e melhorias.
+É interessante observar que o PinePhone recebeu algumas [revisões de _hardware_][pinephone-revisions] a cada edição:
+
+- PinePhone BraveHeart Edition foi considerado a versão 1.1
+- PinePhone UBports Community Edition: versão 1.2
+- PinePhone postmarketOS Community Edition: versão 1.2a
+- PinePhone Manjaro Community Edition: versão 1.2b
+
+Essas revisões não mudaram as especificações, mas trouxeram pequenas correções e melhorias.
 
 [pine64-donation]:      https://www.pine64.org/2019/08/19/its-time-to-start-giving-back/
 [lomiri]:               https://diolinux.com.br/2020/03/lomiri-e-o-novo-nome-para-o-projeto-unity8.html
@@ -126,6 +135,7 @@ A terceira edição comunitária, à venda desde [setembro][manjaro-orders] e ai
 [gnome]:                https://br.gnome.org/
 [manjaro-orders]:       https://www.pine64.org/2020/08/31/pinephone-manjaro-community-edition/
 [manjaro]:              https://manjaro.org/
+[manjaro-shipping]:     https://forum.pine64.org/showthread.php?tid=11959
 [pinephone-revisions]:  https://wiki.pine64.org/index.php?title=PinePhone#Hardware_revisions
 
 ## Distribuições Linux suportadas
@@ -209,7 +219,7 @@ A edição que está à venda agora tem previsão de envio no início de novembr
 
 O PinePhone custa 150 dólares (na loja diz 149,99, mas eu sempre penso arredondando já). O _Convergence Package_, que adiciona a _dock_ (e a memória RAM e a memória interna maiores) custa 200 dólares (199,99), portanto, 50 dólares a mais. Simulei o envio para o Brasil e, para a minha residência, pelo menos, o frete deu 65 dólares. Para cada PinePhone vendido, 10 dólares serão doados para a distribuição — na edição atual, o Manjaro.
 
-Pensando em dólares, não é um preço fora da realidade, é próximo de alguns dos [_smartphones_ Android mais baratos][androidcentral], como o [Motorola Moto E][moto-e], que hoje está custando 150 dólares na [Amazon]. É bem verdade que o Moto E ganha nas especificações, mas quem compra um PinePhone provavelmente o prefere por ser um _smartphone_ com Linux.
+Pensando em dólares, não é um preço fora da realidade, é próximo de alguns dos [_smartphones_ Android mais baratos][androidcentral], como o [Motorola Moto E][moto-e], que hoje custa os mesmos 150 dólares na [Amazon]. É bem verdade que o Moto E ganha nas especificações, mas quem compra um PinePhone provavelmente o prefere por ser um _smartphone_ com Linux.
 
 Pesquisando no [Google], hoje, 13 de outubro, 1 dólar está valendo 5,58 reais.
 
@@ -238,7 +248,7 @@ Os acessórios foram enviados no dia seguinte. Saíram de Hong Kong por China Po
 
 Meus problemas foram com o celular. A transportadora que a PINE64 usou para o envio dos PinePhones com postmarketOS no final de agosto foi a [DHL]. O serviço dessa empresa de fato é muito bom. A informação passada no [fórum da PINE64][forum-pine64] foi que os celulares chegariam a seus destinos dentro de 5 a 10 dias, independentemente da localização geográfica (dependendo também dos procedimentos de importação de cada país, claro).
 
-Ocorre que para conseguir essa rápida entrega, a DHL adianta o pagamento ao governo dos impostos e taxas alfandegárias, que você deve ressarcir à DHL para que seja feita a entrega.
+Ocorre que para conseguir essa rápida entrega, [a DHL adianta o pagamento ao governo dos impostos e taxas alfandegárias][dhl-support], que você deve ressarcir à DHL para que seja feita a entrega.
 
 Ou seja, quando a entrega é feita pelo correio comum, pode ser que a encomenda seja taxada ou liberada, mas quando é feita pela transportadora, é certo que será taxada.
 
@@ -270,8 +280,9 @@ Compras internacionais não são minha especialidade, por isso também sugiro qu
 
 [pinestore-hard-case]:          https://pine64.com/product/pinephone-hard-protective-case/
 [pinestore-glass-protector]:    https://pine64.com/product/pinephone-tempered-glass-screen-protector/
-[forum-pine64]:                 https://forum.pine64.org/showthread.php?tid=11134
 [dhl]:                          https://www.dhl.com/br-pt/home.html
+[forum-pine64]:                 https://forum.pine64.org/showthread.php?tid=11134
+[dhl-support]:                  https://www.dhl.com.br/exp-pt/express/suporte_alfandegario/servicos_e_impostos/impostos_taxas_destinatarios.html
 [shipito]:                      https://www.shipito.com/?id_affiliate=16894
 [thepihut]:                     https://thepihut.com/
 [bitcoin]:                      {% post_url pt/2018-12-12-bitcoin-para-iniciantes-com-a-carteira-electrum %}
@@ -305,7 +316,8 @@ Além dos vários _links_ espalhados pela página, pra escrever este texto eu ta
 - [PINEPHONE – "Community Edition: Manjaro with Convergence Package" Limited Edition Linux SmartPhone – Pine Store][pine-store-manjaro]
 - [postmarketOS // PinePhone: postmarketOS community edition][postmarketos-blog]
 - [The Linux-based PinePhone is the most interesting smartphone I've tried in years - Android Police][androidpolice]
-- [PinePhone: What You Need to Know About This Linux Phone - OMG! Ubuntu!][omgubuntu]
+- [PinePhone: What You Need to Know About This Linux Phone - OMG! Ubuntu!][omgubuntu-1]
+- [New PinePhone with 3GB RAM and USB Dock Goes on Sale - OMG! Ubuntu!][omgubuntu-2]
 - [PinePhone User Manual - Quick Start Guide (EN)][pinephone-manual]
 - [Qual o valor que a alfândega cobra de produtos importados? - UOL Economia][uol]
 
@@ -314,7 +326,8 @@ Além dos vários _links_ espalhados pela página, pra escrever este texto eu ta
 [pine-store-manjaro]:       https://pine64.com/product/pinephone-community-edition-manjaro-with-convergence-package-limited-edition-linux-smartphone/
 [postmarketos-blog]:        https://postmarketos.org/blog/2020/06/15/pinephone-postmarketos-community-edition/
 [androidpolice]:            https://www.androidpolice.com/2020/08/13/the-linux-based-pinephone-is-the-most-interesting-smartphone-ive-tried-in-years/
-[omgubuntu]:                https://www.omgubuntu.co.uk/2019/11/pinephone-specs-price-release-date
+[omgubuntu-1]:              https://www.omgubuntu.co.uk/2019/11/pinephone-specs-price-release-date
+[omgubuntu-2]:              https://www.omgubuntu.co.uk/2020/07/buy-pinephone-postmarketos
 [pinephone-manual]:         https://wiki.pine64.org/images/f/f7/USER_MANUAL_-_QUICK_START_GUIDE_EN_GER_FR_ESP_V1.3.pdf
 [uol]:                      https://economia.uol.com.br/noticias/redacao/2019/11/16/compras-online-internacional-imposto-alfandega-multa-correios.htm
 
@@ -327,7 +340,7 @@ Além dos vários _links_ espalhados pela página, pra escrever este texto eu ta
   - todas as bandas mundiais
   - _chip_ micro-SIM
 - **Conexões sem fio:**
-  - Wi-Fi 802.11 b/g/n, banda única (2,4 GHz), ponto de acesso (_hotspot_)
+  - Wi-Fi 802.11 b/g/n, banda única (2,4GHz), ponto de acesso (_hotspot_)
   - Bluetooth 4.0, perfil A2DP
 - **Localização:**
   - GPS/GLONASS/BeiDou/Galileo/QZSS, com A-GPS
@@ -342,20 +355,20 @@ Além dos vários _links_ espalhados pela página, pra escrever este texto eu ta
   - _system-on-a-chip_ (SoC) Allwinner A64
   - processador (CPU): ARM Cortex-A53
   - quatro núcleos (_quad core_)
-  - frequência de 1,2 GHz
+  - frequência de 1,2GHz
   - arquitetura ARMv8 de 64 bits
   - _chip_ gráfico (GPU): ARM Mali-400 MP2
 - **Memória:**
-  - memória do sistema: 2 ou 3 GB de memória LPDDR3 SDRAM
-  - memória interna: 16 ou 32 GB de memória eMMC
-  - entrada para cartão microSD de até 2 TB (SDHC/SDXC, bootável)
+  - memória do sistema: 2GB ou 3GB de memória LPDDR3 SDRAM
+  - memória interna: 16GB ou 32GB de memória eMMC
+  - entrada para cartão microSD de até 2TB (SDHC/SDXC, bootável)
 - **Câmeras:**
   - câmera traseira (principal): 5 _megapixels_, 1/4", com _flash_ de LED
   - câmera frontal (de _selfie_): 2 _megapixels_, 1/5", abertura f/2.8
 - **Som:**
   - alto-falante mono integrado
   - microfone integrado
-  - conexão para fone de ouvido estéreo com microfone do tipo P2 3,5 mm
+  - conexão para fone de ouvido estéreo com microfone do tipo P2 3,5mm
 - **Sensores:**
   - acelerômetro
   - giroscópio
@@ -380,27 +393,27 @@ Além dos vários _links_ espalhados pela página, pra escrever este texto eu ta
     - câmera frontal
     - fones de ouvido
   - pinos de expansão para conexão serial usando protocolo I2C
-  - luz LED de _status_, cores RGB
+  - luz LED de notificação multicor
   - vibração
 
-{% include image.html src='/files/2020/10/pinephone-pins.jpg' caption='Breakout board para os pinos de expensão do PinePhone. Fonte das imagens: [https://github.com/SMR404/PinephonePogoBreakout](https://github.com/SMR404/PinephonePogoBreakout)' %}
+{% include image.html src='/files/2020/10/pinephone-pins.jpg' caption='Breakout board para os pinos de expansão do PinePhone. Fonte das imagens: [https://github.com/SMR404/PinephonePogoBreakout](https://github.com/SMR404/PinephonePogoBreakout)' %}
 
 - **Tamanho e peso do celular:**
-  - altura: 160,5 mm
-  - largura: 76,6 mm
-  - espessura: 9,2 mm
+  - altura: 160,5mm
+  - largura: 76,6mm
+  - espessura: 9,2mm
   - peso: entre 180 e 200 gramas
 - **Conteúdo da embalagem:**
   - PinePhone
   - cabo USB-A para USB-C
   - pequeno manual do usuário (veja uma cópia em PDF [aqui][pinephone-manual])
-  - adaptador de _chip_
+  - adaptador de _chip_ nano-SIM para micro-SIM
   - _dock_ USB-C (opcional): contém saída de vídeo HDMI, 2 portas USB-A, porta de rede Ethernet 10/100Mbps e porta USB-C (energia)
 
 {% include image.html src='/files/2020/10/pinephone-sim-adapter.jpg' caption='Só depois me dei conta que há na embalagem um adaptador de _chip_ nano-SIM para micro-SIM, provavelmente desnecessário no Brasil, porque que as operadoras já o fornecem.' %}
 
 - **Tamanho e peso da embalagem:**
-  - comprimento: 18 cm
-  - largura: 10 cm
-  - altura: 4 cm
-  - peso: 0,5 kg
+  - comprimento: 18cm
+  - largura: 10cm
+  - altura: 4cm
+  - peso: 0,5kg
