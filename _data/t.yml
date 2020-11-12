@@ -4,7 +4,7 @@ en:
     all_rights_reversed: "All rights reversed"
     based_on: "Based on"
     buymeacoffee: "Would you buy me a coffee?"
-    buymeacoffee_desc: 'If you really liked it, if it was really helpful for you, is it worth a coffee? If you want, you can "buy me a coffee" with <a href="#" title="PayPal" target="_blank">PayPal</a> or <a href="#">contribute to the project in other ways</a>.'
+    buymeacoffee_desc: 'If you really liked it, if it was really helpful for you, is it worth a coffee? If you want, you can "buy me a coffee" with <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J7F5GPWZX7CJA&no_shipping=1&lc=US" title="PayPal" target="_blank">PayPal</a> or <a href="/en/contribute">contribute to the project in other ways</a>.'
     comments: "Comments"
     copy: "Copy"
     copied: "Copied!"
@@ -50,7 +50,7 @@ pt:
     all_rights_reversed:  "Todos os direitos liberados"
     based_on: "Baseado no"
     buymeacoffee: "Me paga um café?"
-    buymeacoffee_desc: 'Se você gostou muito, se foi muito útil pra você, será que vale um café? Se quiser, você pode "me pagar um café" pelo <a href="#" title="PayPal" target="_blank">PayPal</a> ou <a href="#">contribuir com o projeto de outras formas</a>.'
+    buymeacoffee_desc: 'Se você gostou muito, se foi muito útil pra você, será que vale um café? Se quiser, você pode "me pagar um café" pelo <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&business=J7F5GPWZX7CJA&no_shipping=1&currency_code=BRL&lc=BR" title="PayPal" target="_blank">PayPal</a> ou <a href="/pt/contribuir">contribuir com o projeto de outras formas</a>.'
     comments: "Comentários"
     copy: "Copiar"
     copied: "Copiado!"
