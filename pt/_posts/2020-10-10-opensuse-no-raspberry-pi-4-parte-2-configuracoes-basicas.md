@@ -256,7 +256,7 @@ Espero que você faça bom proveito do openSUSE no Raspberry Pi e que esses tuto
 
 Espero também que o openSUSE melhore seu suporte ao Raspberry Pi para que possamos tirar o máximo proveito desses incríveis computador e sistema operacional.
 
-[rpi4b-opensuse]:       {% post_url pt/2020-10-10-opensuse-no-raspberry-pi-4-parte-2-configuracoes-basicas %}
+[rpi4b-opensuse]:       {% post_url pt/2020-10-07-opensuse-no-raspberry-pi-4-parte-1-download-e-instalacao %}
 [rpi4b]:                {% post_url pt/2019-09-20-primeiros-passos-no-raspberry-pi-com-noobs-e-raspbian %}
 [opensuse]:             https://www.opensuse.org/
 [raspbian]:             http://www.raspbian.org/

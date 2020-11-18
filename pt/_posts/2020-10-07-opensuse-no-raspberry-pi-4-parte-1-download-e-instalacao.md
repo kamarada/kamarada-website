@@ -25,7 +25,7 @@ A [Raspberry Pi Foundation][rpi-foundation] disponibiliza no [GitHub] os código
 
 O Raspbian oferece suporte completo ao Raspberry Pi 4 porque usa o _kernel_ Linux e os binários pré-compilados obtidos da Raspberry Pi Foundation. O Manjaro seguiu o mesmo caminho e, por isso, também oferece suporte completo ao Raspberry Pi 4. Esse caminho é mais curto, fornece "para ontem" um sistema que funciona, e não há nada de errado nisso.
 
-Mas o Projeto openSUSE optou por seguir um caminho diferente, tentando adicionar suporte ao Raspberry Pi 4 ao [_kernel_ Linux original][linux], que é usado pela distribuição. É um caminho mais longo e demorado, mas que na teoria deve fornecer melhores resultados no longo prazo, que inclusive beneficiarão outras distribuições além do próprio openSUSE. A desvantagem dessa abordagem é que, enquanto módulos de código aberto não são desenvolvidos, não é possível usar alguns recursos do Raspberry Pi 4.
+Mas o Projeto openSUSE optou por seguir um caminho diferente, tentando adicionar suporte ao Raspberry Pi 4 ao [_kernel_ Linux original][linux-kernel], que é usado pela distribuição. É um caminho mais longo e demorado, mas que na teoria deve fornecer melhores resultados no longo prazo, que inclusive beneficiarão outras distribuições além do próprio openSUSE. A desvantagem dessa abordagem é que, enquanto módulos de código aberto não são desenvolvidos, não é possível usar alguns recursos do Raspberry Pi 4.
 
 ## Sabia que existem "dois openSUSEs"?
 
@@ -36,7 +36,7 @@ A partir daí, o Projeto openSUSE passou a oferecer duas distribuições:
 - **openSUSE Leap:** mais estável, sucessor do bom e velho openSUSE, mas com um novo processo de desenvolvimento, atualmente está na [versão 15.2][leap-15.2] e lança novas versões com regularidade (geralmente, uma nova versão por ano), de modo semelhante a distribuições mais tradicionais como [Ubuntu], [Debian] e [Fedora]; e
 - **openSUSE Tumbleweed:** com lançamentos contínuos (_rolling release_), ou seja, não possui versões distintas, apenas a versão mais recente, que contém sempre os _softwares_ mais recentes, recebe atualizações pequenas e frequentes sempre que um _software_ é atualizado, semelhante a distribuições como [Arch] e Manjaro.
 
-O openSUSE Leap é mais indicado para usuários iniciantes e organizações, que tendem a evitar atualizações frequentes. Já o openSUSE Tumbleweed é preferido por usuários entusiastas que desejam usar sempre o que há de mais novo em Linux.
+O openSUSE Leap é mais indicado para usuários iniciantes e organizações, que tendem a evitar atualizações frequentes. Já o openSUSE Tumbleweed é preferido por usuários entusiastas que desejam usar sempre o que há de mais novo em [Linux].
 
 Normalmente, eu falo aqui do openSUSE Leap. É a distribuição que eu uso e indico há anos, principalmente para usuários iniciantes, tanto que o [Linux Kamarada][kamarada-15.2] é baseado nele.
 
@@ -69,7 +69,7 @@ Sabendo o que hoje funciona ou não no Raspberry Pi 4 com openSUSE, você pode d
 
 ## Baixando a imagem do openSUSE
 
-Para baixar a imagem do openSUSE e gravá-la no cartão de memória, você vai precisar de um PC com Linux ou [Windows] e um cartão de memória micro-SD de pelo menos 8GB. Provavelmente o passo-a-passo a seguir também funciona no [macOS].
+Para baixar a imagem do openSUSE e gravá-la no cartão de memória, você precisará de um PC com Linux, [Windows] ou [macOS] e um cartão de memória micro-SD de pelo menos 8GB.
 
 Eu vou usar o [Linux Kamarada 15.2][kamarada-15.2].
 
@@ -85,81 +85,33 @@ Aqui, vou usar a imagem do Tumbleweed com a área de trabalho [XFCE], que é bem
 
 Clique no _link_ para a imagem que deseja baixar. O _download_ pode demorar um pouco, considerando que o arquivo é grande (no meu caso, 1 GB).
 
-Conecte ao computador o cartão de memória que receberá a imagem.
+## Gravando a imagem no cartão de memória com o balenaEtcher
+
+Para gravar a imagem do openSUSE no cartão de memória, eu recomendo o programa [balenaEtcher][etcher], por ser simples e fácil de usar. Ele é gratuito e de código aberto.
+
+{% include update.html date="17/11/2020" message="Na versão original deste tutorial, eu falava sobre o balenaEtcher. Como pretendo usar o balenaEtcher também em outros tutoriais, decidi mover as instruções de como usá-lo para um tutorial próprio dele." %}
+
+Veja como usar o balenaEtcher em:
+
+- [Gravando imagem no cartão de memória de forma fácil com o balenaEtcher][etcher]
+
+Só observo que há um pequeno problema quanto a privacidade, que explico no tutorial e apresento uma solução de contorno, mas isso não me impede de usar o balenaEtcher.
+
+Se isso for uma questão pra você, uma alternativa é usar o comando **dd**, se você usa Linux.
+
+## Alternativa ao Etcher: comando dd
+
+Se você preferiu seguir minha recomendação e usar o balenaEtcher, pode pular essa seção.
+
+O comando **[dd]** provavelmente está presente em todas as distribuições Linux.
+
+Conecte ao computador o cartão de memória no qual será gravada a imagem.
 
 Note que gravar a imagem do openSUSE no cartão de memória apagará quaisquer dados que porventura estejam nesse cartão. Se ele contém arquivos, talvez você queira fazer um _backup_ deles antes de continuar para não perdê-los.
 
 Recomendo que você remova quaisquer outros dispositivos de armazenamento (_pendrives_, HDs externos, etc) conectados e deixe apenas o cartão de memória, pra não correr o risco de formatar o dispositivo errado (e perder arquivos, provavelmente de forma irreversível).
 
-## Baixando o Balena Etcher
-
-Para gravar a imagem do openSUSE no cartão de memória, eu recomendo a ferramenta [Balena Etcher][etcher], por ser simples e fácil de usar. Ela é gratuita e de [código aberto][etcher-source].
-
-Apenas observo que há uma questão de **privacidade** nessa ferramenta, mas creio ser um problema pequeno e fácil de contornar: durante o uso, o programa faz conexões de rede com servidores do [Google], [Facebook] e outros serviços (mais informações [aqui][etcher-privacy-1] e [aqui][etcher-privacy-2]), o que é intrigante, porque isso é totalmente desnecessário à sua função.
-
-Se isso for uma questão pra você, creio ser suficiente desconectar o computador da Internet durante o uso do aplicativo. Outra alternativa, se você usa Linux, é usar o comando **dd**, falo sobre ele mais adiante (se quiser, você pode pular toda essa parte sobre o Balena Etcher).
-
-Seguindo com o Balena Etcher... acesse seu _site_ e clique no botão para _download_:
-
-- [https://www.balena.io/etcher/][etcher]
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-02.jpg' %}
-
-Quando o _download_ terminar, abra a pasta **Downloads** e extraia o conteúdo do arquivo compactado baixado:
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-03-pt.jpg' %}
-
-Se você vai desconectar seu computador da Internet, a hora de fazer isso é agora.
-
-Abra a pasta criada e faça um clique-duplo no arquivo com extensão [AppImage] (que é, na verdade, o programa Balena Etcher em si, isso vai iniciá-lo):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-04-pt.jpg' %}
-
-## Gravando a imagem no cartão de memória
-
-No Balena Etcher, clique no botão **Flash from file** (gravar a partir do arquivo) e informe a localização da imagem do openSUSE que você baixou:
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-05.jpg' %}
-
-Depois, clique no botão **Select target** (selecionar destino):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-06.jpg' %}
-
-Marque o cartão de memória e clique em **Select** (selecionar):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-07.jpg' %}
-
-**Cuidado:** certifique-se de selecionar corretamente o cartão de memória, do contrário a imagem será gravada no dispositivo de armazenamento errado e você poderá perder dados de forma irreversível. Eu costumo me orientar pela capacidade (**Size**) do dispositivo.
-
-Finalmente, clique no último botão, **Flash** (gravar):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-08.jpg' %}
-
-Informe a senha do administrador (no Linux, chamado de usuário _root_) para prosseguir.
-
-Aguarde a imagem ser gravada no cartão de memória, o Balena Etcher até informa uma estimativa de quanto tempo isso vai demorar (você pode sair e ir tomar um café):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-09.jpg' %}
-
-Depois de gravar, o Balena Etcher verifica os arquivos no cartão de memória (você pode demorar mais um pouco no seu café):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-10.jpg' %}
-
-No final, o Balena Etcher informa que a gravação está completa (**Flash Complete**):
-
-{% include image.html src='/files/2020/10/rpi4b-opensuse-11.jpg' %}
-
-Você pode simplesmente fechar o Balena Etcher.
-
-Se você desconectou seu computador da Internet, já pode conectá-lo de volta.
-
-## Alternativa ao Etcher: comando dd
-
-Se você preferiu usar o Balena Etcher, pode pular essa seção.
-
-Se você não quiser usar o Balena Etcher, uma alternativa é usar o comando **[dd]**, que provavelmente está presente em todas as distribuições Linux.
-
-Antes, identifique o cartão de memória que receberá a imagem. Você pode fazer isso com o auxílio do comando **[fdisk]**, que provavelmente também é outro comando universal:
+Identifique o cartão de memória que receberá a imagem. Você pode fazer isso com o auxílio do comando **[fdisk]**, que provavelmente também é outro comando universal:
 
 ```
 # fdisk -l
@@ -190,11 +142,9 @@ Então, execute o comando a seguir para gravar a imagem no cartão de memória, 
 
 O comando **[sync]** ao final garante que dados que ainda estejam no cache na memória RAM sejam gravados. Com isso, é seguro remover o cartão de memória.
 
-## Removendo o cartão de memória
+Os comandos **dd** e **sync** não montam o cartão de memória após a gravação.
 
-O Balena Etcher, assim como o comando **dd**, não monta o cartão de memória após a gravação.
-
-Se você abrir o aplicativo **Arquivos**, verá que não aparece o ícone de **Desmontar** ao lado do cartão de memória:
+Se você abrir o aplicativo **Arquivos**, verá que o cartão de memória até aparece listado, mas não aparece o ícone de **Desmontar** ao lado dele:
 
 {% include image.html src='/files/2020/10/rpi4b-opensuse-12-pt.jpg' %}
 
@@ -235,24 +185,19 @@ Alguns dos textos que consultei para escrever o presente texto incluem:
 [github]:           https://github.com/raspberrypi/
 [rpi-linux]:        https://github.com/raspberrypi/linux
 [firmware]:         https://github.com/raspberrypi/firmware
-[linux]:            https://www.kernel.org/
+[linux-kernel]:     https://www.kernel.org/
 [leap-15.2]:        {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
 [ubuntu]:           https://ubuntu.com/
 [debian]:           https://www.debian.org/
 [fedora]:           https://getfedora.org/pt_BR/
 [arch]:             https://www.archlinux.org/
+[linux]:            https://www.vivaolinux.com.br/linux/
 [kamarada-15.2]:    {% post_url pt/2020-09-11-linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca %}
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [macos]:            https://www.apple.com/br/macos/
 [opensuse-wiki]:    https://en.opensuse.org/HCL:Raspberry_Pi4
 [xfce]:             https://www.xfce.org/
-[etcher]:           https://www.balena.io/etcher/
-[etcher-source]:    https://github.com/balena-io/etcher
-[google]:           https://www.google.com.br/
-[facebook]:         https://pt-br.facebook.com/
-[etcher-privacy-1]: https://forums.balena.io/t/serious-privacy-concerns-with-etcher-1-4-4/4103
-[etcher-privacy-2]: https://github.com/balena-io/etcher/issues/2977
-[appimage]:         https://appimage.org/
+[etcher]:           {% post_url pt/2020-11-17-gravando-imagem-no-cartao-de-memoria-de-forma-facil-com-o-balenaetcher %}
 [dd]:               https://man7.org/linux/man-pages/man1/dd.1.html
 [fdisk]:            https://linux.die.net/man/8/fdisk
 [sync]:             https://man7.org/linux/man-pages/man1/sync.1.html
