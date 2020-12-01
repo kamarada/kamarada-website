@@ -1,0 +1,83 @@
+<metapackage xmlns:os="http://opensuse.org/Standards/One_Click_Install" xmlns="http://opensuse.org/Standards/One_Click_Install">
+  <group distversion="openSUSE Tumbleweed">
+    <repositories>
+      <repository recommended="true">
+        <name>network:cryptocurrencies</name>
+        <summary>Crypto currencies</summary>
+        <description>This project is dedicated to crypto currencies.
+
+It is in an early stage of evolution, initially filled with the most complex collection created by marec2000 (https://build.opensuse.org/project/show/home:marec2000:cryptocoins). It does not mean, that all of these packages are the best variants. Anybody is welcome to add packages, improve them or even replace existing ones.
+
+If you have a better version of these packages, feel free to submit them. Fee free to submit even a different version of the package with a different changes file (with exception of those few packages that will be in the openSUSE:Factory).
+
+https://bugzilla.suse.com/show_bug.cgi?id=1043401</description>
+        <url>https://download.opensuse.org/repositories/network:/cryptocurrencies/openSUSE_Tumbleweed/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Factory/snapshot/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Tumbleweed/standard/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Tumbleweed/dod/</url>
+      </repository>
+      <repository recommended="true">
+        <name>openSUSE:Tumbleweed</name>
+        <summary>Tumbleweed</summary>
+        <description>Tumbleweed is the openSUSE Rolling Release
+
+This OBS Project represents the content of the currently published
+snapshot. The newer repository for next publish can be found in openSUSE:Factory standard repository.
+</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Tumbleweed/dod_debug/</url>
+      </repository>
+      <repository recommended="false">
+        <name>openSUSE:Factory</name>
+        <summary>The next openSUSE distribution</summary>
+        <description>Any user who wishes to have the newest packages that include, but are not limited to, the Linux kernel, SAMBA, git, desktops, office applications and many other packages, will want Tumbleweed. Tumbleweed appeals to Power Users, Software Developers and openSUSE Contributors. If you require the latest software stacks and Integrated Development Environment or need a stable platform closest to bleeding edge Linux, Tumbleweed is the best choice for you.
+
+Staging dashboard is located at: https://build.opensuse.org/project/show/openSUSE:Factory
+
+List of known devel projects: https://build.opensuse.org/package/view_file/openSUSE:Factory:Staging/dashboard/devel_projects
+
+Have a look at http://en.opensuse.org/Portal:Factory for more details.</description>
+        <url>https://download.opensuse.org/repositories/openSUSE:/Factory/ports/</url>
+      </repository>
+    </repositories>
+    <software>
+      <item>
+        <name>electrum</name>
+        <summary>Lightweight BitCoin Client</summary>
+        <description>Electrum is an easy to use BitCoin wallet. It protects you from losing coins in
+a backup mistake or computer failure, because your wallet can be recovered from
+a secret phrase that you can write on paper or learn by heart. There is no
+waiting time when you start the client, because it does not download the
+BitCoin blockchain.</description>
+      </item>
+    </software>
+  </group>
+</metapackage>
