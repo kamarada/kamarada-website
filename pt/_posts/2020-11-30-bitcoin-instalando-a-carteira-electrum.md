@@ -15,7 +15,7 @@ Eu até já falei sobre a carteira Electrum em outro texto sobre [Bitcoin para i
 
 No momento, a versão mais atual da carteira Electrum é a [4.0.5], lançada em [18/11/2020][4.0.5].
 
-Hoje, é possível instalar a Electrum de algumas maneiras, desde a mais rápida e segura mas não tão segura para os mais tranquilos e/ou apressados, até a mais trabalhosa mas mais segura para os mais desconfiados. A seguir, vou mostrar essas formas de instalação.
+Hoje, é possível instalar a Electrum de algumas maneiras, desde a mais rápida — e segura, mas não tão segura — para os mais tranquilos e/ou apressados, até a mais trabalhosa mas mais segura para os mais desconfiados. A seguir, vou mostrar essas formas de instalação.
 
 Veja as opções, escolha a sua preferida e mão na massa! (não precisa fazer todas, só uma)
 
@@ -25,17 +25,25 @@ Aqui eu uso a distribuição [Linux Kamarada 15.2][kamarada-15.2], que é basead
 
 {% include image.html src="/files/2020/11/electrum-softwareoo.jpg" %}
 
-A carteira Electrum não está disponível no repositório oficial do openSUSE, mas se você procurá-la em [software.opensuse.org][softwareoo], verá que está disponível no repositório semi-oficial [network:cryptocurrencies][electrum-network]. Se você é usuário do openSUSE Tumbleweed, obter a carteira Electrum desse repositório é a forma mais fácil de instalá-la.
+A carteira Electrum não está disponível nos [repositórios oficiais do openSUSE][opensuse-repos], mas se você procurá-la em [software.opensuse.org][softwareoo], verá que está disponível no repositório semi-oficial [network:cryptocurrencies][electrum-network]. Se você é usuário do [openSUSE] (ou do Linux Kamarada), obter a carteira Electrum desse repositório é a forma mais fácil de instalá-la.
 
-Por que essa forma de instalação é específica para o openSUSE Tumbleweed e exclui usuários do openSUSE Leap e do Linux Kamarada? Porque a carteira Electrum depende de uma biblioteca do [Python] que ainda não está disponível na versão 15.2 dessas distribuições, que é a [python3-aiorpcX]. Essa biblioteca já está disponível para o openSUSE Tumbleweed.
+Usuários do openSUSE Tumbleweed vão obter desse repositório a versão 4.0.5 da Electrum, enquanto usuários do openSUSE Leap 15.2 (e do Linux Kamarada 15.2) vão obter a versão 4.0.2. Isso acontece porque a versão mais recente da Electrum depende de uma biblioteca do [Python] que ainda não está disponível no openSUSE Leap 15.2, que é a [python3-aiorpcX]. No momento, essa biblioteca está disponível apenas para o openSUSE Tumbleweed.
 
-Você pode instalar o pacote da carteira Electrum no openSUSE Tumbleweed de duas formas: pela interface gráfica, usando a instalação com 1 clique (*1-Click Install*), ou pelo terminal, usando o gerenciador de pacotes **zypper**. Escolha a que prefere.
+Você pode instalar o pacote da carteira Electrum no openSUSE de duas formas: pela interface gráfica, usando a instalação com 1 clique (*1 Click Install*), ou pelo terminal, usando o gerenciador de pacotes **zypper**. Escolha a que prefere.
 
 Para instalar usando a instalação com 1 clique, clique no botão abaixo:
 
 <p class='text-center'><a class='btn btn-sm btn-outline-primary' href='/downloads/electrum.ymp'><i class='fas fa-bolt'></i> Instalação com 1 clique</a></p>
 
 Para instalar usando o terminal, primeiro adicione o repositório necessário:
+
+- para o openSUSE Leap 15.2 ou o Linux Kamarada 15.2:
+
+```
+# zypper addrepo -f https://download.opensuse.org/repositories/network:/cryptocurrencies/openSUSE_Leap_15.2/ criptomoedas
+```
+
+- para o openSUSE Tumbleweed:
 
 ```
 # zypper addrepo -f https://download.opensuse.org/repositories/network:/cryptocurrencies/openSUSE_Tumbleweed/ criptomoedas
@@ -47,7 +55,7 @@ Depois, instale o pacote propriamente dito:
 # zypper in electrum
 ```
 
-O código-fonte desse pacote pode ser encontrado no [openSUSE Build Service][obs]. Eu tenho familiaridade com o empacotamento [RPM] para [openSUSE] usando o OBS — até porque uso essa mesma infraestrutura para empacotar para o Linux Kamarada — e por isso inspecionei esses arquivos, principalmente o `electrum.spec`. Os arquivos `Electrum-4.0.5.tar.gz` e `Electrum-4.0.5.tar.gz.asc` coincidem com os disponíveis no [_site_ oficial da carteira Electrum][electrum]. Acredito ser seguro instalar a Electrum a partir desse repositório do openSUSE.
+O código-fonte desse pacote pode ser encontrado no [openSUSE Build Service][obs]. Eu tenho familiaridade com o empacotamento [RPM] para openSUSE usando o OBS — até porque uso essa mesma infraestrutura para empacotar para o Linux Kamarada — e por isso inspecionei esses arquivos, principalmente o `electrum.spec`. Os arquivos `Electrum-4.0.5.tar.gz` e `Electrum-4.0.5.tar.gz.asc` coincidem com os disponíveis no [_site_ oficial da carteira Electrum][electrum]. Acredito ser seguro instalar a Electrum a partir desse repositório do openSUSE.
 
 ## 2) Instalação usando Flatpak
 
@@ -56,8 +64,6 @@ O código-fonte desse pacote pode ser encontrado no [openSUSE Build Service][obs
 O [Flatpak] é um gerenciador de pacotes independente de distribuição. Até pouco tempo atrás, diferentes distribuições Linux usavam diferentes formatos de pacotes, geralmente incompatíveis entre si. Por exemplo, [Debian] e [Ubuntu] usam pacotes [DEB], enquanto [RedHat], [Fedora] e openSUSE usam pacotes RPM. O Flatpak trouxe uma alternativa mais simples para instalar programas em diferentes distribuições: contanto que o Flatpak esteja instalado no sistema, o mesmo pacote Flatpak pode ser instalado em qualquer distribuição.
 
 Existe um [pacote Flatpak da carteira Electrum][electrum-flatpak]. No momento, ele traz a versão 4.0.4 da Electrum. É uma alternativa que usuários do openSUSE Leap e do Linux Kamarada tem para usar uma versão mais recente da carteira sem maiores dificuldades.
-
-Se você é usuário do Linux Kamarada ou do openSUSE, obter a carteira Electrum desse repositório é a forma mais fácil de instalá-la.
 
 Para instalar o Flatpak no openSUSE, caso você ainda não o tenha instalado, execute:
 
@@ -85,9 +91,9 @@ Note que o pacote Flatpak, assim como o pacote do openSUSE, também foi contribu
 
 Na verdade, essa é a recomendação do criador da Electrum: não baixar a Electrum de outro lugar que não seja o seu _site_ oficial ([electrum.org][electrum]) e verificar a assinatura GPG.
 
-No entanto, vale observar que a Electrum depende da biblioteca [secp256k1], que pode ser facilmente instalada a partir dos repositórios oficiais de distribuições Linux como [Debian][debian-libsecp256k1] ou [Ubuntu][ubuntu-libsecp256k1], mas não está disponível no repositório oficial do openSUSE.
+No entanto, vale observar que a Electrum depende da biblioteca [secp256k1], que pode ser facilmente instalada a partir dos repositórios oficiais de distribuições Linux como [Debian][debian-libsecp256k1] ou [Ubuntu][ubuntu-libsecp256k1], mas não está disponível nos repositórios oficiais do openSUSE.
 
-Para usuários do openSUSE, isso gera um problema, que é instalar essa biblioteca antes de instalar a Electrum. Ela até pode ser obtida do repositório [network:cryptocurrencies][libsecp256k1], mas aí faria mais sentido instalar também a Electrum a partir desse repositório (opção 1). Ou compilar tanto a biblioteca quanto a carteira a partir de seus códigos-fonte.
+Para usuários do openSUSE, isso gera um problema, que é instalar essa biblioteca antes de instalar a Electrum. Ela até pode ser obtida do repositório [network:cryptocurrencies][libsecp256k1], mas aí faria mais sentido instalar também a Electrum a partir desse mesmo repositório (opção 1). Ou compilar tanto a biblioteca quanto a carteira a partir de seus códigos-fonte.
 
 ## 4) Compilando a partir do código-fonte
 
@@ -134,14 +140,13 @@ $ cd electrum
 $ git submodule update --init
 ```
 
-No momento, a versão mais atual da Electrum é a 4.0.5, e o desenvolvedor segue a boa prática de criar uma _tag_ do Git para cada versão. Mude o código-fonte para essa _tag_:
+No momento, a versão mais atual da Electrum é a 4.0.5, e o desenvolvedor segue a boa prática de criar uma _tag_ do [Git] para cada versão. Mude o código-fonte para essa _tag_:
 
 ```
 $ git checkout 4.0.5
 ```
 
-Códigos-fonte gerenciados pelo Git possuem uma forma própria de verificar integridade e autenticidade. Para verificar esse código-fonte nessa _tag_ específica, execute:
-
+Códigos-fonte versionados pelo Git possuem uma forma própria de verificar integridade e autenticidade. Para verificar esse código-fonte nessa _tag_ específica, execute:
 
 ```
 $ git verify-tag 4.0.5
@@ -243,6 +248,7 @@ Eu também recomendo que você confira o [_site_][bitcoinheiros] assim como o [c
 [4.0.5]:                    https://github.com/spesmilo/electrum/releases/tag/4.0.5
 [kamarada-15.2]:            {% post_url pt/2020-09-11-linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca %}
 [leap-15.2]:                {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
+[opensuse-repos]:           https://en.opensuse.org/Package_repositories
 [softwareoo]:               https://software.opensuse.org/package/electrum
 [electrum-network]:         https://build.opensuse.org/package/show/network:cryptocurrencies/electrum
 [python]:                   https://www.python.org/
@@ -265,6 +271,7 @@ Eu também recomendo que você confira o [_site_][bitcoinheiros] assim como o [c
 [libsecp256k1]:             https://software.opensuse.org/package/libsecp256k1
 [how-to-verify-iso]:        {% post_url pt/2018-10-06-verificacao-de-integridade-e-autenticidade-com-sha-256-e-gpg %}
 [github]:                   https://github.com/spesmilo/electrum
+[git]:                      https://git-scm.com/
 [bitcoin-history]:          {% post_url pt/2020-06-20-dinheiro-passado-presente-e-bitcoin %}
 [bitcoinheiros]:            https://bitcoinheiros.com/
 [bitcoinheiros-youtube]:    https://www.youtube.com/c/bitcoinheiros
