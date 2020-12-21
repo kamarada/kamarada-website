@@ -31,16 +31,15 @@ Mas o Projeto openSUSE optou por seguir um caminho diferente, tentando adicionar
 
 Até 2014, havia apenas uma distribuição chamada openSUSE, então na versão 13.2.
 
-A partir daí, o Projeto openSUSE passou a oferecer duas distribuições:
+A partir daí, o Projeto openSUSE passou a oferecer duas distribuições: openSUSE Leap e openSUSE Tumbleweed.
 
-- **openSUSE Leap:** mais estável, sucessor do bom e velho openSUSE, mas com um novo processo de desenvolvimento, atualmente está na [versão 15.2][leap-15.2] e lança novas versões com regularidade (geralmente, uma nova versão por ano), de modo semelhante a distribuições mais tradicionais como [Ubuntu], [Debian] e [Fedora]; e
-- **openSUSE Tumbleweed:** com lançamentos contínuos (_rolling release_), ou seja, não possui versões distintas, apenas a versão mais recente, que contém sempre os _softwares_ mais recentes, recebe atualizações pequenas e frequentes sempre que um _software_ é atualizado, semelhante a distribuições como [Arch] e Manjaro.
+Se você ainda não conhecia essas distribuições, confira as diferenças entre elas no texto:
 
-O openSUSE Leap é mais indicado para usuários iniciantes e organizações, que tendem a evitar atualizações frequentes. Já o openSUSE Tumbleweed é preferido por usuários entusiastas que desejam usar sempre o que há de mais novo em [Linux].
+- [openSUSE Leap e openSUSE Tumbleweed: qual é a diferença?][leap-tumbleweed]
 
-Normalmente, eu falo aqui do openSUSE Leap. É a distribuição que eu uso e indico há anos, principalmente para usuários iniciantes, tanto que o [Linux Kamarada][kamarada-15.2] é baseado nele.
+{% include update.html date="21/12/2020" message="Na versão original deste tutorial, eu explicava a diferença entre essas distribuições. Como percebi que essa informação estava se repetindo também em outros textos, decidi movê-la para um texto próprio." %}
 
-Mas hoje eu quero falar do Tumbleweed, que, nos meus testes, se saiu um pouco melhor que o Leap no Raspberry Pi 4. Isso já era esperado, uma vez que o suporte ao Raspberry Pi 4 ainda está em desenvolvimento e as novidades chegam primeiro no Tumbleweed.
+Normalmente, eu falo aqui do openSUSE Leap. Mas hoje quero falar do Tumbleweed, que, nos meus testes, se saiu um pouco melhor que o Leap no Raspberry Pi 4. Isso já era esperado, uma vez que o suporte ao Raspberry Pi 4 ainda está em desenvolvimento e as novidades chegam primeiro no Tumbleweed.
 
 ## O que funciona e o que não funciona?
 
@@ -69,9 +68,9 @@ Sabendo o que hoje funciona ou não no Raspberry Pi 4 com openSUSE, você pode d
 
 ## Baixando a imagem do openSUSE
 
-Para baixar a imagem do openSUSE e gravá-la no cartão de memória, você precisará de um PC com Linux, [Windows] ou [macOS] e um cartão de memória micro-SD de pelo menos 8GB.
+Para baixar a imagem do openSUSE e gravá-la no cartão de memória, você precisará de um PC com [Linux], [Windows] ou [macOS] e um cartão de memória micro-SD de pelo menos 8GB.
 
-Eu vou usar o [Linux Kamarada 15.2][kamarada-15.2].
+Eu vou usar o [Linux Kamarada 15.2][kamarada-15.2], baseado no [openSUSE Leap 15.2][leap-15.2].
 
 Acesse a página do Raspberry Pi 4 na _wiki_ do openSUSE:
 
@@ -186,15 +185,12 @@ Alguns dos textos que consultei para escrever o presente texto incluem:
 [rpi-linux]:        https://github.com/raspberrypi/linux
 [firmware]:         https://github.com/raspberrypi/firmware
 [linux-kernel]:     https://www.kernel.org/
-[leap-15.2]:        {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
-[ubuntu]:           https://ubuntu.com/
-[debian]:           https://www.debian.org/
-[fedora]:           https://getfedora.org/pt_BR/
-[arch]:             https://www.archlinux.org/
+[leap-tumbleweed]:  {% post_url pt/2020-12-06-opensuse-leap-e-opensuse-tumbleweed-qual-e-a-diferenca %}
 [linux]:            https://www.vivaolinux.com.br/linux/
-[kamarada-15.2]:    {% post_url pt/2020-09-11-linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca %}
 [windows]:          https://www.microsoft.com/pt-br/windows/
 [macos]:            https://www.apple.com/br/macos/
+[kamarada-15.2]:    {% post_url pt/2020-09-11-linux-kamarada-15.2-venha-para-o-lado-verde-elegante-e-moderno-da-forca %}
+[leap-15.2]:        {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
 [opensuse-wiki]:    https://en.opensuse.org/HCL:Raspberry_Pi4
 [xfce]:             https://www.xfce.org/
 [etcher]:           {% post_url pt/2020-11-17-gravando-imagem-no-cartao-de-memoria-de-forma-facil-com-o-balenaetcher %}
