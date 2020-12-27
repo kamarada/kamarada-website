@@ -33,17 +33,23 @@ Até 2014, havia apenas uma distribuição chamada openSUSE, então na versão 1
 
 A partir daí, o Projeto openSUSE passou a oferecer duas distribuições: openSUSE Leap e openSUSE Tumbleweed.
 
+{% include update.html date="27/12/2020" message="Na versão original desse tutorial, eu explicava a diferença entre essas distribuições. Como percebi que essa informação estava se repetindo também em outros textos, decidi movê-la para um texto próprio e adicionar mais algumas informações." %}
+
 Se você ainda não conhecia essas distribuições, confira as diferenças entre elas no texto:
 
 - [openSUSE Leap e openSUSE Tumbleweed: qual é a diferença?][leap-tumbleweed]
 
-{% include update.html date="21/12/2020" message="Na versão original deste tutorial, eu explicava a diferença entre essas distribuições. Como percebi que essa informação estava se repetindo também em outros textos, decidi movê-la para um texto próprio." %}
+Normalmente, eu falo aqui do openSUSE Leap. Mas hoje quero falar do Tumbleweed.
 
-Normalmente, eu falo aqui do openSUSE Leap. Mas hoje quero falar do Tumbleweed, que, nos meus testes, se saiu um pouco melhor que o Leap no Raspberry Pi 4. Isso já era esperado, uma vez que o suporte ao Raspberry Pi 4 ainda está em desenvolvimento e as novidades chegam primeiro no Tumbleweed.
+{% include update.html date="27/12/2020" message="Na versão original desse texto, o openSUSE Tumbleweed se saía um pouco melhor que o Leap no Raspberry Pi 4, mas hoje não há diferença entre eles no que se refere a suporte de _hardware_, então atualizei o texto de acordo." %}
+
+Como o suporte ao Raspberry Pi 4 ainda está em desenvolvimento e as novidades chegam primeiro no Tumbleweed, acho interessante ficar de olho no Tumbleweed. Por isso, vamos experimentar o Tumbleweed hoje.
+
+Se você prefere usar o Leap, pode seguir esse passo-a-passo da mesma forma. As instruções são as mesmas.
 
 ## O que funciona e o que não funciona?
 
-**Resumo:** no que se refere ao suporte ao _hardware_ do Raspberry Pi 4, praticamente não há diferença entre o Leap e o Tumbleweed. Se você pretende usar o Raspberry Pi como um servidor doméstico, o openSUSE vai te atender muito bem. Se pretende usar como um _desktop_, pode ser que sinta falta de alguns recursos, como o Bluetooth e o som.
+**Resumo:** no que se refere ao suporte ao _hardware_ do Raspberry Pi 4, não há diferença entre o Leap e o Tumbleweed. Se você pretende usar o Raspberry Pi como um servidor doméstico, ambas as distribuições do openSUSE vão te atender muito bem. Se pretende usar como um _desktop_, pode ser que sinta falta de alguns recursos, como o Bluetooth e o som.
 
 Eu testei os seguintes recursos do Raspberry Pi 4 nas duas distribuições:
 
@@ -53,9 +59,10 @@ Eu testei os seguintes recursos do Raspberry Pi 4 nas duas distribuições:
 - **Portas USB:** em ambas, todas as 4 portas USB funcionaram, apenas faço algumas observações quanto a teclado e _mouse_:
   * o teclado não funciona no menu do GRUB;
   * em ambas as distribuições, dependendo do modelo do teclado e/ou _mouse_, ao reiniciar o Raspberry Pi pode ser que parem de funcionar, sendo necessário removê-los e plugá-los de novo para que voltem;
-- **Portas micro-HDMI**:
-  * no Tumbleweed, ambas funcionaram, mas ao mudar o cabo HDMI de uma porta para outra, não era exibida imagem nessa outra porta — então, se precisar mudar o cabo HDMI de porta, é necessário reiniciar o Raspberry Pi;
-  * no Leap, somente a porta HDMI 1 funcionou (a próxima da saída de som), a porta HDMI 0 **não** funcionou (a próxima da porta USB-C);
+- **Portas HDMI**: em ambas as distribuições, ambas as portas HDMI funcionaram, mas ao mudar o cabo HDMI de uma porta para outra, não foi exibida imagem nessa outra porta de imediato — então, se precisar mudar o cabo HDMI de porta, é necessário reiniciar o Raspberry Pi;
+
+{% include update.html date="27/12/2020" message="Quando eu escrevi esse texto pela primeira vez, ambas as portas HDMI funcionavam no Tumbleweed, mas apenas uma funcionava no Leap. Hoje, ambas as portas HDMI funcionam em ambas as distribuições, então atualizei o texto de acordo." %}
+
 - **Saída de som:** em ambas as distribuições, **não** consegui produzir som usando o Raspberry Pi de forma alguma — seja pela saída de som (conectando um fone de ouvido tradicional, por exemplo), pela HDMI (conectando uma TV) ou por Bluetooth.
 
 O que eu não testei (não sei se funciona ou não):
@@ -80,7 +87,7 @@ Acesse a página do Raspberry Pi 4 na _wiki_ do openSUSE:
 
 Note que há várias opções de imagens tanto do Tumbleweed quanto do Leap 15.2. Se você pretende usar o Raspberry Pi como um servidor, a imagem JeOS (_Just enough Operating System_ — traduzindo: tão somente o sistema operacional) é a mais adequada. Se pretende usá-lo como um _desktop_, pode escolher outra imagem com alguma área de trabalho.
 
-Aqui, vou usar a imagem do Tumbleweed com a área de trabalho [XFCE], que é bem leve e, por isso, adequada para o Raspberry Pi. Se você prefere o Leap, o passo-a-passo é o mesmo.
+Aqui, vou usar a imagem do Tumbleweed com a área de trabalho [XFCE], que é bem leve e, por isso, adequada para o Raspberry Pi.
 
 Clique no _link_ para a imagem que deseja baixar. O _download_ pode demorar um pouco, considerando que o arquivo é grande (no meu caso, 1 GB).
 
@@ -88,7 +95,7 @@ Clique no _link_ para a imagem que deseja baixar. O _download_ pode demorar um p
 
 Para gravar a imagem do openSUSE no cartão de memória, eu recomendo o programa [balenaEtcher][etcher], por ser simples e fácil de usar. Ele é gratuito e de código aberto.
 
-{% include update.html date="17/11/2020" message="Na versão original deste tutorial, eu falava sobre o balenaEtcher. Como pretendo usar o balenaEtcher também em outros tutoriais, decidi mover as instruções de como usá-lo para um tutorial próprio dele." %}
+{% include update.html date="27/12/2020" message="Na versão original deste tutorial, eu falava sobre o balenaEtcher. Como pretendo usar o balenaEtcher também em outros tutoriais, decidi mover as instruções de como usá-lo para um tutorial próprio dele e adicionar mais algumas informações." %}
 
 Veja como usar o balenaEtcher em:
 
@@ -157,12 +164,26 @@ Na tela de _login_, use as credenciais `root` como nome de usuário e `linux` co
 
 {% include image.html src='/files/2020/10/rpi4b-opensuse-13.jpg' %}
 
+## Tumbleweed não inicia, e agora?
+
+{% include update.html date="27/12/2020" message="Essa seção não existia na versão original desse texto, foi incluída para falar desse _bug_ que começou a acontecer recentemente." %}
+
+Se em vez da tela de _login_, o Tumbleweed no seu Raspberry Pi 4 mostra isso:
+
+{% include image.html src='/files/2020/12/rpi4b-tumbleweed-waiting-for-phy-auto-negotiation.jpg' caption="O sistema repete várias vezes a mensagem: Waiting for PHY auto negotiation to complete..." %}
+
+Esse é um _bug_ conhecido do Tumbleweed e você pode encontrar mais informações a respeito dele, assim como uma forma de resolvê-lo, no texto:
+
+- [Tumbleweed não inicia no Raspberry Pi 4: veja como resolver][rpi4b-tumbleweed]
+
+Esse _bug_ não afeta o Leap.
+
+## Continua...
+
 Como percebi que o _post_ já estava grande, decidi dividi-lo em duas partes. Deixei as configurações básicas para o próximo _post_.
 
 {% capture atualizacao %}[A segunda parte desse tutorial já está aqui! (clique para acessá-la)]({%post_url pt/2020-10-10-opensuse-no-raspberry-pi-4-parte-2-configuracoes-basicas %}){% endcapture %}
 {% include update.html date="10/10/2020" message=atualizacao %}
-
-Siga o Projeto Linux Kamarada para ler a segunda parte assim que ela for publicada!
 
 ## Referências
 
@@ -197,6 +218,7 @@ Alguns dos textos que consultei para escrever o presente texto incluem:
 [dd]:               https://man7.org/linux/man-pages/man1/dd.1.html
 [fdisk]:            https://linux.die.net/man/8/fdisk
 [sync]:             https://man7.org/linux/man-pages/man1/sync.1.html
+[rpi4b-tumbleweed]: {% post_url pt/2020-12-27-tumbleweed-nao-inicia-no-raspberry-pi-4-veja-como-resolver %}
 [hackaday]:         https://hackaday.com/2017/01/14/blob-less-raspberry-pi-linux-is-a-step-closer/
 [opensuse-arm]:     https://lists.opensuse.org/opensuse-arm/2019-10/msg00003.html
 [rpi-docs]:         https://www.raspberrypi.org/documentation/installation/installing-images/linux.md

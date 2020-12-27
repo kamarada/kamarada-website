@@ -15,7 +15,7 @@ But recent Tumbleweed images for the Raspberry Pi 4 don't boot. The system keeps
 
 And reboots. The [GRUB] menu is not displayed.
 
-I faced this problem while trying to boot the latest Tumbleweed [XFCE] image, based on snapshot 20201214. It does not happen with the latest Leap 15.2 XFCE image.
+I faced this problem while trying to boot the latest Tumbleweed [XFCE] image, based on snapshot 20201214. It does not happen with the latest [Leap 15.2][leap-15.2] XFCE image.
 
 I asked for help on the [openSUSE ARM mailing list][opensuse-arm-1] and people pointed me to a workaround.
 
@@ -40,6 +40,7 @@ If you want to know more about the bug and its workaround, take a look at:
 [rpi4b-opensuse]:       {% post_url en/2020-12-26-opensuse-on-the-raspberry-pi-4-part-1-downloading-and-installing %}
 [grub]:                 https://www.gnu.org/software/grub/
 [xfce]:                 https://www.xfce.org/
+[leap-15.2]:            {% post_url en/2020-07-02-opensuse-leap-15-2-release-brings-exciting-new-artificial-intelligence-ai-machine-learning-and-container-packages %}
 [opensuse-arm-1]:       https://lists.opensuse.org/archives/list/arm@lists.opensuse.org/thread/CWV5EK7ZPVLT2CH4LGP77UL3DRA4GDXM/
 [u-boot-1]:             https://lists.opensuse.org/archives/list/arm@lists.opensuse.org/message/J2YM5M5TMWZC5DUYHU2YQ2KLS2BUH6LW/attachment/3/u-boot.bin
 [u-boot-2]:             /files/2020/12/u-boot.bin
