@@ -171,7 +171,8 @@ This bug does not affect Leap.
 
 If I included what to do after installing openSUSE on the Raspberry Pi here on this text, it would be very long, so I decided to split it in two parts.
 
-Follow the Linux Kamarada Project to read the second part as soon as it's published!
+{% capture update %}[The second part of this tutorial is here. (click)]({%post_url en/2021-01-06-opensuse-on-the-raspberry-pi-4-part-2-first-settings %}){% endcapture %}
+{% include update.html date="Jan 06, 2021" message=update %}
 
 ## References
 

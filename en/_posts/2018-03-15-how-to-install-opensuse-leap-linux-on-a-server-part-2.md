@@ -45,7 +45,7 @@ Settings are listed by the right, grouped by categories listed by the left.
 
 If you already use openSUSE on your desktop, maybe you already know YaST:
 
-{% include image.html src="/files/2016/10/upgrade-03-en.png" caption="YaST's graphical user interface" %}
+{% include image.html src="/files/2016/10/upgrade-03-en.png" caption="YaST&apos;s graphical user interface" %}
 
 Actually, you already know YaST from the [previous post][how-to-server]: besides being an openSUSE configuration tool, YaST is also the openSUSE installer itself (you can revisit that post and see that the name "YaST" appears on the upper-left corner of all screens).
 
