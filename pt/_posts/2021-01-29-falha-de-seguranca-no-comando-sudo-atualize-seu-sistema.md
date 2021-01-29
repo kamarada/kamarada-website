@@ -2,31 +2,32 @@
 date: '2021-01-29 01:10:00 UTC-3'
 image: '/files/2021/01/hacker-access-granted.jpg'
 layout: post
+nickname: 'sudo-baron-samedit'
 title: 'Falha de segurança no comando sudo: atualize seu sistema!'
 ---
 
 {% include image.html src='/files/2021/01/hacker-access-granted.jpg' %}
 
-Uma falha de segurança grave que afeta grande parte dos computadores com [Linux] foi divulgada nessa [terça 26][blog-qualys] pela empresa de auditoria de segurança [Qualys]. A falha envolve o comando **[sudo]**, presente em praticamente todas as instalações do Linux — inclusive do [openSUSE] e do [Linux Kamarada][kamarada-15.2]. A correção já foi disponibilizada pelas distribuições, que recomendam que os usuários instalem as últimas [atualizações][updates].
+Uma falha de segurança grave que afeta grande parte dos computadores com [Linux] foi divulgada nessa [terça 26][blog-qualys] pela empresa de auditoria de segurança [Qualys]. A falha foi identificada no comando **[sudo]**, presente em muitas (senão todas) as instalações do Linux — inclusive do [openSUSE] e do [Linux Kamarada][kamarada-15.2]. A correção já foi disponibilizada pelas distribuições, que recomendam que os usuários instalem as últimas [atualizações][updates].
 
 O utilitário de linha de comando **sudo** permite que usuários comuns do sistema executem comandos que normalmente só podem ser executados pelo administrador do sistema, que no Linux é chamado de _root_ ou **[superusuário][superuser]**. Daí vem o nome do comando **sudo**: _su "do"_ ("superusuário faz", em inglês). O administrador pode conceder permissões para que certos usuários (ou grupos de usuários) sejam capazes de executar certos comandos (ou qualquer comando) como se fossem o _root_ ou outro usuário. Para isso, o administrador deve editar o arquivo de configuração do **sudo**, que é o `/etc/sudoers`.
 
-O _bug_ descoberto pela Qualys foi batizado de "Baron Samedit" e registrado no [CVE] (_Common Vulnerabilities and Exposures_, um banco de dados de falhas de segurança conhecidas) com o código [CVE-2021-3156]. Essa falha de segurança permite que um usuário comum mal-intencionado (ou um invasor que conseguisse acesso a uma conta de usuário comum) obtivesse o mesmo nível de permissões que o usuário _root_, mesmo que essa conta de usuário comum não tivesse sido previamente autorizada no arquivo `/etc/sudoers`.
+O _bug_ descoberto pela Qualys foi batizado de "Baron Samedit" e registrado no [CVE] (_Common Vulnerabilities and Exposures_, um banco de dados de falhas de segurança conhecidas) com o código [CVE-2021-3156]. Essa falha podia ser explorada por um usuário comum mal-intencionado (ou um invasor que conseguisse acesso a uma conta de usuário comum) para obter acesso ao _root_ e assumir o controle do sistema vulnerável, mesmo que essa conta comum não tivesse sido previamente autorizada no arquivo `/etc/sudoers`.
 
 Para os detalhes técnicos a respeito dessa falha de segurança, você pode conferir o [relatório técnico da Qualys][qualys-report] ou o [vídeo][qualys-video] a seguir, que mostra uma forma de explorar a falha para ganhar acesso ao usuário _root_ a partir de uma conta comum (relatório e vídeo ambos em inglês).
 
 <div style="padding:75% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/504872555" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 <p></p>
 
-Curiosamente, embora essa falha tenha sido identificada apenas agora, analisando o código-fonte do **sudo** em busca do trecho de código que a causava, identificou-se que esse código foi introduzido em julho de 2011 (_commit_ [8255ed69][github]). Ou seja, esse _bug_ passou 10 anos (espera-se) despercebido. Felizmente, já foi corrigido.
+Curiosamente, embora essa falha tenha sido divulgada apenas agora, analisando o código-fonte do **sudo** em busca do trecho de código que a causava, identificou-se que esse código foi introduzido em julho de 2011 (_commit_ [8255ed69][github]). Ou seja, esse _bug_ passou 10 anos (espera-se) despercebido. Felizmente, já foi corrigido.
 
-## Como corrigir essa falha?
+## Como posso me proteger dessa falha?
 
 Todas as maiores distribuições Linux já liberaram atualizações de segurança com correções (_patches_) que resolvem esse problema. Cabe aos usuários baixarem essas atualizações.
 
-O Projeto openSUSE liberou atualizações para suas [duas distribuições: Leap e Tumbleweed][leap-vs-tumbleweed]. No caso do openSUSE Leap, receberam atualizações as versões 15.1 e 15.2.
+O Projeto openSUSE liberou atualizações para suas [duas distribuições: Leap e Tumbleweed][leap-vs-tumbleweed]. No caso do openSUSE Leap, as versões com suporte (15.1 e 15.2) receberam atualizações.
 
-Como o Linux Kamarada é baseado no openSUSE Leap, usuários do Linux Kamarada são, por tabela, usuários do openSUSE Leap e recebem essas mesmas atualizações.
+Como o Linux Kamarada é baseado no openSUSE Leap, usuários do Linux Kamarada são, por tabela, usuários do openSUSE Leap também e recebem essas mesmas atualizações.
 
 Se você usa uma dessas distribuições:
 
@@ -38,16 +39,20 @@ Veja como obter atualizações no texto:
 
 - [Como obter atualizações para o Linux openSUSE][updates]
 
-Se você usa uma versão do openSUSE Leap que já foi descontinuada e já não recebe mais suporte (por exemplo, a 15.0), a orientação passada na [lista de discussão do openSUSE][users-list] foi baixar o código-fonte do pacote do **sudo**, compilar e instalar manualmente. Se esse é o seu caso, consulte a lista de discussão (em inglês) para mais informações.
+Se você usa uma das [versões do openSUSE Leap que já foram descontinuadas][discontinued-distros] e já não recebem mais suporte (por exemplo, a 15.0), a orientação passada na [lista de discussão do openSUSE][users-list] foi baixar o código-fonte do pacote do **sudo**, compilar e instalar manualmente. Se esse é o seu caso, consulte a lista de discussão (em inglês) para mais informações.
 
-Outra opção se você usa o openSUSE Leap 15.0 é atualizar para a versão 15.1 e na sequência para a 15.2, já que [o suporte para a versão 15.1 se encerrará agora em janeiro][security-list]. Se quiser instruções de como fazer isso, consulte os textos:
+Outra opção se você usa o openSUSE Leap 15.0 é atualizar para a versão 15.1 e na sequência já atualizar para a 15.2.
+
+[O suporte do openSUSE Leap 15.1 se encerrará agora em janeiro][security-list]. Portanto, usuários da versão 15.1 também são aconselhados a atualizar.
+
+Se quiser instruções de como atualizar toda a distribuição, consulte os textos:
 
 - [Como atualizar do openSUSE Leap 15.0 para o 15.1][upgrade-1]
 - [Linux Kamarada e openSUSE Leap: como atualizar da versão 15.1 para a 15.2][upgrade-2]
 
 ## Como saber se estou vulnerável?
 
-Os desenvolvedores do **sudo** também emitiram um [alerta][sudo-alert] com informações sobre a falha. Eles sugerem um teste simples para saber se a versão do **sudo** que você está usando está sujeita a essa falha. Abra uma janela do terminal e execute o comando a seguir:
+Os desenvolvedores do **sudo** também emitiram um [alerta][sudo-alert] com informações sobre a falha. Eles sugeriram um teste simples para saber se a versão do **sudo** que você está usando está sujeita a essa falha. Abra uma janela do terminal e execute o comando a seguir:
 
 ```
 $ sudoedit -s '\' `perl -e 'print "A" x 65536'`
@@ -77,12 +82,14 @@ $ rpm -q --changelog sudo | head
 
 Se quiser saber mais sobre a falha de segurança do **sudo** código CVE-2021-3156 codenome "Baron Samedit", você pode dar uma conferida nos textos que consultei para escrever este:
 
-- Sobre a falha, em português:
+- Sobre a falha, de modo geral, em português:
   - [Vulnerabilidade com mais de dez anos de idade é finalmente corrigida no Linux - Canaltech][canaltech]
   - [Bug de 10 anos permite que usuários Linux obtenham acesso nível root - SempreUpdate][sempreupdate]
-- Sobre a falha, em inglês:
+- Sobre a falha, de modo geral, em inglês:
+  - [CVE-2021-3156: Heap-Based Buffer Overflow in Sudo (Baron Samedit) - Qualys Security Blog][blog-qualys]
   - [Decade-old bug in Linux world's sudo can be abused by any logged-in user to gain root privileges - The Register][theregister]
   - [10-year-old Sudo bug lets Linux users gain root-level access - ZDNet][zdnet]
+  - [Buffer overflow in command line unescaping - sudo][sudo-alert]
 - Informações específicas para o openSUSE, em inglês:
   - [sudo \*\*BUG\*\* (Mother of All sudo BUGS) -- rebuild if you are using old release - openSUSE Users - openSUSE Mailing Lists][users-list]
   - [CVE-2021-3156 (sudo) vs Leap 15.1 - openSUSE Factory - openSUSE Mailing Lists][factory-list]
@@ -103,6 +110,7 @@ Se quiser saber mais sobre a falha de segurança do **sudo** código CVE-2021-31
 [qualys-video]:         https://vimeo.com/504872555
 [github]:               https://github.com/sudo-project/sudo/commit/8255ed69
 [leap-vs-tumbleweed]:   {% post_url pt/2020-12-06-opensuse-leap-e-opensuse-tumbleweed-qual-e-a-diferenca %}
+[discontinued-distros]: https://en.opensuse.org/Lifetime#Discontinued_distributions
 [users-list]:           https://lists.opensuse.org/archives/list/users@lists.opensuse.org/thread/2LKJJVNGGGMLLF4242KK6HCCAQTTWPQS/
 [security-list]:        https://lists.opensuse.org/opensuse-security-announce/2020-11/msg00040.html
 [upgrade-1]:            {% post_url pt/2019-05-26-como-atualizar-do-opensuse-leap-150-para-o-151 %}
