@@ -1,5 +1,5 @@
 ---
-date: '2021-01-31 22:00:00 UTC-3'
+date: '2021-01-31 22:00:00 GMT-3'
 image: '/files/2021/01/kamarada-15.1-eol.jpg'
 layout: post
 nickname: 'kamarada-15.1-eol'
@@ -10,7 +10,7 @@ title: 'Suporte do openSUSE Leap 15.1 e do Linux Kamarada 15.1 se encerram hoje'
 
 O suporte do [openSUSE Leap 15.1][leap-15.1], lançado em 22 de maio de 2019, se encerra hoje, 31 de janeiro de 2021, conforme [anúncio feito na lista de discussão][opensuse-security-announce]. Isso quer dizer que o openSUSE Leap 15.1 não receberá mais atualizações, seja para corrigir _bugs_ de funcionalidades ou mesmo falhas de segurança.
 
-O Projeto openSUSE recomenda que usuários do openSUSE Leap 15.1 atualizem para o [openSUSE Leap 15.2][leap-15.2], lançado em 01 de julho de 2020 e que deve receber atualizações até dezembro de 2021, de acordo com a [_wiki_ do openSUSE][opensuse-lifetime].
+O [Projeto openSUSE][opensuse] recomenda que usuários do openSUSE Leap 15.1 atualizem para o [openSUSE Leap 15.2][leap-15.2], lançado em 01 de julho de 2020 e que deve receber atualizações até dezembro de 2021, de acordo com a [_wiki_ do openSUSE][opensuse-lifetime].
 
 Até lá, provavelmente já teremos o [openSUSE Leap 15.3][leap-15.3], cujo lançamento é previsto para 07 de julho de 2021. Portanto, quando o Leap 15.3 for lançado, os usuários do Leap 15.2 terão aproximadamente 6 meses para fazer a atualização da distribuição.
 
@@ -32,6 +32,7 @@ Se tiverem alguma dúvida, escrevam nos comentários deste texto ou do tutorial 
 
 [leap-15.1]:                    {% post_url pt/2019-05-22-comunidade-opensuse-lanca-a-versao-15-1-da-distribuicao-leap %}
 [opensuse-security-announce]:   https://lists.opensuse.org/opensuse-security-announce/2020-11/msg00040.html
+[opensuse]:                     https://www.opensuse.org/
 [leap-15.2]:                    {% post_url pt/2020-07-02-versao-15.2-do-opensuse-leap-traz-novos-e-empolgantes-pacotes-de-inteligencia-artificial-aprendizagem-de-maquina-e-containers %}
 [opensuse-lifetime]:            https://en.opensuse.org/Lifetime
 [leap-15.3]:                    https://en.opensuse.org/Portal:15.3
