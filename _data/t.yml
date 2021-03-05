@@ -1,5 +1,6 @@
 en:
     about: "About"
+    ads: "Ads"
     author: "Author"
     all_rights_reversed: "All rights reversed"
     based_on: "Based on"
@@ -46,6 +47,7 @@ en:
     what_about_sharing: "Did you like it? What about sharing?"
 pt:
     about: "Sobre"
+    ads: "Anúncios"
     author: "Autor"
     all_rights_reversed:  "Todos os direitos liberados"
     based_on: "Baseado no"
