@@ -12,7 +12,7 @@ Se você já toca, ou quer aprender a tocar, algum instrumento musical, especial
 
 O TuxGuitar é compatível com outros aplicativos do mesmo gênero, como o [Guitar Pro][guitar-pro], que também é um editor de tablaturas e partituras bastante conhecido, mas é pago (é necessário comprar uma licença para usar) e só está disponível para [Windows] e [macOS]. O TuxGuitar consegue abrir partituras do Guitar Pro, arquivos com extensão `gp3`, `gp4` ou `gp5`.
 
-O TuxGuitar está disponível para Windows, macOS, [Linux],  e [FreeBSD].
+O TuxGuitar está disponível para Windows, macOS, [Linux] e [FreeBSD].
 
 A seguir, você verá como instalar e usar o TuxGuitar na distribuição [Linux Kamarada][kamarada-15.2]. Você pode seguir as mesmas instruções se usa uma das [distribuições do Projeto openSUSE][leap-tumbleweed].
 
@@ -84,7 +84,7 @@ Se você preferir imprimir a partitura para estudar sem ser no computador, abra 
 
 {% include image.html src='/files/2021/03/tuxguitar-06-pt.jpg' %}
 
-Selecione qual instrumento deve ter sua partitura impressa. Você pode selecionar também determinados compassos para impressão (nessa tela, ele chama de **Faixa**). Pode escolher imprimir só a tablatura, só a partitura ou ambas. Pode ativar ou desativar a exibição dos nomes e figuras dos acordes (são as opções não traduzidas: **Show Chord Names** e **Show Chord Diagrams**, respectivamente).
+Selecione qual instrumento deve ter sua partitura impressa. Você pode selecionar também determinados compassos para impressão (essa tela chama de **Faixa**, por padrão todos os compassos serão impressos). Pode escolher imprimir só a tablatura, só a partitura ou ambas. Pode ativar ou desativar a exibição dos nomes e figuras dos acordes (são as opções não traduzidas: **Show Chord Names** e **Show Chord Diagrams**, respectivamente).
 
 Eu recomendo visualizar a impressão ou imprimir para um arquivo antes de imprimir propriamente para uma folha de papel, para se certificar de estar imprimindo o que deseja.
 
@@ -94,7 +94,7 @@ Para visualizar a impressão, abra o menu **Arquivo** e clique em **Visualizar I
 
 ## Escrevendo uma partitura
 
-Como escrever uma partitura seria assunto para um tutorial inteiro e eu uso o TuxGuitar só para abrir partituras, não sei como escrevê-las. Felizmente, há [um vídeo no canal Diolinux][diolinux] onde uma banda que já usa o TuxGuitar para escrever partituras explica como fazer. Se você deseja usar o TuxGuitar para escrever partituras, recomendo que veja esse vídeo:
+Como escrever uma partitura seria assunto para um tutorial inteiro. E eu uso o TuxGuitar só para abrir partituras, não sei como escrevê-las. Felizmente, há [um vídeo no canal Diolinux][diolinux] onde uma banda que já usa o TuxGuitar para escrever partituras explica como fazer. Se você deseja usar o TuxGuitar para escrever partituras, recomendo que veja esse vídeo:
 
 {% include youtube.html id="60mKlVxj1Dw" %}
 
